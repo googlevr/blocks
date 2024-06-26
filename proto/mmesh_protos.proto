@@ -1,0 +1,51 @@
+// Copyright 2020 The Blocks Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto2";
+
+package com.todo.apps.peltzer.client.proto;
+
+import "basic_types_protos.proto";
+
+// Represents a mesh in the model.
+message MMeshProto {
+  message Vertex {
+    optional int32 vertex_id = 1;
+    optional Vector3Proto loc = 2;
+  }
+  message Hole {
+    repeated int32 vertex_ids = 1;
+    repeated Vector3Proto normals = 2;
+  }
+  message Face {
+    message FaceProperties {
+      optional int32 material_id = 1;
+    }
+
+    optional int32 face_id = 1;
+    optional FaceProperties properties = 2;
+    repeated int32 vertex_ids = 3;
+    repeated Hole holes = 4;
+    repeated Vector3Proto normals = 5;
+  }
+
+  optional int32 mesh_id = 1;
+  optional Vector3Proto offset = 2;
+  optional QuaternionProto rotation = 3;
+  repeated Vertex vertices = 4;
+  repeated Face faces = 5;
+
+  // Group ID 0 means "not grouped".
+  optional int32 group_id = 6;
+}

@@ -1,0 +1,78 @@
+// Copyright 2020 The Blocks Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto2";
+
+package com.todo.apps.peltzer.client.proto;
+
+import "basic_types_protos.proto";
+import "mmesh_protos.proto";
+
+// Represents a command (an operation that mutates the model).
+message CommandProto {
+  message AddMeshCommand {
+    optional MMeshProto mesh = 1;
+  }
+  message ChangeFacePropertiesCommand {
+    message Entry {
+      optional int32 face_id = 1;
+      optional MMeshProto.Face.FaceProperties properties = 2;
+    }
+    optional int32 mesh_id = 1;
+    repeated Entry entries = 2;
+  }
+  message CompositeCommand {
+    repeated CommandProto commands = 1;
+  }
+  message CopyMeshCommand {
+    optional int32 copied_from_id = 1;
+    optional MMeshProto copy = 2;
+  }
+  message DeleteMeshCommand {
+    optional int32 mesh_id = 1;
+  }
+  message MoveMeshCommand {
+    optional int32 mesh_id = 1;
+    optional Vector3Proto position_delta = 2;
+    optional QuaternionProto rot_delta = 3;
+  }
+  message ReplaceMeshCommand {
+    optional int32 mesh_id = 1;
+    optional MMeshProto mesh = 2;
+  }
+  message SetMeshGroupsCommand {
+    message GroupAssignment {
+      optional int32 mesh_id = 1;
+      optional int32 from_group_id = 2;
+      optional int32 to_group_id = 3;
+    }
+    repeated GroupAssignment assignments = 1;
+  }
+
+  optional string command_name = 1;
+
+  // One of more of these might be present depending on the command type.
+  // Typically, subclassed commands fill in the field for their derived type
+  // AND the one for ther base class type (so if BarCommand extends FooCommand,
+  // a BarCommand proto would have both a barCommand and a fooCommand field
+  // defined.
+  optional AddMeshCommand add_mesh_command = 2;
+  optional ChangeFacePropertiesCommand change_face_properties_command = 3;
+  optional CompositeCommand composite_command = 4;
+  optional CopyMeshCommand copy_mesh_command = 5;
+  optional DeleteMeshCommand delete_mesh_command = 6;
+  optional MoveMeshCommand move_mesh_command = 7;
+  optional ReplaceMeshCommand replace_mesh_command = 8;
+  optional SetMeshGroupsCommand set_mesh_groups_command = 9;
+}

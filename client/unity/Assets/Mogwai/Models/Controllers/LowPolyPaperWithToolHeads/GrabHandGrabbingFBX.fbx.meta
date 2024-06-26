@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: ccbacd416df38439a8c2b271e5c271c7
+timeCreated: 1475704336
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: grabHand_Jnt
+    100002: //RootNode
+    100004: indFing001_Jnt
+    100006: indFing002_Jnt
+    100008: indFing003_Jnt
+    100010: indFingTip_Jnt
+    100012: midFing001_Jnt
+    100014: midFing002_Jnt
+    100016: midFing003_Jnt
+    100018: midFingTip_Jnt
+    100020: pinkFing001_Jnt
+    100022: pinkFing002_Jnt
+    100024: pinkFing003_Jnt
+    100026: pinkFingTip_Jnt
+    100028: thumbFing001_Jnt
+    100030: thumbFing002_Jnt
+    100032: thumbFing003_Jnt
+    100034: thumbFingTip_Jnt
+    100036: wristHand_Jnt
+    400000: grabHand_Jnt
+    400002: //RootNode
+    400004: indFing001_Jnt
+    400006: indFing002_Jnt
+    400008: indFing003_Jnt
+    400010: indFingTip_Jnt
+    400012: midFing001_Jnt
+    400014: midFing002_Jnt
+    400016: midFing003_Jnt
+    400018: midFingTip_Jnt
+    400020: pinkFing001_Jnt
+    400022: pinkFing002_Jnt
+    400024: pinkFing003_Jnt
+    400026: pinkFingTip_Jnt
+    400028: thumbFing001_Jnt
+    400030: thumbFing002_Jnt
+    400032: thumbFing003_Jnt
+    400034: thumbFingTip_Jnt
+    400036: wristHand_Jnt
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 3.9
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: grabHand_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/indFing001_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/indFing001_Jnt/indFing002_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/indFing001_Jnt/indFing002_Jnt/indFing003_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/indFing001_Jnt/indFing002_Jnt/indFing003_Jnt/indFingTip_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/midFing001_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/midFing001_Jnt/midFing002_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/midFing001_Jnt/midFing002_Jnt/midFing003_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/midFing001_Jnt/midFing002_Jnt/midFing003_Jnt/midFingTip_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/pinkFing001_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/pinkFing001_Jnt/pinkFing002_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/pinkFing001_Jnt/pinkFing002_Jnt/pinkFing003_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/pinkFing001_Jnt/pinkFing002_Jnt/pinkFing003_Jnt/pinkFingTip_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/thumbFing001_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/thumbFing001_Jnt/thumbFing002_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/thumbFing001_Jnt/thumbFing002_Jnt/thumbFing003_Jnt
+        weight: 1
+      - path: grabHand_Jnt/wristHand_Jnt/thumbFing001_Jnt/thumbFing002_Jnt/thumbFing003_Jnt/thumbFingTip_Jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

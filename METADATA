@@ -1,0 +1,10 @@
+# Format: google3/devtools/metadata/metadata.proto (go/google3metadata)
+
+# Notify for all files.
+presubmit: {
+  review_notify: "blocks-core+reviews"
+
+  check_do_not_submit: {
+    action: SUBMIT
+  }
+}

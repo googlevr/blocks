@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: bd18baad676ca40598613a500ecc3166
+timeCreated: 1475702887
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: grabHand_Jnt
+    100002: //RootNode
+    100004: grabTool_Geo
+    100006: handGlbCntrl
+    100008: indexCntrl_001
+    100010: indexCntrl_002
+    100012: indexCntrl_003
+    100014: indFing001_Jnt
+    100016: indFing002_Jnt
+    100018: indFing003_Jnt
+    100020: indFingTip_Jnt
+    100022: midCntrl_001
+    100024: midCntrl_002
+    100026: midCntrl_003
+    100028: midFing001_Jnt
+    100030: midFing002_Jnt
+    100032: midFing003_Jnt
+    100034: midFingTip_Jnt
+    100036: pinkFing001_Jnt
+    100038: pinkFing002_Jnt
+    100040: pinkFing003_Jnt
+    100042: pinkFingTip_Jnt
+    100044: pinkyCntrl_001
+    100046: pinkyCntrl_002
+    100048: pinkyCntrl_003
+    100050: polySurface41
+    100052: thumbCntrl_001
+    100054: thumbCntrl_002
+    100056: thumbCntrl_003
+    100058: thumbFing001_Jnt
+    100060: thumbFing002_Jnt
+    100062: thumbFing003_Jnt
+    100064: thumbFingTip_Jnt
+    100066: wristHand_Jnt
+    400000: grabHand_Jnt
+    400002: //RootNode
+    400004: grabTool_Geo
+    400006: handGlbCntrl
+    400008: indexCntrl_001
+    400010: indexCntrl_002
+    400012: indexCntrl_003
+    400014: indFing001_Jnt
+    400016: indFing002_Jnt
+    400018: indFing003_Jnt
+    400020: indFingTip_Jnt
+    400022: midCntrl_001
+    400024: midCntrl_002
+    400026: midCntrl_003
+    400028: midFing001_Jnt
+    400030: midFing002_Jnt
+    400032: midFing003_Jnt
+    400034: midFingTip_Jnt
+    400036: pinkFing001_Jnt
+    400038: pinkFing002_Jnt
+    400040: pinkFing003_Jnt
+    400042: pinkFingTip_Jnt
+    400044: pinkyCntrl_001
+    400046: pinkyCntrl_002
+    400048: pinkyCntrl_003
+    400050: polySurface41
+    400052: thumbCntrl_001
+    400054: thumbCntrl_002
+    400056: thumbCntrl_003
+    400058: thumbFing001_Jnt
+    400060: thumbFing002_Jnt
+    400062: thumbFing003_Jnt
+    400064: thumbFingTip_Jnt
+    400066: wristHand_Jnt
+    4300000: polySurface41
+    9500000: //RootNode
+    13700000: polySurface41
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

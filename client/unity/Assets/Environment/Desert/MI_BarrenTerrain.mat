@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MI_BarrenTerrain
+  m_Shader: {fileID: 4800000, guid: 245d1d473c6c1fc478ad95939b1b30c1, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BGTexture:
+        m_Texture: {fileID: 2800000, guid: 4c270811b2b358b4296f2c1a8573c805, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Clouds:
+        m_Texture: {fileID: 2800000, guid: c1178dfbbc5ee1f4b82d214652566d2b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FGTexture:
+        m_Texture: {fileID: 2800000, guid: 49f8294a6ca0e8a44b975eb986aee4f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BGMaskFar: 20
+    - _BGMaskNear: 0
+    - _EmissiveAmount: 1
+    - _FogCurve: 0.8
+    - _FogDistance: 1
+    - _FogStrength: 1
+    - _FresnelDistance: 1
+    - _FresnelExp: 2
+    - _FresnelMaskCurve: 0.37
+    - _FresnelOnTopOfFog: 1
+    - _FresnelStrength: 0
+    - _Metallic: 1
+    - _OverrideAmount: 0
+    - _RefractiveIndex: 1.3
+    - _Roughness: 0.8
+    - _TextureStrength: 0.25
+    m_Colors:
+    - _BGColorA: {r: 1, g: 0.8313726, b: 0.67058825, a: 1}
+    - _BGColorB: {r: 0.9803922, g: 0.8117648, b: 0.6901961, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DiffuseColorA: {r: 1, g: 0.915506, b: 0.745098, a: 1}
+    - _DiffuseColorB: {r: 0.915, g: 0.80228543, b: 0.6889412, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FGColorA: {r: 1, g: 0.8313726, b: 0.67058825, a: 1}
+    - _FGColorB: {r: 1, g: 0.8313726, b: 0.67058825, a: 1}
+    - _FogColor: {r: 1, g: 0.90288025, b: 0.76600003, a: 1}
+    - _FresnelColor: {r: 1, g: 0.89420503, b: 0.745098, a: 1}
+    - _OverrideColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}

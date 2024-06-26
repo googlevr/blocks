@@ -1,0 +1,1478 @@
+fileFormatVersion: 2
+guid: 7316f12c2d85b5b4e817222945aebe48
+timeCreated: 1494969152
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature_001
+    100004: Base_Controller
+    100006: Base_Object_000
+    100008: Bone
+    100010: Bone_0
+    100012: Bone_001
+    100014: Bone_002
+    100016: Bone_003
+    100018: Bone_004
+    100020: Bone_005
+    100022: Bone_006
+    100024: Bone_007
+    100026: Bone_008
+    100028: Bone_009
+    100030: Bone_010
+    100032: Bone_2
+    100034: Bone_3
+    100036: Circle_000
+    100038: Circle_001
+    100040: Circle_002
+    100042: Circle_003
+    100044: Circle_004
+    100046: Circle_005
+    100048: Cube_object
+    100050: Eraser_object
+    100052: Hand_Copy_object
+    100054: Hand_object
+    100056: Little_Button_005
+    100058: Little_Button_008
+    100060: Little_Button_009
+    100062: Negative_cube_object
+    100064: //RootNode
+    100066: Paintbrush_object
+    100068: Paintbrush_object_brush
+    100070: Paintbrush_object_paint
+    100072: pliers
+    100074: pliers_closed_000
+    100076: pliers_closed_002
+    100078: Stroke_object
+    100080: subdiv_01
+    100082: subdiv_02
+    400000: Armature
+    400002: Armature_001
+    400004: Base_Controller
+    400006: Base_Object_000
+    400008: Bone
+    400010: Bone_0
+    400012: Bone_001
+    400014: Bone_002
+    400016: Bone_003
+    400018: Bone_004
+    400020: Bone_005
+    400022: Bone_006
+    400024: Bone_007
+    400026: Bone_008
+    400028: Bone_009
+    400030: Bone_010
+    400032: Bone_2
+    400034: Bone_3
+    400036: Circle_000
+    400038: Circle_001
+    400040: Circle_002
+    400042: Circle_003
+    400044: Circle_004
+    400046: Circle_005
+    400048: Cube_object
+    400050: Eraser_object
+    400052: Hand_Copy_object
+    400054: Hand_object
+    400056: Little_Button_005
+    400058: Little_Button_008
+    400060: Little_Button_009
+    400062: Negative_cube_object
+    400064: //RootNode
+    400066: Paintbrush_object
+    400068: Paintbrush_object_brush
+    400070: Paintbrush_object_paint
+    400072: pliers
+    400074: pliers_closed_000
+    400076: pliers_closed_002
+    400078: Stroke_object
+    400080: subdiv_01
+    400082: subdiv_02
+    2300000: Base_Controller
+    2300002: Base_Object_000
+    2300004: Circle_000
+    2300006: Circle_001
+    2300008: Circle_002
+    2300010: Circle_003
+    2300012: Circle_004
+    2300014: Circle_005
+    2300016: Cube_object
+    2300018: Eraser_object
+    2300020: Hand_Copy_object
+    2300022: Little_Button_005
+    2300024: Little_Button_008
+    2300026: Little_Button_009
+    2300028: Negative_cube_object
+    2300030: Paintbrush_object
+    2300032: Paintbrush_object_brush
+    2300034: pliers
+    2300036: pliers_closed_000
+    2300038: pliers_closed_002
+    2300040: Stroke_object
+    2300042: subdiv_01
+    2300044: subdiv_02
+    3300000: Base_Controller
+    3300002: Base_Object_000
+    3300004: Circle_000
+    3300006: Circle_001
+    3300008: Circle_002
+    3300010: Circle_003
+    3300012: Circle_004
+    3300014: Circle_005
+    3300016: Cube_object
+    3300018: Eraser_object
+    3300020: Hand_Copy_object
+    3300022: Little_Button_005
+    3300024: Little_Button_008
+    3300026: Little_Button_009
+    3300028: Negative_cube_object
+    3300030: Paintbrush_object
+    3300032: Paintbrush_object_brush
+    3300034: pliers
+    3300036: pliers_closed_000
+    3300038: pliers_closed_002
+    3300040: Stroke_object
+    3300042: subdiv_01
+    3300044: subdiv_02
+    4300000: subdiv_02
+    4300002: Paintbrush_object_paint
+    4300004: Circle_004
+    4300006: Circle_000
+    4300008: Circle_005
+    4300010: Base_Object_000
+    4300012: Base_Controller
+    4300014: Little_Button_008
+    4300016: Circle_003
+    4300018: Circle_002
+    4300020: Little_Button_009
+    4300022: Little_Button_005
+    4300024: Circle_001
+    4300026: pliers
+    4300028: pliers_closed_000
+    4300030: pliers_closed_002
+    4300032: Hand_object
+    4300034: Paintbrush_object
+    4300036: Paintbrush_object_brush
+    4300038: subdiv_01
+    4300040: Hand_Copy_object
+    4300042: Negative_cube_object
+    4300044: Cube_object
+    4300046: Stroke_object
+    4300048: Eraser_object
+    7400000: Default Take
+    7400002: Armature_001Action_001
+    7400004: ArmatureAction
+    7400006: HandOpen
+    7400008: HandClose
+    7400010: HandIdle
+    7400012: PaintBrush
+    7400014: PaintbrushIdle
+    7400016: ProngsOut
+    7400018: ProngsIn
+    7400020: Prongs
+    7400022: PliersToSubD
+    7400024: SubDToPliers
+    9500000: //RootNode
+    13700000: Hand_object
+    13700002: Paintbrush_object_paint
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: -1
+      lastFrame: 169
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HandOpen
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HandClose
+      takeName: Default Take
+      firstFrame: 15
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HandIdle
+      takeName: Default Take
+      firstFrame: 30
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PaintBrush
+      takeName: Default Take
+      firstFrame: 40
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PaintbrushIdle
+      takeName: Default Take
+      firstFrame: 81
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ProngsOut
+      takeName: Default Take
+      firstFrame: 90
+      lastFrame: 105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ProngsIn
+      takeName: Default Take
+      firstFrame: 106
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prongs
+      takeName: Default Take
+      firstFrame: 90
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PliersToSubD
+      takeName: Default Take
+      firstFrame: 125
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SubDToPliers
+      takeName: Default Take
+      firstFrame: 146
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Bone_2
+        weight: 1
+      - path: Armature/Bone_0/Bone_2/Bone_009
+        weight: 1
+      - path: Armature/Bone_3
+        weight: 1
+      - path: Armature/Bone_3/Bone_003
+        weight: 1
+      - path: Armature/Bone_3/Bone_003/Bone_008
+        weight: 1
+      - path: Armature/Bone_004
+        weight: 1
+      - path: Armature/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/Bone_004/Bone_005/Bone_010
+        weight: 1
+      - path: Armature/Bone_006
+        weight: 1
+      - path: Armature/Bone_006/Bone_007
+        weight: 1
+      - path: Armature_001
+        weight: 1
+      - path: Armature_001/Bone
+        weight: 1
+      - path: Armature_001/Bone/Bone_001
+        weight: 1
+      - path: Armature_001/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Base_Controller
+        weight: 1
+      - path: Base_Controller/Circle_001
+        weight: 1
+      - path: Base_Controller/Circle_002
+        weight: 1
+      - path: Base_Controller/Circle_003
+        weight: 1
+      - path: Base_Controller/Little_Button_005
+        weight: 1
+      - path: Base_Controller/Little_Button_008
+        weight: 1
+      - path: Base_Controller/Little_Button_009
+        weight: 1
+      - path: Circle_004
+        weight: 1
+      - path: Circle_004/Base_Object_000
+        weight: 1
+      - path: Circle_004/Circle_000
+        weight: 1
+      - path: Circle_004/Circle_005
+        weight: 1
+      - path: Cube_object
+        weight: 1
+      - path: Eraser_object
+        weight: 1
+      - path: Hand_Copy_object
+        weight: 1
+      - path: Hand_object
+        weight: 1
+      - path: Negative_cube_object
+        weight: 1
+      - path: Paintbrush_object
+        weight: 1
+      - path: Paintbrush_object/Paintbrush_object_brush
+        weight: 1
+      - path: Paintbrush_object_paint
+        weight: 1
+      - path: pliers
+        weight: 1
+      - path: pliers/pliers_closed_000
+        weight: 1
+      - path: pliers/pliers_closed_002
+        weight: 1
+      - path: Stroke_object
+        weight: 1
+      - path: subdiv_01
+        weight: 1
+      - path: subdiv_02
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

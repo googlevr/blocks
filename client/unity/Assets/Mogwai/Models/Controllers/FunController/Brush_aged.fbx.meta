@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 08fbb44b4a641654e9b3bf619a3f5c12
+timeCreated: 1484261402
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Base_Object
+    100002: Big_Button
+    100004: //RootNode
+    100006: Controller_gripRight_object
+    100008: Controller_gropLeft_object
+    100010: Controller_Object
+    100012: Cube_object
+    100014: Eraser_object
+    100016: Hand_Copy_object
+    100018: Hand_Grab_object
+    100020: Hand_object
+    100022: Little_Button
+    100024: Negative_cube_object
+    100026: Paintbrush_object
+    100028: pliers_closed
+    100030: pliers_open
+    100032: Stroke_object
+    100034: topButton_Object_Blue
+    100036: topButton_Object_Grey
+    100038: zClick_Object
+    400000: Base_Object
+    400002: Big_Button
+    400004: //RootNode
+    400006: Controller_gripRight_object
+    400008: Controller_gropLeft_object
+    400010: Controller_Object
+    400012: Cube_object
+    400014: Eraser_object
+    400016: Hand_Copy_object
+    400018: Hand_Grab_object
+    400020: Hand_object
+    400022: Little_Button
+    400024: Negative_cube_object
+    400026: Paintbrush_object
+    400028: pliers_closed
+    400030: pliers_open
+    400032: Stroke_object
+    400034: topButton_Object_Blue
+    400036: topButton_Object_Grey
+    400038: zClick_Object
+    2300000: Base_Object
+    2300002: Big_Button
+    2300004: Controller_gripRight_object
+    2300006: Controller_gropLeft_object
+    2300008: Controller_Object
+    2300010: Cube_object
+    2300012: Eraser_object
+    2300014: Hand_Copy_object
+    2300016: Hand_Grab_object
+    2300018: Hand_object
+    2300020: Little_Button
+    2300022: Negative_cube_object
+    2300024: Paintbrush_object
+    2300026: pliers_closed
+    2300028: pliers_open
+    2300030: Stroke_object
+    2300032: topButton_Object_Blue
+    2300034: topButton_Object_Grey
+    2300036: zClick_Object
+    3300000: Base_Object
+    3300002: Big_Button
+    3300004: Controller_gripRight_object
+    3300006: Controller_gropLeft_object
+    3300008: Controller_Object
+    3300010: Cube_object
+    3300012: Eraser_object
+    3300014: Hand_Copy_object
+    3300016: Hand_Grab_object
+    3300018: Hand_object
+    3300020: Little_Button
+    3300022: Negative_cube_object
+    3300024: Paintbrush_object
+    3300026: pliers_closed
+    3300028: pliers_open
+    3300030: Stroke_object
+    3300032: topButton_Object_Blue
+    3300034: topButton_Object_Grey
+    3300036: zClick_Object
+    4300000: Base_Object
+    4300002: Hand_object
+    4300004: Hand_Grab_object
+    4300006: Hand_Copy_object
+    4300008: Negative_cube_object
+    4300010: pliers_closed
+    4300012: Cube_object
+    4300014: Paintbrush_object
+    4300016: Stroke_object
+    4300018: Eraser_object
+    4300020: pliers_open
+    4300022: Controller_Object
+    4300024: Controller_gripRight_object
+    4300026: topButton_Object_Grey
+    4300028: topButton_Object_Blue
+    4300030: Controller_gropLeft_object
+    4300032: Big_Button
+    4300034: Little_Button
+    4300036: zClick_Object
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
