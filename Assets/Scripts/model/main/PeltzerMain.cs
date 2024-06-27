@@ -41,7 +41,7 @@ namespace com.google.apps.peltzer.client.model.main {
   public enum MenuAction {
     SAVE, LOAD, SHOWCASE, TAKE_PHOTO, SHARE, CLEAR, BLOCKMODE, NOTHING,
     SHOW_SAVE_CONFIRM, CANCEL_SAVE, NEW_WITH_SAVE, SIGN_IN, SIGN_OUT, ADD_REFERENCE,
-    TOGGLE_SOUND, TOGGLE_PERMISSIONS, SAVE_COPY, PUBLISH, PUBLISHED_TAKE_OFF_HEADSET_DISMISS,
+    TOGGLE_SOUND, SAVE_COPY, PUBLISH, PUBLISHED_TAKE_OFF_HEADSET_DISMISS,
     TUTORIAL_START, TUTORIAL_DISMISS, TUTORIAL_PROMPT, TUTORIAL_CONFIRM_DISMISS,
     TUTORIAL_SAVE_AND_CONFIRM, TUTORIAL_DONT_SAVE_AND_CONFIRM, PUBLISH_AFTER_SAVE_DISMISS,
     PUBLISH_SIGN_IN_DISMISS, PUBLISH_AFTER_SAVE_CONFIRM, TUTORIAL_EXIT_YES, TUTORIAL_EXIT_NO,
@@ -643,9 +643,6 @@ namespace com.google.apps.peltzer.client.model.main {
       audioLibrary = FindObjectOfType<AudioLibrary>();
       audioLibrary.Setup();
 
-      // Get the Analytics library.
-      analytics = FindObjectOfType<Analytics>();
-
       // Get the menu main.
       polyMenuMain = FindObjectOfType<PolyMenuMain>();
 
@@ -779,11 +776,6 @@ namespace com.google.apps.peltzer.client.model.main {
         audioLibrary.ToggleSounds();
       }
 
-      // If the user has disabled analytics permissions according to their player preferences, toggle them 'off'.
-      if (PlayerPrefs.HasKey(DISABLE_ANALYTICS_KEY) && PlayerPrefs.GetString(DISABLE_ANALYTICS_KEY) == "true") {
-        analytics.TogglePermissions();
-      }
-
       // Set the environment theme based on last session.
       environmentThemeManager.Setup();
       if (PlayerPrefs.HasKey(ENVIRONMENT_THEME_KEY)) {
@@ -895,7 +887,6 @@ namespace com.google.apps.peltzer.client.model.main {
         case MenuAction.CLEAR:
           SetAllPromptsInactive();
           CreateNewModel();
-          analytics.SuccessfulOperation("newModel");
           break;
         case MenuAction.LOAD:
           break;
@@ -974,9 +965,6 @@ namespace com.google.apps.peltzer.client.model.main {
           break;
         case MenuAction.TOGGLE_SOUND:
           audioLibrary.ToggleSounds();
-          break;
-        case MenuAction.TOGGLE_PERMISSIONS:
-          analytics.TogglePermissions();
           break;
         case MenuAction.TOGGLE_FEATURE:
           polyWorldBounds.HandleFeatureToggle();

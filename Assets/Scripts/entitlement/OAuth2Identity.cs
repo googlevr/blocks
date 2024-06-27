@@ -312,7 +312,6 @@ namespace com.google.apps.peltzer.client.entitlement {
 
       if (LoggedIn) {
         onSuccess();
-        PeltzerMain.Instance.Analytics.UserAuthenticated();
       } else {
         onFailure();
       }
