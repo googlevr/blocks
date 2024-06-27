@@ -16,44 +16,51 @@ using UnityEngine;
 using System.Collections;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   Animates the GrabToolhead in response to the controller's trigger value. 
-  /// </summary>
-  public class GrabToolheadAnimation : MonoBehaviour {
-
-    PeltzerMain peltzerMain;
-    private Animator animator;
-    bool animationActive = false;
-
-    void Start() {
-      animator = GetComponentInChildren<Animator>();
-      peltzerMain = FindObjectOfType<PeltzerMain>();
-      animator.speed = 0;
-    }
-
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Scrubs through grabbing animation based on controller's trigger value.
+    ///   Animates the GrabToolhead in response to the controller's trigger value. 
     /// </summary>
-    private void Update() {
-      if (animationActive) {
-        animator.Play("grab", -1,
-          peltzerMain.peltzerController.controller.GetTriggerScale().x * .4f + .1f);
-      }
-    }
+    public class GrabToolheadAnimation : MonoBehaviour
+    {
 
-    /// <summary>
-    ///   Activate the animation logic by setting flag.
-    /// </summary>
-    public void Activate() {
-      animationActive = true;
-    }
+        PeltzerMain peltzerMain;
+        private Animator animator;
+        bool animationActive = false;
 
-    /// <summary>
-    ///   Deactivates the animation logic by setting flag.
-    /// </summary>
-    public void Deactivate() {
-      animationActive = false;
+        void Start()
+        {
+            animator = GetComponentInChildren<Animator>();
+            peltzerMain = FindObjectOfType<PeltzerMain>();
+            animator.speed = 0;
+        }
+
+        /// <summary>
+        ///   Scrubs through grabbing animation based on controller's trigger value.
+        /// </summary>
+        private void Update()
+        {
+            if (animationActive)
+            {
+                animator.Play("grab", -1,
+                  peltzerMain.peltzerController.controller.GetTriggerScale().x * .4f + .1f);
+            }
+        }
+
+        /// <summary>
+        ///   Activate the animation logic by setting flag.
+        /// </summary>
+        public void Activate()
+        {
+            animationActive = true;
+        }
+
+        /// <summary>
+        ///   Deactivates the animation logic by setting flag.
+        /// </summary>
+        public void Deactivate()
+        {
+            animationActive = false;
+        }
     }
-  }
 }

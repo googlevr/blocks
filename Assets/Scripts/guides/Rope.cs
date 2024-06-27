@@ -14,46 +14,53 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.guides {
-  /// <summary>
-  ///  Rope rendering utility class for debugging or developing.
-  ///  
-  ///  NOTE: Should not be used in production since it uses game objects to render.
-  /// </summary>
-  public class Rope {
-    private static readonly float WIDTH = 0.002f;
-    private readonly Color START_COLOR = Color.red;
-    private readonly Color END_COLOR = Color.red;
+namespace com.google.apps.peltzer.client.guides
+{
+    /// <summary>
+    ///  Rope rendering utility class for debugging or developing.
+    ///  
+    ///  NOTE: Should not be used in production since it uses game objects to render.
+    /// </summary>
+    public class Rope
+    {
+        private static readonly float WIDTH = 0.002f;
+        private readonly Color START_COLOR = Color.red;
+        private readonly Color END_COLOR = Color.red;
 
-    GameObject go;
-    LineRenderer lineRenderer;
+        GameObject go;
+        LineRenderer lineRenderer;
 
-    public Rope() {
-      go = new GameObject("rope");
+        public Rope()
+        {
+            go = new GameObject("rope");
 
-      lineRenderer = go.AddComponent<LineRenderer>();
-      lineRenderer.startWidth = WIDTH;
-      lineRenderer.endWidth = WIDTH;
+            lineRenderer = go.AddComponent<LineRenderer>();
+            lineRenderer.startWidth = WIDTH;
+            lineRenderer.endWidth = WIDTH;
 
-      lineRenderer.startColor = START_COLOR;
-      lineRenderer.endColor = END_COLOR;
+            lineRenderer.startColor = START_COLOR;
+            lineRenderer.endColor = END_COLOR;
+        }
+
+        public void UpdatePosition(Vector3 sourceWorldSpace, Vector3 targetWorldSpace)
+        {
+            lineRenderer.SetPosition(0, sourceWorldSpace);
+            lineRenderer.SetPosition(1, targetWorldSpace);
+        }
+
+        public void Hide()
+        {
+            go.SetActive(false);
+        }
+
+        public void Unhide()
+        {
+            go.SetActive(true);
+        }
+
+        public void Destroy()
+        {
+            GameObject.Destroy(go);
+        }
     }
-
-    public void UpdatePosition(Vector3 sourceWorldSpace, Vector3 targetWorldSpace) {
-      lineRenderer.SetPosition(0, sourceWorldSpace);
-      lineRenderer.SetPosition(1, targetWorldSpace);
-    }
-
-    public void Hide() {
-      go.SetActive(false);
-    }
-
-    public void Unhide() {
-      go.SetActive(true);
-    }
-
-    public void Destroy() {
-      GameObject.Destroy(go);
-    }
-  }
 }

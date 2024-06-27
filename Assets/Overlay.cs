@@ -16,22 +16,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Overlay : MonoBehaviour {
-  public GameObject up;
-  public GameObject down;
-  public GameObject left;
-  public GameObject right;
-  public GameObject center;
-  public GameObject on;
-  public GameObject off;
+public class Overlay : MonoBehaviour
+{
+    public GameObject up;
+    public GameObject down;
+    public GameObject left;
+    public GameObject right;
+    public GameObject center;
+    public GameObject on;
+    public GameObject off;
 
-  public SpriteRenderer upIcon;
-  public SpriteRenderer downIcon;
-  public SpriteRenderer leftIcon;
-  public SpriteRenderer rightIcon;
-  public SpriteRenderer centerIcon;
-  public SpriteRenderer onIcon;
-  public SpriteRenderer offIcon;
+    public SpriteRenderer upIcon;
+    public SpriteRenderer downIcon;
+    public SpriteRenderer leftIcon;
+    public SpriteRenderer rightIcon;
+    public SpriteRenderer centerIcon;
+    public SpriteRenderer onIcon;
+    public SpriteRenderer offIcon;
 
-  public SpriteRenderer[] icons;
+    public SpriteRenderer[] icons;
 }

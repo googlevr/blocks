@@ -12,37 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  ///   Command that adds an MMesh to the model.
-  /// </summary>
-  public class AddMeshCommand : Command {
-    public const string COMMAND_NAME = "add";
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    ///   Command that adds an MMesh to the model.
+    /// </summary>
+    public class AddMeshCommand : Command
+    {
+        public const string COMMAND_NAME = "add";
 
-    private readonly MMesh mesh;
-    private readonly bool useInsertEffect;
+        private readonly MMesh mesh;
+        private readonly bool useInsertEffect;
 
-    public AddMeshCommand(MMesh mesh, bool useInsertEffect = false) {
-      this.mesh = mesh.Clone();
-      this.useInsertEffect = useInsertEffect;
+        public AddMeshCommand(MMesh mesh, bool useInsertEffect = false)
+        {
+            this.mesh = mesh.Clone();
+            this.useInsertEffect = useInsertEffect;
+        }
+
+        public void ApplyToModel(Model model)
+        {
+            // Clone this mesh so that the mutable one added to the model doesn't affect
+            // this immutable command.
+            model.AddMesh(mesh, useInsertEffect);
+        }
+
+        public Command GetUndoCommand(Model model)
+        {
+            return new DeleteMeshCommand(mesh.id);
+        }
+
+        public MMesh GetMeshClone()
+        {
+            return mesh.Clone();
+        }
+
+        public int GetMeshId()
+        {
+            return mesh.id;
+        }
     }
-
-    public void ApplyToModel(Model model) {
-      // Clone this mesh so that the mutable one added to the model doesn't affect
-      // this immutable command.
-      model.AddMesh(mesh, useInsertEffect);
-    }
-
-    public Command GetUndoCommand(Model model) {
-      return new DeleteMeshCommand(mesh.id);
-    }
-
-    public MMesh GetMeshClone() {
-      return mesh.Clone();
-    }
-
-    public int GetMeshId() {
-      return mesh.id;
-    }
-  }
 }

@@ -19,18 +19,21 @@ using com.google.apps.peltzer.client.model.controller;
 using com.google.apps.peltzer.client.tools.utils;
 using UnityEngine;
 
-public class PolyWorldBounds : MonoBehaviour {
+public class PolyWorldBounds : MonoBehaviour
+{
 
-  private GameObject gridPlanes;
+    private GameObject gridPlanes;
 
-	// Use this for initialization
-	void Start () {
-    gridPlanes = transform.Find("GridPlanes").gameObject;
-    HandleFeatureToggle();
-  }
+    // Use this for initialization
+    void Start()
+    {
+        gridPlanes = transform.Find("GridPlanes").gameObject;
+        HandleFeatureToggle();
+    }
 
-  public void HandleFeatureToggle() {
-    Debug.Log(Features.enableWorldSpaceGridPlanes);
-    gridPlanes.SetActive(Features.enableWorldSpaceGridPlanes);
-  }
+    public void HandleFeatureToggle()
+    {
+        Debug.Log(Features.enableWorldSpaceGridPlanes);
+        gridPlanes.SetActive(Features.enableWorldSpaceGridPlanes);
+    }
 }

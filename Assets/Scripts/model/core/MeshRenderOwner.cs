@@ -12,39 +12,42 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  /// Class that owns responsibility for rendering a particular mesh.  CLASSES OTHER THAN MODEL SHOULD ONLY CALL THIS
-  /// ON MODEL.
-  ///   /// </summary>
-  public interface IMeshRenderOwner {
+namespace com.google.apps.peltzer.client.model.core
+{
     /// <summary>
-    /// Claim responsibility for rendering a mesh from this class.
-    /// </summary>
-    /// <param name="meshId">The id of the mesh being claimed</param>
-    /// <returns>The id of the mesh that was claimed, or -1 for failure.</returns>
-    int ClaimMesh(int meshId, IMeshRenderOwner fosterRenderer);
-  }
+    /// Class that owns responsibility for rendering a particular mesh.  CLASSES OTHER THAN MODEL SHOULD ONLY CALL THIS
+    /// ON MODEL.
+    ///   /// </summary>
+    public interface IMeshRenderOwner
+    {
+        /// <summary>
+        /// Claim responsibility for rendering a mesh from this class.
+        /// </summary>
+        /// <param name="meshId">The id of the mesh being claimed</param>
+        /// <returns>The id of the mesh that was claimed, or -1 for failure.</returns>
+        int ClaimMesh(int meshId, IMeshRenderOwner fosterRenderer);
+    }
 
-  // Interface naming courtesy of Java.
-  // This interface marks a class as the owner of the MeshRenderOwner ownership list - ie, Model.  This is the only
-  // class that mesh ownership can be relinquished to.
-  public interface IMeshRenderOwnerOwner {
-    /// <summary>
-    /// Gives responsibility for rendering a mesh to this class.  Generally, this should only be done to Model - the
-    /// general dynamic being that tool classes attempt to claim ownership whenever they need a
-    /// preview (which will in turn cause model to call Claim on the current owner), and then bequeath it back to Model
-    /// when they are done (provided they still own the mesh.)
-    /// </summary>
-    /// <param name="meshId">The id of the mesh being bequeathed</param>
-    /// <returns>The id of the mesh that is being bequeathed, or -1 for failure.</returns>
-    void RelinquishMesh(int meshId, IMeshRenderOwner fosterRenderer);
+    // Interface naming courtesy of Java.
+    // This interface marks a class as the owner of the MeshRenderOwner ownership list - ie, Model.  This is the only
+    // class that mesh ownership can be relinquished to.
+    public interface IMeshRenderOwnerOwner
+    {
+        /// <summary>
+        /// Gives responsibility for rendering a mesh to this class.  Generally, this should only be done to Model - the
+        /// general dynamic being that tool classes attempt to claim ownership whenever they need a
+        /// preview (which will in turn cause model to call Claim on the current owner), and then bequeath it back to Model
+        /// when they are done (provided they still own the mesh.)
+        /// </summary>
+        /// <param name="meshId">The id of the mesh being bequeathed</param>
+        /// <returns>The id of the mesh that is being bequeathed, or -1 for failure.</returns>
+        void RelinquishMesh(int meshId, IMeshRenderOwner fosterRenderer);
 
-    /// <summary>
-    /// Claim responsibility for rendering a mesh from this class if and only if it is unowned by another renderer.
-    /// </summary>
-    /// <param name="meshId">The id of the mesh being claimed</param>
-    /// <returns>The id of the mesh that was claimed, or -1 for failure.</returns>
-    int ClaimMeshIfUnowned(int meshId, IMeshRenderOwner fosterRenderer);
-  }
+        /// <summary>
+        /// Claim responsibility for rendering a mesh from this class if and only if it is unowned by another renderer.
+        /// </summary>
+        /// <param name="meshId">The id of the mesh being claimed</param>
+        /// <returns>The id of the mesh that was claimed, or -1 for failure.</returns>
+        int ClaimMeshIfUnowned(int meshId, IMeshRenderOwner fosterRenderer);
+    }
 }

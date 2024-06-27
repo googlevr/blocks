@@ -19,40 +19,43 @@ using com.google.apps.peltzer.client.model.controller;
 using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.tools {
-  [TestFixture]
-  public class SubdividerTest {
-    [Test]
-    public void TestInsertVert() {
-      Face triangle = new Face(1,
-        new List<int>() { 1, 2, 3 }.AsReadOnly(), Vector3.zero,
-        new FaceProperties());
+namespace com.google.apps.peltzer.client.tools
+{
+    [TestFixture]
+    public class SubdividerTest
+    {
+        [Test]
+        public void TestInsertVert()
+        {
+            Face triangle = new Face(1,
+              new List<int>() { 1, 2, 3 }.AsReadOnly(), Vector3.zero,
+              new FaceProperties());
 
-      // Not part of triangle, don't split.
-      NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 7, 8, 23));
-      NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 1, 4, 23));
-      NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 3, 5, 23));
+            // Not part of triangle, don't split.
+            NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 7, 8, 23));
+            NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 1, 4, 23));
+            NUnit.Framework.Assert.AreSame(triangle, Subdivider.MaybeInsertVert(triangle, 3, 5, 23));
 
-      // Split between 1 and 2
-      List<int> indices = Subdivider.MaybeInsertVert(triangle, 1, 2, 7);
-      NUnit.Framework.Assert.AreEqual(1, indices[0]);
-      NUnit.Framework.Assert.AreEqual(7, indices[1]);
-      NUnit.Framework.Assert.AreEqual(2, indices[2]);
-      NUnit.Framework.Assert.AreEqual(3, indices[3]);
+            // Split between 1 and 2
+            List<int> indices = Subdivider.MaybeInsertVert(triangle, 1, 2, 7);
+            NUnit.Framework.Assert.AreEqual(1, indices[0]);
+            NUnit.Framework.Assert.AreEqual(7, indices[1]);
+            NUnit.Framework.Assert.AreEqual(2, indices[2]);
+            NUnit.Framework.Assert.AreEqual(3, indices[3]);
 
-      // Reverse order
-      indices = Subdivider.MaybeInsertVert(triangle, 2, 1, 7);
-      NUnit.Framework.Assert.AreEqual(1, indices[0]);
-      NUnit.Framework.Assert.AreEqual(7, indices[1]);
-      NUnit.Framework.Assert.AreEqual(2, indices[2]);
-      NUnit.Framework.Assert.AreEqual(3, indices[3]);
+            // Reverse order
+            indices = Subdivider.MaybeInsertVert(triangle, 2, 1, 7);
+            NUnit.Framework.Assert.AreEqual(1, indices[0]);
+            NUnit.Framework.Assert.AreEqual(7, indices[1]);
+            NUnit.Framework.Assert.AreEqual(2, indices[2]);
+            NUnit.Framework.Assert.AreEqual(3, indices[3]);
 
-      // At endpoint
-      indices = Subdivider.MaybeInsertVert(triangle, 3, 1, 7);
-      NUnit.Framework.Assert.AreEqual(1, indices[0]);
-      NUnit.Framework.Assert.AreEqual(2, indices[1]);
-      NUnit.Framework.Assert.AreEqual(3, indices[2]);
-      NUnit.Framework.Assert.AreEqual(7, indices[3]);
+            // At endpoint
+            indices = Subdivider.MaybeInsertVert(triangle, 3, 1, 7);
+            NUnit.Framework.Assert.AreEqual(1, indices[0]);
+            NUnit.Framework.Assert.AreEqual(2, indices[1]);
+            NUnit.Framework.Assert.AreEqual(3, indices[2]);
+            NUnit.Framework.Assert.AreEqual(7, indices[3]);
+        }
     }
-  }
 }

@@ -14,23 +14,27 @@
 
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  /// A command consists of making a copy of an existing mesh.
-  /// </summary>
-  public class CopyMeshCommand : CompositeCommand {
-    internal readonly int copiedFromId;
-    internal readonly MMesh copy;
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    /// A command consists of making a copy of an existing mesh.
+    /// </summary>
+    public class CopyMeshCommand : CompositeCommand
+    {
+        internal readonly int copiedFromId;
+        internal readonly MMesh copy;
 
-    public CopyMeshCommand(int copiedFromId, MMesh copy) : base(new List<Command>() {
+        public CopyMeshCommand(int copiedFromId, MMesh copy) : base(new List<Command>() {
       new AddMeshCommand(copy)
-    }) {
-      this.copiedFromId = copiedFromId;
-      this.copy = copy;
-    }
+    })
+        {
+            this.copiedFromId = copiedFromId;
+            this.copy = copy;
+        }
 
-    public int GetCopyMeshId() {
-      return copy.id;
+        public int GetCopyMeshId()
+        {
+            return copy.id;
+        }
     }
-  }
 }

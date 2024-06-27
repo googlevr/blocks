@@ -17,17 +17,20 @@ using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.zandria;
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableMenuItem that can be attached to a palette to change the current mode.
-  /// </summary>
-  public class SelectZandriaCreationMenuItem : SelectableMenuItem {
-    public List<MMesh> meshes;
+    /// <summary>
+    ///   SelectableMenuItem that can be attached to a palette to change the current mode.
+    /// </summary>
+    public class SelectZandriaCreationMenuItem : SelectableMenuItem
+    {
+        public List<MMesh> meshes;
 
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      // Uncomment to re-enable 'quick grab' if desired.
-      PeltzerMain.Instance.GetPolyMenuMain().InvokeDetailsMenuAction(menu.PolyMenuMain.DetailsMenuAction.IMPORT);
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            // Uncomment to re-enable 'quick grab' if desired.
+            PeltzerMain.Instance.GetPolyMenuMain().InvokeDetailsMenuAction(menu.PolyMenuMain.DetailsMenuAction.IMPORT);
+        }
     }
-  }
 }

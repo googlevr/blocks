@@ -222,16 +222,16 @@ public class OVRLint : EditorWindow
 		mRecords.Clear();
 		
 		CheckStaticCommonIssues();
-		#if UNITY_ANDROID
+#if UNITY_ANDROID
 		CheckStaticAndroidIssues();
-		#endif
+#endif
 
 		if (EditorApplication.isPlaying)
 		{
 			CheckRuntimeCommonIssues();
-			#if UNITY_ANDROID
+#if UNITY_ANDROID
 			CheckRuntimeAndroidIssues();
-			#endif
+#endif
 		}
 		
 		mRecords.Sort(delegate(FixRecord record1, FixRecord record2)
@@ -255,11 +255,11 @@ public class OVRLint : EditorWindow
 			}, null, "Fix");
 		}
 
-		#if UNITY_ANDROID
+#if UNITY_ANDROID
 		int recommendedPixelLightCount = 1;
-		#else
+#else
 		int recommendedPixelLightCount = 3;
-		#endif
+#endif
 
 		if (QualitySettings.pixelLightCount > recommendedPixelLightCount)
 		{
@@ -728,15 +728,15 @@ public class OVRLint : EditorWindow
 	
 	static bool IsLightBaked(Light light)
     {
-    	#if UNITY_5_6_OR_NEWER
+#if UNITY_5_6_OR_NEWER
     		return light.lightmapBakeType == LightmapBakeType.Baked; 
-    	#elif UNITY_5_5_OR_NEWER
+#elif UNITY_5_5_OR_NEWER
     		return light.lightmappingMode == LightmappingMode.Baked; 
-    	#else
+#else
 			SerializedObject serialObj = new SerializedObject(light); 
 			SerializedProperty lightmapProp = serialObj.FindProperty("m_Lightmapping");
 			return (LightmapType)lightmapProp.intValue == LightmapType.Baked;
-    	#endif
+#endif
     }
     
     static void SetAudioPreload( AudioClip clip, bool preload, bool refreshImmediately)

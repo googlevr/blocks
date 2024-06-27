@@ -14,23 +14,26 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.core {
+namespace com.google.apps.peltzer.client.model.core
+{
 
-  /// <summary>
-  ///   A shared vertex.  Represents a location in space that can be
-  ///   shared by multiple faces in a single MMesh.
-  /// </summary>
-  public class Vertex {
-    private readonly int _id;
-    private Vector3 _loc;
+    /// <summary>
+    ///   A shared vertex.  Represents a location in space that can be
+    ///   shared by multiple faces in a single MMesh.
+    /// </summary>
+    public class Vertex
+    {
+        private readonly int _id;
+        private Vector3 _loc;
 
-    // Read-only getters.
-    public int id { get { return _id; } }
-    public Vector3 loc { get { return _loc; } }
+        // Read-only getters.
+        public int id { get { return _id; } }
+        public Vector3 loc { get { return _loc; } }
 
-    public Vertex(int id, Vector3 loc) {
-      _id = id;
-      _loc = loc;
+        public Vertex(int id, Vector3 loc)
+        {
+            _id = id;
+            _loc = loc;
+        }
     }
-  }
 }

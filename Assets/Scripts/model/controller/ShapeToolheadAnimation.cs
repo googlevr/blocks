@@ -18,35 +18,42 @@ using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   This class deals with the palette icon that shows for the Volume Inserter option.
-  /// </summary>
-  public class ShapeToolheadAnimation : MonoBehaviour {
-    // The available shapes.
-    private Dictionary<Primitives.Shape, GameObject> mockShapes = new Dictionary<Primitives.Shape, GameObject>();
-
-    void Start() {
-      mockShapes[Primitives.Shape.CONE] = ObjectFinder.ObjectById("ID_Cone");
-      mockShapes[Primitives.Shape.CUBE] = ObjectFinder.ObjectById("ID_Cube");
-      mockShapes[Primitives.Shape.CYLINDER] = ObjectFinder.ObjectById("ID_Cylinder");
-      mockShapes[Primitives.Shape.TORUS] = ObjectFinder.ObjectById("ID_Torus");
-      mockShapes[Primitives.Shape.SPHERE] = ObjectFinder.ObjectById("ID_Sphere");
-      mockShapes[Primitives.Shape.ICOSAHEDRON] = ObjectFinder.ObjectById("ID_Icosahedron");
-    }
-    
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Handler for shape changed event from the shape menu.
+    ///   This class deals with the palette icon that shows for the Volume Inserter option.
     /// </summary>
-    /// <param name="shapeMenuItemId"></param>
-    public void ShapeChangedHandler(int shapeMenuItemId) {
-      foreach (KeyValuePair<Primitives.Shape, GameObject> mockShape in mockShapes) {
-        if (shapeMenuItemId == (int) mockShape.Key) {
-          mockShape.Value.SetActive(true);
-        } else {
-          mockShape.Value.SetActive(false);
+    public class ShapeToolheadAnimation : MonoBehaviour
+    {
+        // The available shapes.
+        private Dictionary<Primitives.Shape, GameObject> mockShapes = new Dictionary<Primitives.Shape, GameObject>();
+
+        void Start()
+        {
+            mockShapes[Primitives.Shape.CONE] = ObjectFinder.ObjectById("ID_Cone");
+            mockShapes[Primitives.Shape.CUBE] = ObjectFinder.ObjectById("ID_Cube");
+            mockShapes[Primitives.Shape.CYLINDER] = ObjectFinder.ObjectById("ID_Cylinder");
+            mockShapes[Primitives.Shape.TORUS] = ObjectFinder.ObjectById("ID_Torus");
+            mockShapes[Primitives.Shape.SPHERE] = ObjectFinder.ObjectById("ID_Sphere");
         }
-      }
+
+        /// <summary>
+        ///   Handler for shape changed event from the shape menu.
+        /// </summary>
+        /// <param name="shapeMenuItemId"></param>
+        public void ShapeChangedHandler(int shapeMenuItemId)
+        {
+            foreach (KeyValuePair<Primitives.Shape, GameObject> mockShape in mockShapes)
+            {
+                if (shapeMenuItemId == (int)mockShape.Key)
+                {
+                    mockShape.Value.SetActive(true);
+                }
+                else
+                {
+                    mockShape.Value.SetActive(false);
+                }
+            }
+        }
     }
-  }
 }

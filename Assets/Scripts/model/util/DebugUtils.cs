@@ -19,65 +19,77 @@ using System.Text;
 using com.google.apps.peltzer.client.model.core;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.util {
-  /// <summary>
-  ///   Debug utilities.
-  /// </summary>
-  public class DebugUtils {
+namespace com.google.apps.peltzer.client.model.util
+{
     /// <summary>
-    /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
-    /// places of precision (Vector3.ToString uses only 1).
+    ///   Debug utilities.
     /// </summary>
-    public static string Vector3ToString(Vector3 v) {
-      return string.Format("{0:F3},{1:F3},{2:F3}", v.x, v.y, v.z);
-    }
-    /// <summary>
-    /// Converts a Bounds object to string, including center, size, extents, min, max (which are not
-    /// included in the regular Bounds.ToString() method).
-    /// </summary>
-    public static string BoundsToString(Bounds b) {
-      return string.Format("Center={0}, Size={1}, Extents={2}, Min={3}, Max={4}",
-        Vector3ToString(b.center), Vector3ToString(b.size), Vector3ToString(b.extents), Vector3ToString(b.min),
-        Vector3ToString(b.max));
-    }
-    /// <summary>
-    /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
-    /// places of precision (Vector3.ToString uses only 1).
-    /// </summary>
-    public static string Vector3sToString(IEnumerable<Vector3> vs) {
-      StringBuilder outString = new StringBuilder();
-      int count = 1;
-      outString.Append("[");
-      foreach (Vector3 vec in vs) {
-        if (count < vs.Count()) {
-          outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>, ", vec.x, vec.y, vec.z));
+    public class DebugUtils
+    {
+        /// <summary>
+        /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
+        /// places of precision (Vector3.ToString uses only 1).
+        /// </summary>
+        public static string Vector3ToString(Vector3 v)
+        {
+            return string.Format("{0:F3},{1:F3},{2:F3}", v.x, v.y, v.z);
         }
-        else {
-          outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>]", vec.x, vec.y, vec.z));
+        /// <summary>
+        /// Converts a Bounds object to string, including center, size, extents, min, max (which are not
+        /// included in the regular Bounds.ToString() method).
+        /// </summary>
+        public static string BoundsToString(Bounds b)
+        {
+            return string.Format("Center={0}, Size={1}, Extents={2}, Min={3}, Max={4}",
+              Vector3ToString(b.center), Vector3ToString(b.size), Vector3ToString(b.extents), Vector3ToString(b.min),
+              Vector3ToString(b.max));
         }
-        count++;
-      }
-      return outString.ToString();
+        /// <summary>
+        /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
+        /// places of precision (Vector3.ToString uses only 1).
+        /// </summary>
+        public static string Vector3sToString(IEnumerable<Vector3> vs)
+        {
+            StringBuilder outString = new StringBuilder();
+            int count = 1;
+            outString.Append("[");
+            foreach (Vector3 vec in vs)
+            {
+                if (count < vs.Count())
+                {
+                    outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>, ", vec.x, vec.y, vec.z));
+                }
+                else
+                {
+                    outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>]", vec.x, vec.y, vec.z));
+                }
+                count++;
+            }
+            return outString.ToString();
+        }
+
+        /// <summary>
+        /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
+        /// places of precision (Vector3.ToString uses only 1).
+        /// </summary>
+        public static string MMeshVertsToString(MMesh mesh)
+        {
+            StringBuilder outString = new StringBuilder();
+            int count = 1;
+            outString.Append("[");
+            foreach (Vertex vec in mesh.GetVertices())
+            {
+                if (count < mesh.vertexCount)
+                {
+                    outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>, ", vec.loc.x, vec.loc.x, vec.loc.x));
+                }
+                else
+                {
+                    outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>]", vec.loc.x, vec.loc.x, vec.loc.x));
+                }
+                count++;
+            }
+            return outString.ToString();
+        }
     }
-    
-    /// <summary>
-    /// Converts a Vector3 to string. Use this instead of Vector3.ToString() because we need 3 decimal
-    /// places of precision (Vector3.ToString uses only 1).
-    /// </summary>
-    public static string MMeshVertsToString(MMesh mesh) {
-      StringBuilder outString = new StringBuilder();
-      int count = 1;
-      outString.Append("[");
-      foreach (Vertex vec in mesh.GetVertices()) {
-        if (count < mesh.vertexCount) {
-          outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>, ", vec.loc.x, vec.loc.x, vec.loc.x));
-        }
-        else {
-          outString.Append(string.Format("<{0:F3},{1:F3},{2:F3}>]", vec.loc.x, vec.loc.x, vec.loc.x));
-        }
-        count++;
-      }
-      return outString.ToString();
-    }
-  }
 }

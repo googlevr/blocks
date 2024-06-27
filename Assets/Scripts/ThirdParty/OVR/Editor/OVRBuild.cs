@@ -27,44 +27,44 @@ using UnityEditor;
 /// </summary>
 partial class OculusBuildApp
 {
-	static void SetPCTarget()
-	{
-		if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.StandaloneWindows)
-		{
+    static void SetPCTarget()
+    {
+        if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.StandaloneWindows)
+        {
 #if UNITY_5_6_OR_NEWER
 			EditorUserBuildSettings.SwitchActiveBuildTarget (BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows);
 #else
-			EditorUserBuildSettings.SwitchActiveBuildTarget (BuildTarget.StandaloneWindows);
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.StandaloneWindows);
 #endif
-		}
+        }
 #if UNITY_5_5_OR_NEWER
 		UnityEditorInternal.VR.VREditor.SetVREnabledOnTargetGroup(BuildTargetGroup.Standalone, true);
 #elif UNITY_5_4_OR_NEWER
 		UnityEditorInternal.VR.VREditor.SetVREnabled(BuildTargetGroup.Standalone, true);
 #endif
-		PlayerSettings.virtualRealitySupported = true;
-		AssetDatabase.SaveAssets();
-	}
+        PlayerSettings.virtualRealitySupported = true;
+        AssetDatabase.SaveAssets();
+    }
 
-	static void SetAndroidTarget()
-	{
-		EditorUserBuildSettings.androidBuildSubtarget = MobileTextureSubtarget.ASTC;
+    static void SetAndroidTarget()
+    {
+        EditorUserBuildSettings.androidBuildSubtarget = MobileTextureSubtarget.ASTC;
 
-		if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
-		{
+        if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
+        {
 #if UNITY_5_6_OR_NEWER
 			EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
 #else
-			EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
 #endif
-		}
+        }
 
 #if UNITY_5_5_OR_NEWER
 		UnityEditorInternal.VR.VREditor.SetVREnabledOnTargetGroup(BuildTargetGroup.Standalone, true);
 #elif UNITY_5_4_OR_NEWER
 		UnityEditorInternal.VR.VREditor.SetVREnabled(BuildTargetGroup.Android, true);
 #endif
-		PlayerSettings.virtualRealitySupported = true;
-		AssetDatabase.SaveAssets();
-	}
+        PlayerSettings.virtualRealitySupported = true;
+        AssetDatabase.SaveAssets();
+    }
 }

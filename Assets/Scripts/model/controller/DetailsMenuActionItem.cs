@@ -15,23 +15,27 @@
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.menu;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableMenuItem that can be attached to items on the palette file menu.
-  /// </summary>
-  public class DetailsMenuActionItem : PolyMenuButton {
-    public PolyMenuMain.DetailsMenuAction action;
+    /// <summary>
+    ///   SelectableMenuItem that can be attached to items on the palette file menu.
+    /// </summary>
+    public class DetailsMenuActionItem : PolyMenuButton
+    {
+        public PolyMenuMain.DetailsMenuAction action;
 
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      if (isActive) {
-        PeltzerMain.Instance.GetPolyMenuMain().InvokeDetailsMenuAction(action);
-        main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            if (isActive)
+            {
+                PeltzerMain.Instance.GetPolyMenuMain().InvokeDetailsMenuAction(action);
+                main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
 
-        // Bump down slightly and back up to its position, to provide a visual indication that
-        // the user's click was registered.
-        StartBump();
-      }
+                // Bump down slightly and back up to its position, to provide a visual indication that
+                // the user's click was registered.
+                StartBump();
+            }
+        }
     }
-  }
 }

@@ -18,12 +18,14 @@ using System.Collections;
 /// <summary>
 /// Convenience struct containing a GameObject and its mesh.
 /// </summary>
-public class ObjectMesh {
-  public GameObject gameObject { get; set; }
-  public Mesh mesh { get; set; }
+public class ObjectMesh
+{
+    public GameObject gameObject { get; set; }
+    public Mesh mesh { get; set; }
 
-  public ObjectMesh(GameObject gameObject, Mesh mesh) {
-    this.gameObject = gameObject;
-    this.mesh = mesh;
-  }
+    public ObjectMesh(GameObject gameObject, Mesh mesh)
+    {
+        this.gameObject = gameObject;
+        this.mesh = mesh;
+    }
 }

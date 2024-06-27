@@ -15,46 +15,57 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  /// <summary>
-  /// This is attached to the camera which renders previews. It controls setting the proper
-  /// render texture and active render texture before rendering, and writing the rendered
-  /// frame to a texture post rendering.
-  /// </summary>
-  public class WriteFrameToPreview : MonoBehaviour {
-    private Camera previewCam;
-    private RenderTexture renderTexture;
-    private Image previewImage;
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    /// <summary>
+    /// This is attached to the camera which renders previews. It controls setting the proper
+    /// render texture and active render texture before rendering, and writing the rendered
+    /// frame to a texture post rendering.
+    /// </summary>
+    public class WriteFrameToPreview : MonoBehaviour
+    {
+        private Camera previewCam;
+        private RenderTexture renderTexture;
+        private Image previewImage;
 
-    public void Setup(RenderTexture renderTexture, Image previewImage) {
-      this.renderTexture = renderTexture;
-      this.previewImage = previewImage;
-    }
-
-    void Awake() {
-      previewCam = gameObject.GetComponent<Camera>();
-    }
-
-    void OnPreRender() {
-      if (renderTexture != null && previewImage != null) {
-        previewCam.targetTexture = renderTexture;
-        RenderTexture.active = renderTexture;
-      }
-    }
-
-    void OnPostRender() {
-      if (renderTexture != null && previewImage != null) {
-        if (previewImage.sprite != null && previewImage.sprite.texture != null) {
-          Texture2D previewTex = previewImage.sprite.texture;
-          previewTex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-          previewTex.Apply();
-        } else {
-          Texture2D previewTex = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false);
-          previewTex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-          previewTex.Apply();
-          previewImage.sprite = Sprite.Create(previewTex, new Rect(0, 0, renderTexture.width, renderTexture.height), new Vector2(.5f, .5f));
+        public void Setup(RenderTexture renderTexture, Image previewImage)
+        {
+            this.renderTexture = renderTexture;
+            this.previewImage = previewImage;
         }
-      }
+
+        void Awake()
+        {
+            previewCam = gameObject.GetComponent<Camera>();
+        }
+
+        void OnPreRender()
+        {
+            if (renderTexture != null && previewImage != null)
+            {
+                previewCam.targetTexture = renderTexture;
+                RenderTexture.active = renderTexture;
+            }
+        }
+
+        void OnPostRender()
+        {
+            if (renderTexture != null && previewImage != null)
+            {
+                if (previewImage.sprite != null && previewImage.sprite.texture != null)
+                {
+                    Texture2D previewTex = previewImage.sprite.texture;
+                    previewTex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+                    previewTex.Apply();
+                }
+                else
+                {
+                    Texture2D previewTex = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false);
+                    previewTex.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
+                    previewTex.Apply();
+                    previewImage.sprite = Sprite.Create(previewTex, new Rect(0, 0, renderTexture.width, renderTexture.height), new Vector2(.5f, .5f));
+                }
+            }
+        }
     }
-  }
 }

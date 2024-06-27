@@ -37,7 +37,7 @@ public class OVRSceneSampleController : MonoBehaviour
     /// An optional texture that appears before the menu fades in.
     /// </summary>
     public Texture fadeInTexture = null;
-    
+
     /// <summary>
     /// Controls how quickly the player's speed and rotation change based on input.
     /// </summary>
@@ -86,7 +86,7 @@ public class OVRSceneSampleController : MonoBehaviour
         else
         {
             cameraController = cameraControllers[0];
-        }       
+        }
 
         // Find player controller
         OVRPlayerController[] playerControllers;
@@ -114,8 +114,8 @@ public class OVRSceneSampleController : MonoBehaviour
         // Make sure to hide cursor 
         if (Application.isEditor == false)
         {
-			Cursor.visible = false; 
-			Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         // CameraController updates
@@ -124,7 +124,7 @@ public class OVRSceneSampleController : MonoBehaviour
             // Add a GridCube component to this object
             gridCube = gameObject.AddComponent<OVRGridCube>();
             gridCube.SetOVRCameraController(ref cameraController);
-        } 
+        }
     }
 
 
@@ -132,7 +132,7 @@ public class OVRSceneSampleController : MonoBehaviour
     /// Update this instance.
     /// </summary>
     void Update()
-    {           
+    {
         // Recenter pose
         UpdateRecenterPose();
 
@@ -148,7 +148,7 @@ public class OVRSceneSampleController : MonoBehaviour
             Screen.fullScreen = !Screen.fullScreen;
 
         if (Input.GetKeyDown(KeyCode.M))
-			UnityEngine.XR.XRSettings.showDeviceView = !UnityEngine.XR.XRSettings.showDeviceView;
+            UnityEngine.XR.XRSettings.showDeviceView = !UnityEngine.XR.XRSettings.showDeviceView;
 
 #if !UNITY_ANDROID || UNITY_EDITOR
         // Escape Application
@@ -166,7 +166,7 @@ public class OVRSceneSampleController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F2))
         {
             visionMode ^= visionMode;
-            OVRManager.tracker.isEnabled = visionMode;            
+            OVRManager.tracker.isEnabled = visionMode;
         }
     }
 
@@ -202,8 +202,8 @@ public class OVRSceneSampleController : MonoBehaviour
         }
 
         playerController.SetRotationScaleMultiplier(rotationScaleMultiplier);
-    }    
-      
+    }
+
     /// <summary>
     /// Recenter pose
     /// </summary>

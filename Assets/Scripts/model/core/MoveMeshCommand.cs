@@ -14,32 +14,37 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.core {
+namespace com.google.apps.peltzer.client.model.core
+{
 
-  /// <summary>
-  ///   Move a mesh to a new location.
-  /// </summary>
-  public class MoveMeshCommand : Command {
-    public const string COMMAND_NAME = "move";
+    /// <summary>
+    ///   Move a mesh to a new location.
+    /// </summary>
+    public class MoveMeshCommand : Command
+    {
+        public const string COMMAND_NAME = "move";
 
-    internal readonly int meshId;
-    internal Vector3 positionDelta;
-    internal Quaternion rotDelta = Quaternion.identity;
+        internal readonly int meshId;
+        internal Vector3 positionDelta;
+        internal Quaternion rotDelta = Quaternion.identity;
 
-    public MoveMeshCommand(int meshId, Vector3 positionDelta, Quaternion rotDelta) {
-      this.meshId = meshId;
-      this.positionDelta = positionDelta;
-      this.rotDelta = rotDelta;
+        public MoveMeshCommand(int meshId, Vector3 positionDelta, Quaternion rotDelta)
+        {
+            this.meshId = meshId;
+            this.positionDelta = positionDelta;
+            this.rotDelta = rotDelta;
+        }
+
+        public void ApplyToModel(Model model)
+        {
+            MMesh mesh = model.GetMesh(meshId);
+            MMesh.MoveMMesh(mesh, positionDelta, rotDelta);
+            model.MeshUpdated(meshId, materialsChanged: false, geometryChanged: true, vertsOrFacesChanged: false);
+        }
+
+        public Command GetUndoCommand(Model model)
+        {
+            return new MoveMeshCommand(meshId, -positionDelta, Quaternion.Inverse(rotDelta));
+        }
     }
-
-    public void ApplyToModel(Model model) {
-      MMesh mesh = model.GetMesh(meshId);
-      MMesh.MoveMMesh(mesh, positionDelta, rotDelta);
-      model.MeshUpdated(meshId, materialsChanged:false, geometryChanged:true, vertsOrFacesChanged:false);
-    }
-
-    public Command GetUndoCommand(Model model) {
-      return new MoveMeshCommand(meshId, -positionDelta, Quaternion.Inverse(rotDelta));
-    }
-  }
 }
