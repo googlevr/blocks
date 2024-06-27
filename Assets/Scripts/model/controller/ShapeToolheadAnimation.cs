@@ -35,6 +35,7 @@ namespace com.google.apps.peltzer.client.model.controller
             mockShapes[Primitives.Shape.CYLINDER] = ObjectFinder.ObjectById("ID_Cylinder");
             mockShapes[Primitives.Shape.TORUS] = ObjectFinder.ObjectById("ID_Torus");
             mockShapes[Primitives.Shape.SPHERE] = ObjectFinder.ObjectById("ID_Sphere");
+            mockShapes[Primitives.Shape.ICOSAHEDRON] = ObjectFinder.ObjectById("ID_Icosahedron");
         }
 
         /// <summary>
