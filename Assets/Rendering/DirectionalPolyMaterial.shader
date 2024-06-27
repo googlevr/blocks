@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-﻿Shader "Mogwai/DirectionalPolyMaterial"
+Shader "Mogwai/DirectionalPolyMaterial"
 {
 	Properties
 	{
@@ -51,7 +51,7 @@
             float4 _OverrideColor;
             float4 _SelectorPosition;
             float _SelectorAlphaRadius;
-            
+
             float4 frag (CTVertexOutput fragment) : SV_Target {
                 float3 ennoisenedNormal;
                 float4 ennoisenedColorMult;
@@ -63,7 +63,7 @@
                 ennoisenedNormal = lerp(mul(unity_ObjectToWorld, modelSpaceNormal), ennoisenedNormal, smoothstep(0.1, 0.8, NDotV));
                 float3 lightOut = 0;
                 float3 specOut = 0;
-                
+
                 evaluateLights(
                   fragment.worldPosition.xyz , // pixelPos
                   ennoisenedNormal, // pixelNormal
@@ -75,7 +75,7 @@
                 // for the fragment and determine new alpha factor.
                 float distBasedAlpha = 1;
                 // W component of _SelectorPosition holds a float that indicates active or inactive.
-                if (_SelectorPosition.w == 1.0) { 
+                if (_SelectorPosition.w == 1.0) {
                   distBasedAlpha = clamp((min(distance(_SelectorPosition, fragment.worldPosition.xyz), _SelectorAlphaRadius) / _SelectorAlphaRadius), 0.1, 1.0);
                 }
                 float4 outColor = float4(lightOut, fragment.color.a * (_MultiplicitiveAlpha * distBasedAlpha));
@@ -95,19 +95,19 @@
 
             #include "shaderMath.cginc"
 
-      
+
               struct posOut {
                 float4 pos : SV_POSITION;
               };
-              
+
               posOut vert(struct PNCVertexInput vertex) {
-                
+
                   posOut output = (posOut)0;
                   float4x4 xFormMat =  mul(UNITY_MATRIX_VP, mul(unity_ObjectToWorld, _RemesherMeshTransforms[vertex.meshBone.x]));
                   output.pos = mul(xFormMat, vertex.position);
                   return output;
                 }
-              
+
                 float4 frag (posOut fragment) : SV_Target
                 {
                     return float4(1, 1, 1, 1);
@@ -115,5 +115,5 @@
         ENDCG
 		}
     }
-    
+
 }
