@@ -22,35 +22,37 @@ namespace com.google.apps.peltzer.client.entitlement {
     private const string OCULUS_APP_ID = "[Removed]]";
 
     private void Awake() {
-      Oculus.Platform.Core.Initialize(OCULUS_APP_ID);
-      Oculus.Platform.Entitlements.IsUserEntitledToApplication().OnComplete(EntitlementCallback);
+      // TODO AB
+      // Oculus.Platform.Core.Initialize(OCULUS_APP_ID);
+      // Oculus.Platform.Entitlements.IsUserEntitledToApplication().OnComplete(EntitlementCallback);
     }
 
     public void Update() {
-      Oculus.Platform.Request.RunCallbacks();
+      // Oculus.Platform.Request.RunCallbacks();
     }
 
-    private void EntitlementCallback(Oculus.Platform.Message response) {
-      string message;
-      if (response.IsError) {
-        if (response.GetError() != null) {
-          message = response.GetError().Message;
-        } else {
-          message = "Authentication failed";
-        }
-      } else {
-        userIsEntitled = true;
-        message = "";
-      }
-
-      if (message != string.Empty) {
-        Debug.Log(message, this);
-      }
-
-      if (!userIsEntitled) {
-        Debug.Log("User not authenticated! You must be logged in to continue.");
-        Application.Quit();
-      }
-    }
+    // TODO AB
+    // private void EntitlementCallback(Oculus.Platform.Message response) {
+    //   string message;
+    //   if (response.IsError) {
+    //     if (response.GetError() != null) {
+    //       message = response.GetError().Message;
+    //     } else {
+    //       message = "Authentication failed";
+    //     }
+    //   } else {
+    //     userIsEntitled = true;
+    //     message = "";
+    //   }
+    //
+    //   if (message != string.Empty) {
+    //     Debug.Log(message, this);
+    //   }
+    //
+    //   if (!userIsEntitled) {
+    //     Debug.Log("User not authenticated! You must be logged in to continue.");
+    //     Application.Quit();
+    //   }
+    // }
   }
 }
