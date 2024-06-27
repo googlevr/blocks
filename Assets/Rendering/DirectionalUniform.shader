@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-﻿Shader "Mogwai/DirectionalUniform"
+Shader "Mogwai/DirectionalUniform"
 {
 	Properties
 	{
@@ -52,8 +52,8 @@
 				float3 normal : TEXCOORD0;
 				float4 worldPosition : TEXCOORD1;
 				float4 shadowPosition : TEXCOORD2;
-			}; 
-			
+			};
+
 			VertexOutput vert (VertexInput vertex)
 			{
 				VertexOutput output;
