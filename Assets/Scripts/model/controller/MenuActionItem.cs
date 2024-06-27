@@ -15,29 +15,33 @@
 using System;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableMenuItem that can be attached to items on the palette file menu.
-  /// </summary>
-  public class MenuActionItem : PolyMenuButton {
-    public MenuAction action;
     /// <summary>
-    /// Returns whether or not action is currently allowed by the restriction manager.
+    ///   SelectableMenuItem that can be attached to items on the palette file menu.
     /// </summary>
-    /// <returns>Whether or not action is allowed.</returns>
-    internal bool ActionIsAllowed() {
-      return (PeltzerMain.Instance.restrictionManager.tutorialMenuActionsAllowed
-        && PeltzerMain.TUTORIAL_MENU_ACTIONS.Contains(action))
-        || PeltzerMain.Instance.restrictionManager.menuActionsAllowed;
-    }
+    public class MenuActionItem : PolyMenuButton
+    {
+        public MenuAction action;
+        /// <summary>
+        /// Returns whether or not action is currently allowed by the restriction manager.
+        /// </summary>
+        /// <returns>Whether or not action is allowed.</returns>
+        internal bool ActionIsAllowed()
+        {
+            return (PeltzerMain.Instance.restrictionManager.tutorialMenuActionsAllowed
+              && PeltzerMain.TUTORIAL_MENU_ACTIONS.Contains(action))
+              || PeltzerMain.Instance.restrictionManager.menuActionsAllowed;
+        }
 
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      if (!ActionIsAllowed()) return;
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            if (!ActionIsAllowed()) return;
 
-      main.InvokeMenuAction(action);
-      main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
-      StartBump();
+            main.InvokeMenuAction(action);
+            main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+            StartBump();
+        }
     }
-  }
 }

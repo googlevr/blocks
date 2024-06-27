@@ -18,36 +18,45 @@ using System.Collections;
 using com.google.apps.peltzer.client.model.export;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  public class HeaderOptionsController : MonoBehaviour {
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    public class HeaderOptionsController : MonoBehaviour
+    {
 
-    private Rect localBounds;
+        private Rect localBounds;
 
-    void Start() {
-      HoverableButton signOut = transform.Find("SignOutOption").gameObject.AddComponent<HoverableButton>();
-      signOut.SetOnClickAction(() => {
-        PeltzerMain.Instance.InvokeMenuAction(MenuAction.SIGN_OUT);
-      });
+        void Start()
+        {
+            HoverableButton signOut = transform.Find("SignOutOption").gameObject.AddComponent<HoverableButton>();
+            signOut.SetOnClickAction(() =>
+            {
+                PeltzerMain.Instance.InvokeMenuAction(MenuAction.SIGN_OUT);
+            });
+        }
+
+        void LateUpdate()
+        {
+            if (Input.GetMouseButtonDown(0) && !localBounds.Contains(Input.mousePosition))
+            {
+                Close();
+            }
+        }
+
+        void OnEnable()
+        {
+            Vector2 size = GetComponent<RectTransform>().sizeDelta;
+            Vector2 position = GetComponent<RectTransform>().position;
+            localBounds = new Rect(position.x - size.x / 2.0f, position.y - size.y / 2.0f, size.x, size.y);
+        }
+
+        public void Open()
+        {
+            gameObject.SetActive(true);
+        }
+
+        public void Close()
+        {
+            gameObject.SetActive(false);
+        }
     }
-
-    void LateUpdate() {
-      if (Input.GetMouseButtonDown(0) && !localBounds.Contains(Input.mousePosition)) {
-        Close();
-      }
-    }
-
-    void OnEnable() {
-      Vector2 size = GetComponent<RectTransform>().sizeDelta;
-      Vector2 position = GetComponent<RectTransform>().position;
-      localBounds = new Rect(position.x - size.x / 2.0f, position.y - size.y / 2.0f, size.x, size.y);
-    }
-
-    public void Open() {
-      gameObject.SetActive(true);
-    }
-
-    public void Close() {
-      gameObject.SetActive(false);
-    }
-  }
 }

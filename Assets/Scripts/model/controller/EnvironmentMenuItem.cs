@@ -15,35 +15,42 @@
 using com.google.apps.peltzer.client.model.main;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   EnvironmentMenuItem that can be attached to an object that will trigger an environment change.
-  /// </summary>
-  public class EnvironmentMenuItem : SelectableMenuItem {
-    public EnvironmentThemeManager.EnvironmentTheme theme;
-    private GameObject selectedBorder;
+    /// <summary>
+    ///   EnvironmentMenuItem that can be attached to an object that will trigger an environment change.
+    /// </summary>
+    public class EnvironmentMenuItem : SelectableMenuItem
+    {
+        public EnvironmentThemeManager.EnvironmentTheme theme;
+        private GameObject selectedBorder;
 
-    public void Start() {
-      selectedBorder = transform.Find("Selected").gameObject;
-      PeltzerMain.Instance.environmentThemeManager.EnvironmentThemeActionHandler += EnvironmentThemeActionHandler;
-      // We persist the last chosen environment in user prefs and set that during setup,
-      // however at that point this component has not started and thusly
-      // will not respond to the EnvironmentThemeActionHandler event. So we check here.
-      if (PeltzerMain.Instance.environmentThemeManager.currentTheme == theme) {
-        selectedBorder.SetActive(true);
-      }
+        public void Start()
+        {
+            selectedBorder = transform.Find("Selected").gameObject;
+            PeltzerMain.Instance.environmentThemeManager.EnvironmentThemeActionHandler += EnvironmentThemeActionHandler;
+            // We persist the last chosen environment in user prefs and set that during setup,
+            // however at that point this component has not started and thusly
+            // will not respond to the EnvironmentThemeActionHandler event. So we check here.
+            if (PeltzerMain.Instance.environmentThemeManager.currentTheme == theme)
+            {
+                selectedBorder.SetActive(true);
+            }
+        }
+
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            if (main.environmentThemeManager != null)
+            {
+                main.SetEnvironmentTheme(theme);
+                main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+            }
+        }
+
+        public void EnvironmentThemeActionHandler(object sender, EnvironmentThemeManager.EnvironmentTheme selectedTheme)
+        {
+            selectedBorder.SetActive(selectedTheme == theme);
+        }
     }
-
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      if (main.environmentThemeManager != null) {
-        main.SetEnvironmentTheme(theme);
-        main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
-      }
-    }
-
-    public void EnvironmentThemeActionHandler(object sender, EnvironmentThemeManager.EnvironmentTheme selectedTheme) {
-      selectedBorder.SetActive(selectedTheme == theme);
-    }
-  }
 }

@@ -17,45 +17,56 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using System;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  /// <summary>
-  /// This class handles the hovering and selection of individual items in the "more options" menu.
-  /// </summary>
-  public class MyCreationMoreButtonOptionHandler : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler {
-    private GameObject hover;
-    private Action clickAction;
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    /// <summary>
+    /// This class handles the hovering and selection of individual items in the "more options" menu.
+    /// </summary>
+    public class MyCreationMoreButtonOptionHandler : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
+    {
+        private GameObject hover;
+        private Action clickAction;
 
-    void Start() {
-      EventSystem eventSystem = EventSystem.current;
-      hover = transform.Find("hover").gameObject;
-    }
+        void Start()
+        {
+            EventSystem eventSystem = EventSystem.current;
+            hover = transform.Find("hover").gameObject;
+        }
 
-    public void OnPointerClick(PointerEventData eventData) {
-      if (clickAction != null) {
-        clickAction();
-      }
-    }
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (clickAction != null)
+            {
+                clickAction();
+            }
+        }
 
-    public void OnPointerEnter(PointerEventData eventData) {
-      hover.SetActive(true);
-    }
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            hover.SetActive(true);
+        }
 
-    public void OnPointerExit(PointerEventData eventData) {
-      hover.SetActive(false);
-    }
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            hover.SetActive(false);
+        }
 
-    public void OnPointerDown(PointerEventData eventData) {
-    }
+        public void OnPointerDown(PointerEventData eventData)
+        {
+        }
 
-    public void OnPointerUp(PointerEventData eventData) {
-    }
+        public void OnPointerUp(PointerEventData eventData)
+        {
+        }
 
-    public void SetClickAction(Action clickAction) {
-      this.clickAction = clickAction;
-    }
+        public void SetClickAction(Action clickAction)
+        {
+            this.clickAction = clickAction;
+        }
 
-    public void RemoveHover() {
-      hover.SetActive(false);
+        public void RemoveHover()
+        {
+            hover.SetActive(false);
+        }
     }
-  }
 }

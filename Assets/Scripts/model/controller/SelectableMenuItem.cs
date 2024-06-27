@@ -15,18 +15,21 @@
 using UnityEngine;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  public class SelectableMenuItem : MonoBehaviour {
-    // Name to display when this menu item is hovered. Set in Unity editor.
-    public string hoverName;
-    public bool isActive = true;
+namespace com.google.apps.peltzer.client.model.controller
+{
+    public class SelectableMenuItem : MonoBehaviour
+    {
+        // Name to display when this menu item is hovered. Set in Unity editor.
+        public string hoverName;
+        public bool isActive = true;
 
-    /// <summary>
-    ///   Called whenever a SelectableMenuItem is touched.
-    /// </summary>
-    /// <param name="main"></param>
-    public virtual void ApplyMenuOptions(PeltzerMain main) {
+        /// <summary>
+        ///   Called whenever a SelectableMenuItem is touched.
+        /// </summary>
+        /// <param name="main"></param>
+        public virtual void ApplyMenuOptions(PeltzerMain main)
+        {
 
+        }
     }
-  }
 }

@@ -20,10 +20,12 @@ using UnityEngine;
 /// Simple script to attach to Particle System prefabs that get instantiated
 /// during runtime so they destroy themselves after their duration elapses.
 /// </summary>
-public class ParticleSystemDestroy : MonoBehaviour {
+public class ParticleSystemDestroy : MonoBehaviour
+{
 
-  void Start () {
-    Destroy(this.gameObject, this.GetComponent<ParticleSystem>().main.duration);
-  }
-	
+    void Start()
+    {
+        Destroy(this.gameObject, this.GetComponent<ParticleSystem>().main.duration);
+    }
+
 }

@@ -16,76 +16,91 @@ using UnityEngine;
 using System.Collections;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   Animates the ModifyToolhead in response to our event system. 
-  /// </summary>
-  public class ModifyToolheadAnimation : MonoBehaviour {
-
-    public PeltzerMain peltzerMain;
-    public ControllerMain controllerMain;
-    public PeltzerController peltzerController;
-    private Transform leftArm, rightArm;
-    private Vector3 leftArmOpen = new Vector3(0f, -8.025001f, 0f);
-    private Vector3 rightArmOpen = new Vector3(0f, 8.025001f, 0f);
-
-    // Use this for initialization
-    void Start() {
-      leftArm = transform.Find("modifyTool_GEO/Plier_Geo/Plier_L_Geo");
-      rightArm = transform.Find("modifyTool_GEO/Plier_Geo/Plier_R_Geo");
-      peltzerMain = FindObjectOfType<PeltzerMain>();
-      controllerMain = peltzerMain.controllerMain;
-    }
-
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   An event handler that listens for controller input and delegates accordingly.
+    ///   Animates the ModifyToolhead in response to our event system. 
     /// </summary>
-    /// <param name="sender">The sender of the controller event.</param>
-    /// <param name="args">The controller event arguments.</param>
-    private void ControllerEventHandler(object sender, ControllerEventArgs args) {
-      if(args.ControllerType == ControllerType.PELTZER
-        && args.ButtonId == ButtonId.Trigger) {
-        if(args.Action == ButtonAction.DOWN) {
-          StartAnimation();
-        } else if(args.Action == ButtonAction.UP) {
-          StopAnimation();
+    public class ModifyToolheadAnimation : MonoBehaviour
+    {
+
+        public PeltzerMain peltzerMain;
+        public ControllerMain controllerMain;
+        public PeltzerController peltzerController;
+        private Transform leftArm, rightArm;
+        private Vector3 leftArmOpen = new Vector3(0f, -8.025001f, 0f);
+        private Vector3 rightArmOpen = new Vector3(0f, 8.025001f, 0f);
+
+        // Use this for initialization
+        void Start()
+        {
+            leftArm = transform.Find("modifyTool_GEO/Plier_Geo/Plier_L_Geo");
+            rightArm = transform.Find("modifyTool_GEO/Plier_Geo/Plier_R_Geo");
+            peltzerMain = FindObjectOfType<PeltzerMain>();
+            controllerMain = peltzerMain.controllerMain;
         }
-      }
-    }
 
-    /// <summary>
-    ///   Activates the animation logic by attaching the event handler for input.
-    /// </summary>
-    public void Activate() {
-      controllerMain.ControllerActionHandler += ControllerEventHandler;
-    }
+        /// <summary>
+        ///   An event handler that listens for controller input and delegates accordingly.
+        /// </summary>
+        /// <param name="sender">The sender of the controller event.</param>
+        /// <param name="args">The controller event arguments.</param>
+        private void ControllerEventHandler(object sender, ControllerEventArgs args)
+        {
+            if (args.ControllerType == ControllerType.PELTZER
+              && args.ButtonId == ButtonId.Trigger)
+            {
+                if (args.Action == ButtonAction.DOWN)
+                {
+                    StartAnimation();
+                }
+                else if (args.Action == ButtonAction.UP)
+                {
+                    StopAnimation();
+                }
+            }
+        }
 
-    /// <summary>
-    ///   Deactivates the animation logic by removing the event handler for input.
-    /// </summary>
-    public void Deactivate() {
-      controllerMain.ControllerActionHandler -= ControllerEventHandler;
-    }
+        /// <summary>
+        ///   Activates the animation logic by attaching the event handler for input.
+        /// </summary>
+        public void Activate()
+        {
+            controllerMain.ControllerActionHandler += ControllerEventHandler;
+        }
 
-    /// <summary>
-    ///   Entry point for actual animation which is to "close" the head grips of the tool.
-    /// </summary>
-    private void StartAnimation() {
-      if (leftArm) {
-        leftArm.localEulerAngles = rightArm.localEulerAngles = Vector3.zero;
-      }
-    }
+        /// <summary>
+        ///   Deactivates the animation logic by removing the event handler for input.
+        /// </summary>
+        public void Deactivate()
+        {
+            controllerMain.ControllerActionHandler -= ControllerEventHandler;
+        }
 
-    /// <summary>
-    ///   Entry point for the animation which is to "open" / "relax" the head grips of the tool.
-    /// </summary>
-    private void StopAnimation() {
-      if (leftArm) {
-        leftArm.localEulerAngles = leftArmOpen;
-      }
-      if (rightArm) {
-        rightArm.localEulerAngles = rightArmOpen;
-      }
+        /// <summary>
+        ///   Entry point for actual animation which is to "close" the head grips of the tool.
+        /// </summary>
+        private void StartAnimation()
+        {
+            if (leftArm)
+            {
+                leftArm.localEulerAngles = rightArm.localEulerAngles = Vector3.zero;
+            }
+        }
+
+        /// <summary>
+        ///   Entry point for the animation which is to "open" / "relax" the head grips of the tool.
+        /// </summary>
+        private void StopAnimation()
+        {
+            if (leftArm)
+            {
+                leftArm.localEulerAngles = leftArmOpen;
+            }
+            if (rightArm)
+            {
+                rightArm.localEulerAngles = rightArmOpen;
+            }
+        }
     }
-  }
 }

@@ -20,34 +20,36 @@ using UnityEngine;
 /// This class primarily exists to provide an editor level interface for assigning materials for various effects
 /// other than adding them directly to PeltzerMain.
 /// </summary>
-public class MaterialLibrary : MonoBehaviour {
-  public float paperCraftNoiseScale = 500f;
-  public float paperCraftNoiseIntensity = 0.2f;
+public class MaterialLibrary : MonoBehaviour
+{
+    public float paperCraftNoiseScale = 500f;
+    public float paperCraftNoiseIntensity = 0.2f;
 
-  public Material baseMaterial;
-  public Material highlightMaterial;
-  public Material highlightMaterial2;
-  public Material highlightSilhouetteMaterial;
-  public Material gemMaterial;
-  public Material glassMaterial;
-  public Material glassSpecMaterial;
-  public Material subtractMaterial;
-  public Material copyMaterial;
-  public Material snapEffectMaterial;
-  public Material meshInsertEffectMaterial;
-  public Material meshSelectMaterial;
-  public Material gridMaterial;
-  public Material pointHighlightMaterial;
-  public Material pointInactiveMaterial;
-  public Material edgeHighlightMaterial;
-  public Material edgeInactiveMaterial;
-  public Material faceHighlightMaterial;
-  public Material facePaintMaterial;
-  public Material faceExtrudeMaterial;
-  public Material selectMaterial;
+    public Material baseMaterial;
+    public Material highlightMaterial;
+    public Material highlightMaterial2;
+    public Material highlightSilhouetteMaterial;
+    public Material gemMaterial;
+    public Material glassMaterial;
+    public Material glassSpecMaterial;
+    public Material subtractMaterial;
+    public Material copyMaterial;
+    public Material snapEffectMaterial;
+    public Material meshInsertEffectMaterial;
+    public Material meshSelectMaterial;
+    public Material gridMaterial;
+    public Material pointHighlightMaterial;
+    public Material pointInactiveMaterial;
+    public Material edgeHighlightMaterial;
+    public Material edgeInactiveMaterial;
+    public Material faceHighlightMaterial;
+    public Material facePaintMaterial;
+    public Material faceExtrudeMaterial;
+    public Material selectMaterial;
 
-  public void Start() {
-    Shader.SetGlobalFloat("_NoiseScale", paperCraftNoiseScale);
-    Shader.SetGlobalFloat("_NoiseIntensity", paperCraftNoiseIntensity);
-  }
+    public void Start()
+    {
+        Shader.SetGlobalFloat("_NoiseScale", paperCraftNoiseScale);
+        Shader.SetGlobalFloat("_NoiseIntensity", paperCraftNoiseIntensity);
+    }
 }

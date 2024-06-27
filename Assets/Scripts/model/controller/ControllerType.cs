@@ -15,24 +15,26 @@
 using UnityEngine;
 using System.Collections;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   Descriptor for types of controllers.
-  /// </summary>
-  public enum ControllerType {
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Null state.
+    ///   Descriptor for types of controllers.
     /// </summary>
-    NONE,
+    public enum ControllerType
+    {
+        /// <summary>
+        ///   Null state.
+        /// </summary>
+        NONE,
 
-    /// <summary>
-    ///   The main peltzer controller.
-    /// </summary>
-    PELTZER,
+        /// <summary>
+        ///   The main peltzer controller.
+        /// </summary>
+        PELTZER,
 
-    /// <summary>
-    ///   The palette controller.
-    /// </summary>
-    PALETTE
-  }
+        /// <summary>
+        ///   The palette controller.
+        /// </summary>
+        PALETTE
+    }
 }

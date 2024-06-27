@@ -16,29 +16,35 @@ using UnityEngine;
 using System.Collections;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   Delegate method for controller clients to implement.
-  /// </summary>
-  public delegate void ControllerActionHandler(object sender, ControllerEventArgs args);
-
-  public class ControllerMain {
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Clients must register themselves on this handler.
+    ///   Delegate method for controller clients to implement.
     /// </summary>
-    public event ControllerActionHandler ControllerActionHandler;
+    public delegate void ControllerActionHandler(object sender, ControllerEventArgs args);
 
-    public ControllerMain(PeltzerController peltzerController, PaletteController paletteController) {
-      peltzerController.PeltzerControllerActionHandler += ControllerEventHandler;
-      paletteController.PaletteControllerActionHandler += ControllerEventHandler;
-    }
+    public class ControllerMain
+    {
+        /// <summary>
+        ///   Clients must register themselves on this handler.
+        /// </summary>
+        public event ControllerActionHandler ControllerActionHandler;
 
-    private void ControllerEventHandler(object sender, ControllerEventArgs args) {
-      if (ControllerActionHandler != null) {
-        if (PeltzerMain.Instance.restrictionManager.controllerEventsAllowed) {
-          ControllerActionHandler(sender, args);
+        public ControllerMain(PeltzerController peltzerController, PaletteController paletteController)
+        {
+            peltzerController.PeltzerControllerActionHandler += ControllerEventHandler;
+            paletteController.PaletteControllerActionHandler += ControllerEventHandler;
         }
-      }
+
+        private void ControllerEventHandler(object sender, ControllerEventArgs args)
+        {
+            if (ControllerActionHandler != null)
+            {
+                if (PeltzerMain.Instance.restrictionManager.controllerEventsAllowed)
+                {
+                    ControllerActionHandler(sender, args);
+                }
+            }
+        }
     }
-  }
 }

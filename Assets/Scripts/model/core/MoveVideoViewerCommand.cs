@@ -15,27 +15,32 @@
 using com.google.apps.peltzer.client.model.main;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  /// This command moves the video viewer. It does not affect the Model.
-  /// </summary>
-  public class MoveVideoViewerCommand : Command {
-    private Vector3 positionDelta;
-    private Quaternion rotDelta = Quaternion.identity;
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    /// This command moves the video viewer. It does not affect the Model.
+    /// </summary>
+    public class MoveVideoViewerCommand : Command
+    {
+        private Vector3 positionDelta;
+        private Quaternion rotDelta = Quaternion.identity;
 
-    public MoveVideoViewerCommand(Vector3 positionDelta, Quaternion rotDelta) {
-      this.positionDelta = positionDelta;
-      this.rotDelta = rotDelta;
-    }
+        public MoveVideoViewerCommand(Vector3 positionDelta, Quaternion rotDelta)
+        {
+            this.positionDelta = positionDelta;
+            this.rotDelta = rotDelta;
+        }
 
-    public void ApplyToModel(Model model) {
-      GameObject videoViewer = PeltzerMain.Instance.GetVideoViewer();
-      videoViewer.transform.position += positionDelta;
-      PeltzerMain.Instance.GetVideoViewer().transform.rotation *= rotDelta;
-    }
+        public void ApplyToModel(Model model)
+        {
+            GameObject videoViewer = PeltzerMain.Instance.GetVideoViewer();
+            videoViewer.transform.position += positionDelta;
+            PeltzerMain.Instance.GetVideoViewer().transform.rotation *= rotDelta;
+        }
 
-    public Command GetUndoCommand(Model model) {
-      return new MoveVideoViewerCommand(-positionDelta, Quaternion.Inverse(rotDelta));
+        public Command GetUndoCommand(Model model)
+        {
+            return new MoveVideoViewerCommand(-positionDelta, Quaternion.Inverse(rotDelta));
+        }
     }
-  }
 }
