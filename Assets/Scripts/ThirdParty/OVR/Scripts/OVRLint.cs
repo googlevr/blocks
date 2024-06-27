@@ -288,13 +288,14 @@ public class OVRLint : EditorWindow
 		}
 #endif
 
-		if ((!PlayerSettings.MTRendering || !PlayerSettings.mobileMTRendering))
-		{
-		    AddFix ("Optimize MT Rendering", "For CPU performance, please enable multithreaded rendering.", delegate(UnityEngine.Object obj, bool last, int selected)
-		    {
-				PlayerSettings.MTRendering = PlayerSettings.mobileMTRendering = true;
-			}, null, "Fix");
-		}
+		// TODO AB
+		// if ((!PlayerSettings.MTRendering || !PlayerSettings.mobileMTRendering))
+		// {
+		//     AddFix ("Optimize MT Rendering", "For CPU performance, please enable multithreaded rendering.", delegate(UnityEngine.Object obj, bool last, int selected)
+		//     {
+		// 		PlayerSettings.MTRendering = PlayerSettings.mobileMTRendering = true;
+		// 	}, null, "Fix");
+		// }
 
 #if UNITY_5_5_OR_NEWER
 		BuildTargetGroup target = EditorUserBuildSettings.selectedBuildTargetGroup;
