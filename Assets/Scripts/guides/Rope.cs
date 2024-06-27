@@ -24,7 +24,6 @@ namespace com.google.apps.peltzer.client.guides {
     private static readonly float WIDTH = 0.002f;
     private readonly Color START_COLOR = Color.red;
     private readonly Color END_COLOR = Color.red;
-    private readonly Material ROPE_MATERIAL = new Material(Shader.Find("Particles/Additive"));
 
     GameObject go;
     LineRenderer lineRenderer;
