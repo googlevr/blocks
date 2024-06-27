@@ -17,29 +17,32 @@ using UnityEngine;
 
 using com.google.apps.peltzer.client.model.util;
 
-namespace com.google.apps.peltzer.client.model.core {
-
-  /// <summary>
-  ///   A hole in a Face.
-  /// </summary>
-  public class Hole {
-    private readonly ReadOnlyCollection<int> _vertexIds;
-    private ReadOnlyCollection<Vector3> _normals;
-
-    // Read-only getters.
-    public ReadOnlyCollection<int> vertexIds { get { return _vertexIds; } }
-    public ReadOnlyCollection<Vector3> normals { get { return _normals; } }
+namespace com.google.apps.peltzer.client.model.core
+{
 
     /// <summary>
-    ///   Create a new hole.
+    ///   A hole in a Face.
     /// </summary>
-    /// <param name="vertexIds">Vertex ids of the border in counterclockwise order.</param>
-    /// <param name="normals">Normals for the given vertices.</param>
-    public Hole(ReadOnlyCollection<int> vertexIds, ReadOnlyCollection<Vector3> normals) {
-      AssertOrThrow.True(vertexIds.Count == normals.Count,
-        "Must have same number of vertices and normals.");
-      _vertexIds = vertexIds;
-      _normals = normals;
+    public class Hole
+    {
+        private readonly ReadOnlyCollection<int> _vertexIds;
+        private ReadOnlyCollection<Vector3> _normals;
+
+        // Read-only getters.
+        public ReadOnlyCollection<int> vertexIds { get { return _vertexIds; } }
+        public ReadOnlyCollection<Vector3> normals { get { return _normals; } }
+
+        /// <summary>
+        ///   Create a new hole.
+        /// </summary>
+        /// <param name="vertexIds">Vertex ids of the border in counterclockwise order.</param>
+        /// <param name="normals">Normals for the given vertices.</param>
+        public Hole(ReadOnlyCollection<int> vertexIds, ReadOnlyCollection<Vector3> normals)
+        {
+            AssertOrThrow.True(vertexIds.Count == normals.Count,
+              "Must have same number of vertices and normals.");
+            _vertexIds = vertexIds;
+            _normals = normals;
+        }
     }
-  }
 }

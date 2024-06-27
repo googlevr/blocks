@@ -16,9 +16,11 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
-  [Serializable]
-  public class ObjectStoreSearchResult {
-    public ObjectStoreEntry[] results;
-  }
+namespace com.google.apps.peltzer.client.api_clients.objectstore_client
+{
+    [Serializable]
+    public class ObjectStoreSearchResult
+    {
+        public ObjectStoreEntry[] results;
+    }
 }

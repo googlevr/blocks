@@ -12,25 +12,30 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  ///   Delete a mesh from the model.
-  /// </summary>
-  public class DeleteMeshCommand : Command {
-    private readonly int meshId;
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    ///   Delete a mesh from the model.
+    /// </summary>
+    public class DeleteMeshCommand : Command
+    {
+        private readonly int meshId;
 
-    public DeleteMeshCommand (int meshId) {
-      this.meshId = meshId;
+        public DeleteMeshCommand(int meshId)
+        {
+            this.meshId = meshId;
+        }
+
+        public void ApplyToModel(Model model)
+        {
+            model.DeleteMesh(meshId);
+        }
+
+        public Command GetUndoCommand(Model model)
+        {
+            return new AddMeshCommand(model.GetMesh(meshId));
+        }
+
+        public int MeshId { get { return meshId; } }
     }
-
-    public void ApplyToModel(Model model) {
-      model.DeleteMesh(meshId);
-    }
-
-    public Command GetUndoCommand(Model model) {
-      return new AddMeshCommand(model.GetMesh(meshId));
-    }
-
-    public int MeshId { get { return meshId; } }
-  }
 }

@@ -14,41 +14,47 @@
 
 using System;
 
-namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
+namespace com.google.apps.peltzer.client.api_clients.objectstore_client
+{
 
-  [Serializable]
-  public class ObjectStoreObjectAssets {
-    public string rootUrl;
-    public string[] supportingFiles;
-    public string baseFile;
-  }
+    [Serializable]
+    public class ObjectStoreObjectAssets
+    {
+        public string rootUrl;
+        public string[] supportingFiles;
+        public string baseFile;
+    }
 
-  [Serializable]
-  public class ObjectStorePeltzerAssets {
-    public string rootUrl;
-    public string[] supportingFiles;
-    public string baseFile;
-  }
+    [Serializable]
+    public class ObjectStorePeltzerAssets
+    {
+        public string rootUrl;
+        public string[] supportingFiles;
+        public string baseFile;
+    }
 
-  [Serializable]
-  public class ObjectStorePeltzerPackageAssets {
-    public string rootUrl;
-    public string[] supportingFiles;
-    public string baseFile;
-  }
+    [Serializable]
+    public class ObjectStorePeltzerPackageAssets
+    {
+        public string rootUrl;
+        public string[] supportingFiles;
+        public string baseFile;
+    }
 
-  [Serializable]
-  public class ObjectStoreObjMtlPackageAssets {
-    public string rootUrl;
-    public string[] supportingFiles;
-    public string baseFile;
-  }
+    [Serializable]
+    public class ObjectStoreObjMtlPackageAssets
+    {
+        public string rootUrl;
+        public string[] supportingFiles;
+        public string baseFile;
+    }
 
-  [Serializable]
-  public class ObjectStoreObjectAssetsWrapper {
-    public ObjectStoreObjectAssets obj;
-    public ObjectStorePeltzerAssets peltzer;
-    public ObjectStorePeltzerPackageAssets peltzer_package;
-    public ObjectStoreObjMtlPackageAssets object_package;
-  }
+    [Serializable]
+    public class ObjectStoreObjectAssetsWrapper
+    {
+        public ObjectStoreObjectAssets obj;
+        public ObjectStorePeltzerAssets peltzer;
+        public ObjectStorePeltzerPackageAssets peltzer_package;
+        public ObjectStoreObjMtlPackageAssets object_package;
+    }
 }

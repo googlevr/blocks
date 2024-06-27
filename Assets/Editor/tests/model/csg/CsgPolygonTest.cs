@@ -19,44 +19,50 @@ using System.Text;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.csg {
-  [TestFixture]
-  public class CsgPolygonTest {
-    [Test]
-    public void TestBaryCenter() {
-      CsgPolygon poly = toPoly(
-        new Vector3(-1, 0, -1), new Vector3(1, 0, -1), new Vector3(1, 0, 1), new Vector3(-1, 0, 1));
-      NUnit.Framework.Assert.AreEqual(0f, Vector3.Distance(poly.baryCenter, Vector3.zero), 0.001f);
+namespace com.google.apps.peltzer.client.model.csg
+{
+    [TestFixture]
+    public class CsgPolygonTest
+    {
+        [Test]
+        public void TestBaryCenter()
+        {
+            CsgPolygon poly = toPoly(
+              new Vector3(-1, 0, -1), new Vector3(1, 0, -1), new Vector3(1, 0, 1), new Vector3(-1, 0, 1));
+            NUnit.Framework.Assert.AreEqual(0f, Vector3.Distance(poly.baryCenter, Vector3.zero), 0.001f);
 
-      poly = toPoly(
-         new Vector3(-1, 3, -1), new Vector3(1, 3, -1), new Vector3(1, 3, 1), new Vector3(-1, 3, 1));
-      NUnit.Framework.Assert.AreEqual(0f, Vector3.Distance(poly.baryCenter, new Vector3(0, 3, 0)), 0.001f);
+            poly = toPoly(
+               new Vector3(-1, 3, -1), new Vector3(1, 3, -1), new Vector3(1, 3, 1), new Vector3(-1, 3, 1));
+            NUnit.Framework.Assert.AreEqual(0f, Vector3.Distance(poly.baryCenter, new Vector3(0, 3, 0)), 0.001f);
 
-      poly = toPoly(new Vector3(-1, 1, -1), new Vector3(1, 1, -1), new Vector3(1, 1, 1));
-      NUnit.Framework.Assert.AreEqual(0f, 
-        Vector3.Distance(poly.baryCenter, new Vector3(0.3333f, 1.0f, -0.333f)), 0.001f);
+            poly = toPoly(new Vector3(-1, 1, -1), new Vector3(1, 1, -1), new Vector3(1, 1, 1));
+            NUnit.Framework.Assert.AreEqual(0f,
+              Vector3.Distance(poly.baryCenter, new Vector3(0.3333f, 1.0f, -0.333f)), 0.001f);
+        }
+
+        [Test]
+        public void TestNormal()
+        {
+            CsgPolygon poly = toPoly(
+              new Vector3(-1, 0, -1), new Vector3(1, 0, -1), new Vector3(1, 0, 1), new Vector3(-1, 0, 1));
+            NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(0, -1, 0)), 0.001f);
+
+            poly = toPoly(new Vector3(-1, 10, -1), new Vector3(1, 10, -1), new Vector3(1, 10, 1));
+            NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(0, -1, 0)), 0.001f);
+
+            poly = toPoly(new Vector3(0, -1, -1), new Vector3(0, 1, -1), new Vector3(0, 0, 1));
+            NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(1, 0, 0)), 0.001f);
+        }
+
+        private CsgPolygon toPoly(params Vector3[] verts)
+        {
+            List<CsgVertex> poly = new List<CsgVertex>();
+            foreach (Vector3 vert in verts)
+            {
+                poly.Add(new CsgVertex(vert));
+            }
+            return new CsgPolygon(poly, new core.FaceProperties());
+        }
+
     }
-
-    [Test]
-    public void TestNormal() {
-      CsgPolygon poly = toPoly(
-        new Vector3(-1, 0, -1), new Vector3(1, 0, -1), new Vector3(1, 0, 1), new Vector3(-1, 0, 1));
-      NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(0, -1, 0)), 0.001f);
-
-      poly = toPoly(new Vector3(-1, 10, -1), new Vector3(1, 10, -1), new Vector3(1, 10, 1));
-      NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(0, -1, 0)), 0.001f);
-
-      poly = toPoly(new Vector3(0, -1, -1), new Vector3(0, 1, -1), new Vector3(0, 0, 1));
-      NUnit.Framework.Assert.AreEqual(0, Vector3.Distance(poly.plane.normal, new Vector3(1, 0, 0)), 0.001f);
-    }
-
-    private CsgPolygon toPoly(params Vector3[] verts) {
-      List<CsgVertex> poly = new List<CsgVertex>();
-      foreach (Vector3 vert in verts) {
-        poly.Add(new CsgVertex(vert));
-      }
-      return new CsgPolygon(poly, new core.FaceProperties());
-    }
-
-  }
 }

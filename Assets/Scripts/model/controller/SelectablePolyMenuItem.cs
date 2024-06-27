@@ -14,24 +14,27 @@
 
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableMenuItem that can be attached to a palette to change the current page of the PolyMenu.
-  ///   It is expected that these are configured in the Unity Editor with local:
-  ///   - y position of DEFAULT_Y_POSITION
-  ///   - y scale of DEFAULT_Y_SCALE
-  /// </summary>
-  public class SelectablePolyMenuItem : PolyMenuButton {
-    public int polyMenuIndex;
+    /// <summary>
+    ///   SelectableMenuItem that can be attached to a palette to change the current page of the PolyMenu.
+    ///   It is expected that these are configured in the Unity Editor with local:
+    ///   - y position of DEFAULT_Y_POSITION
+    ///   - y scale of DEFAULT_Y_SCALE
+    /// </summary>
+    public class SelectablePolyMenuItem : PolyMenuButton
+    {
+        public int polyMenuIndex;
 
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      main.GetPolyMenuMain().ApplyMenuChange(polyMenuIndex);
-      main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            main.GetPolyMenuMain().ApplyMenuChange(polyMenuIndex);
+            main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
 
-      // Bump down slightly and back up to its position, to provide a visual indication that
-      // the user's click was registered.
-      StartBump();
+            // Bump down slightly and back up to its position, to provide a visual indication that
+            // the user's click was registered.
+            StartBump();
+        }
     }
-  }
 }

@@ -14,73 +14,88 @@
 
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  ///   Command for changing the properties of faces on a MMesh.  This command only applies to a single
-  ///   mesh but can change one or more faces.
-  ///
-  ///   This command is used for painting, which consists of changing the material of one or more faces.
-  ///   Note that this command can be set up to apply the same properties to all indicated faces, or
-  ///   apply different properties to each face.
-  /// </summary>
-  public class ChangeFacePropertiesCommand : Command {
-    public const string COMMAND_NAME = "changeFaceProperties";
-
+namespace com.google.apps.peltzer.client.model.core
+{
     /// <summary>
-    /// The mesh ID whose faces are to be affected.
+    ///   Command for changing the properties of faces on a MMesh.  This command only applies to a single
+    ///   mesh but can change one or more faces.
+    ///
+    ///   This command is used for painting, which consists of changing the material of one or more faces.
+    ///   Note that this command can be set up to apply the same properties to all indicated faces, or
+    ///   apply different properties to each face.
     /// </summary>
-    private readonly int meshId;
+    public class ChangeFacePropertiesCommand : Command
+    {
+        public const string COMMAND_NAME = "changeFaceProperties";
 
-    /// <summary>
-    /// The FaceProperties to apply to each face in the mesh (map from face ID to the face properties to apply to it).
-    /// Only one of propertiesForAllFaces or propertiesByFaceId should be non-null.
-    /// </summary>
-    private readonly Dictionary<int, FaceProperties> propertiesByFaceId;
+        /// <summary>
+        /// The mesh ID whose faces are to be affected.
+        /// </summary>
+        private readonly int meshId;
 
-    /// <summary>
-    /// Properties to apply to ALL faces.
-    /// Only one of propertiesForAllFaces or propertiesByFaceId should be non-null.
-    /// </summary>
-    private readonly FaceProperties? propertiesForAllFaces;
+        /// <summary>
+        /// The FaceProperties to apply to each face in the mesh (map from face ID to the face properties to apply to it).
+        /// Only one of propertiesForAllFaces or propertiesByFaceId should be non-null.
+        /// </summary>
+        private readonly Dictionary<int, FaceProperties> propertiesByFaceId;
 
-    public ChangeFacePropertiesCommand(int meshId, Dictionary<int, FaceProperties> propertiesByFaceId) {
-      this.meshId = meshId;
-      this.propertiesByFaceId = propertiesByFaceId;
-    }
+        /// <summary>
+        /// Properties to apply to ALL faces.
+        /// Only one of propertiesForAllFaces or propertiesByFaceId should be non-null.
+        /// </summary>
+        private readonly FaceProperties? propertiesForAllFaces;
 
-    public ChangeFacePropertiesCommand(int meshId, FaceProperties propertiesForAllFaces) {
-      this.meshId = meshId;
-      this.propertiesForAllFaces = propertiesForAllFaces;
-    }
-
-    public int GetMeshId() {
-      return meshId;
-    }
-
-    public void ApplyToModel(Model model) {
-      if (propertiesForAllFaces != null) {
-        model.ChangeAllFaceProperties(meshId, propertiesForAllFaces.Value);
-      } else {
-        model.ChangeFaceProperties(meshId, propertiesByFaceId);
-      }
-    }
-
-    public Command GetUndoCommand(Model model) {
-      MMesh mesh = model.GetMesh(meshId);
-      Dictionary<int, FaceProperties> undoProps;
-
-      if (propertiesByFaceId == null) {
-        undoProps = new Dictionary<int, FaceProperties>(mesh.faceCount);
-        foreach (Face face in mesh.GetFaces()) {
-          undoProps[face.id] = face.properties;
+        public ChangeFacePropertiesCommand(int meshId, Dictionary<int, FaceProperties> propertiesByFaceId)
+        {
+            this.meshId = meshId;
+            this.propertiesByFaceId = propertiesByFaceId;
         }
-      } else {
-        undoProps = new Dictionary<int, FaceProperties>(propertiesByFaceId.Count);
-        foreach (int faceId in propertiesByFaceId.Keys) {
-          undoProps[faceId] = mesh.GetFace(faceId).properties;
+
+        public ChangeFacePropertiesCommand(int meshId, FaceProperties propertiesForAllFaces)
+        {
+            this.meshId = meshId;
+            this.propertiesForAllFaces = propertiesForAllFaces;
         }
-      }
-      return new ChangeFacePropertiesCommand(meshId, undoProps);
+
+        public int GetMeshId()
+        {
+            return meshId;
+        }
+
+        public void ApplyToModel(Model model)
+        {
+            if (propertiesForAllFaces != null)
+            {
+                model.ChangeAllFaceProperties(meshId, propertiesForAllFaces.Value);
+            }
+            else
+            {
+                model.ChangeFaceProperties(meshId, propertiesByFaceId);
+            }
+        }
+
+        public Command GetUndoCommand(Model model)
+        {
+            MMesh mesh = model.GetMesh(meshId);
+            Dictionary<int, FaceProperties> undoProps;
+
+            if (propertiesByFaceId == null)
+            {
+                undoProps = new Dictionary<int, FaceProperties>(mesh.faceCount);
+                foreach (Face face in mesh.GetFaces())
+                {
+                    undoProps[face.id] = face.properties;
+                }
+            }
+            else
+            {
+                undoProps = new Dictionary<int, FaceProperties>(propertiesByFaceId.Count);
+                foreach (int faceId in propertiesByFaceId.Keys)
+                {
+                    undoProps[faceId] = mesh.GetFace(faceId).properties;
+                }
+            }
+            return new ChangeFacePropertiesCommand(meshId, undoProps);
+        }
     }
-  }
 }

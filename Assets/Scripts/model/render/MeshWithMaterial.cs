@@ -14,17 +14,20 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.render {
-  /// <summary>
-  ///   Holds a pair of Mesh and Material.
-  /// </summary>
-  public struct MeshWithMaterial {
-    public Mesh mesh { get; private set; }
-    public MaterialAndColor materialAndColor { get; set; }
+namespace com.google.apps.peltzer.client.model.render
+{
+    /// <summary>
+    ///   Holds a pair of Mesh and Material.
+    /// </summary>
+    public struct MeshWithMaterial
+    {
+        public Mesh mesh { get; private set; }
+        public MaterialAndColor materialAndColor { get; set; }
 
-    public MeshWithMaterial(Mesh mesh, MaterialAndColor materialAndColor) {
-      this.mesh = mesh;
-      this.materialAndColor = materialAndColor;
+        public MeshWithMaterial(Mesh mesh, MaterialAndColor materialAndColor)
+        {
+            this.mesh = mesh;
+            this.materialAndColor = materialAndColor;
+        }
     }
-  }
 }

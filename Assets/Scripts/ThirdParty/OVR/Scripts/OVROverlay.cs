@@ -57,197 +57,197 @@ using VR = UnityEngine.VR;
 
 public class OVROverlay : MonoBehaviour
 {
-	public enum OverlayShape
-	{
-		Quad = 0,       // Display overlay as a quad
-		Cylinder = 1,   // [Mobile Only][Experimental] Display overlay as a cylinder, Translation only works correctly with vrDriver 1.04 or above 
-		Cubemap = 2,    // Display overlay as a cube map
-		OffcenterCubemap = 4,    // Display overlay as a cube map with a center offset 
-	}
+    public enum OverlayShape
+    {
+        Quad = 0,       // Display overlay as a quad
+        Cylinder = 1,   // [Mobile Only][Experimental] Display overlay as a cylinder, Translation only works correctly with vrDriver 1.04 or above 
+        Cubemap = 2,    // Display overlay as a cube map
+        OffcenterCubemap = 4,    // Display overlay as a cube map with a center offset 
+    }
 
-	public enum OverlayType
-	{
-		None,           // Disabled the overlay
-		Underlay,       // Eye buffers blend on top
-		Overlay,        // Blends on top of the eye buffer
-		OverlayShowLod  // (Deprecated) Blends on top and colorizes texture level of detail
-	};
+    public enum OverlayType
+    {
+        None,           // Disabled the overlay
+        Underlay,       // Eye buffers blend on top
+        Overlay,        // Blends on top of the eye buffer
+        OverlayShowLod  // (Deprecated) Blends on top and colorizes texture level of detail
+    };
 
 #if UNITY_ANDROID && !UNITY_EDITOR
 	const int maxInstances = 3;
 #else
-	const int maxInstances = 15;
+    const int maxInstances = 15;
 #endif
 
-	internal static OVROverlay[] instances = new OVROverlay[maxInstances];
+    internal static OVROverlay[] instances = new OVROverlay[maxInstances];
 
-	/// <summary>
-	/// Specify overlay's type
-	/// </summary>
-	public OverlayType currentOverlayType = OverlayType.Overlay;
+    /// <summary>
+    /// Specify overlay's type
+    /// </summary>
+    public OverlayType currentOverlayType = OverlayType.Overlay;
 
-	/// <summary>
-	/// Specify overlay's shape
-	/// </summary>
-	public OverlayShape currentOverlayShape = OverlayShape.Quad;
-	private OverlayShape _prevOverlayShape = OverlayShape.Quad;
+    /// <summary>
+    /// Specify overlay's shape
+    /// </summary>
+    public OverlayShape currentOverlayShape = OverlayShape.Quad;
+    private OverlayShape _prevOverlayShape = OverlayShape.Quad;
 
-	/// <summary>
-	/// Try to avoid setting texture frequently when app is running, texNativePtr updating is slow since rendering thread synchronization
-	/// Please cache your nativeTexturePtr and use  OverrideOverlayTextureInfo
-	/// </summary>
-	public Texture[] textures = new Texture[] { null, null };
-	private Texture[] cachedTextures = new Texture[] { null, null };
-	private IntPtr[] texNativePtrs = new IntPtr[] { IntPtr.Zero, IntPtr.Zero };
+    /// <summary>
+    /// Try to avoid setting texture frequently when app is running, texNativePtr updating is slow since rendering thread synchronization
+    /// Please cache your nativeTexturePtr and use  OverrideOverlayTextureInfo
+    /// </summary>
+    public Texture[] textures = new Texture[] { null, null };
+    private Texture[] cachedTextures = new Texture[] { null, null };
+    private IntPtr[] texNativePtrs = new IntPtr[] { IntPtr.Zero, IntPtr.Zero };
 
-	private int layerIndex = -1;
-	Renderer rend;
+    private int layerIndex = -1;
+    Renderer rend;
 
-	/// <summary>
-	/// Use this function to set texture and texNativePtr when app is running 
-	/// GetNativeTexturePtr is a slow behavior, the value should be pre-cached 
-	/// </summary>
-	public void OverrideOverlayTextureInfo(Texture srcTexture, IntPtr nativePtr, UnityEngine.XR.XRNode node)
-	{
-		int index = (node == UnityEngine.XR.XRNode.RightEye) ? 1 : 0;
+    /// <summary>
+    /// Use this function to set texture and texNativePtr when app is running 
+    /// GetNativeTexturePtr is a slow behavior, the value should be pre-cached 
+    /// </summary>
+    public void OverrideOverlayTextureInfo(Texture srcTexture, IntPtr nativePtr, UnityEngine.XR.XRNode node)
+    {
+        int index = (node == UnityEngine.XR.XRNode.RightEye) ? 1 : 0;
 
-		textures[index] = srcTexture;
-		cachedTextures[index] = srcTexture;
-		texNativePtrs[index] = nativePtr;
-	}
+        textures[index] = srcTexture;
+        cachedTextures[index] = srcTexture;
+        texNativePtrs[index] = nativePtr;
+    }
 
-	void Awake()
-	{
-		Debug.Log("Overlay Awake");
-		rend = GetComponent<Renderer>();
-		for (int i = 0; i < 2; ++i)
-		{
-			// Backward compatibility
-			if (rend != null && textures[i] == null)
-				textures[i] = rend.material.mainTexture;
+    void Awake()
+    {
+        Debug.Log("Overlay Awake");
+        rend = GetComponent<Renderer>();
+        for (int i = 0; i < 2; ++i)
+        {
+            // Backward compatibility
+            if (rend != null && textures[i] == null)
+                textures[i] = rend.material.mainTexture;
 
-			if (textures[i] != null)
-			{
-				cachedTextures[i] = textures[i];
-				texNativePtrs[i] = textures[i].GetNativeTexturePtr();
-			}
-		}
-	}
+            if (textures[i] != null)
+            {
+                cachedTextures[i] = textures[i];
+                texNativePtrs[i] = textures[i].GetNativeTexturePtr();
+            }
+        }
+    }
 
-	void OnEnable()
-	{
-		if (!OVRManager.isHmdPresent)
-		{
-			enabled = false;
-			return;
-		}
+    void OnEnable()
+    {
+        if (!OVRManager.isHmdPresent)
+        {
+            enabled = false;
+            return;
+        }
 
-		OnDisable();
+        OnDisable();
 
-		for (int i = 0; i < maxInstances; ++i)
-		{
-			if (instances[i] == null || instances[i] == this)
-			{
-				layerIndex = i;
-				instances[i] = this;
-				break;
-			}
-		}
-	}
+        for (int i = 0; i < maxInstances; ++i)
+        {
+            if (instances[i] == null || instances[i] == this)
+            {
+                layerIndex = i;
+                instances[i] = this;
+                break;
+            }
+        }
+    }
 
-	void OnDisable()
-	{
-		if (layerIndex != -1)
-		{
-			// Turn off the overlay if it was on.
-			OVRPlugin.SetOverlayQuad(true, false, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero, OVRPose.identity.ToPosef(), Vector3.one.ToVector3f(), layerIndex, (OVRPlugin.OverlayShape)_prevOverlayShape);
-			instances[layerIndex] = null;
-		}
-		layerIndex = -1;
-	}
+    void OnDisable()
+    {
+        if (layerIndex != -1)
+        {
+            // Turn off the overlay if it was on.
+            OVRPlugin.SetOverlayQuad(true, false, IntPtr.Zero, IntPtr.Zero, IntPtr.Zero, OVRPose.identity.ToPosef(), Vector3.one.ToVector3f(), layerIndex, (OVRPlugin.OverlayShape)_prevOverlayShape);
+            instances[layerIndex] = null;
+        }
+        layerIndex = -1;
+    }
 
-	void OnRenderObject()
-	{
-		// The overlay must be specified every eye frame, because it is positioned relative to the
-		// current head location.  If frames are dropped, it will be time warped appropriately,
-		// just like the eye buffers.
-		if (!Camera.current.CompareTag("MainCamera") || Camera.current.cameraType != CameraType.Game || layerIndex == -1 || currentOverlayType == OverlayType.None)
-			return;
+    void OnRenderObject()
+    {
+        // The overlay must be specified every eye frame, because it is positioned relative to the
+        // current head location.  If frames are dropped, it will be time warped appropriately,
+        // just like the eye buffers.
+        if (!Camera.current.CompareTag("MainCamera") || Camera.current.cameraType != CameraType.Game || layerIndex == -1 || currentOverlayType == OverlayType.None)
+            return;
 
 #if !UNITY_ANDROID || UNITY_EDITOR
-		if (currentOverlayShape == OverlayShape.Cylinder || currentOverlayShape == OverlayShape.OffcenterCubemap)
-		{
-			Debug.LogWarning("Overlay shape " + currentOverlayShape + " is not supported on current platform");
-		}
+        if (currentOverlayShape == OverlayShape.Cylinder || currentOverlayShape == OverlayShape.OffcenterCubemap)
+        {
+            Debug.LogWarning("Overlay shape " + currentOverlayShape + " is not supported on current platform");
+        }
 #endif
 
-		for (int i = 0; i < 2; ++i)
-		{
-			if (i >= textures.Length)
-				continue;
-			
-			if (textures[i] != cachedTextures[i])
-			{
-				cachedTextures[i] = textures[i];
-				if (cachedTextures[i] != null)
-					texNativePtrs[i] = cachedTextures[i].GetNativeTexturePtr();
-			}
+        for (int i = 0; i < 2; ++i)
+        {
+            if (i >= textures.Length)
+                continue;
 
-			if (currentOverlayShape == OverlayShape.Cubemap)
-			{
-				if (textures[i] != null && textures[i].GetType() != typeof(Cubemap))
-				{
-					Debug.LogError("Need Cubemap texture for cube map overlay");
-					return;
-				}
-			}
-		}
+            if (textures[i] != cachedTextures[i])
+            {
+                cachedTextures[i] = textures[i];
+                if (cachedTextures[i] != null)
+                    texNativePtrs[i] = cachedTextures[i].GetNativeTexturePtr();
+            }
 
-		if (cachedTextures[0] == null || texNativePtrs[0] == IntPtr.Zero)
-			return;
+            if (currentOverlayShape == OverlayShape.Cubemap)
+            {
+                if (textures[i] != null && textures[i].GetType() != typeof(Cubemap))
+                {
+                    Debug.LogError("Need Cubemap texture for cube map overlay");
+                    return;
+                }
+            }
+        }
 
-		bool overlay = (currentOverlayType == OverlayType.Overlay);
-		bool headLocked = false;
-		for (var t = transform; t != null && !headLocked; t = t.parent)
-			headLocked |= (t == Camera.current.transform);
+        if (cachedTextures[0] == null || texNativePtrs[0] == IntPtr.Zero)
+            return;
 
-		OVRPose pose = (headLocked) ? transform.ToHeadSpacePose() : transform.ToTrackingSpacePose();
-		Vector3 scale = transform.lossyScale;
-		for (int i = 0; i < 3; ++i)
-			scale[i] /= Camera.current.transform.lossyScale[i];
+        bool overlay = (currentOverlayType == OverlayType.Overlay);
+        bool headLocked = false;
+        for (var t = transform; t != null && !headLocked; t = t.parent)
+            headLocked |= (t == Camera.current.transform);
+
+        OVRPose pose = (headLocked) ? transform.ToHeadSpacePose() : transform.ToTrackingSpacePose();
+        Vector3 scale = transform.lossyScale;
+        for (int i = 0; i < 3; ++i)
+            scale[i] /= Camera.current.transform.lossyScale[i];
 
 #if !UNITY_ANDROID
-		if (currentOverlayShape == OverlayShape.Cubemap)
-		{
-			pose.position = Camera.current.transform.position;
-		}
+        if (currentOverlayShape == OverlayShape.Cubemap)
+        {
+            pose.position = Camera.current.transform.position;
+        }
 #endif
-		// Pack the offsetCenter directly into pose.position for offcenterCubemap
-		if (currentOverlayShape == OverlayShape.OffcenterCubemap)
-		{
-			pose.position = transform.position;
+        // Pack the offsetCenter directly into pose.position for offcenterCubemap
+        if (currentOverlayShape == OverlayShape.OffcenterCubemap)
+        {
+            pose.position = transform.position;
 
-			if ( pose.position.magnitude > 1.0f )
-			{
-				Debug.LogWarning("your cube map center offset's magnitude is greater than 1, which will cause some cube map pixel always invisible .");
-			}
-		}
+            if (pose.position.magnitude > 1.0f)
+            {
+                Debug.LogWarning("your cube map center offset's magnitude is greater than 1, which will cause some cube map pixel always invisible .");
+            }
+        }
 
-		// Cylinder overlay sanity checking
-		if (currentOverlayShape == OverlayShape.Cylinder)
-		{
-			float arcAngle = scale.x / scale.z / (float)Math.PI * 180.0f;
-			if (arcAngle > 180.0f)
-			{
-				Debug.LogError("Cylinder overlay's arc angle has to be below 180 degree, current arc angle is " + arcAngle + " degree." );
-				return ;
-			}
-		}
+        // Cylinder overlay sanity checking
+        if (currentOverlayShape == OverlayShape.Cylinder)
+        {
+            float arcAngle = scale.x / scale.z / (float)Math.PI * 180.0f;
+            if (arcAngle > 180.0f)
+            {
+                Debug.LogError("Cylinder overlay's arc angle has to be below 180 degree, current arc angle is " + arcAngle + " degree.");
+                return;
+            }
+        }
 
-		bool isOverlayVisible = OVRPlugin.SetOverlayQuad(overlay, headLocked, texNativePtrs[0], texNativePtrs[1], IntPtr.Zero, pose.flipZ().ToPosef(), scale.ToVector3f(), layerIndex, (OVRPlugin.OverlayShape)currentOverlayShape);
-		_prevOverlayShape = currentOverlayShape;
-		if (rend)
-			rend.enabled = !isOverlayVisible;
-	}
+        bool isOverlayVisible = OVRPlugin.SetOverlayQuad(overlay, headLocked, texNativePtrs[0], texNativePtrs[1], IntPtr.Zero, pose.flipZ().ToPosef(), scale.ToVector3f(), layerIndex, (OVRPlugin.OverlayShape)currentOverlayShape);
+        _prevOverlayShape = currentOverlayShape;
+        if (rend)
+            rend.enabled = !isOverlayVisible;
+    }
 
 }

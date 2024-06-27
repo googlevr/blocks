@@ -15,18 +15,21 @@
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.zandria;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableDetailsMenuItem that can be attached to a creation on the PolyMenu and used to open and populate the
-  ///   details section.
-  /// </summary>
-  public class SelectableDetailsMenuItem : SelectableMenuItem {
-    public Creation creation;
+    /// <summary>
+    ///   SelectableDetailsMenuItem that can be attached to a creation on the PolyMenu and used to open and populate the
+    ///   details section.
+    /// </summary>
+    public class SelectableDetailsMenuItem : SelectableMenuItem
+    {
+        public Creation creation;
 
-    public override void ApplyMenuOptions(PeltzerMain main) {
-      PeltzerMain.Instance.GetPolyMenuMain().OpenDetailsSection(creation);
-      main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
+            PeltzerMain.Instance.GetPolyMenuMain().OpenDetailsSection(creation);
+            main.audioLibrary.PlayClip(main.audioLibrary.menuSelectSound);
+        }
     }
-  }
 }

@@ -15,41 +15,43 @@
 using UnityEngine;
 using System.Collections;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   Descriptor for a button action.
-  /// </summary>
-  public enum ButtonAction {
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Null state.
+    ///   Descriptor for a button action.
     /// </summary>
-    NONE,
+    public enum ButtonAction
+    {
+        /// <summary>
+        ///   Null state.
+        /// </summary>
+        NONE,
 
-    /// <summary>
-    ///   Button was pressed.
-    /// </summary>
-    DOWN,
+        /// <summary>
+        ///   Button was pressed.
+        /// </summary>
+        DOWN,
 
-    /// <summary>
-    ///   Button was unpressed.
-    /// </summary>
-    UP,
+        /// <summary>
+        ///   Button was unpressed.
+        /// </summary>
+        UP,
 
-    /// <summary>
-    ///   Touchpad is grazed.
-    /// </summary>
-    TOUCHPAD,
+        /// <summary>
+        ///   Touchpad is grazed.
+        /// </summary>
+        TOUCHPAD,
 
-    /// <summary>
-    ///   Primarily in service of the trigger button so that
-    ///   an abstraction can be made to indicate a "light" trigger down.
-    /// </summary>
-    LIGHT_DOWN,
+        /// <summary>
+        ///   Primarily in service of the trigger button so that
+        ///   an abstraction can be made to indicate a "light" trigger down.
+        /// </summary>
+        LIGHT_DOWN,
 
-    /// <summary>
-    ///   Primarily in service of the trigger button so that
-    ///   an abstraction can be made  to indicate a "light" trigger up.
-    /// </summary>
-    LIGHT_UP
-  }
+        /// <summary>
+        ///   Primarily in service of the trigger button so that
+        ///   an abstraction can be made  to indicate a "light" trigger up.
+        /// </summary>
+        LIGHT_UP
+    }
 }

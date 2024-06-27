@@ -14,17 +14,21 @@
 
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  /// This command makes the video viewer invisible. It does not affect the Model.
-  /// </summary>
-  public class HideVideoViewerCommand : Command {
-    public void ApplyToModel(Model model) {
-      PeltzerMain.Instance.GetVideoViewer().SetActive(false);
-    }
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    /// This command makes the video viewer invisible. It does not affect the Model.
+    /// </summary>
+    public class HideVideoViewerCommand : Command
+    {
+        public void ApplyToModel(Model model)
+        {
+            PeltzerMain.Instance.GetVideoViewer().SetActive(false);
+        }
 
-    public Command GetUndoCommand(Model model) {
-      return new ShowVideoViewerCommand();
+        public Command GetUndoCommand(Model model)
+        {
+            return new ShowVideoViewerCommand();
+        }
     }
-  }
 }

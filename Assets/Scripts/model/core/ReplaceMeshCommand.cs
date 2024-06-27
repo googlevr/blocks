@@ -14,19 +14,22 @@
 
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.core {
-  public class ReplaceMeshCommand : CompositeCommand {
-    public new const string COMMAND_NAME = "replace";
+namespace com.google.apps.peltzer.client.model.core
+{
+    public class ReplaceMeshCommand : CompositeCommand
+    {
+        public new const string COMMAND_NAME = "replace";
 
-    public readonly int meshId;
-    private readonly MMesh mesh;
+        public readonly int meshId;
+        private readonly MMesh mesh;
 
-    public ReplaceMeshCommand(int meshId, MMesh mesh) : base(new List<Command>() {
+        public ReplaceMeshCommand(int meshId, MMesh mesh) : base(new List<Command>() {
       new DeleteMeshCommand(meshId),
       new AddMeshCommand(mesh)
-        }) {
-      this.meshId = meshId;
-      this.mesh = mesh;
+        })
+        {
+            this.meshId = meshId;
+            this.mesh = mesh;
+        }
     }
-  }
 }

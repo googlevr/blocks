@@ -15,35 +15,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.tools.utils {
-  /// <summary>
-  /// This class supplies instances of a material so that we don't need to reinstantiate, which can leak Materials.
-  /// The queue of instances is for situations where a draw call needs a unique instance (one of the properties is
-  /// animated in a way that may be different per-draw call, for example).  If more unique instances are requested than
-  /// exist, it will start reusing - this will cause a visual artifact, but as most of these animations are quite fast
-  /// it should be hard to trigger.
-  /// </summary>
-  public class MaterialCycler {
-    private Queue<Material> matQueue;
-    private Material fixedInstance;
+namespace com.google.apps.peltzer.client.tools.utils
+{
+    /// <summary>
+    /// This class supplies instances of a material so that we don't need to reinstantiate, which can leak Materials.
+    /// The queue of instances is for situations where a draw call needs a unique instance (one of the properties is
+    /// animated in a way that may be different per-draw call, for example).  If more unique instances are requested than
+    /// exist, it will start reusing - this will cause a visual artifact, but as most of these animations are quite fast
+    /// it should be hard to trigger.
+    /// </summary>
+    public class MaterialCycler
+    {
+        private Queue<Material> matQueue;
+        private Material fixedInstance;
 
-    public MaterialCycler(Material baseMaterial, int instanceSize) {
-      fixedInstance = new Material(baseMaterial);
-      matQueue = new Queue<Material>();
-      for (int i = 0; i < instanceSize; i++) {
-        matQueue.Enqueue(new Material(baseMaterial));
-      }
-    }
+        public MaterialCycler(Material baseMaterial, int instanceSize)
+        {
+            fixedInstance = new Material(baseMaterial);
+            matQueue = new Queue<Material>();
+            for (int i = 0; i < instanceSize; i++)
+            {
+                matQueue.Enqueue(new Material(baseMaterial));
+            }
+        }
 
-    public Material GetFixedMaterial() {
-      return fixedInstance;
-    }
+        public Material GetFixedMaterial()
+        {
+            return fixedInstance;
+        }
 
-    public Material GetInstanceOfMaterial() {
-      // Pull the material off the front of the queue, add it back to the end, then return it.
-      Material front = matQueue.Dequeue();
-      matQueue.Enqueue(front);
-      return front;
+        public Material GetInstanceOfMaterial()
+        {
+            // Pull the material off the front of the queue, add it back to the end, then return it.
+            Material front = matQueue.Dequeue();
+            matQueue.Enqueue(front);
+            return front;
+        }
     }
-  }
 }
