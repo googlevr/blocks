@@ -412,7 +412,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.event_name == 'push' &&
-      github.repository == 'icosa-foundation/open-brush' &&
+      github.repository == 'icosa-foundation/open-blocks' &&
       (github.ref == 'refs/heads/main' || contains(github.ref, 'refs/tags/v'))
 
     steps:
