@@ -180,4 +180,44 @@ public class GifEncodeTask {
   }
 }
 
+internal class AnimatedGifEncoder32 : IDisposable
+{
+  public void Dispose()
+  {
+    throw new NotImplementedException();
+  }
+  public void Start(string mGifName)
+  {
+    throw new NotImplementedException();
+  }
+  public void SetSize(int mGifWidth, int mGifHeight)
+  {
+    throw new NotImplementedException();
+  }
+  public void SetTransparent(Color32 color32, bool b)
+  {
+    throw new NotImplementedException();
+  }
+  public void SetDelay(int mFrameDelayMs)
+  {
+    throw new NotImplementedException();
+  }
+  public void SetRepeat(int i)
+  {
+    throw new NotImplementedException();
+  }
+  public float DitherStrength { get; set; }
+  public void PreAnalyzeFrame(Color32[] mFrame, int mGifWidth, int mGifHeight)
+  {
+    throw new NotImplementedException();
+  }
+  public void AddFrame(Color32[] mFrame, int mGifWidth, int mGifHeight)
+  {
+    throw new NotImplementedException();
+  }
+  public void Finish()
+  {
+    throw new NotImplementedException();
+  }
+}
 }  // namespace TiltBrush
