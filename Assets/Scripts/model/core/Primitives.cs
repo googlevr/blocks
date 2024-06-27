@@ -28,9 +28,7 @@ namespace com.google.apps.peltzer.client.model.core
     {
         // Note: the Shape enum is used to index things, so it should always start at 0 and count up
         // without skipping numbers. Do not define items to have arbitrary values. You will have a bad time.
-        public enum Shape { CONE, SPHERE, CUBE, CYLINDER, TORUS,
-            ICOSAHEDRON
-        };
+        public enum Shape { CONE, SPHERE, CUBE, CYLINDER, TORUS, ICOSAHEDRON };
         private const int LINES_OF_LATITUDE = 8;
         private const int LINES_OF_LONGITUDE = 12;
         public static readonly int NUM_SHAPES = Enum.GetValues(typeof(Shape)).Length;
@@ -46,49 +44,51 @@ namespace com.google.apps.peltzer.client.model.core
         private static readonly float GOLDEN_RATIO_SCALED = 0.1618033988749895f;
 
         private static readonly Vector3[] ICOSAHEDRON_POINTS = {
-      new Vector3(-0.1f, GOLDEN_RATIO_SCALED, 0),
-      new Vector3(0.1f, GOLDEN_RATIO_SCALED, 0),
-      new Vector3(-0.1f, -GOLDEN_RATIO_SCALED, 0),
-      new Vector3(0.1f, -GOLDEN_RATIO_SCALED, 0),
+            new Vector3(-0.1f, GOLDEN_RATIO_SCALED, 0),
+            new Vector3(0.1f, GOLDEN_RATIO_SCALED, 0),
+            new Vector3(-0.1f, -GOLDEN_RATIO_SCALED, 0),
+            new Vector3(0.1f, -GOLDEN_RATIO_SCALED, 0),
 
-      new Vector3(0, -0.1f, GOLDEN_RATIO_SCALED),
-      new Vector3(0, 0.1f, GOLDEN_RATIO_SCALED),
-      new Vector3(0, -0.1f, -GOLDEN_RATIO_SCALED),
-      new Vector3(0, 0.1f, -GOLDEN_RATIO_SCALED),
+            new Vector3(0, -0.1f, GOLDEN_RATIO_SCALED),
+            new Vector3(0, 0.1f, GOLDEN_RATIO_SCALED),
+            new Vector3(0, -0.1f, -GOLDEN_RATIO_SCALED),
+            new Vector3(0, 0.1f, -GOLDEN_RATIO_SCALED),
 
-      new Vector3(GOLDEN_RATIO_SCALED, 0, -0.1f),
-      new Vector3(GOLDEN_RATIO_SCALED, 0, 0.1f),
-      new Vector3(-GOLDEN_RATIO_SCALED, 0, -0.1f),
-      new Vector3(-GOLDEN_RATIO_SCALED, 0, 0.1f)};
+            new Vector3(GOLDEN_RATIO_SCALED, 0, -0.1f),
+            new Vector3(GOLDEN_RATIO_SCALED, 0, 0.1f),
+            new Vector3(-GOLDEN_RATIO_SCALED, 0, -0.1f),
+            new Vector3(-GOLDEN_RATIO_SCALED, 0, 0.1f)
+        };
 
         private static readonly List<int>[] ICOSAHEDRON_FACES = {
-      // Faces around point 0.
-      new List<int> { 0, 11, 5 },
-      new List<int> { 0, 5, 1 },
-      new List<int> { 0, 1, 7 },
-      new List<int> { 0, 7, 10 },
-      new List<int> { 0, 10, 11 },
+            // Faces around point 0.
+            new List<int> { 0, 11, 5 },
+            new List<int> { 0, 5, 1 },
+            new List<int> { 0, 1, 7 },
+            new List<int> { 0, 7, 10 },
+            new List<int> { 0, 10, 11 },
 
-      // Faces adjacent to point 0.
-      new List<int> { 1, 5, 9 },
-      new List<int> { 5, 11, 4 },
-      new List<int> { 11, 10, 2 },
-      new List<int> { 10, 7, 6 },
-      new List<int> { 7, 1, 8 },
+            // Faces adjacent to point 0.
+            new List<int> { 1, 5, 9 },
+            new List<int> { 5, 11, 4 },
+            new List<int> { 11, 10, 2 },
+            new List<int> { 10, 7, 6 },
+            new List<int> { 7, 1, 8 },
 
-      // Faces around point 3.
-      new List<int> { 3, 9, 4 },
-      new List<int> { 3, 4, 2 },
-      new List<int> { 3, 2, 6 },
-      new List<int> { 3, 6, 8 },
-      new List<int> { 3, 8, 9 },
+            // Faces around point 3.
+            new List<int> { 3, 9, 4 },
+            new List<int> { 3, 4, 2 },
+            new List<int> { 3, 2, 6 },
+            new List<int> { 3, 6, 8 },
+            new List<int> { 3, 8, 9 },
 
-      // Faces adjacent to point 3.
-      new List<int> { 4, 9, 5 },
-      new List<int> { 2, 4, 11 },
-      new List<int> { 6, 2, 10 },
-      new List<int> { 8, 6, 7 },
-      new List<int> { 9, 8, 1 }};
+            // Faces adjacent to point 3.
+            new List<int> { 4, 9, 5 },
+            new List<int> { 2, 4, 11 },
+            new List<int> { 6, 2, 10 },
+            new List<int> { 8, 6, 7 },
+            new List<int> { 9, 8, 1 }
+        };
 
         public static MMesh BuildPrimitive(Shape shape, Vector3 scale, Vector3 offset, int id, int material)
         {
@@ -105,7 +105,7 @@ namespace com.google.apps.peltzer.client.model.core
                 case Shape.TORUS:
                     return Torus(id, offset, scale, material);
                 case Shape.ICOSAHEDRON:
-                    return Icosahedron(id, offset, scale, material);
+                    return AxisAlignedIcosphere(id, offset, scale, material, 0);
                 default:
                     return AxisAlignedBox(id, offset, scale, material);
             }
@@ -666,61 +666,6 @@ namespace com.google.apps.peltzer.client.model.core
             }
 
             return new MMesh(id, center, Quaternion.identity, vertices, faces);
-        }
-
-        /// <summary>
-        ///   Create an icosahedron
-        /// </summary>
-        /// <param name="id">Id for the mesh.</param>
-        /// <param name="center">Center of the icosahedron.</param>
-        /// <param name="scale">Scale of icosahedron.</param>
-        /// <param name="materialId">Material id for the mesh.</param>
-        /// <returns>An MMesh that renders an icosahedron.</returns>
-        public static MMesh Icosahedron(
-            int id, Vector3 center, Vector3 scale, int materialId) {
-            FaceProperties faceProperties = new FaceProperties(materialId);
-            Dictionary<int, Vertex> vertices = new Dictionary<int, Vertex>
-            {
-                // Vertices for an icosahedron of unit radius
-                {0, new Vertex(0, new Vector3(-0.1f, GOLDEN_RATIO_SCALED, 0))},
-                {1, new Vertex(1, new Vector3(0.1f, GOLDEN_RATIO_SCALED, 0))},
-                {2, new Vertex(2, new Vector3(-0.1f, -GOLDEN_RATIO_SCALED, 0))},
-                {3, new Vertex(3, new Vector3(0.1f, -GOLDEN_RATIO_SCALED, 0))},
-                {4, new Vertex(4, new Vector3(0, -0.1f, GOLDEN_RATIO_SCALED))},
-                {5, new Vertex(5, new Vector3(0, 0.1f, GOLDEN_RATIO_SCALED))},
-                {6, new Vertex(6, new Vector3(0, -0.1f, -GOLDEN_RATIO_SCALED))},
-                {7, new Vertex(7, new Vector3(0, 0.1f, -GOLDEN_RATIO_SCALED))},
-                {8, new Vertex(8, new Vector3(GOLDEN_RATIO_SCALED, 0, -0.1f))},
-                {9, new Vertex(9, new Vector3(GOLDEN_RATIO_SCALED, 0, 0.1f))},
-                {10, new Vertex(10, new Vector3(-GOLDEN_RATIO_SCALED, 0, -0.1f))},
-                {11, new Vertex(11, new Vector3(-GOLDEN_RATIO_SCALED, 0, 0.1f))}
-            };
-
-            var faces = new List<Face>
-            {
-                new Face(0, new List<int>{0, 1, 4}.AsReadOnly(), vertices, faceProperties),
-                new Face(1, new List<int>{0, 4, 5}.AsReadOnly(), vertices, faceProperties),
-                new Face(2, new List<int>{0, 5, 10}.AsReadOnly(), vertices, faceProperties),
-                new Face(3, new List<int>{0, 10, 11}.AsReadOnly(), vertices, faceProperties),
-                new Face(4, new List<int>{0, 11, 1}.AsReadOnly(), vertices, faceProperties),
-                new Face(5, new List<int>{1, 5, 9}.AsReadOnly(), vertices, faceProperties),
-                new Face(6, new List<int>{1, 9, 8}.AsReadOnly(), vertices, faceProperties),
-                new Face(7, new List<int>{1, 8, 4}.AsReadOnly(), vertices, faceProperties),
-                new Face(8, new List<int>{2, 3, 6}.AsReadOnly(), vertices, faceProperties),
-                new Face(9, new List<int>{2, 6, 7}.AsReadOnly(), vertices, faceProperties),
-                new Face(10, new List<int>{2, 7, 11}.AsReadOnly(), vertices, faceProperties),
-                new Face(11, new List<int>{2, 11, 10}.AsReadOnly(), vertices, faceProperties),
-                new Face(12, new List<int>{2, 10, 3}.AsReadOnly(), vertices, faceProperties),
-                new Face(13, new List<int>{3, 9, 8}.AsReadOnly(), vertices, faceProperties),
-                new Face(14, new List<int>{3, 8, 6}.AsReadOnly(), vertices, faceProperties),
-                new Face(15, new List<int>{3, 6, 9}.AsReadOnly(), vertices, faceProperties),
-                new Face(16, new List<int>{4, 8, 7}.AsReadOnly(), vertices, faceProperties),
-                new Face(17, new List<int>{4, 7, 5}.AsReadOnly(), vertices, faceProperties),
-                new Face(18, new List<int>{5, 7, 11}.AsReadOnly(), vertices, faceProperties),
-                new Face(19, new List<int>{5, 11, 9}.AsReadOnly(), vertices, faceProperties)
-
-            };
-            return new MMesh(id, center, Quaternion.identity, vertices, faces.ToDictionary(f => f.id));
         }
     }
 }
