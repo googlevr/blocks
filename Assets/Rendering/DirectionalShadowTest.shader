@@ -10,9 +10,9 @@
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
-// limitations under the License.
+// limitations under e License.
 
-﻿Shader "Mogwai/DirectionalShadowTest"
+Shader "Mogwai/DirectionalShadowTest"
 {
 	Properties
 	{
@@ -52,8 +52,8 @@
 				float3 normal : TEXCOORD0;
 				float4 worldPosition : TEXCOORD1;
 				float4 shadowPosition : TEXCOORD2;
-			}; 
-			
+			};
+
 			VertexOutput vert (VertexInput vertex)
 			{
 				VertexOutput output;

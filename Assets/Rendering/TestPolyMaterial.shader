@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-﻿Shader "Mogwai/TestPolyMaterial"
+Shader "Mogwai/TestPolyMaterial"
 {
 	Properties
 	{
@@ -54,8 +54,8 @@
 				float4 worldPosition : TEXCOORD1;
 				float4 shadowPosition : TEXCOORD2;
 				float2 uv : TEXCOORD3;
-			}; 
-			
+			};
+
 			VertexOutput vert (VertexInput vertex)
 			{
 				VertexOutput output;
