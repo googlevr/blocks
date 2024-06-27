@@ -24,22 +24,24 @@ using System;
 /// was obtained from. This is why you might see in the code that ObjectStoreEntry (and related classes) are
 /// used for Zandria loading code.
 /// </summary>
-namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
-  [Serializable]
-  public class ObjectStoreEntry {
-    public string id; // This is the 'asset id', we can't rename it due to a dependency in mogwai-objectstore, 
-    public string localId;
-    public string[] tags;
-    public ObjectStoreObjectAssetsWrapper assets;
-    public bool isPrivateAsset;
-    public string thumbnail;
-    public string author;
-    public string title;
-    public string description;
-    public string webViewConfig;
-    public DateTime createdDate;
-    public string localThumbnailFile;
-    public string localPeltzerFile;
-    public Vector3 cameraForward;
-  }
+namespace com.google.apps.peltzer.client.api_clients.objectstore_client
+{
+    [Serializable]
+    public class ObjectStoreEntry
+    {
+        public string id; // This is the 'asset id', we can't rename it due to a dependency in mogwai-objectstore, 
+        public string localId;
+        public string[] tags;
+        public ObjectStoreObjectAssetsWrapper assets;
+        public bool isPrivateAsset;
+        public string thumbnail;
+        public string author;
+        public string title;
+        public string description;
+        public string webViewConfig;
+        public DateTime createdDate;
+        public string localThumbnailFile;
+        public string localPeltzerFile;
+        public Vector3 cameraForward;
+    }
 }

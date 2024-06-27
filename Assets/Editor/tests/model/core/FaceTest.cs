@@ -17,33 +17,36 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.core {
+namespace com.google.apps.peltzer.client.model.core
+{
 
-  [TestFixture]
-  // Tests for Face.
-  public class FaceTest {
+    [TestFixture]
+    // Tests for Face.
+    public class FaceTest
+    {
 
-    [Test]
-    public void TestClone() {
-      List<int> verts = new List<int>();
-      Vector3 norm = new Vector3(0, 1, 0);
-      FaceProperties props = new FaceProperties(47);
+        [Test]
+        public void TestClone()
+        {
+            List<int> verts = new List<int>();
+            Vector3 norm = new Vector3(0, 1, 0);
+            FaceProperties props = new FaceProperties(47);
 
-      verts.Add(0);
-      verts.Add(1);
+            verts.Add(0);
+            verts.Add(1);
 
-      Face face = new Face(/* faceId */ 2, verts.AsReadOnly(), norm, props);
+            Face face = new Face(/* faceId */ 2, verts.AsReadOnly(), norm, props);
 
-      Face clone = face.Clone();
+            Face clone = face.Clone();
 
-      NUnit.Framework.Assert.AreSame(face.normal, clone.normal,
-        "Normals are immutable and should be shared.");
-      NUnit.Framework.Assert.AreSame(face.vertexIds, clone.vertexIds,
-        "Vertices are immutable and should be shared.");
-      NUnit.Framework.Assert.AreNotSame(face.properties, clone.properties);
+            NUnit.Framework.Assert.AreSame(face.normal, clone.normal,
+              "Normals are immutable and should be shared.");
+            NUnit.Framework.Assert.AreSame(face.vertexIds, clone.vertexIds,
+              "Vertices are immutable and should be shared.");
+            NUnit.Framework.Assert.AreNotSame(face.properties, clone.properties);
 
-      NUnit.Framework.Assert.AreEqual(
-        face.properties.materialId, clone.properties.materialId);
+            NUnit.Framework.Assert.AreEqual(
+              face.properties.materialId, clone.properties.materialId);
+        }
     }
-  }
 }

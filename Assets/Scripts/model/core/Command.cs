@@ -12,26 +12,28 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  ///   A command represents a mutation of the Model. For example, adding, moving, modifying or deleting meshes
-  ///   are commands. In general, UI code should only mutate the Model by using a Command because that allows
-  ///   undo/redo to work correctly.
-  /// </summary>
-  public interface Command {
+namespace com.google.apps.peltzer.client.model.core
+{
     /// <summary>
-    ///   Mutate the model with this command.
+    ///   A command represents a mutation of the Model. For example, adding, moving, modifying or deleting meshes
+    ///   are commands. In general, UI code should only mutate the Model by using a Command because that allows
+    ///   undo/redo to work correctly.
     /// </summary>
-    /// <param name="model">The model.</param>
-    void ApplyToModel(Model model);
+    public interface Command
+    {
+        /// <summary>
+        ///   Mutate the model with this command.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        void ApplyToModel(Model model);
 
-    /// <summary>
-    ///   Create a command that will undo this Command.  This will be
-    ///   called before ApplyToModel so that it will have the desired
-    ///   end state available to it.
-    /// </summary>
-    /// <param name="model">The model.</param>
-    /// <returns>The undo command.</returns>
-    Command GetUndoCommand(Model model);
-  }
+        /// <summary>
+        ///   Create a command that will undo this Command.  This will be
+        ///   called before ApplyToModel so that it will have the desired
+        ///   end state available to it.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>The undo command.</returns>
+        Command GetUndoCommand(Model model);
+    }
 }

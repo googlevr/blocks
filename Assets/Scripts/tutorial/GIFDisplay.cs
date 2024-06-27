@@ -18,28 +18,31 @@ using UnityEngine;
 /// <summary>
 ///   This class acts as a pseudo GIF, providing a simple mechanic for looping frame based animation.
 /// </summary>
-public class GIFDisplay : MonoBehaviour {
-  /// <summary>
-  ///   The speed of the animation specified as the number of frames per second.
-  /// </summary>
-  public int framesPerSecond = 2;
-  /// <summary>
-  ///   Arrays of Textures representing the frames of the animation.
-  /// </summary>
-  public Texture[] frames;
-  public Texture[] riftFrames;
+public class GIFDisplay : MonoBehaviour
+{
+    /// <summary>
+    ///   The speed of the animation specified as the number of frames per second.
+    /// </summary>
+    public int framesPerSecond = 2;
+    /// <summary>
+    ///   Arrays of Textures representing the frames of the animation.
+    /// </summary>
+    public Texture[] frames;
+    public Texture[] riftFrames;
 
-  /// <summary>
-  ///   Determines which frame to play based on frames per second in a loop.
-  /// </summary>
-  void Update() {
-    Texture[] framesToUse = Config.Instance.VrHardware == VrHardware.Vive ? frames : riftFrames;
+    /// <summary>
+    ///   Determines which frame to play based on frames per second in a loop.
+    /// </summary>
+    void Update()
+    {
+        Texture[] framesToUse = Config.Instance.VrHardware == VrHardware.Vive ? frames : riftFrames;
 
-    if (frames.Length == 0) {
-      Debug.Log("no frames!");
-      return;
+        if (frames.Length == 0)
+        {
+            Debug.Log("no frames!");
+            return;
+        }
+        int idx = Mathf.FloorToInt((Time.time * framesPerSecond) % framesToUse.Length);
+        gameObject.transform.GetComponent<Renderer>().material.mainTexture = framesToUse[idx];
     }
-    int idx = Mathf.FloorToInt((Time.time * framesPerSecond) % framesToUse.Length);
-    gameObject.transform.GetComponent<Renderer>().material.mainTexture = framesToUse[idx];
-  }
 }

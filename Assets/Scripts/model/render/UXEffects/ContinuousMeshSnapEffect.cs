@@ -21,38 +21,45 @@ using UnityEngine;
 using Valve.VR;
 using com.google.apps.peltzer.client.tools.utils;
 
-namespace com.google.apps.peltzer.client.model.render {
-  /// <summary>
-  /// UX Effect which renders mesh snap axes.
-  /// </summary>
-  class ContinuousMeshSnapEffect {
-    List<FaceKey> highlightedFaces = new List<FaceKey>();
-
+namespace com.google.apps.peltzer.client.model.render
+{
     /// <summary>
-    /// Constructs the effect, Initialize must still be called before the effect starts to take place.
+    /// UX Effect which renders mesh snap axes.
     /// </summary>
-    /// <param name="snapTarget">The MMesh id of the target mesh to play the shader on.</param>
-    public ContinuousMeshSnapEffect() {
+    class ContinuousMeshSnapEffect
+    {
+        List<FaceKey> highlightedFaces = new List<FaceKey>();
+
+        /// <summary>
+        /// Constructs the effect, Initialize must still be called before the effect starts to take place.
+        /// </summary>
+        /// <param name="snapTarget">The MMesh id of the target mesh to play the shader on.</param>
+        public ContinuousMeshSnapEffect()
+        {
+        }
+
+        public void Finish()
+        {
+            HighlightUtils highlightUtils = PeltzerMain.Instance.highlightUtils;
+            foreach (FaceKey highlightedFace in highlightedFaces)
+            {
+                highlightUtils.TurnOff(highlightedFace);
+            }
+        }
+
+        public void UpdateFromSnapSpace(MeshSnapSpace meshSnapSpace)
+        {
+            MMesh targetMesh = PeltzerMain.Instance.GetModel().GetMesh(meshSnapSpace.targetMeshId);
+            HighlightUtils highlightUtils = PeltzerMain.Instance.highlightUtils;
+
+            foreach (Face targetFace in targetMesh.GetFaces())
+            {
+                FaceKey faceKey = new core.FaceKey(targetMesh.id, targetFace.id);
+                highlightUtils.TurnOn(faceKey);
+                highlightUtils.SetFaceStyleToSelect(faceKey, targetMesh.offset);
+
+                highlightedFaces.Add(faceKey);
+            }
+        }
     }
-
-    public void Finish() {
-      HighlightUtils highlightUtils = PeltzerMain.Instance.highlightUtils;
-      foreach (FaceKey highlightedFace in highlightedFaces) {
-        highlightUtils.TurnOff(highlightedFace);
-      }
-    }
-
-    public void UpdateFromSnapSpace(MeshSnapSpace meshSnapSpace) {
-      MMesh targetMesh = PeltzerMain.Instance.GetModel().GetMesh(meshSnapSpace.targetMeshId);
-      HighlightUtils highlightUtils = PeltzerMain.Instance.highlightUtils;
-
-      foreach (Face targetFace in targetMesh.GetFaces()) {
-        FaceKey faceKey = new core.FaceKey(targetMesh.id, targetFace.id);
-        highlightUtils.TurnOn(faceKey);
-        highlightUtils.SetFaceStyleToSelect(faceKey, targetMesh.offset);
-
-        highlightedFaces.Add(faceKey);
-      }
-    }
-  }
 }

@@ -14,30 +14,34 @@
 
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.tutorial {
-  /// <summary>
-  /// Represents a tutorial. A tutorial is a single lesson in user education (for example, a lesson
-  /// that teaches the user how to place and move objects). It is made up of a list of steps,
-  /// which the user must go through in sequence.
-  /// </summary>
-  public abstract class Tutorial {
-    public List<ITutorialStep> steps { get; private set; }
-
-    protected Tutorial() {
-      steps = new List<ITutorialStep>();
-    }
-
+namespace com.google.apps.peltzer.client.tutorial
+{
     /// <summary>
-    /// Called to prepare the tutorial. This is called before the first step.
+    /// Represents a tutorial. A tutorial is a single lesson in user education (for example, a lesson
+    /// that teaches the user how to place and move objects). It is made up of a list of steps,
+    /// which the user must go through in sequence.
     /// </summary>
-    public virtual void OnPrepare() {}
+    public abstract class Tutorial
+    {
+        public List<ITutorialStep> steps { get; private set; }
 
-    /// <summary>
-    /// Adds a new tutorial step.
-    /// </summary>
-    /// <param name="step"></param>
-    protected void AddStep(ITutorialStep step) {
-      steps.Add(step);
+        protected Tutorial()
+        {
+            steps = new List<ITutorialStep>();
+        }
+
+        /// <summary>
+        /// Called to prepare the tutorial. This is called before the first step.
+        /// </summary>
+        public virtual void OnPrepare() { }
+
+        /// <summary>
+        /// Adds a new tutorial step.
+        /// </summary>
+        /// <param name="step"></param>
+        protected void AddStep(ITutorialStep step)
+        {
+            steps.Add(step);
+        }
     }
-  }
 }

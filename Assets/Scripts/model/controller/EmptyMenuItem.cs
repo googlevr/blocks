@@ -14,15 +14,18 @@
 
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  /// <summary>
-  ///   SelectableMenuItem that can be attached to items on the palette menu that are empty space.
-  ///   This will allow us to hide the toolhead when hovering over nonbutton portions of the menu.
-  /// </summary>
-  public class EmptyMenuItem : SelectableMenuItem {
-    public override void ApplyMenuOptions(PeltzerMain main) {
+    /// <summary>
+    ///   SelectableMenuItem that can be attached to items on the palette menu that are empty space.
+    ///   This will allow us to hide the toolhead when hovering over nonbutton portions of the menu.
+    /// </summary>
+    public class EmptyMenuItem : SelectableMenuItem
+    {
+        public override void ApplyMenuOptions(PeltzerMain main)
+        {
 
+        }
     }
-  }
 }

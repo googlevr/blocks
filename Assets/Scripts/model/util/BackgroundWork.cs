@@ -17,21 +17,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace com.google.apps.peltzer.client.model.util {
-
-  /// <summary>
-  ///   Work to be done on a background thread.
-  /// </summary>
-  public interface BackgroundWork {
+namespace com.google.apps.peltzer.client.model.util
+{
 
     /// <summary>
-    ///   The work to be done on the background.
+    ///   Work to be done on a background thread.
     /// </summary>
-    void BackgroundWork();
+    public interface BackgroundWork
+    {
 
-    /// <summary>
-    ///   Work to be done on the main thread after the background work is completed.
-    /// </summary>
-    void PostWork();
-  }
+        /// <summary>
+        ///   The work to be done on the background.
+        /// </summary>
+        void BackgroundWork();
+
+        /// <summary>
+        ///   Work to be done on the main thread after the background work is completed.
+        /// </summary>
+        void PostWork();
+    }
 }

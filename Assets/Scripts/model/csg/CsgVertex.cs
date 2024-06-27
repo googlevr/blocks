@@ -17,34 +17,39 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.csg {
-  public enum VertexStatus {
-    UNKNOWN,
-    INSIDE,
-    OUTSIDE,
-    BOUNDARY
-  }
-
-  /// <summary>
-  ///   A vertex with an associated 'status'.  The status determines whether a given vertex is inside another
-  ///   object (or outside or on its boundary).
-  /// </summary>
-  [System.Diagnostics.DebuggerDisplay("{ToString()}")]
-  public class CsgVertex {
-    public Vector3 loc { get; private set; }
-    public HashSet<CsgVertex> neighbors { get; private set; }
-    public VertexStatus status { get; set; }
-    private readonly String asString;
-
-    public CsgVertex(Vector3 loc) {
-      this.loc = loc;
-      this.neighbors = new HashSet<CsgVertex>();
-      this.status = VertexStatus.UNKNOWN;
-      this.asString = "(" + loc.x.ToString("0.000") + ", " + loc.y.ToString("0.000") + ", " + loc.z.ToString("0.000") + ")";
+namespace com.google.apps.peltzer.client.model.csg
+{
+    public enum VertexStatus
+    {
+        UNKNOWN,
+        INSIDE,
+        OUTSIDE,
+        BOUNDARY
     }
 
-    public override string ToString() {
-      return asString;
+    /// <summary>
+    ///   A vertex with an associated 'status'.  The status determines whether a given vertex is inside another
+    ///   object (or outside or on its boundary).
+    /// </summary>
+    [System.Diagnostics.DebuggerDisplay("{ToString()}")]
+    public class CsgVertex
+    {
+        public Vector3 loc { get; private set; }
+        public HashSet<CsgVertex> neighbors { get; private set; }
+        public VertexStatus status { get; set; }
+        private readonly String asString;
+
+        public CsgVertex(Vector3 loc)
+        {
+            this.loc = loc;
+            this.neighbors = new HashSet<CsgVertex>();
+            this.status = VertexStatus.UNKNOWN;
+            this.asString = "(" + loc.x.ToString("0.000") + ", " + loc.y.ToString("0.000") + ", " + loc.z.ToString("0.000") + ")";
+        }
+
+        public override string ToString()
+        {
+            return asString;
+        }
     }
-  }
 }

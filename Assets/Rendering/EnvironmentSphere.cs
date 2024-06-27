@@ -16,23 +16,27 @@ using UnityEngine;
 using System.Collections;
 
 [ExecuteInEditMode]
-public class EnvironmentSphere : MonoBehaviour {
+public class EnvironmentSphere : MonoBehaviour
+{
 
     public Texture2D ambientTex;
     public float ambientStrength;
     private float cachedAmbientStrength;
-	
-	void Start () {
-	   Shader.SetGlobalTexture("_EnvironmentSphere", ambientTex);
-       cachedAmbientStrength = ambientStrength;
-       Shader.SetGlobalFloat("_EnviroStrength", cachedAmbientStrength);
-	}
-	
-	void Update(){
-        if(cachedAmbientStrength != ambientStrength){
+
+    void Start()
+    {
+        Shader.SetGlobalTexture("_EnvironmentSphere", ambientTex);
+        cachedAmbientStrength = ambientStrength;
+        Shader.SetGlobalFloat("_EnviroStrength", cachedAmbientStrength);
+    }
+
+    void Update()
+    {
+        if (cachedAmbientStrength != ambientStrength)
+        {
             cachedAmbientStrength = ambientStrength;
             Shader.SetGlobalFloat("_EnviroStrength", cachedAmbientStrength);
         }
-        
+
     }
 }
