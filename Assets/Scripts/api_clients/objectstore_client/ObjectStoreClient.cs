@@ -99,7 +99,7 @@ namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
       System.Action<ObjectStoreSearchResult> callback) {
       using (searchRequest) {
         yield return searchRequest.Send();
-        if (!searchRequest.isError) {
+        if (!searchRequest.isNetworkError) {
           callback(JsonUtility.FromJson<ObjectStoreSearchResult>(searchRequest.downloadHandler.text));
         }
       }
@@ -116,7 +116,7 @@ namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
             .Append(entry.assets.object_package.baseFile);
         using (UnityWebRequest fetchRequest = GetNewGetRequest(zipUrl, "text/plain")) {
           yield return fetchRequest.Send();
-          if (!fetchRequest.isError) {
+          if (!fetchRequest.isNetworkError) {
             PeltzerMain.Instance.DoPolyMenuBackgroundWork(new CreateMeshFromStreamWork(fetchRequest.downloadHandler, callback));
           }
         }
@@ -125,14 +125,14 @@ namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
           new StringBuilder(OBJECT_STORE_BASE_URL).Append(entry.assets.obj.rootUrl).Append(entry.assets.obj.baseFile);
         using (UnityWebRequest fetchRequest = GetNewGetRequest(url, "text/plain")) {
           yield return fetchRequest.Send();
-          if (!fetchRequest.isError) {
+          if (!fetchRequest.isNetworkError) {
           } else {
             if (entry.assets.obj.supportingFiles != null && entry.assets.obj.supportingFiles.Length > 0) {
               using (UnityWebRequest materialFetch =
                     GetNewGetRequest(new StringBuilder(OBJECT_STORE_BASE_URL).Append(entry.assets.obj.rootUrl).Append(
                     entry.assets.obj.supportingFiles[0]), "text/plain")) {
                 yield return materialFetch.Send();
-                if (!materialFetch.isError) {
+                if (!materialFetch.isNetworkError) {
                   PeltzerMain.Instance.DoPolyMenuBackgroundWork(new CreateMeshWork(ObjImporter.ImportMaterials(
                       materialFetch.downloadHandler.text), fetchRequest.downloadHandler.text, callback));
                 }
@@ -193,7 +193,7 @@ namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
           .Append(entry.assets.peltzer_package.baseFile);
         using (UnityWebRequest fetchRequest = GetNewGetRequest(zipUrl, "text/plain")) {
           yield return fetchRequest.Send();
-          if (!fetchRequest.isError) {
+          if (!fetchRequest.isNetworkError) {
             PeltzerMain.Instance.DoPolyMenuBackgroundWork(new CopyStreamWork(fetchRequest.downloadHandler.data, /* byteCallback */ null, callback));
           }
         }
@@ -202,7 +202,7 @@ namespace com.google.apps.peltzer.client.api_clients.objectstore_client {
           .Append(entry.assets.peltzer.baseFile);
         using (UnityWebRequest fetchRequest = GetNewGetRequest(url, "text/plain")) {
           yield return fetchRequest.Send();
-          if (!fetchRequest.isError) {
+          if (!fetchRequest.isNetworkError) {
             PeltzerFile peltzerFile;
             bool validFile =
               PeltzerFileHandler.PeltzerFileFromBytes(fetchRequest.downloadHandler.data, out peltzerFile);

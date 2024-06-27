@@ -296,10 +296,10 @@ namespace com.google.apps.peltzer.client.model.util {
       yield return webRequest.Send();
 
       // Request is finished. Call user-supplied callback.
-      request.completionCallback(!webRequest.isError, (int)webRequest.responseCode, webRequest.downloadHandler.data);
+      request.completionCallback(!webRequest.isNetworkError, (int)webRequest.responseCode, webRequest.downloadHandler.data);
 
       // Cache the result, if applicable.
-      if (!webRequest.isError && cacheAllowed) {
+      if (!webRequest.isNetworkError && cacheAllowed) {
         byte[] data = webRequest.downloadHandler.data;
         if (data != null && data.Length > 0) {
           byte[] copy = new byte[data.Length];

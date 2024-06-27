@@ -671,7 +671,7 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
 
         yield return request.Send();
 
-        if (request.responseCode == 401 || request.isError) {
+        if (request.responseCode == 401 || request.isNetworkError) {
           yield return OAuth2Identity.Instance.Reauthorize();
           continue;
         } else {
@@ -714,7 +714,7 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
 
         yield return request.Send();
 
-        if (request.responseCode == 401 || request.isError) {
+        if (request.responseCode == 401 || request.isNetworkError) {
           yield return OAuth2Identity.Instance.Reauthorize();
           continue;
         } else {
@@ -816,7 +816,7 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
 
         yield return request.Send();
 
-        if (request.responseCode == 401 || request.isError) {
+        if (request.responseCode == 401 || request.isNetworkError) {
           yield return OAuth2Identity.Instance.Reauthorize();
           continue;
         } else {
@@ -906,7 +906,7 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
 
         yield return request.Send();
 
-        if (request.responseCode == 401 || request.isError) {
+        if (request.responseCode == 401 || request.isNetworkError) {
           yield return OAuth2Identity.Instance.Reauthorize();
           continue;
         } else {

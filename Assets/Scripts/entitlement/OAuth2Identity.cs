@@ -207,7 +207,7 @@ namespace com.google.apps.peltzer.client.entitlement {
         parameters.Add("grant_type", "refresh_token");
         using (UnityWebRequest www = UnityWebRequest.Post(m_AccessTokenUri, parameters)) {
           yield return www.Send();
-          if (www.isError) {
+          if (www.isNetworkError) {
             Debug.LogError("Network error");
             yield break;
           }
@@ -288,7 +288,7 @@ namespace com.google.apps.peltzer.client.entitlement {
         UnityWebRequest www = UnityWebRequest.Post(m_AccessTokenUri, parameters);
 
         yield return www.Send();
-        if (www.isError) {
+        if (www.isNetworkError) {
           Debug.LogError("Network error");
           m_WaitingOnAuthorization = false;
           yield break;
@@ -426,9 +426,9 @@ namespace com.google.apps.peltzer.client.entitlement {
       if (Profile == null) {
         yield break;
       }
-      using (UnityWebRequest www = UnityWebRequest.GetTexture(uri + kIconSizeSuffix)) {
+      using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(uri + kIconSizeSuffix)) {
         yield return www.Send();
-        if (www.isError || www.responseCode >= 400) {
+        if (www.isNetworkError || www.responseCode >= 400) {
           Debug.LogErrorFormat("Error downloading {0}, error {1}", uri, www.responseCode);
           Profile.icon = null;
         } else {

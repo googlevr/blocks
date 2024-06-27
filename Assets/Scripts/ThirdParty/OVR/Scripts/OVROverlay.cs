@@ -107,9 +107,9 @@ public class OVROverlay : MonoBehaviour
 	/// Use this function to set texture and texNativePtr when app is running 
 	/// GetNativeTexturePtr is a slow behavior, the value should be pre-cached 
 	/// </summary>
-	public void OverrideOverlayTextureInfo(Texture srcTexture, IntPtr nativePtr, VR.VRNode node)
+	public void OverrideOverlayTextureInfo(Texture srcTexture, IntPtr nativePtr, UnityEngine.XR.XRNode node)
 	{
-		int index = (node == VR.VRNode.RightEye) ? 1 : 0;
+		int index = (node == UnityEngine.XR.XRNode.RightEye) ? 1 : 0;
 
 		textures[index] = srcTexture;
 		cachedTextures[index] = srcTexture;

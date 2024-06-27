@@ -35,8 +35,8 @@ public static class OVRExtensions
 	public static OVRPose ToTrackingSpacePose(this Transform transform)
 	{
 		OVRPose headPose;
-		headPose.position = UnityEngine.VR.InputTracking.GetLocalPosition(UnityEngine.VR.VRNode.Head);
-		headPose.orientation = UnityEngine.VR.InputTracking.GetLocalRotation(UnityEngine.VR.VRNode.Head);
+		headPose.position = UnityEngine.XR.InputTracking.GetLocalPosition(UnityEngine.XR.XRNode.Head);
+		headPose.orientation = UnityEngine.XR.InputTracking.GetLocalRotation(UnityEngine.XR.XRNode.Head);
 
 		var ret = headPose * transform.ToHeadSpacePose();
 
