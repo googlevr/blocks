@@ -94,8 +94,7 @@ namespace com.google.apps.peltzer.client.model.export {
       }
       catch (Exception ex) {
         // Missing FBX DLL.
-        PeltzerMain.Instance.Analytics.googleAnalytics.LogException(
-          new ExceptionHitBuilder().SetExceptionDescription("Unable to load FBXExporter DLL: " + ex.ToString()));
+        Debug.LogError("Unable to load FBXExporter DLL: " + ex.ToString());
       }
     }
 

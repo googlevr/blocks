@@ -532,9 +532,7 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
         }
         if (publish) {
           OpenPublishUrl(assetId);
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("publish");
         } else {
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("saveLoggedIn");
           // Don't prompt to publish if the tutorial is active or if we are only saving a selected
           // subset of the model.
           if (!PeltzerMain.Instance.tutorialManager.TutorialOccurring() && !saveSelected) {
@@ -548,8 +546,6 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
             OpenSaveUrl();
           }
         }
-      } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("saveLoggedIn");
       }
     }
 
@@ -576,12 +572,9 @@ namespace com.google.apps.peltzer.client.api_clients.assets_service_client {
         PeltzerMain.Instance.LastSavedAssetId = assetId;
         if (publish) {
           OpenPublishUrl(assetId);
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("publish");
         } else {
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("saveLoggedIn");
         }
       } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("saveLoggedIn");
       }
     }
 

@@ -18,7 +18,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.model.render;
@@ -144,7 +143,6 @@ namespace com.google.apps.peltzer.client.model.controller {
     private Overlay overlay;
     private AudioLibrary audioLibrary;
     private WorldSpace worldSpace;
-    private Analytics analytics;
     private MeshRepresentationCache meshRepresentationCache;
 
     private Dictionary<ControllerMode, GameObject> tooltips;
@@ -325,7 +323,6 @@ namespace com.google.apps.peltzer.client.model.controller {
       audioLibrary = FindObjectOfType<AudioLibrary>();
       haptics = GetComponent<HapticFeedback>();
       lastSelectedPaintMode = ControllerMode.paintMesh;
-      analytics = FindObjectOfType<Analytics>();
       worldSpace = PeltzerMain.Instance.worldSpace;
       Transform wandTipXform = gameObject.transform.Find("UI-Tool/TipHead/Sphere");
       wandTip = wandTipXform != null ? wandTipXform.gameObject : gameObject;  //  Fall back to controller obj.
@@ -1119,9 +1116,6 @@ namespace com.google.apps.peltzer.client.model.controller {
       if (BlockModeChangedHandler != null)
         BlockModeChangedHandler(isBlockMode);
 
-      if (initiatedByUser) {
-        analytics.SuccessfulOperation("toggleBlockMode");
-      }
     }
 
     public Vector3 LastPositionModel { get { return lastPositionModel; } }
@@ -1146,7 +1140,6 @@ namespace com.google.apps.peltzer.client.model.controller {
         PeltzerMain.Instance.paletteController.HideSnapAssistanceTooltips();
       }
 
-      analytics.SwitchToMode(newMode);
       ShowTooltips();
       ResetTouchpadOverlay();
 

@@ -320,7 +320,6 @@ namespace com.google.apps.peltzer.client.tools {
         paintCommands.Clear();
         PlayFeedback();
 
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("paintMesh");
       }
     }
 
@@ -339,7 +338,6 @@ namespace com.google.apps.peltzer.client.tools {
           new Dictionary<int, FaceProperties>() { { faceId, paintedFaceProperties } }));
         PlayFeedback();
 
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("paintFace");
       }
     }
 

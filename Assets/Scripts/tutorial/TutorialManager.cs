@@ -193,7 +193,6 @@ namespace com.google.apps.peltzer.client.tutorial {
       AudioLibrary audioLibrary = PeltzerMain.Instance.audioLibrary;
       audioLibrary.PlayClip(audioLibrary.tutorialIntroSound);
 
-      PeltzerMain.Instance.Analytics.SuccessfulOperation("tutorialBegin");
     }
 
     /// <summary>
@@ -255,12 +254,7 @@ namespace com.google.apps.peltzer.client.tutorial {
         PeltzerMain.Instance.applicationButtonToolTips.TurnOn("ViewFeatured");
         PeltzerMain.Instance.polyMenuMain.SwitchToFeaturedSection();
         PeltzerMain.Instance.HasEverShownFeaturedTooltip = true;
-      }
 
-      if (isForceExit) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("tutorialEarlyExit");
-      } else {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("tutorialComplete");
       }
     }
 

@@ -835,11 +835,6 @@ namespace com.google.apps.peltzer.client.tools {
         DestroyImmediate(preview);
       }
 
-      if (!anyInvalidMeshes) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("importModel");
-      } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("importModel");
-      }
 
       return anyInvalidMeshes;
     }
@@ -883,11 +878,6 @@ namespace com.google.apps.peltzer.client.tools {
         DestroyImmediate(preview);
       }
 
-      if (!anyInvalidMeshes) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("copyMeshes");
-      } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("copyMeshes");
-      }
 
       return anyInvalidMeshes;
     }
@@ -922,7 +912,6 @@ namespace com.google.apps.peltzer.client.tools {
         peltzerController.TriggerHapticFeedback();
         PeltzerMain.Instance.movesCompleted++;
       } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("moveMesh");
         audioLibrary.PlayClip(audioLibrary.errorSound);
         peltzerController.TriggerHapticFeedback();
       }
@@ -996,7 +985,6 @@ namespace com.google.apps.peltzer.client.tools {
       List<MMesh> flippedMeshes;
 
       if (!Flipper.FlipMeshes(meshesToFlip, PeltzerMain.Instance.peltzerController.LastRotationModel, out flippedMeshes)) {
-        PeltzerMain.Instance.Analytics.FailedOperation("flipMeshes");
         return;
       }
 
@@ -1036,7 +1024,6 @@ namespace com.google.apps.peltzer.client.tools {
         }
       }
 
-      PeltzerMain.Instance.Analytics.SuccessfulOperation("flipMeshes");
 
       // Make some noise.
       // TODO(bug): replace with flip sound.
@@ -1088,7 +1075,6 @@ namespace com.google.apps.peltzer.client.tools {
 
       // Apply the command and log to Google Analytics.
       model.ApplyCommand(command);
-      PeltzerMain.Instance.Analytics.SuccessfulOperation(operationName);
 
       if (heldMeshes != null) {
         // Since the held meshes are clones of the model's meshes, we need to update the group IDs of
@@ -1269,7 +1255,6 @@ namespace com.google.apps.peltzer.client.tools {
         // Try and scale the meshes as they are.
         if (!Scaler.TryScalingMeshes(meshesToScale, scaleFactor)) {
           audioLibrary.PlayClip(audioLibrary.errorSound);
-          PeltzerMain.Instance.Analytics.FailedOperation("scaleHeldMeshes");
           return;
         }
 
@@ -1300,14 +1285,12 @@ namespace com.google.apps.peltzer.client.tools {
 
         if (!Scaler.TryScalingMeshes(clonedMeshes, scaleFactor)) {
           audioLibrary.PlayClip(audioLibrary.errorSound);
-          PeltzerMain.Instance.Analytics.FailedOperation("scaleHeldMeshes");
           return;
         }
 
         // First check that every operation is valid.
         foreach (MMesh mesh in clonedMeshes) {
           if (!model.CanAddMesh(mesh)) {
-            PeltzerMain.Instance.Analytics.FailedOperation("scaleNonHeldMeshes");
             audioLibrary.PlayClip(audioLibrary.errorSound);
             return;
           }

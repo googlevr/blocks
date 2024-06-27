@@ -21,7 +21,6 @@ using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.model.util;
 using com.google.apps.peltzer.client.tools.utils;
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.model.render;
 using System;
 
@@ -774,7 +773,6 @@ namespace com.google.apps.peltzer.client.tools {
       SubdivideFaces(activeSubdivisions);
       ResetOverlays();
       ClearState();
-      PeltzerMain.Instance.Analytics.SuccessfulOperation("subdivideMesh");
     }
 
     /// <summary>
@@ -912,7 +910,6 @@ namespace com.google.apps.peltzer.client.tools {
         // Check this is a valid subdivision.
         SubdividePoints points;
         if (!GetSubdividePoints(subdivision.face, subdivision.mesh, start, sliceDirection.normalized, out points)) {
-          PeltzerMain.Instance.Analytics.FailedOperation("subdivideMesh");
           audioLibrary.PlayClip(audioLibrary.errorSound);
           peltzerController.TriggerHapticFeedback();
           return;
@@ -981,7 +978,6 @@ namespace com.google.apps.peltzer.client.tools {
 
         // If the two subdivide points are an edge on the subdivide face, don't subdivide.
         if (vertex1AlreadyExisted && vertex2AlreadyExisted && VerticesAreEdgeOnFace(newVertex1, newVertex2, face)) {
-          PeltzerMain.Instance.Analytics.FailedOperation("subdivideMesh");
           audioLibrary.PlayClip(audioLibrary.errorSound);
           peltzerController.TriggerHapticFeedback();
           return;
@@ -1059,7 +1055,6 @@ namespace com.google.apps.peltzer.client.tools {
         audioLibrary.PlayClip(audioLibrary.subdivideSound);
         peltzerController.TriggerHapticFeedback();
       } else {
-        PeltzerMain.Instance.Analytics.FailedOperation("subdivideMesh");
         audioLibrary.PlayClip(audioLibrary.errorSound);
         peltzerController.TriggerHapticFeedback();
       }
@@ -1143,8 +1138,6 @@ namespace com.google.apps.peltzer.client.tools {
         if (completedSnaps < SNAP_KNOW_HOW_COUNT) {
           PeltzerMain.Instance.paletteController.ShowSnapAssistanceTooltip();
         }
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnapping");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnappingSubdivider");
         PeltzerMain.Instance.audioLibrary.PlayClip(PeltzerMain.Instance.audioLibrary.alignSound);
         PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
       } else if (IsEndSnapEvent(args) && !peltzerController.isBlockMode) {

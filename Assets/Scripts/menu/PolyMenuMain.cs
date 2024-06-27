@@ -318,7 +318,6 @@ namespace com.google.apps.peltzer.client.menu {
         // Toggle the state of the menus.
         if (activeMenu == Menu.TOOLS_MENU) {
           SetActiveMenu(Menu.POLY_MENU);
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("openedPolyMenu");
         } else {
           SetActiveMenu(Menu.TOOLS_MENU);
         }
@@ -498,7 +497,6 @@ namespace com.google.apps.peltzer.client.menu {
               CurrentCreationType(), currentCreationHandler.creationLocalId);
             creationsManager.DeleteOfflineModel(currentCreationHandler.creationLocalId);
           }
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("deleteModel");
           SetActiveMenu(Menu.POLY_MENU);
           break;
         case DetailsMenuAction.CLOSE:
@@ -554,19 +552,6 @@ namespace com.google.apps.peltzer.client.menu {
         WorldSpaceAdjuster.AdjustWorldSpace();
       }
 
-      switch (CurrentCreationType()) {
-        case CreationType.YOUR:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("openYourModel");
-          break;
-        case CreationType.LIKED:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("openLikedModel");
-          break;
-        case CreationType.FEATURED:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("openFeaturedModel");
-          break;
-        default:
-          break;
-      }
 
       SetActiveMenu(Menu.TOOLS_MENU);
     }
@@ -1000,19 +985,6 @@ namespace com.google.apps.peltzer.client.menu {
       PeltzerMain.Instance.peltzerController.ResetUnhoveredItem();
       PeltzerMain.Instance.peltzerController.ResetMenu();
 
-      switch (CurrentCreationType()) {
-        case CreationType.YOUR:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("importYourModel");
-          break;
-        case CreationType.LIKED:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("importLikedModel");
-          break;
-        case CreationType.FEATURED:
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("importFeaturedModel");
-          break;
-        default:
-          break;
-      }
     }
 
     public bool ToolMenuIsActive() {

@@ -428,7 +428,6 @@ namespace com.google.apps.peltzer.client.tools {
         Command compositeCommand = new CompositeCommand(deleteCommands);
         model.ApplyCommand(compositeCommand);
 
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("deleteMesh");
       }
 
       meshIdsToDelete.Clear();

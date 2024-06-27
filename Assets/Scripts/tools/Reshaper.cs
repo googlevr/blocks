@@ -603,28 +603,14 @@ namespace com.google.apps.peltzer.client.tools {
       }
 
       if (moveErrors) {
-        PeltzerMain.Instance.Analytics.FailedOperation("reshapeMesh");
         audioLibrary.PlayClip(audioLibrary.errorSound);
         peltzerController.TriggerHapticFeedback();
       } else {
         audioLibrary.PlayClip(audioLibrary.releaseMeshSound);
         model.ApplyCommand(new CompositeCommand(commands));
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("reshapeMesh");
         PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
         if (grabbedFaces.Count > 0) {
           PeltzerMain.Instance.faceReshapesCompleted++;
-          if (grabbedFaces.Count() == 1) {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("reshapeMeshSingleFace");
-          } else {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("reshapeMeshMultipleFaces");
-          }
-        }
-        if (grabbedEdges.Count > 0) {
-          if (grabbedEdges.Count() == 1) {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("reshapeMeshSingleEdge");
-          } else {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("reshapeMeshMultipleEdges");
-          }
         }
       }
 
@@ -822,8 +808,6 @@ namespace com.google.apps.peltzer.client.tools {
           PeltzerMain.Instance.paletteController.ShowSnapAssistanceTooltip();
         }
         isSnapping = true;
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnapping");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnappingReshaper");
         PeltzerMain.Instance.audioLibrary.PlayClip(PeltzerMain.Instance.audioLibrary.alignSound);
         PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
       } else if (IsEndSnapEvent(args) && !peltzerController.isBlockMode) {

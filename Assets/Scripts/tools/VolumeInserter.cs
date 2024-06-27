@@ -16,7 +16,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.model.controller;
 using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.csg;
@@ -472,7 +471,6 @@ namespace com.google.apps.peltzer.client.tools {
       meshToInsert.rotation = meshWithMaterialRenderer.GetOrientationInModelSpace();
       // Abort entire volume insert on any error.
       if (peltzerController.mode == ControllerMode.insertVolume && !model.CanAddMesh(meshToInsert)) {
-        PeltzerMain.Instance.Analytics.FailedOperation("insertVolume");
         audioLibrary.PlayClip(audioLibrary.errorSound);
         peltzerController.TriggerHapticFeedback();
         CreateNewVolumeMesh();
@@ -488,7 +486,6 @@ namespace com.google.apps.peltzer.client.tools {
         peltzerController.TriggerHapticFeedback(
           HapticFeedback.HapticFeedbackType.FEEDBACK_3, /* durationSeconds */ 0.05f, /* strength */ 0.3f);
         Primitives.Shape selectedShape = (Primitives.Shape)peltzerController.shapesMenu.CurrentItemId;
-        PeltzerMain.Instance.Analytics.InsertMesh(Analytics.primitiveTypesToStrings[selectedShape]);
       } else if (peltzerController.mode == ControllerMode.subtract) {
         if (CsgOperations.SubtractMeshFromModel(model, spatialIndex, meshToInsert)) {
           audioLibrary.PlayClip(audioLibrary.deleteSound);
@@ -551,7 +548,6 @@ namespace com.google.apps.peltzer.client.tools {
           // If we are already at the max scale, don't try and scale further.
           StopScaling();
           audioLibrary.PlayClip(audioLibrary.errorSound);
-          PeltzerMain.Instance.Analytics.FailedOperation("scaleUpVolume");
           return;
         } else if (scaleDelta + steps > MAX_SCALE_DELTA) {
           // If scaling by the specified amount would take us past the max scale, just scale up to the max scale.
@@ -570,7 +566,6 @@ namespace com.google.apps.peltzer.client.tools {
           // If we are already at the min scale, don't try and scale further.
           StopScaling();
           audioLibrary.PlayClip(audioLibrary.errorSound);
-          PeltzerMain.Instance.Analytics.FailedOperation("scaleDownVolume");
           return;
         } else if (scaleDelta - steps < MIN_SCALE_DELTA) {
           // If scaling by the specified amount would take us past the min scale, just scale down to the min scale.
@@ -628,7 +623,6 @@ namespace com.google.apps.peltzer.client.tools {
         bool forward = args.TouchpadLocation == TouchpadLocation.RIGHT;
         if (forward) {
           if (!peltzerController.shapesMenu.SelectNextShapesMenuItem()) {
-            PeltzerMain.Instance.Analytics.FailedOperation("switchShapeRight");
             audioLibrary.PlayClip(audioLibrary.shapeMenuEndSound);
             peltzerController.TriggerHapticFeedback();
           } else {
@@ -637,7 +631,6 @@ namespace com.google.apps.peltzer.client.tools {
           peltzerController.TriggerHapticFeedback();
         } else {
           if (!peltzerController.shapesMenu.SelectPreviousShapesMenuItem()) {
-            PeltzerMain.Instance.Analytics.FailedOperation("switchShapeLeft");
             audioLibrary.PlayClip(audioLibrary.shapeMenuEndSound);
             peltzerController.TriggerHapticFeedback();
           } else {

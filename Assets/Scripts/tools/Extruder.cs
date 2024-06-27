@@ -388,16 +388,9 @@ namespace com.google.apps.peltzer.client.tools {
         
         bool isValidMesh = MeshValidator.IsValidMesh(newMesh, updatedVertIds);
         if (isValidMesh && model.CanAddMesh(newMesh)) {
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("extrudeMesh");
-          if (extrusions.Count == 1) {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("extrudeMeshSingleFace");
-          } else {
-            PeltzerMain.Instance.Analytics.SuccessfulOperation("extrudeMeshMultipleFaces");
-          }
           commands.Add(new ReplaceMeshCommand(meshId, newMesh));
         } else {
           // If any new mesh is invalid, abort everything.
-          PeltzerMain.Instance.Analytics.FailedOperation("extrudeMesh");
           audioLibrary.PlayClip(audioLibrary.errorSound);
           peltzerController.TriggerHapticFeedback();
           UndoTemporaryHeldFaceMaterialCommands();
@@ -451,8 +444,6 @@ namespace com.google.apps.peltzer.client.tools {
         if (completedSnaps < SNAP_KNOW_HOW_COUNT) {
           PeltzerMain.Instance.paletteController.ShowSnapAssistanceTooltip();
         }
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnapping");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnappingExtruder");
         PeltzerMain.Instance.audioLibrary.PlayClip(PeltzerMain.Instance.audioLibrary.alignSound);
         PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
         PeltzerMain.Instance.snappedInExtruder = true;

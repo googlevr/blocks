@@ -20,7 +20,6 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.desktop_app;
 using com.google.apps.peltzer.client.menu;
 using com.google.apps.peltzer.client.model.core;
@@ -119,7 +118,6 @@ namespace com.google.apps.peltzer.client.model.main {
         if (success) {
           DirectoryInfo directoryInfo = new DirectoryInfo(directory);
           PeltzerMain.Instance.HandleSaveComplete(true, "Saved locally");
-          PeltzerMain.Instance.Analytics.SuccessfulOperation("saveNotLoggedIn");
           if (isOverwrite) {
             PeltzerMain.Instance.UpdateLocalModelOntoPolyMenu(directoryInfo);
           } else {
@@ -127,7 +125,6 @@ namespace com.google.apps.peltzer.client.model.main {
           }
         } else {
           PeltzerMain.Instance.HandleSaveComplete(false, "Save failed");
-          PeltzerMain.Instance.Analytics.FailedOperation("saveNotLoggedIn");
         }
       }
     }

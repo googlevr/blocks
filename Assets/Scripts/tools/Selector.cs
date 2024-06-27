@@ -1320,19 +1320,6 @@ namespace com.google.apps.peltzer.client.tools {
       }
       DOTS.Clear();
 
-      if (selectedMeshes.Count > 1 ) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelect");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelectMeshes");
-      } else if (selectedFaces.Count > 1) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelect");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelectFaces");
-      } else if (selectedVertices.Count > 1) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelect");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelectVertices");
-      } else if (selectedEdges.Count > 1) {
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelect");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("multiSelectEdges");
-      }
 
       multiselectTrail.SetActive(false);
     }

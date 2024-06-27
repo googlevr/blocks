@@ -396,8 +396,6 @@ namespace com.google.apps.peltzer.client.tools.utils {
         return;
 
       isSnapping = true;
-      PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnapping");
-      PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnappingHeldMeshes");
 
       if (Features.useContinuousSnapDetection) {
         MMesh mesh = heldMeshes[0].Mesh;

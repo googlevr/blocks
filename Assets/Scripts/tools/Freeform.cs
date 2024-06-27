@@ -17,7 +17,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.model.render;
@@ -751,7 +750,6 @@ namespace com.google.apps.peltzer.client.tools {
         /* splitNonCoplanarFaces */ false, /* mergeAdjacentCoplanarFaces*/ true);
 
       if (!model.CanAddMesh(currentVolume)) {
-        PeltzerMain.Instance.Analytics.FailedOperation("insertStroke");
         audioLibrary.PlayClip(audioLibrary.errorSound);
         peltzerController.TriggerHapticFeedback();
 
@@ -762,7 +760,6 @@ namespace com.google.apps.peltzer.client.tools {
 
         strokeVolumeSegments.Add(currentVolume.id);
         CreateNewVolumeAndHighlightSegment();
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("insertStroke");
       }
     }
 
@@ -1052,8 +1049,6 @@ namespace com.google.apps.peltzer.client.tools {
         UnsetAllHoverTooltips();
       } else if (IsStartSnapEvent(args)) {
         isSnapping = true;
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnapping");
-        PeltzerMain.Instance.Analytics.SuccessfulOperation("usedSnappingFreeform");
         PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
         PeltzerMain.Instance.audioLibrary.PlayClip(PeltzerMain.Instance.audioLibrary.alignSound);
         if (completedSnaps < SNAP_KNOW_HOW_COUNT) {

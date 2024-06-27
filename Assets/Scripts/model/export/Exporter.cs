@@ -18,7 +18,6 @@ using UnityEngine;
 
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.api_clients.assets_service_client;
-using com.google.apps.peltzer.client.analytics;
 using com.google.apps.peltzer.client.zandria;
 
 namespace com.google.apps.peltzer.client.model.export {
