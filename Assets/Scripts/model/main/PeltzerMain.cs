@@ -70,7 +70,7 @@ namespace com.google.apps.peltzer.client.model.main {
     /// </summary>
     /// <param name="model">The model to serialize.</param>
     /// <param name="meshes">The meshes to serialize.</param>
-    public SerializeWork(Model model, ICollection<MMesh> meshes, 
+    public SerializeWork(Model model, ICollection<MMesh> meshes,
         byte[] thumbnailBytes, Action<SaveData> callback, PolySerializer serializer, bool saveSelected) {
       this.model = model;
       this.meshes = meshes;
@@ -307,7 +307,6 @@ namespace com.google.apps.peltzer.client.model.main {
     private ConcurrentQueue<BackgroundWork> polyMenuBackgroundQueue = new ConcurrentQueue<BackgroundWork>();
     private ConcurrentQueue<BackgroundWork> filePickerBackgroundQueue = new ConcurrentQueue<BackgroundWork>();
     private ConcurrentQueue<BackgroundWork> forMainThread = new ConcurrentQueue<BackgroundWork>();
-    private Analytics analytics;
     public AutoThumbnailCamera autoThumbnailCamera;
     public Camera eyeCamera;
     public Vector3 eyeCameraPosition;
@@ -502,7 +501,7 @@ namespace com.google.apps.peltzer.client.model.main {
 
       // Initializes static buffers we're using for optimizing setting of list values.
       ReMesher.InitBufferCaches();
-      
+
       // Set up the authentication.
       gameObject.AddComponent<OAuth2Identity>();
 
@@ -820,7 +819,7 @@ namespace com.google.apps.peltzer.client.model.main {
         TryAutoSave();
       }
 
-      // Detect if the user is left- or right- handed. We do this every frame to deal with them putting down 
+      // Detect if the user is left- or right- handed. We do this every frame to deal with them putting down
       // and picking up controllers.
       ResolveControllerHandedness();
 
@@ -1625,12 +1624,10 @@ namespace com.google.apps.peltzer.client.model.main {
       return spatialIndex;
     }
 
-    public Analytics Analytics { get { return analytics; } }
-
     public Zoomer Zoomer { get { return zoomer; } }
 
     /// <summary>
-    ///   Enqueue work that should be done on the general background thread. 
+    ///   Enqueue work that should be done on the general background thread.
     ///   This thread is expected to be used only for operations affecting the model.
     /// </summary>
     /// <param name="work">The work</param>
@@ -1639,7 +1636,7 @@ namespace com.google.apps.peltzer.client.model.main {
     }
 
     /// <summary>
-    ///   Enqueue work that should be done on the Poly Menu background thread. 
+    ///   Enqueue work that should be done on the Poly Menu background thread.
     ///   This thread is expected to be used for anything around saving or loading objects.
     /// </summary>
     /// <param name="work">The work</param>
@@ -1648,7 +1645,7 @@ namespace com.google.apps.peltzer.client.model.main {
     }
 
     /// <summary>
-    ///   Enqueue work that should be done on the File Picker background thread. 
+    ///   Enqueue work that should be done on the File Picker background thread.
     ///   This thread is expected to be used for the operations where a user picks a file.
     /// </summary>
     /// <param name="work">The work</param>
