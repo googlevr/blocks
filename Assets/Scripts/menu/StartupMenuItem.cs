@@ -19,56 +19,67 @@ using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.model.util;
 using com.google.apps.peltzer.client.model.controller;
 
-namespace com.google.apps.peltzer.client.menu {
-  /// <summary>
-  /// Represents one of the items in the startup menu.
-  /// </summary>
-  public class StartupMenuItem : SelectableMenuItem {
-    // Set from Unity. Can be null.
-    public GameObject normalObject;
-    // Set from Unity. Can be null.
-    public GameObject hoverObject;
+namespace com.google.apps.peltzer.client.menu
+{
+    /// <summary>
+    /// Represents one of the items in the startup menu.
+    /// </summary>
+    public class StartupMenuItem : SelectableMenuItem
+    {
+        // Set from Unity. Can be null.
+        public GameObject normalObject;
+        // Set from Unity. Can be null.
+        public GameObject hoverObject;
 
 
-    private Collider ourCollider;
-    private Material ourMaterial;
-    public bool hovering { get; private set; }
-    public bool pointing { get; set; }
+        private Collider ourCollider;
+        private Material ourMaterial;
+        public bool hovering { get; private set; }
+        public bool pointing { get; set; }
 
-    private void Start() {
-      hovering = false;
-      pointing = false;
-      ourCollider = gameObject.GetComponent<Collider>();
-      AssertOrThrow.NotNull(ourCollider, "StartupMenuItem needs a Collider.");
-     
-      if (normalObject != null) {
-        normalObject.SetActive(true);
-      }
-      if (hoverObject != null) {
-        hoverObject.SetActive(false);
-      }
-      
+        private void Start()
+        {
+            hovering = false;
+            pointing = false;
+            ourCollider = gameObject.GetComponent<Collider>();
+            AssertOrThrow.NotNull(ourCollider, "StartupMenuItem needs a Collider.");
+
+            if (normalObject != null)
+            {
+                normalObject.SetActive(true);
+            }
+            if (hoverObject != null)
+            {
+                hoverObject.SetActive(false);
+            }
+
+        }
+
+        private void Update()
+        {
+            if (!PeltzerMain.Instance.peltzerController)
+            {
+                // PeltzerMain hasn't initialized the controller yet, so don't do anything for now.
+                return;
+            }
+
+            if (hovering !=
+              (ourCollider.bounds.Contains(PeltzerMain.Instance.peltzerController.transform.position) || pointing))
+            {
+                hovering = !hovering;
+                if (hovering)
+                {
+                    PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
+                }
+                if (hoverObject != null)
+                {
+                    hoverObject.SetActive(hovering);
+                }
+                if (normalObject != null)
+                {
+                    normalObject.SetActive(!hovering);
+                }
+            }
+        }
     }
-
-    private void Update() {
-      if (!PeltzerMain.Instance.peltzerController) {
-        // PeltzerMain hasn't initialized the controller yet, so don't do anything for now.
-        return;
-      }
-
-      if (hovering !=
-        (ourCollider.bounds.Contains(PeltzerMain.Instance.peltzerController.transform.position) || pointing)) {
-        hovering = !hovering;
-        if (hovering) {
-          PeltzerMain.Instance.peltzerController.TriggerHapticFeedback();
-        }
-        if (hoverObject != null) {
-          hoverObject.SetActive(hovering);
-        }
-        if (normalObject != null) {
-          normalObject.SetActive(!hovering);
-        }
-      }
-    }
-  }
 }

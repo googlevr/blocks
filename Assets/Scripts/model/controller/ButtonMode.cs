@@ -12,28 +12,30 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.controller {
-  /// <summary>
-  ///   The current mode of a button.
-  ///   IMPORTANT: enum values are used as indices, so the values must be numbered sequentially from 0
-  ///   (default enum value assignment).
-  /// </summary>
-  public enum ButtonMode {
+namespace com.google.apps.peltzer.client.model.controller
+{
     /// <summary>
-    ///   Default
+    ///   The current mode of a button.
+    ///   IMPORTANT: enum values are used as indices, so the values must be numbered sequentially from 0
+    ///   (default enum value assignment).
     /// </summary>
-    NONE,
-    /// <summary>
-    ///  The button is active and clickable.
-    /// </summary>
-    ACTIVE,
-    /// <summary>
-    ///  The button is inactive and not clickable.
-    /// </summary>
-    INACTIVE,
-    /// <summary>
-    ///  The button is active but not yet clickable.
-    /// </summary>
-    WAITING
-  }
+    public enum ButtonMode
+    {
+        /// <summary>
+        ///   Default
+        /// </summary>
+        NONE,
+        /// <summary>
+        ///  The button is active and clickable.
+        /// </summary>
+        ACTIVE,
+        /// <summary>
+        ///  The button is inactive and not clickable.
+        /// </summary>
+        INACTIVE,
+        /// <summary>
+        ///  The button is active but not yet clickable.
+        /// </summary>
+        WAITING
+    }
 }

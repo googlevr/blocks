@@ -17,20 +17,25 @@ using UnityEngine;
 using com.google.apps.peltzer.client.model.util;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  public class PreviewController : MonoBehaviour {
-    class OpenFileDialogAndCreatePreview : BackgroundWork {
-      private const string DIALOG_TITLE = "Choose a Reference Image";
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    public class PreviewController : MonoBehaviour
+    {
+        class OpenFileDialogAndCreatePreview : BackgroundWork
+        {
+            private const string DIALOG_TITLE = "Choose a Reference Image";
 
-      private readonly PreviewController previewController;
+            private readonly PreviewController previewController;
 
-      private bool userCancelled;
+            private bool userCancelled;
 
-      public OpenFileDialogAndCreatePreview(PreviewController controller) {
-        previewController = controller;
-      }
+            public OpenFileDialogAndCreatePreview(PreviewController controller)
+            {
+                previewController = controller;
+            }
 
-      public void BackgroundWork() {
+            public void BackgroundWork()
+            {
 #if UNITY_STANDALONE_WIN
         string selectedPath;
         if (Win32FileDialog.ShowWin32FileDialog(DIALOG_TITLE,
@@ -41,42 +46,48 @@ namespace com.google.apps.peltzer.client.desktop_app {
           userCancelled = true;
         }
 #else
-        Debug.LogError("Open file dialog not available in this platform.");
+                Debug.LogError("Open file dialog not available in this platform.");
 #endif
-      }
+            }
 
-      public void PostWork() {
-        if (userCancelled) {
-          previewController.ChangeMenuPrompt(showClickToInsert: true);
+            public void PostWork()
+            {
+                if (userCancelled)
+                {
+                    previewController.ChangeMenuPrompt(showClickToInsert: true);
+                }
+            }
         }
-      }
-    }
 
-    bool loadNewPreviewImage = false;
-    string previewImagePath = null;
+        bool loadNewPreviewImage = false;
+        string previewImagePath = null;
 
-    void Update() {
-      if (loadNewPreviewImage && previewImagePath != null) {
-        PeltzerMain.Instance.referenceImageManager.InsertNewReferenceImage(previewImagePath);
-        loadNewPreviewImage = false;
-        previewImagePath = null;
-        ChangeMenuPrompt(showClickToInsert: true);
-      }
-    }
+        void Update()
+        {
+            if (loadNewPreviewImage && previewImagePath != null)
+            {
+                PeltzerMain.Instance.referenceImageManager.InsertNewReferenceImage(previewImagePath);
+                loadNewPreviewImage = false;
+                previewImagePath = null;
+                ChangeMenuPrompt(showClickToInsert: true);
+            }
+        }
 
-    public void SelectPreviewImage() {
-      BackgroundWork openDialog = new OpenFileDialogAndCreatePreview(this);
-      PeltzerMain.Instance.DoFilePickerBackgroundWork(openDialog);
-      ChangeMenuPrompt(showClickToInsert: false);
-    }
+        public void SelectPreviewImage()
+        {
+            BackgroundWork openDialog = new OpenFileDialogAndCreatePreview(this);
+            PeltzerMain.Instance.DoFilePickerBackgroundWork(openDialog);
+            ChangeMenuPrompt(showClickToInsert: false);
+        }
 
-    /// <summary>
-    ///   Switches the menu prompt between telling a user to click to insert a reference image, or to
-    ///   take off their headset to complete adding one.
-    /// </summary>
-    private void ChangeMenuPrompt(bool showClickToInsert) {
-      ObjectFinder.ObjectById("ID_add_ref_image").SetActive(showClickToInsert);
-      ObjectFinder.ObjectById("ID_take_off_headset_for_ref_image").SetActive(!showClickToInsert);
+        /// <summary>
+        ///   Switches the menu prompt between telling a user to click to insert a reference image, or to
+        ///   take off their headset to complete adding one.
+        /// </summary>
+        private void ChangeMenuPrompt(bool showClickToInsert)
+        {
+            ObjectFinder.ObjectById("ID_add_ref_image").SetActive(showClickToInsert);
+            ObjectFinder.ObjectById("ID_take_off_headset_for_ref_image").SetActive(!showClickToInsert);
+        }
     }
-  }
 }

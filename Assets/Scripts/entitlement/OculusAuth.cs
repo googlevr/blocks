@@ -14,45 +14,49 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.entitlement {
-  public class OculusAuth : MonoBehaviour {
-    private bool userIsEntitled = false;
-    // The App ID is a public identifier for the Blocks app on the Oculus platform. It is
-    // analogous to Apple's App ID, which shows up in URLs related to the app.
-    private const string OCULUS_APP_ID = "[Removed]]";
+namespace com.google.apps.peltzer.client.entitlement
+{
+    public class OculusAuth : MonoBehaviour
+    {
+        private bool userIsEntitled = false;
+        // The App ID is a public identifier for the Blocks app on the Oculus platform. It is
+        // analogous to Apple's App ID, which shows up in URLs related to the app.
+        private const string OCULUS_APP_ID = "[Removed]]";
 
-    private void Awake() {
-      // TODO AB
-      // Oculus.Platform.Core.Initialize(OCULUS_APP_ID);
-      // Oculus.Platform.Entitlements.IsUserEntitledToApplication().OnComplete(EntitlementCallback);
+        private void Awake()
+        {
+            // TODO AB
+            // Oculus.Platform.Core.Initialize(OCULUS_APP_ID);
+            // Oculus.Platform.Entitlements.IsUserEntitledToApplication().OnComplete(EntitlementCallback);
+        }
+
+        public void Update()
+        {
+            // Oculus.Platform.Request.RunCallbacks();
+        }
+
+        // TODO AB
+        // private void EntitlementCallback(Oculus.Platform.Message response) {
+        //   string message;
+        //   if (response.IsError) {
+        //     if (response.GetError() != null) {
+        //       message = response.GetError().Message;
+        //     } else {
+        //       message = "Authentication failed";
+        //     }
+        //   } else {
+        //     userIsEntitled = true;
+        //     message = "";
+        //   }
+        //
+        //   if (message != string.Empty) {
+        //     Debug.Log(message, this);
+        //   }
+        //
+        //   if (!userIsEntitled) {
+        //     Debug.Log("User not authenticated! You must be logged in to continue.");
+        //     Application.Quit();
+        //   }
+        // }
     }
-
-    public void Update() {
-      // Oculus.Platform.Request.RunCallbacks();
-    }
-
-    // TODO AB
-    // private void EntitlementCallback(Oculus.Platform.Message response) {
-    //   string message;
-    //   if (response.IsError) {
-    //     if (response.GetError() != null) {
-    //       message = response.GetError().Message;
-    //     } else {
-    //       message = "Authentication failed";
-    //     }
-    //   } else {
-    //     userIsEntitled = true;
-    //     message = "";
-    //   }
-    //
-    //   if (message != string.Empty) {
-    //     Debug.Log(message, this);
-    //   }
-    //
-    //   if (!userIsEntitled) {
-    //     Debug.Log("User not authenticated! You must be logged in to continue.");
-    //     Application.Quit();
-    //   }
-    // }
-  }
 }

@@ -14,27 +14,31 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.import {
-  /// <summary>
-  ///   A helper class to hold vertices and triangles for a mesh, and convert them to a Mesh if needed.
-  /// </summary>
-  public class MeshVerticesAndTriangles {
-    public Vector3[] meshVertices;
-    public int[] triangles;
+namespace com.google.apps.peltzer.client.model.import
+{
+    /// <summary>
+    ///   A helper class to hold vertices and triangles for a mesh, and convert them to a Mesh if needed.
+    /// </summary>
+    public class MeshVerticesAndTriangles
+    {
+        public Vector3[] meshVertices;
+        public int[] triangles;
 
-    public MeshVerticesAndTriangles(Vector3[] meshVertices, int[] triangles) {
-      this.meshVertices = meshVertices;
-      this.triangles = triangles;
-    }
+        public MeshVerticesAndTriangles(Vector3[] meshVertices, int[] triangles)
+        {
+            this.meshVertices = meshVertices;
+            this.triangles = triangles;
+        }
 
-    // Must be called on main thread.
-    public Mesh ToMesh() {
-      Mesh mesh = new Mesh();
-      mesh.vertices = meshVertices;
-      mesh.triangles = triangles;
-      mesh.RecalculateBounds();
-      mesh.RecalculateNormals();
-      return mesh;
+        // Must be called on main thread.
+        public Mesh ToMesh()
+        {
+            Mesh mesh = new Mesh();
+            mesh.vertices = meshVertices;
+            mesh.triangles = triangles;
+            mesh.RecalculateBounds();
+            mesh.RecalculateNormals();
+            return mesh;
+        }
     }
-  }
 }

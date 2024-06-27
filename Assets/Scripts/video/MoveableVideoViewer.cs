@@ -18,45 +18,50 @@ using com.google.apps.peltzer.client.model.core;
 using com.google.apps.peltzer.client.model.main;
 using com.google.apps.peltzer.client.tools;
 
-namespace com.google.apps.peltzer.video {
-  /// <summary>
-  ///   The video viewer is a mesh with a texture that allows movies (videos) to be played. This script allows the 
-  ///   viewer to be moved, and thrown with the grab tool, or 'deleted' with the delete tool, without actually
-  ///   being a part of the Model. Note that we never actually delete the video viewer: exactly one viewer exists in
-  ///   the scene at all times, and is hidden rather than deleted. The video viewer cannot be scaled, to avoid
-  ///   distorting the movie texture.
-  ///   
-  ///   Operations on the video viewer are included in the undo/redo stack.
-  /// </summary>
-  public class MoveableVideoViewer : MoveableObject {
-    public override void Setup() {
-      base.Setup();
+namespace com.google.apps.peltzer.video
+{
+    /// <summary>
+    ///   The video viewer is a mesh with a texture that allows movies (videos) to be played. This script allows the 
+    ///   viewer to be moved, and thrown with the grab tool, or 'deleted' with the delete tool, without actually
+    ///   being a part of the Model. Note that we never actually delete the video viewer: exactly one viewer exists in
+    ///   the scene at all times, and is hidden rather than deleted. The video viewer cannot be scaled, to avoid
+    ///   distorting the movie texture.
+    ///   
+    ///   Operations on the video viewer are included in the undo/redo stack.
+    /// </summary>
+    public class MoveableVideoViewer : MoveableObject
+    {
+        public override void Setup()
+        {
+            base.Setup();
 
-      mesh = gameObject.GetComponent<MeshFilter>().mesh;
-      material = gameObject.GetComponent<MeshRenderer>().material;
+            mesh = gameObject.GetComponent<MeshFilter>().mesh;
+            material = gameObject.GetComponent<MeshRenderer>().material;
 
-      WorldSpace worldSpace = PeltzerMain.Instance.worldSpace;
-      positionModelSpace = worldSpace.WorldToModel(transform.position);
-      rotationModelSpace = worldSpace.WorldOrientationToModel(transform.rotation);
-      RecalculateVerticesAndNormal();
+            WorldSpace worldSpace = PeltzerMain.Instance.worldSpace;
+            positionModelSpace = worldSpace.WorldToModel(transform.position);
+            rotationModelSpace = worldSpace.WorldOrientationToModel(transform.rotation);
+            RecalculateVerticesAndNormal();
+        }
+
+        internal override void Delete()
+        {
+            base.Delete();
+
+            PeltzerMain.Instance.GetModel().ApplyCommand(new HideVideoViewerCommand());
+        }
+
+        internal override void Release()
+        {
+            base.Release();
+
+            // Force an update to get the latest position and rotation.
+            UpdatePosition();
+
+            // Move the viewer via a command.
+            Vector3 positionDelta = positionModelSpace - positionAtStartOfMove;
+            Quaternion rotDelta = Quaternion.Inverse(rotationAtStartOfMove) * rotationModelSpace;
+            PeltzerMain.Instance.GetModel().ApplyCommand(new MoveVideoViewerCommand(positionDelta, rotDelta));
+        }
     }
-
-    internal override void Delete() {
-      base.Delete();
-
-      PeltzerMain.Instance.GetModel().ApplyCommand(new HideVideoViewerCommand());
-    }
-
-    internal override void Release() {
-      base.Release();
-
-      // Force an update to get the latest position and rotation.
-      UpdatePosition();
-
-      // Move the viewer via a command.
-      Vector3 positionDelta = positionModelSpace - positionAtStartOfMove;
-      Quaternion rotDelta = Quaternion.Inverse(rotationAtStartOfMove) * rotationModelSpace;
-      PeltzerMain.Instance.GetModel().ApplyCommand(new MoveVideoViewerCommand(positionDelta, rotDelta));
-    }
-  }
 }

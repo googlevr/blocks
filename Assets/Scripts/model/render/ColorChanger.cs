@@ -14,28 +14,36 @@
 
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.render {
-  /// <summary>
-  ///   Placed on a component with a renderer, this will update the renderer to use a given material from the
-  ///   registry when ChangeMaterial is called.
-  /// </summary>
-  public class ColorChanger : MonoBehaviour {
-    public Renderer rend;
+namespace com.google.apps.peltzer.client.model.render
+{
+    /// <summary>
+    ///   Placed on a component with a renderer, this will update the renderer to use a given material from the
+    ///   registry when ChangeMaterial is called.
+    /// </summary>
+    public class ColorChanger : MonoBehaviour
+    {
+        public Renderer rend;
 
-    void Start() {
-      rend = GetComponent<Renderer>();
-    }
-
-    public void ChangeMaterial(int materialId) {
-      if (rend != null) {
-        if (rend.material.HasProperty("_OverrideAmount")) { // TODO: Could add a default material to stuff instead.
-          float overrideAmount = rend.material.GetFloat("_OverrideAmount");
-          rend.material = new Material(MaterialRegistry.GetMaterialWithAlbedoById(materialId));
-          rend.material.SetFloat("_OverrideAmount", overrideAmount);
-        } else {
-          rend.material = new Material(MaterialRegistry.GetMaterialWithAlbedoById(materialId));
+        void Start()
+        {
+            rend = GetComponent<Renderer>();
         }
-      }
+
+        public void ChangeMaterial(int materialId)
+        {
+            if (rend != null)
+            {
+                if (rend.material.HasProperty("_OverrideAmount"))
+                { // TODO: Could add a default material to stuff instead.
+                    float overrideAmount = rend.material.GetFloat("_OverrideAmount");
+                    rend.material = new Material(MaterialRegistry.GetMaterialWithAlbedoById(materialId));
+                    rend.material.SetFloat("_OverrideAmount", overrideAmount);
+                }
+                else
+                {
+                    rend.material = new Material(MaterialRegistry.GetMaterialWithAlbedoById(materialId));
+                }
+            }
+        }
     }
-  }
 }

@@ -17,20 +17,24 @@ using UnityEngine;
 using com.google.apps.peltzer.video;
 using com.google.apps.peltzer.client.model.main;
 
-namespace com.google.apps.peltzer.client.model.core {
-  /// <summary>
-  /// This command makes the video viewer visible. It does not affect the Model.
-  /// </summary>
-  public class ShowVideoViewerCommand : Command {
-    public void ApplyToModel(Model model) {
-      // Set the video viewer active and set it up to be moveable.
-      GameObject videoViewer = PeltzerMain.Instance.GetVideoViewer();
-      videoViewer.SetActive(true);
-      videoViewer.GetComponent<MoveableVideoViewer>().Setup();
-    }
+namespace com.google.apps.peltzer.client.model.core
+{
+    /// <summary>
+    /// This command makes the video viewer visible. It does not affect the Model.
+    /// </summary>
+    public class ShowVideoViewerCommand : Command
+    {
+        public void ApplyToModel(Model model)
+        {
+            // Set the video viewer active and set it up to be moveable.
+            GameObject videoViewer = PeltzerMain.Instance.GetVideoViewer();
+            videoViewer.SetActive(true);
+            videoViewer.GetComponent<MoveableVideoViewer>().Setup();
+        }
 
-    public Command GetUndoCommand(Model model) {
-      return new HideVideoViewerCommand();
+        public Command GetUndoCommand(Model model)
+        {
+            return new HideVideoViewerCommand();
+        }
     }
-  }
 }

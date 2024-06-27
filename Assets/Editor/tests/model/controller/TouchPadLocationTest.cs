@@ -15,39 +15,44 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.controller {
+namespace com.google.apps.peltzer.client.model.controller
+{
 
-  [TestFixture]
-  // Tests for TouchpadLocation.
-  public class TouchpadLocationTest {
-    [Test]
-    public void TestBasicQuadrants() {
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.RIGHT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.5f, 0))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.TOP.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, .5f))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.LEFT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.5f, 0))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, -.5f))));
-    }
+    [TestFixture]
+    // Tests for TouchpadLocation.
+    public class TouchpadLocationTest
+    {
+        [Test]
+        public void TestBasicQuadrants()
+        {
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.RIGHT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.5f, 0))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.TOP.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, .5f))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.LEFT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.5f, 0))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, -.5f))));
+        }
 
-    [Test]
-    public void TestCenter() {
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.CENTER.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, 0))));
-    }
+        [Test]
+        public void TestCenter()
+        {
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.CENTER.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(0, 0))));
+        }
 
-    [Test]
-    public void TestXYCombinations() {
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.TOP.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.1f, .5f))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.1f, -.5f))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.1f, -.5f))));
-      NUnit.Framework.Assert.IsTrue(
-        TouchpadLocation.LEFT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.5f, 0))));
+        [Test]
+        public void TestXYCombinations()
+        {
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.TOP.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.1f, .5f))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(.1f, -.5f))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.BOTTOM.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.1f, -.5f))));
+            NUnit.Framework.Assert.IsTrue(
+              TouchpadLocation.LEFT.Equals(TouchpadLocationHelper.GetTouchpadLocation(new Vector2(-.5f, 0))));
+        }
     }
-  }
 }

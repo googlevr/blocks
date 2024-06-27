@@ -15,45 +15,50 @@
 using com.google.apps.peltzer.client.model.main;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.model.controller {
-  public class OculusHandTrackingManager : MonoBehaviour {
-    // These are set to null to remove warning log.
-    public Transform leftTransform = null;
-    public Transform rightTransform = null;
+namespace com.google.apps.peltzer.client.model.controller
+{
+    public class OculusHandTrackingManager : MonoBehaviour
+    {
+        // These are set to null to remove warning log.
+        public Transform leftTransform = null;
+        public Transform rightTransform = null;
 
-    // This class tries to mimic the tracking done in SteamVR's SteamVR_TrackedObject, which updates
-    // poses in response to the event "new_poses". This event is sent in
-    // SteamVR_UpdatePoses.OnPreCull(). But OnPreCull() is only available to components attached to
-    // the camera, which this class is not. So this public OnPreCull() is called exactly once
-    // from the OculusVideoRendering.OnPreCull() which is attached to the camera.
-    void Update() {
-      // Adding in additional checks to make sure for each controller instead of a single check for
-      // both so the player will know if either controller is having problems.
-      bool touchControllersConnected =
-          (OVRInput.GetConnectedControllers() & OVRInput.Controller.Touch)
-          == OVRInput.Controller.Touch;
-      bool leftTouchValid = false;
-      if (OVRInput.GetControllerOrientationTracked(OVRInput.Controller.LTouch) ||
-          OVRInput.GetControllerPositionTracked(OVRInput.Controller.LTouch) &&
-          touchControllersConnected) {
-        leftTouchValid = true;
-      }
+        // This class tries to mimic the tracking done in SteamVR's SteamVR_TrackedObject, which updates
+        // poses in response to the event "new_poses". This event is sent in
+        // SteamVR_UpdatePoses.OnPreCull(). But OnPreCull() is only available to components attached to
+        // the camera, which this class is not. So this public OnPreCull() is called exactly once
+        // from the OculusVideoRendering.OnPreCull() which is attached to the camera.
+        void Update()
+        {
+            // Adding in additional checks to make sure for each controller instead of a single check for
+            // both so the player will know if either controller is having problems.
+            bool touchControllersConnected =
+                (OVRInput.GetConnectedControllers() & OVRInput.Controller.Touch)
+                == OVRInput.Controller.Touch;
+            bool leftTouchValid = false;
+            if (OVRInput.GetControllerOrientationTracked(OVRInput.Controller.LTouch) ||
+                OVRInput.GetControllerPositionTracked(OVRInput.Controller.LTouch) &&
+                touchControllersConnected)
+            {
+                leftTouchValid = true;
+            }
 
-      bool rightTouchValid = false;
-      if (OVRInput.GetControllerOrientationTracked(OVRInput.Controller.RTouch) ||
-          OVRInput.GetControllerPositionTracked(OVRInput.Controller.RTouch) &&
-          touchControllersConnected) {
-        rightTouchValid = true;
-      }
+            bool rightTouchValid = false;
+            if (OVRInput.GetControllerOrientationTracked(OVRInput.Controller.RTouch) ||
+                OVRInput.GetControllerPositionTracked(OVRInput.Controller.RTouch) &&
+                touchControllersConnected)
+            {
+                rightTouchValid = true;
+            }
 
-      PeltzerMain.Instance.paletteController.controller.IsTrackedObjectValid = leftTouchValid;
-      PeltzerMain.Instance.peltzerController.controller.IsTrackedObjectValid = rightTouchValid;
+            PeltzerMain.Instance.paletteController.controller.IsTrackedObjectValid = leftTouchValid;
+            PeltzerMain.Instance.peltzerController.controller.IsTrackedObjectValid = rightTouchValid;
 
-      leftTransform.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
-      rightTransform.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch);
+            leftTransform.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
+            rightTransform.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch);
 
-      leftTransform.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
-      rightTransform.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
+            leftTransform.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
+            rightTransform.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
+        }
     }
-  }
 }

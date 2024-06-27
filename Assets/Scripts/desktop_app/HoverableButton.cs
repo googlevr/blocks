@@ -16,43 +16,53 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  /// <summary>
-  /// A button with a background component called 'hover' that has an associated action.
-  /// </summary>
-  public class HoverableButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
-      IPointerExitHandler, IPointerDownHandler, IPointerUpHandler {
-    private GameObject hover;
-    private System.Action onClick;
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    /// <summary>
+    /// A button with a background component called 'hover' that has an associated action.
+    /// </summary>
+    public class HoverableButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
+        IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
+    {
+        private GameObject hover;
+        private System.Action onClick;
 
-    void Awake() {
-      hover = transform.Find("hover").gameObject;
-      hover.SetActive(false);
-    }
+        void Awake()
+        {
+            hover = transform.Find("hover").gameObject;
+            hover.SetActive(false);
+        }
 
-    public void OnPointerClick(PointerEventData eventData) {
-      if (onClick != null) {
-        onClick();
-        hover.SetActive(false);
-      }
-    }
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (onClick != null)
+            {
+                onClick();
+                hover.SetActive(false);
+            }
+        }
 
-    public void OnPointerEnter(PointerEventData eventData) {
-      hover.SetActive(true);
-    }
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            hover.SetActive(true);
+        }
 
-    public void OnPointerExit(PointerEventData eventData) {
-      hover.SetActive(false);
-    }
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            hover.SetActive(false);
+        }
 
-    public void OnPointerDown(PointerEventData eventData) {
-    }
+        public void OnPointerDown(PointerEventData eventData)
+        {
+        }
 
-    public void OnPointerUp(PointerEventData eventData) {
-    }
+        public void OnPointerUp(PointerEventData eventData)
+        {
+        }
 
-    public void SetOnClickAction(System.Action onClick) {
-      this.onClick = onClick;
+        public void SetOnClickAction(System.Action onClick)
+        {
+            this.onClick = onClick;
+        }
     }
-  }
 }

@@ -20,141 +20,168 @@ using UnityEngine;
 /// <summary>
 ///   Holds app-level configuration information.
 /// </summary>
-namespace com.google.apps.peltzer.client.app {
-  public enum VrHardware {
-    Unset,
-    None,
-    Rift,
-    Vive,
-  }
-
-  public enum SdkMode {
-    Unset = -1,
-    Oculus = 0,
-    SteamVR,
-  }
-
-  public class Config : MonoBehaviour {
-    private static Config instance;
-    public static Config Instance {
-      get {
-        if (instance == null) {
-          instance = GameObject.FindObjectOfType<Config>();
-          Debug.Assert(instance != null, "No Config object found in scene!");
-        }
-        return instance;
-      }
+namespace com.google.apps.peltzer.client.app
+{
+    public enum VrHardware
+    {
+        Unset,
+        None,
+        Rift,
+        Vive,
     }
 
-    public OculusHandTrackingManager oculusHandTrackingManager;
+    public enum SdkMode
+    {
+        Unset = -1,
+        Oculus = 0,
+        SteamVR,
+    }
 
-    public string appName = "[Removed]";
-    // The SDK being used -- Oculus or Steam. Set from the Editor.
-    public SdkMode sdkMode;
-    // The current version ID -- 'debug' or something more meaningful. Set from the Editor.
-    public string version = "debug";
+    public class Config : MonoBehaviour
+    {
+        private static Config instance;
+        public static Config Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = GameObject.FindObjectOfType<Config>();
+                    Debug.Assert(instance != null, "No Config object found in scene!");
+                }
+                return instance;
+            }
+        }
 
-    [SerializeField] private GameObject cameraRigGameObject;
-    [SerializeField] private GameObject controllerLeftGameObject;
-    [SerializeField] private GameObject controllerRightGameObject;
+        public OculusHandTrackingManager oculusHandTrackingManager;
 
-    // The hardware being used -- Vive or Rift. Detected at runtime.
-    private VrHardware vrHardware;
+        public string appName = "[Removed]";
+        // The SDK being used -- Oculus or Steam. Set from the Editor.
+        public SdkMode sdkMode;
+        // The current version ID -- 'debug' or something more meaningful. Set from the Editor.
+        public string version = "debug";
 
-    // Find or fetch the hardware being used.
-    public VrHardware VrHardware {
-      // This is set lazily the first time VrHardware is accesssed. 
-      get {
-        if (vrHardware == VrHardware.Unset) {
-          if (sdkMode == SdkMode.Oculus) {
-            vrHardware = VrHardware.Rift;
-          }
+        [SerializeField] private GameObject cameraRigGameObject;
+        [SerializeField] private GameObject controllerLeftGameObject;
+        [SerializeField] private GameObject controllerRightGameObject;
+
+        // The hardware being used -- Vive or Rift. Detected at runtime.
+        private VrHardware vrHardware;
+
+        // Find or fetch the hardware being used.
+        public VrHardware VrHardware
+        {
+            // This is set lazily the first time VrHardware is accesssed. 
+            get
+            {
+                if (vrHardware == VrHardware.Unset)
+                {
+                    if (sdkMode == SdkMode.Oculus)
+                    {
+                        vrHardware = VrHardware.Rift;
+                    }
 #if STEAMVRBUILD
-          else if (sdkMode == SdkMode.SteamVR) {
-            // If SteamVR fails for some reason we will discover it here.
-            try {
-              if (Valve.VR.OpenVR.System == null) {
-                vrHardware = VrHardware.None;
+                    else if (sdkMode == SdkMode.SteamVR)
+                    {
+                        // If SteamVR fails for some reason we will discover it here.
+                        try
+                        {
+                            if (Valve.VR.OpenVR.System == null)
+                            {
+                                vrHardware = VrHardware.None;
+                                return vrHardware;
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            vrHardware = VrHardware.None;
+                            return vrHardware;
+                        }
+
+                        // RiftUsedInSteamVr relies on headset detection, so controllers don't have to be on.
+                        if (RiftUsedInSteamVr())
+                        {
+                            vrHardware = VrHardware.Rift;
+                        }
+                        else
+                        {
+                            vrHardware = VrHardware.Vive;
+                        }
+                    }
+#endif
+                    else
+                    {
+                        vrHardware = VrHardware.None;
+                    }
+                }
+
                 return vrHardware;
-              }
-            } catch (Exception) {
-              vrHardware = VrHardware.None;
-              return vrHardware;
             }
-
-            // RiftUsedInSteamVr relies on headset detection, so controllers don't have to be on.
-            if (RiftUsedInSteamVr()) {
-              vrHardware = VrHardware.Rift;
-            } else {
-              vrHardware = VrHardware.Vive;
-            }
-          } 
-#endif
-          else {
-            vrHardware = VrHardware.None;
-          }
         }
 
-        return vrHardware;
-      }
-    }
-
-    void Start() {
-      instance = this;
-      if (sdkMode == SdkMode.Oculus) {
-        oculusHandTrackingManager = cameraRigGameObject.AddComponent<OculusHandTrackingManager>();
-        oculusHandTrackingManager.leftTransform = controllerLeftGameObject.transform;
-        oculusHandTrackingManager.rightTransform = controllerRightGameObject.transform;
-      } else if (sdkMode == SdkMode.SteamVR) {
+        void Start()
+        {
+            instance = this;
+            if (sdkMode == SdkMode.Oculus)
+            {
+                oculusHandTrackingManager = cameraRigGameObject.AddComponent<OculusHandTrackingManager>();
+                oculusHandTrackingManager.leftTransform = controllerLeftGameObject.transform;
+                oculusHandTrackingManager.rightTransform = controllerRightGameObject.transform;
+            }
+            else if (sdkMode == SdkMode.SteamVR)
+            {
 #if STEAMVRBUILD
-        var controllerLeftTracking = controllerLeftGameObject.AddComponent<SteamVR_TrackedObject>();
-        controllerLeftTracking.SetDeviceIndex(1);
-        var controllerRightTracking = controllerRightGameObject.AddComponent<SteamVR_TrackedObject>();
-        controllerRightTracking.SetDeviceIndex(2);
-        var manager = cameraRigGameObject.AddComponent<SteamVR_ControllerManager>();
-        manager.left = controllerLeftGameObject;
-        manager.right = controllerRightGameObject;
-        manager.UpdateTargets();
+                var controllerLeftTracking = controllerLeftGameObject.AddComponent<SteamVR_TrackedObject>();
+                controllerLeftTracking.SetDeviceIndex(1);
+                var controllerRightTracking = controllerRightGameObject.AddComponent<SteamVR_TrackedObject>();
+                controllerRightTracking.SetDeviceIndex(2);
+                var manager = cameraRigGameObject.AddComponent<SteamVR_ControllerManager>();
+                manager.left = controllerLeftGameObject;
+                manager.right = controllerRightGameObject;
+                manager.UpdateTargets();
 #endif
-      }
-    }
+            }
+        }
 
 #if STEAMVRBUILD
-    // Check  if the Rift hardware is being used in SteamVR.
-    private bool RiftUsedInSteamVr() {
-      Valve.VR.CVRSystem system = Valve.VR.OpenVR.System;
-      // If system == null, then somehow, the SteamVR SDK was not properly loaded in.
-      Debug.Assert(system != null, "OpenVR System not found, check \"Virtual Reality Supported\"");
+        // Check  if the Rift hardware is being used in SteamVR.
+        private bool RiftUsedInSteamVr()
+        {
+            Valve.VR.CVRSystem system = Valve.VR.OpenVR.System;
+            // If system == null, then somehow, the SteamVR SDK was not properly loaded in.
+            Debug.Assert(system != null, "OpenVR System not found, check \"Virtual Reality Supported\"");
 
-      // Index 0 is always the HMD.
-      return CheckRiftTrackedInSteamVr(0);
-    }
+            // Index 0 is always the HMD.
+            return CheckRiftTrackedInSteamVr(0);
+        }
 
-    // Check if the tracked object is Rift hardware.
-    private bool CheckRiftTrackedInSteamVr(uint index) {
-      var system = Valve.VR.OpenVR.System;
-      var error = Valve.VR.ETrackedPropertyError.TrackedProp_Success;
+        // Check if the tracked object is Rift hardware.
+        private bool CheckRiftTrackedInSteamVr(uint index)
+        {
+            var system = Valve.VR.OpenVR.System;
+            var error = Valve.VR.ETrackedPropertyError.TrackedProp_Success;
 
-      var capacity = system.GetStringTrackedDeviceProperty(
-          index,
-          Valve.VR.ETrackedDeviceProperty.Prop_ManufacturerName_String,
-          null,
-          0,
-          ref error);
-      System.Text.StringBuilder buffer = new System.Text.StringBuilder((int)capacity);
-      system.GetStringTrackedDeviceProperty(
-          index,
-          Valve.VR.ETrackedDeviceProperty.Prop_ManufacturerName_String,
-          buffer,
-          capacity,
-          ref error);
-      string s = buffer.ToString();
+            var capacity = system.GetStringTrackedDeviceProperty(
+                index,
+                Valve.VR.ETrackedDeviceProperty.Prop_ManufacturerName_String,
+                null,
+                0,
+                ref error);
+            System.Text.StringBuilder buffer = new System.Text.StringBuilder((int)capacity);
+            system.GetStringTrackedDeviceProperty(
+                index,
+                Valve.VR.ETrackedDeviceProperty.Prop_ManufacturerName_String,
+                buffer,
+                capacity,
+                ref error);
+            string s = buffer.ToString();
 
-      if (s.Contains("Oculus")) {
-        return true;
-      }
-      return false;
-    }
+            if (s.Contains("Oculus"))
+            {
+                return true;
+            }
+            return false;
+        }
 #endif
 
 #if UNITY_EDITOR
@@ -184,5 +211,5 @@ namespace com.google.apps.peltzer.client.app {
       }
     }
 #endif
-  }
+    }
 }

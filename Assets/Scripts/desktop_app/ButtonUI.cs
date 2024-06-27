@@ -15,35 +15,40 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace com.google.apps.peltzer.client.desktop_app {
-  /// <summary>
-  ///   A class to manage hover behaviour for buttons in our desktop app.
-  /// </summary>
-  class ButtonUI : MonoBehaviour {
-    // A hover highlight, normally comprising an image around the button and a textual tip about the button.
-    private GameObject tip;
+namespace com.google.apps.peltzer.client.desktop_app
+{
+    /// <summary>
+    ///   A class to manage hover behaviour for buttons in our desktop app.
+    /// </summary>
+    class ButtonUI : MonoBehaviour
+    {
+        // A hover highlight, normally comprising an image around the button and a textual tip about the button.
+        private GameObject tip;
 
-    void Start() {
-      tip = transform.Find("Tip").gameObject;
-      tip.SetActive(false);
+        void Start()
+        {
+            tip = transform.Find("Tip").gameObject;
+            tip.SetActive(false);
 
-      EventTrigger trigger = GetComponent<EventTrigger>();
-      EventTrigger.Entry entry = new EventTrigger.Entry();
-      entry.eventID = EventTriggerType.PointerEnter;
-      entry.callback.AddListener((data) => { OnPointerEnter(); });
-      trigger.triggers.Add(entry);
-      entry = new EventTrigger.Entry();
-      entry.eventID = EventTriggerType.PointerExit;
-      entry.callback.AddListener((data) => { OnPointerExit(); });
-      trigger.triggers.Add(entry);
-    }
+            EventTrigger trigger = GetComponent<EventTrigger>();
+            EventTrigger.Entry entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerEnter;
+            entry.callback.AddListener((data) => { OnPointerEnter(); });
+            trigger.triggers.Add(entry);
+            entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerExit;
+            entry.callback.AddListener((data) => { OnPointerExit(); });
+            trigger.triggers.Add(entry);
+        }
 
-    public void OnPointerEnter() {
-      tip.SetActive(true);
+        public void OnPointerEnter()
+        {
+            tip.SetActive(true);
+        }
+
+        public void OnPointerExit()
+        {
+            tip.SetActive(false);
+        }
     }
-    
-    public void OnPointerExit() {
-      tip.SetActive(false);
-    }
-  }
 }

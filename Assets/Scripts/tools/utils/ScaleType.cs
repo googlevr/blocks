@@ -12,22 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.tools.utils {
-  /// <summary>
-  ///   The scaling types used by various tools.
-  /// </summary>
-  public enum ScaleType {
+namespace com.google.apps.peltzer.client.tools.utils
+{
     /// <summary>
-    ///   Scaling type when no scaling is happening currently.
+    ///   The scaling types used by various tools.
     /// </summary>
-    NONE,
-    /// <summary>
-    ///   Scaling type when the user is scaling up.
-    /// </summary>
-    SCALE_UP,
-    /// <summary>
-    ///   Scaling type when the user is scaling down.
-    /// </summary>
-    SCALE_DOWN,
-  }
+    public enum ScaleType
+    {
+        /// <summary>
+        ///   Scaling type when no scaling is happening currently.
+        /// </summary>
+        NONE,
+        /// <summary>
+        ///   Scaling type when the user is scaling up.
+        /// </summary>
+        SCALE_UP,
+        /// <summary>
+        ///   Scaling type when the user is scaling down.
+        /// </summary>
+        SCALE_DOWN,
+    }
 }

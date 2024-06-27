@@ -12,16 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace com.google.apps.peltzer.client.model.core {
+namespace com.google.apps.peltzer.client.model.core
+{
 
-  /// <summary>
-  ///   Properties for Faces.  A value-type.
-  /// </summary>
-  public struct FaceProperties {
-    public int materialId { get; private set; }
+    /// <summary>
+    ///   Properties for Faces.  A value-type.
+    /// </summary>
+    public struct FaceProperties
+    {
+        public int materialId { get; private set; }
 
-    public FaceProperties(int materialId) {
-      this.materialId = materialId;
+        public FaceProperties(int materialId)
+        {
+            this.materialId = materialId;
+        }
     }
-  }
 }

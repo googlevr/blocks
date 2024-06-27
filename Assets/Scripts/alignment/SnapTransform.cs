@@ -16,17 +16,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace com.google.apps.peltzer.client.alignment {
-  /// <summary>
-  ///   Holds the position and rotation for a snap.
-  /// </summary>
-  public class SnapTransform {
-    public Vector3 position;
-    public Quaternion rotation;
+namespace com.google.apps.peltzer.client.alignment
+{
+    /// <summary>
+    ///   Holds the position and rotation for a snap.
+    /// </summary>
+    public class SnapTransform
+    {
+        public Vector3 position;
+        public Quaternion rotation;
 
-    public SnapTransform(Vector3 position, Quaternion rotation) {
-      this.position = position;
-      this.rotation = rotation;
+        public SnapTransform(Vector3 position, Quaternion rotation)
+        {
+            this.position = position;
+            this.rotation = rotation;
+        }
     }
-  }
 }

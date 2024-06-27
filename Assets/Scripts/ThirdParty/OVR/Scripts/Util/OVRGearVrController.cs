@@ -27,14 +27,14 @@ using System.Collections;
 /// </summary>
 public class OVRGearVrController : MonoBehaviour
 {
-	/// <summary>
-	/// The root GameObject that should be conditionally enabled depending on controller connection status.
-	/// </summary>
+    /// <summary>
+    /// The root GameObject that should be conditionally enabled depending on controller connection status.
+    /// </summary>
     public GameObject m_model;
 
-	/// <summary>
-	/// The controller that determines whether or not to enable rendering of the controller model.
-	/// </summary>
+    /// <summary>
+    /// The controller that determines whether or not to enable rendering of the controller model.
+    /// </summary>
     public OVRInput.Controller m_controller;
 
     private bool m_prevControllerConnected = false;

@@ -14,39 +14,47 @@
 
 using System.Collections.Generic;
 
-namespace com.google.apps.peltzer.client.model.core {
+namespace com.google.apps.peltzer.client.model.core
+{
 
-  /// <summary>
-  ///   A Command that is a composite of several other Commands.
-  /// </summary>
-  public class CompositeCommand : Command {
-    public const string COMMAND_NAME = "composite";
+    /// <summary>
+    ///   A Command that is a composite of several other Commands.
+    /// </summary>
+    public class CompositeCommand : Command
+    {
+        public const string COMMAND_NAME = "composite";
 
-    private readonly List<Command> commands;
+        private readonly List<Command> commands;
 
-    public CompositeCommand(List<Command> commands) {
-      this.commands = commands;
+        public CompositeCommand(List<Command> commands)
+        {
+            this.commands = commands;
+        }
+
+        public void ApplyToModel(Model model)
+        {
+            foreach (Command command in commands)
+            {
+                command.ApplyToModel(model);
+            }
+        }
+
+        public Command GetUndoCommand(Model model)
+        {
+            List<Command> undoCommands = new List<Command>(commands.Count);
+            foreach (Command command in commands)
+            {
+                undoCommands.Add(command.GetUndoCommand(model));
+            }
+            // Undo should be applied in reverse order.
+            undoCommands.Reverse();
+            return new CompositeCommand(undoCommands);
+        }
+
+        // Visible for testing.
+        public List<Command> GetCommands()
+        {
+            return commands;
+        }
     }
-
-    public void ApplyToModel(Model model) {
-      foreach(Command command in commands) {
-        command.ApplyToModel(model);
-      }
-    }
-
-    public Command GetUndoCommand(Model model) {
-      List<Command> undoCommands = new List<Command>(commands.Count);
-      foreach(Command command in commands) {
-        undoCommands.Add(command.GetUndoCommand(model));
-      }
-      // Undo should be applied in reverse order.
-      undoCommands.Reverse();
-      return new CompositeCommand(undoCommands);
-    }
-
-    // Visible for testing.
-    public List<Command> GetCommands() {
-      return commands;
-    }
-  }
 }
