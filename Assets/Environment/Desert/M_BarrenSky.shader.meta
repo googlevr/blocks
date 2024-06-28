@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: c5f37c23ea6cce647af18762f495c67f
-timeCreated: 1491949736
-licenseType: Pro
 ShaderImporter:
+  externalObjects: {}
   defaultTextures:
   - _Sky: {fileID: 2800000, guid: 4ed4aeae7237d674f9084d2fce4e5a28, type: 3}
   - _Clouds: {fileID: 2800000, guid: c1178dfbbc5ee1f4b82d214652566d2b, type: 3}
   - _Clouds_copy: {fileID: 2800000, guid: c1178dfbbc5ee1f4b82d214652566d2b, type: 3}
   - _Clouds: {fileID: 2800000, guid: c1178dfbbc5ee1f4b82d214652566d2b, type: 3}
+  nonModifiableTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 

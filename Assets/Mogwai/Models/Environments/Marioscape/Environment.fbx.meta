@@ -1,162 +1,446 @@
 fileFormatVersion: 2
 guid: 584218f66b3d442c4a5711159de7dbe2
-timeCreated: 1473885433
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: group1
-    100004: group6
-    100006: pCube10
-    100008: pCube11
-    100010: pCube12
-    100012: pCube13
-    100014: pCube14
-    100016: pCube15
-    100018: pCube16
-    100020: pCube17
-    100022: pCube18
-    100024: pCube19
-    100026: pCube20
-    100028: pCube21
-    100030: pCube22
-    100032: pCube23
-    100034: pCube24
-    100036: pCube25
-    100038: pCube26
-    100040: pCube27
-    100042: pCube3
-    100044: pCube6
-    100046: pCube7
-    100048: pCube8
-    100050: pCube9
-    100052: pPlane1
-    100054: pPlane2
-    400000: //RootNode
-    400002: group1
-    400004: group6
-    400006: pCube10
-    400008: pCube11
-    400010: pCube12
-    400012: pCube13
-    400014: pCube14
-    400016: pCube15
-    400018: pCube16
-    400020: pCube17
-    400022: pCube18
-    400024: pCube19
-    400026: pCube20
-    400028: pCube21
-    400030: pCube22
-    400032: pCube23
-    400034: pCube24
-    400036: pCube25
-    400038: pCube26
-    400040: pCube27
-    400042: pCube3
-    400044: pCube6
-    400046: pCube7
-    400048: pCube8
-    400050: pCube9
-    400052: pPlane1
-    400054: pPlane2
-    2300000: pCube10
-    2300002: pCube11
-    2300004: pCube12
-    2300006: pCube13
-    2300008: pCube14
-    2300010: pCube15
-    2300012: pCube16
-    2300014: pCube17
-    2300016: pCube18
-    2300018: pCube19
-    2300020: pCube20
-    2300022: pCube21
-    2300024: pCube22
-    2300026: pCube23
-    2300028: pCube24
-    2300030: pCube25
-    2300032: pCube26
-    2300034: pCube27
-    2300036: pCube3
-    2300038: pCube6
-    2300040: pCube7
-    2300042: pCube8
-    2300044: pCube9
-    2300046: pPlane1
-    2300048: pPlane2
-    3300000: pCube10
-    3300002: pCube11
-    3300004: pCube12
-    3300006: pCube13
-    3300008: pCube14
-    3300010: pCube15
-    3300012: pCube16
-    3300014: pCube17
-    3300016: pCube18
-    3300018: pCube19
-    3300020: pCube20
-    3300022: pCube21
-    3300024: pCube22
-    3300026: pCube23
-    3300028: pCube24
-    3300030: pCube25
-    3300032: pCube26
-    3300034: pCube27
-    3300036: pCube3
-    3300038: pCube6
-    3300040: pCube7
-    3300042: pCube8
-    3300044: pCube9
-    3300046: pPlane1
-    3300048: pPlane2
-    4300000: pPlane1
-    4300002: pPlane2
-    4300004: pCube13
-    4300006: pCube11
-    4300008: pCube6
-    4300010: pCube12
-    4300012: pCube8
-    4300014: pCube15
-    4300016: pCube9
-    4300018: pCube16
-    4300020: pCube17
-    4300022: pCube18
-    4300024: pCube7
-    4300026: pCube19
-    4300028: pCube10
-    4300030: pCube20
-    4300032: pCube21
-    4300034: pCube22
-    4300036: pCube23
-    4300038: pCube24
-    4300040: pCube25
-    4300042: pCube26
-    4300044: pCube27
-    4300046: pCube3
-    4300048: pCube14
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: group1
+  - first:
+      1: 100004
+    second: group6
+  - first:
+      1: 100006
+    second: pCube10
+  - first:
+      1: 100008
+    second: pCube11
+  - first:
+      1: 100010
+    second: pCube12
+  - first:
+      1: 100012
+    second: pCube13
+  - first:
+      1: 100014
+    second: pCube14
+  - first:
+      1: 100016
+    second: pCube15
+  - first:
+      1: 100018
+    second: pCube16
+  - first:
+      1: 100020
+    second: pCube17
+  - first:
+      1: 100022
+    second: pCube18
+  - first:
+      1: 100024
+    second: pCube19
+  - first:
+      1: 100026
+    second: pCube20
+  - first:
+      1: 100028
+    second: pCube21
+  - first:
+      1: 100030
+    second: pCube22
+  - first:
+      1: 100032
+    second: pCube23
+  - first:
+      1: 100034
+    second: pCube24
+  - first:
+      1: 100036
+    second: pCube25
+  - first:
+      1: 100038
+    second: pCube26
+  - first:
+      1: 100040
+    second: pCube27
+  - first:
+      1: 100042
+    second: pCube3
+  - first:
+      1: 100044
+    second: pCube6
+  - first:
+      1: 100046
+    second: pCube7
+  - first:
+      1: 100048
+    second: pCube8
+  - first:
+      1: 100050
+    second: pCube9
+  - first:
+      1: 100052
+    second: pPlane1
+  - first:
+      1: 100054
+    second: pPlane2
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: group1
+  - first:
+      4: 400004
+    second: group6
+  - first:
+      4: 400006
+    second: pCube10
+  - first:
+      4: 400008
+    second: pCube11
+  - first:
+      4: 400010
+    second: pCube12
+  - first:
+      4: 400012
+    second: pCube13
+  - first:
+      4: 400014
+    second: pCube14
+  - first:
+      4: 400016
+    second: pCube15
+  - first:
+      4: 400018
+    second: pCube16
+  - first:
+      4: 400020
+    second: pCube17
+  - first:
+      4: 400022
+    second: pCube18
+  - first:
+      4: 400024
+    second: pCube19
+  - first:
+      4: 400026
+    second: pCube20
+  - first:
+      4: 400028
+    second: pCube21
+  - first:
+      4: 400030
+    second: pCube22
+  - first:
+      4: 400032
+    second: pCube23
+  - first:
+      4: 400034
+    second: pCube24
+  - first:
+      4: 400036
+    second: pCube25
+  - first:
+      4: 400038
+    second: pCube26
+  - first:
+      4: 400040
+    second: pCube27
+  - first:
+      4: 400042
+    second: pCube3
+  - first:
+      4: 400044
+    second: pCube6
+  - first:
+      4: 400046
+    second: pCube7
+  - first:
+      4: 400048
+    second: pCube8
+  - first:
+      4: 400050
+    second: pCube9
+  - first:
+      4: 400052
+    second: pPlane1
+  - first:
+      4: 400054
+    second: pPlane2
+  - first:
+      23: 2300000
+    second: pCube10
+  - first:
+      23: 2300002
+    second: pCube11
+  - first:
+      23: 2300004
+    second: pCube12
+  - first:
+      23: 2300006
+    second: pCube13
+  - first:
+      23: 2300008
+    second: pCube14
+  - first:
+      23: 2300010
+    second: pCube15
+  - first:
+      23: 2300012
+    second: pCube16
+  - first:
+      23: 2300014
+    second: pCube17
+  - first:
+      23: 2300016
+    second: pCube18
+  - first:
+      23: 2300018
+    second: pCube19
+  - first:
+      23: 2300020
+    second: pCube20
+  - first:
+      23: 2300022
+    second: pCube21
+  - first:
+      23: 2300024
+    second: pCube22
+  - first:
+      23: 2300026
+    second: pCube23
+  - first:
+      23: 2300028
+    second: pCube24
+  - first:
+      23: 2300030
+    second: pCube25
+  - first:
+      23: 2300032
+    second: pCube26
+  - first:
+      23: 2300034
+    second: pCube27
+  - first:
+      23: 2300036
+    second: pCube3
+  - first:
+      23: 2300038
+    second: pCube6
+  - first:
+      23: 2300040
+    second: pCube7
+  - first:
+      23: 2300042
+    second: pCube8
+  - first:
+      23: 2300044
+    second: pCube9
+  - first:
+      23: 2300046
+    second: pPlane1
+  - first:
+      23: 2300048
+    second: pPlane2
+  - first:
+      33: 3300000
+    second: pCube10
+  - first:
+      33: 3300002
+    second: pCube11
+  - first:
+      33: 3300004
+    second: pCube12
+  - first:
+      33: 3300006
+    second: pCube13
+  - first:
+      33: 3300008
+    second: pCube14
+  - first:
+      33: 3300010
+    second: pCube15
+  - first:
+      33: 3300012
+    second: pCube16
+  - first:
+      33: 3300014
+    second: pCube17
+  - first:
+      33: 3300016
+    second: pCube18
+  - first:
+      33: 3300018
+    second: pCube19
+  - first:
+      33: 3300020
+    second: pCube20
+  - first:
+      33: 3300022
+    second: pCube21
+  - first:
+      33: 3300024
+    second: pCube22
+  - first:
+      33: 3300026
+    second: pCube23
+  - first:
+      33: 3300028
+    second: pCube24
+  - first:
+      33: 3300030
+    second: pCube25
+  - first:
+      33: 3300032
+    second: pCube26
+  - first:
+      33: 3300034
+    second: pCube27
+  - first:
+      33: 3300036
+    second: pCube3
+  - first:
+      33: 3300038
+    second: pCube6
+  - first:
+      33: 3300040
+    second: pCube7
+  - first:
+      33: 3300042
+    second: pCube8
+  - first:
+      33: 3300044
+    second: pCube9
+  - first:
+      33: 3300046
+    second: pPlane1
+  - first:
+      33: 3300048
+    second: pPlane2
+  - first:
+      43: 4300000
+    second: pPlane1
+  - first:
+      43: 4300002
+    second: pPlane2
+  - first:
+      43: 4300004
+    second: pCube13
+  - first:
+      43: 4300006
+    second: pCube11
+  - first:
+      43: 4300008
+    second: pCube6
+  - first:
+      43: 4300010
+    second: pCube12
+  - first:
+      43: 4300012
+    second: pCube8
+  - first:
+      43: 4300014
+    second: pCube15
+  - first:
+      43: 4300016
+    second: pCube9
+  - first:
+      43: 4300018
+    second: pCube16
+  - first:
+      43: 4300020
+    second: pCube17
+  - first:
+      43: 4300022
+    second: pCube18
+  - first:
+      43: 4300024
+    second: pCube7
+  - first:
+      43: 4300026
+    second: pCube19
+  - first:
+      43: 4300028
+    second: pCube10
+  - first:
+      43: 4300030
+    second: pCube20
+  - first:
+      43: 4300032
+    second: pCube21
+  - first:
+      43: 4300034
+    second: pCube22
+  - first:
+      43: 4300036
+    second: pCube23
+  - first:
+      43: 4300038
+    second: pCube24
+  - first:
+      43: 4300040
+    second: pCube25
+  - first:
+      43: 4300042
+    second: pCube26
+  - first:
+      43: 4300044
+    second: pCube27
+  - first:
+      43: 4300046
+    second: pCube3
+  - first:
+      43: 4300048
+    second: pCube14
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloud
+    second: {fileID: 2100000, guid: 798b784448146434292a58368fdc260d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: 917c19bb0af9349d890d7a1af1f40a57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mountain
+    second: {fileID: 2100000, guid: c26a41977961fc543a305f1a20a6b7da, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -164,13 +448,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -180,9 +475,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -192,11 +492,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

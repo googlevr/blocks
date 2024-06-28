@@ -1,174 +1,507 @@
 fileFormatVersion: 2
 guid: 923f9f7869c51704689c66d67a972377
-timeCreated: 1490122087
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Armature
-    100002: Base_Object_000
-    100004: Base_Object_002
-    100006: Big_Button_001
-    100008: Bone
-    100010: Bone_001
-    100012: Bone_002
-    100014: Bone_003
-    100016: Bone_004
-    100018: Bone_005
-    100020: Bone_006
-    100022: Bone_007
-    100024: Bone_008
-    100026: Bone_009
-    100028: Bone_010
-    100030: //RootNode
-    100032: Controller_gripRight_object_001
-    100034: Controller_gropLeft_object_001
-    100036: Controller_Object_000
-    100038: Controller_Object_001
-    100040: Cube_object
-    100042: Eraser_object
-    100044: Hand_Copy_object
-    100046: Hand_object
-    100048: Little_Button_001
-    100050: Negative_cube_object
-    100052: Paintbrush_object
-    100054: Paintbrush_object_brush
-    100056: Paintbrush_object_paint
-    100058: pliers
-    100060: pliers_closed_001
-    100062: pliers_closed_002
-    100064: Stroke_object
-    100066: subdiv_object_001
-    100068: topButton_Object_Grey_001
-    100070: zClick_Object_001
-    400000: Armature
-    400002: Base_Object_000
-    400004: Base_Object_002
-    400006: Big_Button_001
-    400008: Bone
-    400010: Bone_001
-    400012: Bone_002
-    400014: Bone_003
-    400016: Bone_004
-    400018: Bone_005
-    400020: Bone_006
-    400022: Bone_007
-    400024: Bone_008
-    400026: Bone_009
-    400028: Bone_010
-    400030: //RootNode
-    400032: Controller_gripRight_object_001
-    400034: Controller_gropLeft_object_001
-    400036: Controller_Object_000
-    400038: Controller_Object_001
-    400040: Cube_object
-    400042: Eraser_object
-    400044: Hand_Copy_object
-    400046: Hand_object
-    400048: Little_Button_001
-    400050: Negative_cube_object
-    400052: Paintbrush_object
-    400054: Paintbrush_object_brush
-    400056: Paintbrush_object_paint
-    400058: pliers
-    400060: pliers_closed_001
-    400062: pliers_closed_002
-    400064: Stroke_object
-    400066: subdiv_object_001
-    400068: topButton_Object_Grey_001
-    400070: zClick_Object_001
-    2300000: Base_Object_000
-    2300002: Base_Object_002
-    2300004: Big_Button_001
-    2300006: Controller_gripRight_object_001
-    2300008: Controller_gropLeft_object_001
-    2300010: Controller_Object_000
-    2300012: Controller_Object_001
-    2300014: Cube_object
-    2300016: Eraser_object
-    2300018: Hand_Copy_object
-    2300020: Little_Button_001
-    2300022: Negative_cube_object
-    2300024: Paintbrush_object
-    2300026: Paintbrush_object_brush
-    2300028: Paintbrush_object_paint
-    2300030: pliers
-    2300032: pliers_closed_001
-    2300034: pliers_closed_002
-    2300036: Stroke_object
-    2300038: subdiv_object_001
-    2300040: topButton_Object_Grey_001
-    2300042: zClick_Object_001
-    3300000: Base_Object_000
-    3300002: Base_Object_002
-    3300004: Big_Button_001
-    3300006: Controller_gripRight_object_001
-    3300008: Controller_gropLeft_object_001
-    3300010: Controller_Object_000
-    3300012: Controller_Object_001
-    3300014: Cube_object
-    3300016: Eraser_object
-    3300018: Hand_Copy_object
-    3300020: Little_Button_001
-    3300022: Negative_cube_object
-    3300024: Paintbrush_object
-    3300026: Paintbrush_object_brush
-    3300028: Paintbrush_object_paint
-    3300030: pliers
-    3300032: pliers_closed_001
-    3300034: pliers_closed_002
-    3300036: Stroke_object
-    3300038: subdiv_object_001
-    3300040: topButton_Object_Grey_001
-    3300042: zClick_Object_001
-    4300000: pliers
-    4300002: pliers_closed_002
-    4300004: pliers_closed_001
-    4300006: Hand_object
-    4300008: Paintbrush_object
-    4300010: Paintbrush_object_paint
-    4300012: Paintbrush_object_brush
-    4300014: subdiv_object_001
-    4300016: Hand_Copy_object
-    4300018: Negative_cube_object
-    4300020: Cube_object
-    4300022: Stroke_object
-    4300024: Eraser_object
-    4300026: Base_Object_002
-    4300028: Controller_Object_000
-    4300030: Base_Object_000
-    4300032: Controller_Object_001
-    4300034: Big_Button_001
-    4300036: Controller_gripRight_object_001
-    4300038: Controller_gropLeft_object_001
-    4300040: Little_Button_001
-    4300042: topButton_Object_Grey_001
-    4300044: zClick_Object_001
-    7400000: Default Take
-    7400002: Armature_001Action
-    7400004: ArmatureAction
-    9500000: //RootNode
-    13700000: Hand_object
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Base_Object_000
+  - first:
+      1: 100004
+    second: Base_Object_002
+  - first:
+      1: 100006
+    second: Big_Button_001
+  - first:
+      1: 100008
+    second: Bone
+  - first:
+      1: 100010
+    second: Bone_001
+  - first:
+      1: 100012
+    second: Bone_002
+  - first:
+      1: 100014
+    second: Bone_003
+  - first:
+      1: 100016
+    second: Bone_004
+  - first:
+      1: 100018
+    second: Bone_005
+  - first:
+      1: 100020
+    second: Bone_006
+  - first:
+      1: 100022
+    second: Bone_007
+  - first:
+      1: 100024
+    second: Bone_008
+  - first:
+      1: 100026
+    second: Bone_009
+  - first:
+      1: 100028
+    second: Bone_010
+  - first:
+      1: 100030
+    second: //RootNode
+  - first:
+      1: 100032
+    second: Controller_gripRight_object_001
+  - first:
+      1: 100034
+    second: Controller_gropLeft_object_001
+  - first:
+      1: 100036
+    second: Controller_Object_000
+  - first:
+      1: 100038
+    second: Controller_Object_001
+  - first:
+      1: 100040
+    second: Cube_object
+  - first:
+      1: 100042
+    second: Eraser_object
+  - first:
+      1: 100044
+    second: Hand_Copy_object
+  - first:
+      1: 100046
+    second: Hand_object
+  - first:
+      1: 100048
+    second: Little_Button_001
+  - first:
+      1: 100050
+    second: Negative_cube_object
+  - first:
+      1: 100052
+    second: Paintbrush_object
+  - first:
+      1: 100054
+    second: Paintbrush_object_brush
+  - first:
+      1: 100056
+    second: Paintbrush_object_paint
+  - first:
+      1: 100058
+    second: pliers
+  - first:
+      1: 100060
+    second: pliers_closed_001
+  - first:
+      1: 100062
+    second: pliers_closed_002
+  - first:
+      1: 100064
+    second: Stroke_object
+  - first:
+      1: 100066
+    second: subdiv_object_001
+  - first:
+      1: 100068
+    second: topButton_Object_Grey_001
+  - first:
+      1: 100070
+    second: zClick_Object_001
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Base_Object_000
+  - first:
+      4: 400004
+    second: Base_Object_002
+  - first:
+      4: 400006
+    second: Big_Button_001
+  - first:
+      4: 400008
+    second: Bone
+  - first:
+      4: 400010
+    second: Bone_001
+  - first:
+      4: 400012
+    second: Bone_002
+  - first:
+      4: 400014
+    second: Bone_003
+  - first:
+      4: 400016
+    second: Bone_004
+  - first:
+      4: 400018
+    second: Bone_005
+  - first:
+      4: 400020
+    second: Bone_006
+  - first:
+      4: 400022
+    second: Bone_007
+  - first:
+      4: 400024
+    second: Bone_008
+  - first:
+      4: 400026
+    second: Bone_009
+  - first:
+      4: 400028
+    second: Bone_010
+  - first:
+      4: 400030
+    second: //RootNode
+  - first:
+      4: 400032
+    second: Controller_gripRight_object_001
+  - first:
+      4: 400034
+    second: Controller_gropLeft_object_001
+  - first:
+      4: 400036
+    second: Controller_Object_000
+  - first:
+      4: 400038
+    second: Controller_Object_001
+  - first:
+      4: 400040
+    second: Cube_object
+  - first:
+      4: 400042
+    second: Eraser_object
+  - first:
+      4: 400044
+    second: Hand_Copy_object
+  - first:
+      4: 400046
+    second: Hand_object
+  - first:
+      4: 400048
+    second: Little_Button_001
+  - first:
+      4: 400050
+    second: Negative_cube_object
+  - first:
+      4: 400052
+    second: Paintbrush_object
+  - first:
+      4: 400054
+    second: Paintbrush_object_brush
+  - first:
+      4: 400056
+    second: Paintbrush_object_paint
+  - first:
+      4: 400058
+    second: pliers
+  - first:
+      4: 400060
+    second: pliers_closed_001
+  - first:
+      4: 400062
+    second: pliers_closed_002
+  - first:
+      4: 400064
+    second: Stroke_object
+  - first:
+      4: 400066
+    second: subdiv_object_001
+  - first:
+      4: 400068
+    second: topButton_Object_Grey_001
+  - first:
+      4: 400070
+    second: zClick_Object_001
+  - first:
+      23: 2300000
+    second: Base_Object_000
+  - first:
+      23: 2300002
+    second: Base_Object_002
+  - first:
+      23: 2300004
+    second: Big_Button_001
+  - first:
+      23: 2300006
+    second: Controller_gripRight_object_001
+  - first:
+      23: 2300008
+    second: Controller_gropLeft_object_001
+  - first:
+      23: 2300010
+    second: Controller_Object_000
+  - first:
+      23: 2300012
+    second: Controller_Object_001
+  - first:
+      23: 2300014
+    second: Cube_object
+  - first:
+      23: 2300016
+    second: Eraser_object
+  - first:
+      23: 2300018
+    second: Hand_Copy_object
+  - first:
+      23: 2300020
+    second: Little_Button_001
+  - first:
+      23: 2300022
+    second: Negative_cube_object
+  - first:
+      23: 2300024
+    second: Paintbrush_object
+  - first:
+      23: 2300026
+    second: Paintbrush_object_brush
+  - first:
+      23: 2300028
+    second: Paintbrush_object_paint
+  - first:
+      23: 2300030
+    second: pliers
+  - first:
+      23: 2300032
+    second: pliers_closed_001
+  - first:
+      23: 2300034
+    second: pliers_closed_002
+  - first:
+      23: 2300036
+    second: Stroke_object
+  - first:
+      23: 2300038
+    second: subdiv_object_001
+  - first:
+      23: 2300040
+    second: topButton_Object_Grey_001
+  - first:
+      23: 2300042
+    second: zClick_Object_001
+  - first:
+      33: 3300000
+    second: Base_Object_000
+  - first:
+      33: 3300002
+    second: Base_Object_002
+  - first:
+      33: 3300004
+    second: Big_Button_001
+  - first:
+      33: 3300006
+    second: Controller_gripRight_object_001
+  - first:
+      33: 3300008
+    second: Controller_gropLeft_object_001
+  - first:
+      33: 3300010
+    second: Controller_Object_000
+  - first:
+      33: 3300012
+    second: Controller_Object_001
+  - first:
+      33: 3300014
+    second: Cube_object
+  - first:
+      33: 3300016
+    second: Eraser_object
+  - first:
+      33: 3300018
+    second: Hand_Copy_object
+  - first:
+      33: 3300020
+    second: Little_Button_001
+  - first:
+      33: 3300022
+    second: Negative_cube_object
+  - first:
+      33: 3300024
+    second: Paintbrush_object
+  - first:
+      33: 3300026
+    second: Paintbrush_object_brush
+  - first:
+      33: 3300028
+    second: Paintbrush_object_paint
+  - first:
+      33: 3300030
+    second: pliers
+  - first:
+      33: 3300032
+    second: pliers_closed_001
+  - first:
+      33: 3300034
+    second: pliers_closed_002
+  - first:
+      33: 3300036
+    second: Stroke_object
+  - first:
+      33: 3300038
+    second: subdiv_object_001
+  - first:
+      33: 3300040
+    second: topButton_Object_Grey_001
+  - first:
+      33: 3300042
+    second: zClick_Object_001
+  - first:
+      43: 4300000
+    second: pliers
+  - first:
+      43: 4300002
+    second: pliers_closed_002
+  - first:
+      43: 4300004
+    second: pliers_closed_001
+  - first:
+      43: 4300006
+    second: Hand_object
+  - first:
+      43: 4300008
+    second: Paintbrush_object
+  - first:
+      43: 4300010
+    second: Paintbrush_object_paint
+  - first:
+      43: 4300012
+    second: Paintbrush_object_brush
+  - first:
+      43: 4300014
+    second: subdiv_object_001
+  - first:
+      43: 4300016
+    second: Hand_Copy_object
+  - first:
+      43: 4300018
+    second: Negative_cube_object
+  - first:
+      43: 4300020
+    second: Cube_object
+  - first:
+      43: 4300022
+    second: Stroke_object
+  - first:
+      43: 4300024
+    second: Eraser_object
+  - first:
+      43: 4300026
+    second: Base_Object_002
+  - first:
+      43: 4300028
+    second: Controller_Object_000
+  - first:
+      43: 4300030
+    second: Base_Object_000
+  - first:
+      43: 4300032
+    second: Controller_Object_001
+  - first:
+      43: 4300034
+    second: Big_Button_001
+  - first:
+      43: 4300036
+    second: Controller_gripRight_object_001
+  - first:
+      43: 4300038
+    second: Controller_gropLeft_object_001
+  - first:
+      43: 4300040
+    second: Little_Button_001
+  - first:
+      43: 4300042
+    second: topButton_Object_Grey_001
+  - first:
+      43: 4300044
+    second: zClick_Object_001
+  - first:
+      74: 7400000
+    second: Default Take
+  - first:
+      74: 7400002
+    second: Armature_001Action
+  - first:
+      74: 7400004
+    second: ArmatureAction
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Hand_object
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue
+    second: {fileID: 2100000, guid: 8c1d9b9679e92ca42a6e649cc31dfb7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_006
+    second: {fileID: 2100000, guid: 5c887c08af9c0104ab6984532fb7d7af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_009
+    second: {fileID: 2100000, guid: e02635ad3b28bcb4593d8395933fd5bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Off_white
+    second: {fileID: 2100000, guid: 5d95ce0a50f7e2d4ea39950aef45a913, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Off_white_001
+    second: {fileID: 2100000, guid: 4c9644aaf06e3c544b80be54205733c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pink
+    second: {fileID: 2100000, guid: d82de43e4f924b743a6564f46d8c0dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: d06ae5e60c379dc4484da7d362750c97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_001
+    second: {fileID: 2100000, guid: 6a2e86b059241fd4ba58b3c92a851b49, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -176,13 +509,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -192,10 +536,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -205,14 +553,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

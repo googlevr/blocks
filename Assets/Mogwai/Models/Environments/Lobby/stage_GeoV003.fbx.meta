@@ -1,60 +1,140 @@
 fileFormatVersion: 2
 guid: d14ac05108f014d27aaece1d485b8b14
-timeCreated: 1474912866
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: door
-    100002: pCube8
-    100004: pCube9
-    100006: pCylinder4
-    100008: polySurface19
-    100010: polySurface4
-    100012: //RootNode
-    400000: door
-    400002: pCube8
-    400004: pCube9
-    400006: pCylinder4
-    400008: polySurface19
-    400010: polySurface4
-    400012: //RootNode
-    2300000: pCube8
-    2300002: pCube9
-    2300004: pCylinder4
-    2300006: polySurface19
-    2300008: polySurface4
-    3300000: pCube8
-    3300002: pCube9
-    3300004: pCylinder4
-    3300006: polySurface19
-    3300008: polySurface4
-    4300000: polySurface4
-    4300002: pCube8
-    4300004: pCylinder4
-    4300006: pCube9
-    4300008: polySurface19
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: door
+  - first:
+      1: 100002
+    second: pCube8
+  - first:
+      1: 100004
+    second: pCube9
+  - first:
+      1: 100006
+    second: pCylinder4
+  - first:
+      1: 100008
+    second: polySurface19
+  - first:
+      1: 100010
+    second: polySurface4
+  - first:
+      1: 100012
+    second: //RootNode
+  - first:
+      4: 400000
+    second: door
+  - first:
+      4: 400002
+    second: pCube8
+  - first:
+      4: 400004
+    second: pCube9
+  - first:
+      4: 400006
+    second: pCylinder4
+  - first:
+      4: 400008
+    second: polySurface19
+  - first:
+      4: 400010
+    second: polySurface4
+  - first:
+      4: 400012
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: pCube8
+  - first:
+      23: 2300002
+    second: pCube9
+  - first:
+      23: 2300004
+    second: pCylinder4
+  - first:
+      23: 2300006
+    second: polySurface19
+  - first:
+      23: 2300008
+    second: polySurface4
+  - first:
+      33: 3300000
+    second: pCube8
+  - first:
+      33: 3300002
+    second: pCube9
+  - first:
+      33: 3300004
+    second: pCylinder4
+  - first:
+      33: 3300006
+    second: polySurface19
+  - first:
+      33: 3300008
+    second: polySurface4
+  - first:
+      43: 4300000
+    second: polySurface4
+  - first:
+      43: 4300002
+    second: pCube8
+  - first:
+      43: 4300004
+    second: pCylinder4
+  - first:
+      43: 4300006
+    second: pCube9
+  - first:
+      43: 4300008
+    second: polySurface19
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandard2
+    second: {fileID: 2100000, guid: e2e5f6502be0310438b9186fc2040218, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandard3
+    second: {fileID: 2100000, guid: 093c290716fa53c40b86f1c42b04e528, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 2bbfc14f4c5a92149af3de8d7688eb73, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -62,13 +142,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -78,9 +169,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -90,11 +186,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

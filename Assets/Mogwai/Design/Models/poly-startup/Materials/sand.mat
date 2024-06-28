@@ -4,184 +4,100 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: sand
   m_Shader: {fileID: 4800000, guid: a95ed28e647e949419a204a4ccb7743c, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _BGTexture
-      second:
+    - _BGTexture:
         m_Texture: {fileID: 2800000, guid: 4c270811b2b358b4296f2c1a8573c805, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _BumpMap
-      second:
+    - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Clouds
-      second:
+    - _Clouds:
         m_Texture: {fileID: 2800000, guid: c1178dfbbc5ee1f4b82d214652566d2b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailAlbedoMap
-      second:
+    - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailMask
-      second:
+    - _DetailMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailNormalMap
-      second:
+    - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _EmissionMap
-      second:
+    - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _FGTexture
-      second:
+    - _FGTexture:
         m_Texture: {fileID: 2800000, guid: 49f8294a6ca0e8a44b975eb986aee4f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MainTex
-      second:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MetallicGlossMap
-      second:
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _OcclusionMap
-      second:
+    - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ParallaxMap
-      second:
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _BGMaskFar
-      second: 1
-    - first:
-        name: _BGMaskNear
-      second: 0
-    - first:
-        name: _BumpScale
-      second: 1
-    - first:
-        name: _Cutoff
-      second: 0.5
-    - first:
-        name: _DetailNormalMapScale
-      second: 1
-    - first:
-        name: _DstBlend
-      second: 0
-    - first:
-        name: _FogCurve
-      second: 2
-    - first:
-        name: _FogDistance
-      second: 1
-    - first:
-        name: _FogStrength
-      second: 1
-    - first:
-        name: _FresnelDistance
-      second: 1
-    - first:
-        name: _FresnelExp
-      second: 2
-    - first:
-        name: _FresnelMaskCurve
-      second: 1
-    - first:
-        name: _FresnelOnTopOfFog
-      second: 0
-    - first:
-        name: _GlossMapScale
-      second: 1
-    - first:
-        name: _Glossiness
-      second: 1
-    - first:
-        name: _GlossyReflections
-      second: 1
-    - first:
-        name: _Metallic
-      second: 0
-    - first:
-        name: _Mode
-      second: 0
-    - first:
-        name: _OcclusionStrength
-      second: 1
-    - first:
-        name: _Parallax
-      second: 0.02
-    - first:
-        name: _SmoothnessTextureChannel
-      second: 0
-    - first:
-        name: _SpecularHighlights
-      second: 1
-    - first:
-        name: _SrcBlend
-      second: 1
-    - first:
-        name: _TextureStrength
-      second: 0.5
-    - first:
-        name: _UVSec
-      second: 0
-    - first:
-        name: _ZWrite
-      second: 1
+    - _BGMaskFar: 1
+    - _BGMaskNear: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _FogCurve: 2
+    - _FogDistance: 1
+    - _FogStrength: 1
+    - _FresnelDistance: 1
+    - _FresnelExp: 2
+    - _FresnelMaskCurve: 1
+    - _FresnelOnTopOfFog: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 1
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TextureStrength: 0.5
+    - _UVSec: 0
+    - _ZWrite: 1
     m_Colors:
-    - first:
-        name: _Color
-      second: {r: 0.6838235, g: 0.6838235, b: 0.6838235, a: 1}
-    - first:
-        name: _DiffuseColorA
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - first:
-        name: _DiffuseColorB
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - first:
-        name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _FogColor
-      second: {r: 0.882353, g: 0.95686275, b: 0.8705883, a: 1}
-    - first:
-        name: _FresnelColor
-      second: {r: 0.882353, g: 0.95686275, b: 0.8705883, a: 1}
+    - _Color: {r: 0.6838235, g: 0.6838235, b: 0.6838235, a: 1}
+    - _DiffuseColorA: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _DiffuseColorB: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogColor: {r: 0.882353, g: 0.95686275, b: 0.8705883, a: 1}
+    - _FresnelColor: {r: 0.882353, g: 0.95686275, b: 0.8705883, a: 1}
