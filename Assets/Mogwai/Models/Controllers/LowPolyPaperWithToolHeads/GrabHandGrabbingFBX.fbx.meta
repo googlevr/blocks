@@ -1,74 +1,160 @@
 fileFormatVersion: 2
 guid: ccbacd416df38439a8c2b271e5c271c7
-timeCreated: 1475704336
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: grabHand_Jnt
-    100002: //RootNode
-    100004: indFing001_Jnt
-    100006: indFing002_Jnt
-    100008: indFing003_Jnt
-    100010: indFingTip_Jnt
-    100012: midFing001_Jnt
-    100014: midFing002_Jnt
-    100016: midFing003_Jnt
-    100018: midFingTip_Jnt
-    100020: pinkFing001_Jnt
-    100022: pinkFing002_Jnt
-    100024: pinkFing003_Jnt
-    100026: pinkFingTip_Jnt
-    100028: thumbFing001_Jnt
-    100030: thumbFing002_Jnt
-    100032: thumbFing003_Jnt
-    100034: thumbFingTip_Jnt
-    100036: wristHand_Jnt
-    400000: grabHand_Jnt
-    400002: //RootNode
-    400004: indFing001_Jnt
-    400006: indFing002_Jnt
-    400008: indFing003_Jnt
-    400010: indFingTip_Jnt
-    400012: midFing001_Jnt
-    400014: midFing002_Jnt
-    400016: midFing003_Jnt
-    400018: midFingTip_Jnt
-    400020: pinkFing001_Jnt
-    400022: pinkFing002_Jnt
-    400024: pinkFing003_Jnt
-    400026: pinkFingTip_Jnt
-    400028: thumbFing001_Jnt
-    400030: thumbFing002_Jnt
-    400032: thumbFing003_Jnt
-    400034: thumbFingTip_Jnt
-    400036: wristHand_Jnt
-    7400000: Take 001
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: grabHand_Jnt
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: indFing001_Jnt
+  - first:
+      1: 100006
+    second: indFing002_Jnt
+  - first:
+      1: 100008
+    second: indFing003_Jnt
+  - first:
+      1: 100010
+    second: indFingTip_Jnt
+  - first:
+      1: 100012
+    second: midFing001_Jnt
+  - first:
+      1: 100014
+    second: midFing002_Jnt
+  - first:
+      1: 100016
+    second: midFing003_Jnt
+  - first:
+      1: 100018
+    second: midFingTip_Jnt
+  - first:
+      1: 100020
+    second: pinkFing001_Jnt
+  - first:
+      1: 100022
+    second: pinkFing002_Jnt
+  - first:
+      1: 100024
+    second: pinkFing003_Jnt
+  - first:
+      1: 100026
+    second: pinkFingTip_Jnt
+  - first:
+      1: 100028
+    second: thumbFing001_Jnt
+  - first:
+      1: 100030
+    second: thumbFing002_Jnt
+  - first:
+      1: 100032
+    second: thumbFing003_Jnt
+  - first:
+      1: 100034
+    second: thumbFingTip_Jnt
+  - first:
+      1: 100036
+    second: wristHand_Jnt
+  - first:
+      4: 400000
+    second: grabHand_Jnt
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: indFing001_Jnt
+  - first:
+      4: 400006
+    second: indFing002_Jnt
+  - first:
+      4: 400008
+    second: indFing003_Jnt
+  - first:
+      4: 400010
+    second: indFingTip_Jnt
+  - first:
+      4: 400012
+    second: midFing001_Jnt
+  - first:
+      4: 400014
+    second: midFing002_Jnt
+  - first:
+      4: 400016
+    second: midFing003_Jnt
+  - first:
+      4: 400018
+    second: midFingTip_Jnt
+  - first:
+      4: 400020
+    second: pinkFing001_Jnt
+  - first:
+      4: 400022
+    second: pinkFing002_Jnt
+  - first:
+      4: 400024
+    second: pinkFing003_Jnt
+  - first:
+      4: 400026
+    second: pinkFingTip_Jnt
+  - first:
+      4: 400028
+    second: thumbFing001_Jnt
+  - first:
+      4: 400030
+    second: thumbFing002_Jnt
+  - first:
+      4: 400032
+    second: thumbFing003_Jnt
+  - first:
+      4: 400034
+    second: thumbFingTip_Jnt
+  - first:
+      4: 400036
+    second: wristHand_Jnt
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
+      internalID: 0
       firstFrame: 3.9
       lastFrame: 17
       wrapMode: 0
@@ -138,13 +224,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -154,9 +251,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -166,11 +268,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

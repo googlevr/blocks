@@ -1,832 +1,2483 @@
 fileFormatVersion: 2
 guid: de1af7b086b8b644680eb36185daf610
-timeCreated: 1498056871
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Blocks_Bits
-    100002: Blue (10)
-    100004: Blue (11)
-    100006: Blue (12)
-    100008: Blue (13)
-    100010: Blue (14)
-    100012: Blue (15)
-    100014: Blue (16)
-    100016: Blue (17)
-    100018: Blue (18)
-    100020: Blue (19)
-    100022: Blue (2)
-    100024: Blue (20)
-    100026: Blue (21)
-    100028: Blue (22)
-    100030: Blue (23)
-    100032: Blue (24)
-    100034: Blue (25)
-    100036: Blue (26)
-    100038: Blue (27)
-    100040: Blue (28)
-    100042: Blue (29)
-    100044: Blue (3)
-    100046: Blue (30)
-    100048: Blue (31)
-    100050: Blue (32)
-    100052: Blue (33)
-    100054: Blue (34)
-    100056: Blue (35)
-    100058: Blue (36)
-    100060: Blue (37)
-    100062: Blue (38)
-    100064: Blue (39)
-    100066: Blue (4)
-    100068: Blue (40)
-    100070: Blue (41)
-    100072: Blue (42)
-    100074: Blue (43)
-    100076: Blue (44)
-    100078: Blue (45)
-    100080: Blue (46)
-    100082: Blue (47)
-    100084: Blue (48)
-    100086: Blue (49)
-    100088: Blue (5)
-    100090: Blue (50)
-    100092: Blue (51)
-    100094: Blue (52)
-    100096: Blue (53)
-    100098: Blue (54)
-    100100: Blue (55)
-    100102: Blue (6)
-    100104: Blue (7)
-    100106: Blue (8)
-    100108: Blue (9)
-    100110: Camera
-    100112: Red (10)
-    100114: Red (11)
-    100116: Red (12)
-    100118: Red (13)
-    100120: Red (14)
-    100122: Red (15)
-    100124: Red (16)
-    100126: Red (17)
-    100128: Red (18)
-    100130: Red (19)
-    100132: Red (2)
-    100134: Red (20)
-    100136: Red (21)
-    100138: Red (22)
-    100140: Red (23)
-    100142: Red (24)
-    100144: Red (25)
-    100146: Red (26)
-    100148: Red (27)
-    100150: Red (28)
-    100152: Red (29)
-    100154: Red (3)
-    100156: Red (30)
-    100158: Red (31)
-    100160: Red (32)
-    100162: Red (33)
-    100164: Red (34)
-    100166: Red (35)
-    100168: Red (36)
-    100170: Red (37)
-    100172: Red (38)
-    100174: Red (39)
-    100176: Red (4)
-    100178: Red (40)
-    100180: Red (41)
-    100182: Red (42)
-    100184: Red (43)
-    100186: Red (44)
-    100188: Red (45)
-    100190: Red (46)
-    100192: Red (47)
-    100194: Red (48)
-    100196: Red (49)
-    100198: Red (5)
-    100200: Red (50)
-    100202: Red (51)
-    100204: Red (52)
-    100206: Red (53)
-    100208: Red (54)
-    100210: Red (55)
-    100212: Red (6)
-    100214: Red (7)
-    100216: Red (8)
-    100218: Red (9)
-    100220: //RootNode
-    100222: Yellow (10)
-    100224: Yellow (11)
-    100226: Yellow (12)
-    100228: Yellow (13)
-    100230: Yellow (14)
-    100232: Yellow (15)
-    100234: Yellow (16)
-    100236: Yellow (17)
-    100238: Yellow (18)
-    100240: Yellow (19)
-    100242: Yellow (2)
-    100244: Yellow (20)
-    100246: Yellow (21)
-    100248: Yellow (22)
-    100250: Yellow (23)
-    100252: Yellow (24)
-    100254: Yellow (25)
-    100256: Yellow (26)
-    100258: Yellow (27)
-    100260: Yellow (28)
-    100262: Yellow (29)
-    100264: Yellow (3)
-    100266: Yellow (30)
-    100268: Yellow (31)
-    100270: Yellow (32)
-    100272: Yellow (33)
-    100274: Yellow (34)
-    100276: Yellow (35)
-    100278: Yellow (36)
-    100280: Yellow (37)
-    100282: Yellow (38)
-    100284: Yellow (39)
-    100286: Yellow (4)
-    100288: Yellow (40)
-    100290: Yellow (41)
-    100292: Yellow (42)
-    100294: Yellow (43)
-    100296: Yellow (44)
-    100298: Yellow (45)
-    100300: Yellow (46)
-    100302: Yellow (47)
-    100304: Yellow (48)
-    100306: Yellow (49)
-    100308: Yellow (5)
-    100310: Yellow (50)
-    100312: Yellow (51)
-    100314: Yellow (52)
-    100316: Yellow (53)
-    100318: Yellow (54)
-    100320: Yellow (55)
-    100322: Yellow (6)
-    100324: Yellow (7)
-    100326: Yellow (8)
-    100328: Yellow (9)
-    400000: Blocks_Bits
-    400002: Blue (10)
-    400004: Blue (11)
-    400006: Blue (12)
-    400008: Blue (13)
-    400010: Blue (14)
-    400012: Blue (15)
-    400014: Blue (16)
-    400016: Blue (17)
-    400018: Blue (18)
-    400020: Blue (19)
-    400022: Blue (2)
-    400024: Blue (20)
-    400026: Blue (21)
-    400028: Blue (22)
-    400030: Blue (23)
-    400032: Blue (24)
-    400034: Blue (25)
-    400036: Blue (26)
-    400038: Blue (27)
-    400040: Blue (28)
-    400042: Blue (29)
-    400044: Blue (3)
-    400046: Blue (30)
-    400048: Blue (31)
-    400050: Blue (32)
-    400052: Blue (33)
-    400054: Blue (34)
-    400056: Blue (35)
-    400058: Blue (36)
-    400060: Blue (37)
-    400062: Blue (38)
-    400064: Blue (39)
-    400066: Blue (4)
-    400068: Blue (40)
-    400070: Blue (41)
-    400072: Blue (42)
-    400074: Blue (43)
-    400076: Blue (44)
-    400078: Blue (45)
-    400080: Blue (46)
-    400082: Blue (47)
-    400084: Blue (48)
-    400086: Blue (49)
-    400088: Blue (5)
-    400090: Blue (50)
-    400092: Blue (51)
-    400094: Blue (52)
-    400096: Blue (53)
-    400098: Blue (54)
-    400100: Blue (55)
-    400102: Blue (6)
-    400104: Blue (7)
-    400106: Blue (8)
-    400108: Blue (9)
-    400110: Camera
-    400112: Red (10)
-    400114: Red (11)
-    400116: Red (12)
-    400118: Red (13)
-    400120: Red (14)
-    400122: Red (15)
-    400124: Red (16)
-    400126: Red (17)
-    400128: Red (18)
-    400130: Red (19)
-    400132: Red (2)
-    400134: Red (20)
-    400136: Red (21)
-    400138: Red (22)
-    400140: Red (23)
-    400142: Red (24)
-    400144: Red (25)
-    400146: Red (26)
-    400148: Red (27)
-    400150: Red (28)
-    400152: Red (29)
-    400154: Red (3)
-    400156: Red (30)
-    400158: Red (31)
-    400160: Red (32)
-    400162: Red (33)
-    400164: Red (34)
-    400166: Red (35)
-    400168: Red (36)
-    400170: Red (37)
-    400172: Red (38)
-    400174: Red (39)
-    400176: Red (4)
-    400178: Red (40)
-    400180: Red (41)
-    400182: Red (42)
-    400184: Red (43)
-    400186: Red (44)
-    400188: Red (45)
-    400190: Red (46)
-    400192: Red (47)
-    400194: Red (48)
-    400196: Red (49)
-    400198: Red (5)
-    400200: Red (50)
-    400202: Red (51)
-    400204: Red (52)
-    400206: Red (53)
-    400208: Red (54)
-    400210: Red (55)
-    400212: Red (6)
-    400214: Red (7)
-    400216: Red (8)
-    400218: Red (9)
-    400220: //RootNode
-    400222: Yellow (10)
-    400224: Yellow (11)
-    400226: Yellow (12)
-    400228: Yellow (13)
-    400230: Yellow (14)
-    400232: Yellow (15)
-    400234: Yellow (16)
-    400236: Yellow (17)
-    400238: Yellow (18)
-    400240: Yellow (19)
-    400242: Yellow (2)
-    400244: Yellow (20)
-    400246: Yellow (21)
-    400248: Yellow (22)
-    400250: Yellow (23)
-    400252: Yellow (24)
-    400254: Yellow (25)
-    400256: Yellow (26)
-    400258: Yellow (27)
-    400260: Yellow (28)
-    400262: Yellow (29)
-    400264: Yellow (3)
-    400266: Yellow (30)
-    400268: Yellow (31)
-    400270: Yellow (32)
-    400272: Yellow (33)
-    400274: Yellow (34)
-    400276: Yellow (35)
-    400278: Yellow (36)
-    400280: Yellow (37)
-    400282: Yellow (38)
-    400284: Yellow (39)
-    400286: Yellow (4)
-    400288: Yellow (40)
-    400290: Yellow (41)
-    400292: Yellow (42)
-    400294: Yellow (43)
-    400296: Yellow (44)
-    400298: Yellow (45)
-    400300: Yellow (46)
-    400302: Yellow (47)
-    400304: Yellow (48)
-    400306: Yellow (49)
-    400308: Yellow (5)
-    400310: Yellow (50)
-    400312: Yellow (51)
-    400314: Yellow (52)
-    400316: Yellow (53)
-    400318: Yellow (54)
-    400320: Yellow (55)
-    400322: Yellow (6)
-    400324: Yellow (7)
-    400326: Yellow (8)
-    400328: Yellow (9)
-    2300000: Blue (10)
-    2300002: Blue (11)
-    2300004: Blue (12)
-    2300006: Blue (13)
-    2300008: Blue (14)
-    2300010: Blue (15)
-    2300012: Blue (16)
-    2300014: Blue (17)
-    2300016: Blue (18)
-    2300018: Blue (19)
-    2300020: Blue (2)
-    2300022: Blue (20)
-    2300024: Blue (21)
-    2300026: Blue (22)
-    2300028: Blue (23)
-    2300030: Blue (24)
-    2300032: Blue (25)
-    2300034: Blue (26)
-    2300036: Blue (27)
-    2300038: Blue (28)
-    2300040: Blue (29)
-    2300042: Blue (3)
-    2300044: Blue (30)
-    2300046: Blue (31)
-    2300048: Blue (32)
-    2300050: Blue (33)
-    2300052: Blue (34)
-    2300054: Blue (35)
-    2300056: Blue (36)
-    2300058: Blue (37)
-    2300060: Blue (38)
-    2300062: Blue (39)
-    2300064: Blue (4)
-    2300066: Blue (40)
-    2300068: Blue (41)
-    2300070: Blue (42)
-    2300072: Blue (43)
-    2300074: Blue (44)
-    2300076: Blue (45)
-    2300078: Blue (46)
-    2300080: Blue (47)
-    2300082: Blue (48)
-    2300084: Blue (49)
-    2300086: Blue (5)
-    2300088: Blue (50)
-    2300090: Blue (51)
-    2300092: Blue (52)
-    2300094: Blue (53)
-    2300096: Blue (54)
-    2300098: Blue (55)
-    2300100: Blue (6)
-    2300102: Blue (7)
-    2300104: Blue (8)
-    2300106: Blue (9)
-    2300108: Red (10)
-    2300110: Red (11)
-    2300112: Red (12)
-    2300114: Red (13)
-    2300116: Red (14)
-    2300118: Red (15)
-    2300120: Red (16)
-    2300122: Red (17)
-    2300124: Red (18)
-    2300126: Red (19)
-    2300128: Red (2)
-    2300130: Red (20)
-    2300132: Red (21)
-    2300134: Red (22)
-    2300136: Red (23)
-    2300138: Red (24)
-    2300140: Red (25)
-    2300142: Red (26)
-    2300144: Red (27)
-    2300146: Red (28)
-    2300148: Red (29)
-    2300150: Red (3)
-    2300152: Red (30)
-    2300154: Red (31)
-    2300156: Red (32)
-    2300158: Red (33)
-    2300160: Red (34)
-    2300162: Red (35)
-    2300164: Red (36)
-    2300166: Red (37)
-    2300168: Red (38)
-    2300170: Red (39)
-    2300172: Red (4)
-    2300174: Red (40)
-    2300176: Red (41)
-    2300178: Red (42)
-    2300180: Red (43)
-    2300182: Red (44)
-    2300184: Red (45)
-    2300186: Red (46)
-    2300188: Red (47)
-    2300190: Red (48)
-    2300192: Red (49)
-    2300194: Red (5)
-    2300196: Red (50)
-    2300198: Red (51)
-    2300200: Red (52)
-    2300202: Red (53)
-    2300204: Red (54)
-    2300206: Red (55)
-    2300208: Red (6)
-    2300210: Red (7)
-    2300212: Red (8)
-    2300214: Red (9)
-    2300216: Yellow (10)
-    2300218: Yellow (11)
-    2300220: Yellow (12)
-    2300222: Yellow (13)
-    2300224: Yellow (14)
-    2300226: Yellow (15)
-    2300228: Yellow (16)
-    2300230: Yellow (17)
-    2300232: Yellow (18)
-    2300234: Yellow (19)
-    2300236: Yellow (2)
-    2300238: Yellow (20)
-    2300240: Yellow (21)
-    2300242: Yellow (22)
-    2300244: Yellow (23)
-    2300246: Yellow (24)
-    2300248: Yellow (25)
-    2300250: Yellow (26)
-    2300252: Yellow (27)
-    2300254: Yellow (28)
-    2300256: Yellow (29)
-    2300258: Yellow (3)
-    2300260: Yellow (30)
-    2300262: Yellow (31)
-    2300264: Yellow (32)
-    2300266: Yellow (33)
-    2300268: Yellow (34)
-    2300270: Yellow (35)
-    2300272: Yellow (36)
-    2300274: Yellow (37)
-    2300276: Yellow (38)
-    2300278: Yellow (39)
-    2300280: Yellow (4)
-    2300282: Yellow (40)
-    2300284: Yellow (41)
-    2300286: Yellow (42)
-    2300288: Yellow (43)
-    2300290: Yellow (44)
-    2300292: Yellow (45)
-    2300294: Yellow (46)
-    2300296: Yellow (47)
-    2300298: Yellow (48)
-    2300300: Yellow (49)
-    2300302: Yellow (5)
-    2300304: Yellow (50)
-    2300306: Yellow (51)
-    2300308: Yellow (52)
-    2300310: Yellow (53)
-    2300312: Yellow (54)
-    2300314: Yellow (55)
-    2300316: Yellow (6)
-    2300318: Yellow (7)
-    2300320: Yellow (8)
-    2300322: Yellow (9)
-    3300000: Blue (10)
-    3300002: Blue (11)
-    3300004: Blue (12)
-    3300006: Blue (13)
-    3300008: Blue (14)
-    3300010: Blue (15)
-    3300012: Blue (16)
-    3300014: Blue (17)
-    3300016: Blue (18)
-    3300018: Blue (19)
-    3300020: Blue (2)
-    3300022: Blue (20)
-    3300024: Blue (21)
-    3300026: Blue (22)
-    3300028: Blue (23)
-    3300030: Blue (24)
-    3300032: Blue (25)
-    3300034: Blue (26)
-    3300036: Blue (27)
-    3300038: Blue (28)
-    3300040: Blue (29)
-    3300042: Blue (3)
-    3300044: Blue (30)
-    3300046: Blue (31)
-    3300048: Blue (32)
-    3300050: Blue (33)
-    3300052: Blue (34)
-    3300054: Blue (35)
-    3300056: Blue (36)
-    3300058: Blue (37)
-    3300060: Blue (38)
-    3300062: Blue (39)
-    3300064: Blue (4)
-    3300066: Blue (40)
-    3300068: Blue (41)
-    3300070: Blue (42)
-    3300072: Blue (43)
-    3300074: Blue (44)
-    3300076: Blue (45)
-    3300078: Blue (46)
-    3300080: Blue (47)
-    3300082: Blue (48)
-    3300084: Blue (49)
-    3300086: Blue (5)
-    3300088: Blue (50)
-    3300090: Blue (51)
-    3300092: Blue (52)
-    3300094: Blue (53)
-    3300096: Blue (54)
-    3300098: Blue (55)
-    3300100: Blue (6)
-    3300102: Blue (7)
-    3300104: Blue (8)
-    3300106: Blue (9)
-    3300108: Red (10)
-    3300110: Red (11)
-    3300112: Red (12)
-    3300114: Red (13)
-    3300116: Red (14)
-    3300118: Red (15)
-    3300120: Red (16)
-    3300122: Red (17)
-    3300124: Red (18)
-    3300126: Red (19)
-    3300128: Red (2)
-    3300130: Red (20)
-    3300132: Red (21)
-    3300134: Red (22)
-    3300136: Red (23)
-    3300138: Red (24)
-    3300140: Red (25)
-    3300142: Red (26)
-    3300144: Red (27)
-    3300146: Red (28)
-    3300148: Red (29)
-    3300150: Red (3)
-    3300152: Red (30)
-    3300154: Red (31)
-    3300156: Red (32)
-    3300158: Red (33)
-    3300160: Red (34)
-    3300162: Red (35)
-    3300164: Red (36)
-    3300166: Red (37)
-    3300168: Red (38)
-    3300170: Red (39)
-    3300172: Red (4)
-    3300174: Red (40)
-    3300176: Red (41)
-    3300178: Red (42)
-    3300180: Red (43)
-    3300182: Red (44)
-    3300184: Red (45)
-    3300186: Red (46)
-    3300188: Red (47)
-    3300190: Red (48)
-    3300192: Red (49)
-    3300194: Red (5)
-    3300196: Red (50)
-    3300198: Red (51)
-    3300200: Red (52)
-    3300202: Red (53)
-    3300204: Red (54)
-    3300206: Red (55)
-    3300208: Red (6)
-    3300210: Red (7)
-    3300212: Red (8)
-    3300214: Red (9)
-    3300216: Yellow (10)
-    3300218: Yellow (11)
-    3300220: Yellow (12)
-    3300222: Yellow (13)
-    3300224: Yellow (14)
-    3300226: Yellow (15)
-    3300228: Yellow (16)
-    3300230: Yellow (17)
-    3300232: Yellow (18)
-    3300234: Yellow (19)
-    3300236: Yellow (2)
-    3300238: Yellow (20)
-    3300240: Yellow (21)
-    3300242: Yellow (22)
-    3300244: Yellow (23)
-    3300246: Yellow (24)
-    3300248: Yellow (25)
-    3300250: Yellow (26)
-    3300252: Yellow (27)
-    3300254: Yellow (28)
-    3300256: Yellow (29)
-    3300258: Yellow (3)
-    3300260: Yellow (30)
-    3300262: Yellow (31)
-    3300264: Yellow (32)
-    3300266: Yellow (33)
-    3300268: Yellow (34)
-    3300270: Yellow (35)
-    3300272: Yellow (36)
-    3300274: Yellow (37)
-    3300276: Yellow (38)
-    3300278: Yellow (39)
-    3300280: Yellow (4)
-    3300282: Yellow (40)
-    3300284: Yellow (41)
-    3300286: Yellow (42)
-    3300288: Yellow (43)
-    3300290: Yellow (44)
-    3300292: Yellow (45)
-    3300294: Yellow (46)
-    3300296: Yellow (47)
-    3300298: Yellow (48)
-    3300300: Yellow (49)
-    3300302: Yellow (5)
-    3300304: Yellow (50)
-    3300306: Yellow (51)
-    3300308: Yellow (52)
-    3300310: Yellow (53)
-    3300312: Yellow (54)
-    3300314: Yellow (55)
-    3300316: Yellow (6)
-    3300318: Yellow (7)
-    3300320: Yellow (8)
-    3300322: Yellow (9)
-    4300000: Red (2)
-    4300002: Red (3)
-    4300004: Red (4)
-    4300006: Red (5)
-    4300008: Red (6)
-    4300010: Red (7)
-    4300012: Red (8)
-    4300014: Red (9)
-    4300016: Red (10)
-    4300018: Red (11)
-    4300020: Red (12)
-    4300022: Red (13)
-    4300024: Red (14)
-    4300026: Red (15)
-    4300028: Red (16)
-    4300030: Red (17)
-    4300032: Red (18)
-    4300034: Red (19)
-    4300036: Red (20)
-    4300038: Red (21)
-    4300040: Red (22)
-    4300042: Red (23)
-    4300044: Red (24)
-    4300046: Red (25)
-    4300048: Red (26)
-    4300050: Red (27)
-    4300052: Red (28)
-    4300054: Red (29)
-    4300056: Red (30)
-    4300058: Red (31)
-    4300060: Red (32)
-    4300062: Red (33)
-    4300064: Red (34)
-    4300066: Red (35)
-    4300068: Red (36)
-    4300070: Red (37)
-    4300072: Red (38)
-    4300074: Red (39)
-    4300076: Red (40)
-    4300078: Red (41)
-    4300080: Red (42)
-    4300082: Red (43)
-    4300084: Red (44)
-    4300086: Red (45)
-    4300088: Red (46)
-    4300090: Red (47)
-    4300092: Red (48)
-    4300094: Red (49)
-    4300096: Red (50)
-    4300098: Red (51)
-    4300100: Red (52)
-    4300102: Red (53)
-    4300104: Red (54)
-    4300106: Red (55)
-    4300108: Blue (2)
-    4300110: Blue (3)
-    4300112: Blue (4)
-    4300114: Blue (5)
-    4300116: Blue (6)
-    4300118: Blue (7)
-    4300120: Blue (8)
-    4300122: Blue (9)
-    4300124: Blue (10)
-    4300126: Blue (11)
-    4300128: Blue (12)
-    4300130: Blue (13)
-    4300132: Blue (14)
-    4300134: Blue (15)
-    4300136: Blue (16)
-    4300138: Blue (17)
-    4300140: Blue (18)
-    4300142: Blue (19)
-    4300144: Blue (20)
-    4300146: Blue (21)
-    4300148: Blue (22)
-    4300150: Blue (23)
-    4300152: Blue (24)
-    4300154: Blue (25)
-    4300156: Blue (26)
-    4300158: Blue (27)
-    4300160: Blue (28)
-    4300162: Blue (29)
-    4300164: Blue (30)
-    4300166: Blue (31)
-    4300168: Blue (32)
-    4300170: Blue (33)
-    4300172: Blue (34)
-    4300174: Blue (35)
-    4300176: Blue (36)
-    4300178: Blue (37)
-    4300180: Blue (38)
-    4300182: Blue (39)
-    4300184: Blue (40)
-    4300186: Blue (41)
-    4300188: Blue (42)
-    4300190: Blue (43)
-    4300192: Blue (44)
-    4300194: Blue (45)
-    4300196: Blue (46)
-    4300198: Blue (47)
-    4300200: Blue (48)
-    4300202: Blue (49)
-    4300204: Blue (50)
-    4300206: Blue (51)
-    4300208: Blue (52)
-    4300210: Blue (53)
-    4300212: Blue (54)
-    4300214: Blue (55)
-    4300216: Yellow (3)
-    4300218: Yellow (4)
-    4300220: Yellow (5)
-    4300222: Yellow (6)
-    4300224: Yellow (7)
-    4300226: Yellow (8)
-    4300228: Yellow (9)
-    4300230: Yellow (10)
-    4300232: Yellow (11)
-    4300234: Yellow (12)
-    4300236: Yellow (13)
-    4300238: Yellow (14)
-    4300240: Yellow (15)
-    4300242: Yellow (16)
-    4300244: Yellow (17)
-    4300246: Yellow (18)
-    4300248: Yellow (19)
-    4300250: Yellow (20)
-    4300252: Yellow (21)
-    4300254: Yellow (22)
-    4300256: Yellow (23)
-    4300258: Yellow (24)
-    4300260: Yellow (25)
-    4300262: Yellow (26)
-    4300264: Yellow (27)
-    4300266: Yellow (28)
-    4300268: Yellow (29)
-    4300270: Yellow (30)
-    4300272: Yellow (31)
-    4300274: Yellow (32)
-    4300276: Yellow (33)
-    4300278: Yellow (34)
-    4300280: Yellow (35)
-    4300282: Yellow (36)
-    4300284: Yellow (37)
-    4300286: Yellow (38)
-    4300288: Yellow (55)
-    4300290: Yellow (54)
-    4300292: Yellow (53)
-    4300294: Yellow (52)
-    4300296: Yellow (51)
-    4300298: Yellow (50)
-    4300300: Yellow (49)
-    4300302: Yellow (48)
-    4300304: Yellow (47)
-    4300306: Yellow (46)
-    4300308: Yellow (45)
-    4300310: Yellow (44)
-    4300312: Yellow (43)
-    4300314: Yellow (42)
-    4300316: Yellow (41)
-    4300318: Yellow (40)
-    4300320: Yellow (39)
-    4300322: Yellow (2)
-    7400000: Take 001
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Blocks_Bits
+  - first:
+      1: 100002
+    second: Blue (10)
+  - first:
+      1: 100004
+    second: Blue (11)
+  - first:
+      1: 100006
+    second: Blue (12)
+  - first:
+      1: 100008
+    second: Blue (13)
+  - first:
+      1: 100010
+    second: Blue (14)
+  - first:
+      1: 100012
+    second: Blue (15)
+  - first:
+      1: 100014
+    second: Blue (16)
+  - first:
+      1: 100016
+    second: Blue (17)
+  - first:
+      1: 100018
+    second: Blue (18)
+  - first:
+      1: 100020
+    second: Blue (19)
+  - first:
+      1: 100022
+    second: Blue (2)
+  - first:
+      1: 100024
+    second: Blue (20)
+  - first:
+      1: 100026
+    second: Blue (21)
+  - first:
+      1: 100028
+    second: Blue (22)
+  - first:
+      1: 100030
+    second: Blue (23)
+  - first:
+      1: 100032
+    second: Blue (24)
+  - first:
+      1: 100034
+    second: Blue (25)
+  - first:
+      1: 100036
+    second: Blue (26)
+  - first:
+      1: 100038
+    second: Blue (27)
+  - first:
+      1: 100040
+    second: Blue (28)
+  - first:
+      1: 100042
+    second: Blue (29)
+  - first:
+      1: 100044
+    second: Blue (3)
+  - first:
+      1: 100046
+    second: Blue (30)
+  - first:
+      1: 100048
+    second: Blue (31)
+  - first:
+      1: 100050
+    second: Blue (32)
+  - first:
+      1: 100052
+    second: Blue (33)
+  - first:
+      1: 100054
+    second: Blue (34)
+  - first:
+      1: 100056
+    second: Blue (35)
+  - first:
+      1: 100058
+    second: Blue (36)
+  - first:
+      1: 100060
+    second: Blue (37)
+  - first:
+      1: 100062
+    second: Blue (38)
+  - first:
+      1: 100064
+    second: Blue (39)
+  - first:
+      1: 100066
+    second: Blue (4)
+  - first:
+      1: 100068
+    second: Blue (40)
+  - first:
+      1: 100070
+    second: Blue (41)
+  - first:
+      1: 100072
+    second: Blue (42)
+  - first:
+      1: 100074
+    second: Blue (43)
+  - first:
+      1: 100076
+    second: Blue (44)
+  - first:
+      1: 100078
+    second: Blue (45)
+  - first:
+      1: 100080
+    second: Blue (46)
+  - first:
+      1: 100082
+    second: Blue (47)
+  - first:
+      1: 100084
+    second: Blue (48)
+  - first:
+      1: 100086
+    second: Blue (49)
+  - first:
+      1: 100088
+    second: Blue (5)
+  - first:
+      1: 100090
+    second: Blue (50)
+  - first:
+      1: 100092
+    second: Blue (51)
+  - first:
+      1: 100094
+    second: Blue (52)
+  - first:
+      1: 100096
+    second: Blue (53)
+  - first:
+      1: 100098
+    second: Blue (54)
+  - first:
+      1: 100100
+    second: Blue (55)
+  - first:
+      1: 100102
+    second: Blue (6)
+  - first:
+      1: 100104
+    second: Blue (7)
+  - first:
+      1: 100106
+    second: Blue (8)
+  - first:
+      1: 100108
+    second: Blue (9)
+  - first:
+      1: 100110
+    second: Camera
+  - first:
+      1: 100112
+    second: Red (10)
+  - first:
+      1: 100114
+    second: Red (11)
+  - first:
+      1: 100116
+    second: Red (12)
+  - first:
+      1: 100118
+    second: Red (13)
+  - first:
+      1: 100120
+    second: Red (14)
+  - first:
+      1: 100122
+    second: Red (15)
+  - first:
+      1: 100124
+    second: Red (16)
+  - first:
+      1: 100126
+    second: Red (17)
+  - first:
+      1: 100128
+    second: Red (18)
+  - first:
+      1: 100130
+    second: Red (19)
+  - first:
+      1: 100132
+    second: Red (2)
+  - first:
+      1: 100134
+    second: Red (20)
+  - first:
+      1: 100136
+    second: Red (21)
+  - first:
+      1: 100138
+    second: Red (22)
+  - first:
+      1: 100140
+    second: Red (23)
+  - first:
+      1: 100142
+    second: Red (24)
+  - first:
+      1: 100144
+    second: Red (25)
+  - first:
+      1: 100146
+    second: Red (26)
+  - first:
+      1: 100148
+    second: Red (27)
+  - first:
+      1: 100150
+    second: Red (28)
+  - first:
+      1: 100152
+    second: Red (29)
+  - first:
+      1: 100154
+    second: Red (3)
+  - first:
+      1: 100156
+    second: Red (30)
+  - first:
+      1: 100158
+    second: Red (31)
+  - first:
+      1: 100160
+    second: Red (32)
+  - first:
+      1: 100162
+    second: Red (33)
+  - first:
+      1: 100164
+    second: Red (34)
+  - first:
+      1: 100166
+    second: Red (35)
+  - first:
+      1: 100168
+    second: Red (36)
+  - first:
+      1: 100170
+    second: Red (37)
+  - first:
+      1: 100172
+    second: Red (38)
+  - first:
+      1: 100174
+    second: Red (39)
+  - first:
+      1: 100176
+    second: Red (4)
+  - first:
+      1: 100178
+    second: Red (40)
+  - first:
+      1: 100180
+    second: Red (41)
+  - first:
+      1: 100182
+    second: Red (42)
+  - first:
+      1: 100184
+    second: Red (43)
+  - first:
+      1: 100186
+    second: Red (44)
+  - first:
+      1: 100188
+    second: Red (45)
+  - first:
+      1: 100190
+    second: Red (46)
+  - first:
+      1: 100192
+    second: Red (47)
+  - first:
+      1: 100194
+    second: Red (48)
+  - first:
+      1: 100196
+    second: Red (49)
+  - first:
+      1: 100198
+    second: Red (5)
+  - first:
+      1: 100200
+    second: Red (50)
+  - first:
+      1: 100202
+    second: Red (51)
+  - first:
+      1: 100204
+    second: Red (52)
+  - first:
+      1: 100206
+    second: Red (53)
+  - first:
+      1: 100208
+    second: Red (54)
+  - first:
+      1: 100210
+    second: Red (55)
+  - first:
+      1: 100212
+    second: Red (6)
+  - first:
+      1: 100214
+    second: Red (7)
+  - first:
+      1: 100216
+    second: Red (8)
+  - first:
+      1: 100218
+    second: Red (9)
+  - first:
+      1: 100220
+    second: //RootNode
+  - first:
+      1: 100222
+    second: Yellow (10)
+  - first:
+      1: 100224
+    second: Yellow (11)
+  - first:
+      1: 100226
+    second: Yellow (12)
+  - first:
+      1: 100228
+    second: Yellow (13)
+  - first:
+      1: 100230
+    second: Yellow (14)
+  - first:
+      1: 100232
+    second: Yellow (15)
+  - first:
+      1: 100234
+    second: Yellow (16)
+  - first:
+      1: 100236
+    second: Yellow (17)
+  - first:
+      1: 100238
+    second: Yellow (18)
+  - first:
+      1: 100240
+    second: Yellow (19)
+  - first:
+      1: 100242
+    second: Yellow (2)
+  - first:
+      1: 100244
+    second: Yellow (20)
+  - first:
+      1: 100246
+    second: Yellow (21)
+  - first:
+      1: 100248
+    second: Yellow (22)
+  - first:
+      1: 100250
+    second: Yellow (23)
+  - first:
+      1: 100252
+    second: Yellow (24)
+  - first:
+      1: 100254
+    second: Yellow (25)
+  - first:
+      1: 100256
+    second: Yellow (26)
+  - first:
+      1: 100258
+    second: Yellow (27)
+  - first:
+      1: 100260
+    second: Yellow (28)
+  - first:
+      1: 100262
+    second: Yellow (29)
+  - first:
+      1: 100264
+    second: Yellow (3)
+  - first:
+      1: 100266
+    second: Yellow (30)
+  - first:
+      1: 100268
+    second: Yellow (31)
+  - first:
+      1: 100270
+    second: Yellow (32)
+  - first:
+      1: 100272
+    second: Yellow (33)
+  - first:
+      1: 100274
+    second: Yellow (34)
+  - first:
+      1: 100276
+    second: Yellow (35)
+  - first:
+      1: 100278
+    second: Yellow (36)
+  - first:
+      1: 100280
+    second: Yellow (37)
+  - first:
+      1: 100282
+    second: Yellow (38)
+  - first:
+      1: 100284
+    second: Yellow (39)
+  - first:
+      1: 100286
+    second: Yellow (4)
+  - first:
+      1: 100288
+    second: Yellow (40)
+  - first:
+      1: 100290
+    second: Yellow (41)
+  - first:
+      1: 100292
+    second: Yellow (42)
+  - first:
+      1: 100294
+    second: Yellow (43)
+  - first:
+      1: 100296
+    second: Yellow (44)
+  - first:
+      1: 100298
+    second: Yellow (45)
+  - first:
+      1: 100300
+    second: Yellow (46)
+  - first:
+      1: 100302
+    second: Yellow (47)
+  - first:
+      1: 100304
+    second: Yellow (48)
+  - first:
+      1: 100306
+    second: Yellow (49)
+  - first:
+      1: 100308
+    second: Yellow (5)
+  - first:
+      1: 100310
+    second: Yellow (50)
+  - first:
+      1: 100312
+    second: Yellow (51)
+  - first:
+      1: 100314
+    second: Yellow (52)
+  - first:
+      1: 100316
+    second: Yellow (53)
+  - first:
+      1: 100318
+    second: Yellow (54)
+  - first:
+      1: 100320
+    second: Yellow (55)
+  - first:
+      1: 100322
+    second: Yellow (6)
+  - first:
+      1: 100324
+    second: Yellow (7)
+  - first:
+      1: 100326
+    second: Yellow (8)
+  - first:
+      1: 100328
+    second: Yellow (9)
+  - first:
+      4: 400000
+    second: Blocks_Bits
+  - first:
+      4: 400002
+    second: Blue (10)
+  - first:
+      4: 400004
+    second: Blue (11)
+  - first:
+      4: 400006
+    second: Blue (12)
+  - first:
+      4: 400008
+    second: Blue (13)
+  - first:
+      4: 400010
+    second: Blue (14)
+  - first:
+      4: 400012
+    second: Blue (15)
+  - first:
+      4: 400014
+    second: Blue (16)
+  - first:
+      4: 400016
+    second: Blue (17)
+  - first:
+      4: 400018
+    second: Blue (18)
+  - first:
+      4: 400020
+    second: Blue (19)
+  - first:
+      4: 400022
+    second: Blue (2)
+  - first:
+      4: 400024
+    second: Blue (20)
+  - first:
+      4: 400026
+    second: Blue (21)
+  - first:
+      4: 400028
+    second: Blue (22)
+  - first:
+      4: 400030
+    second: Blue (23)
+  - first:
+      4: 400032
+    second: Blue (24)
+  - first:
+      4: 400034
+    second: Blue (25)
+  - first:
+      4: 400036
+    second: Blue (26)
+  - first:
+      4: 400038
+    second: Blue (27)
+  - first:
+      4: 400040
+    second: Blue (28)
+  - first:
+      4: 400042
+    second: Blue (29)
+  - first:
+      4: 400044
+    second: Blue (3)
+  - first:
+      4: 400046
+    second: Blue (30)
+  - first:
+      4: 400048
+    second: Blue (31)
+  - first:
+      4: 400050
+    second: Blue (32)
+  - first:
+      4: 400052
+    second: Blue (33)
+  - first:
+      4: 400054
+    second: Blue (34)
+  - first:
+      4: 400056
+    second: Blue (35)
+  - first:
+      4: 400058
+    second: Blue (36)
+  - first:
+      4: 400060
+    second: Blue (37)
+  - first:
+      4: 400062
+    second: Blue (38)
+  - first:
+      4: 400064
+    second: Blue (39)
+  - first:
+      4: 400066
+    second: Blue (4)
+  - first:
+      4: 400068
+    second: Blue (40)
+  - first:
+      4: 400070
+    second: Blue (41)
+  - first:
+      4: 400072
+    second: Blue (42)
+  - first:
+      4: 400074
+    second: Blue (43)
+  - first:
+      4: 400076
+    second: Blue (44)
+  - first:
+      4: 400078
+    second: Blue (45)
+  - first:
+      4: 400080
+    second: Blue (46)
+  - first:
+      4: 400082
+    second: Blue (47)
+  - first:
+      4: 400084
+    second: Blue (48)
+  - first:
+      4: 400086
+    second: Blue (49)
+  - first:
+      4: 400088
+    second: Blue (5)
+  - first:
+      4: 400090
+    second: Blue (50)
+  - first:
+      4: 400092
+    second: Blue (51)
+  - first:
+      4: 400094
+    second: Blue (52)
+  - first:
+      4: 400096
+    second: Blue (53)
+  - first:
+      4: 400098
+    second: Blue (54)
+  - first:
+      4: 400100
+    second: Blue (55)
+  - first:
+      4: 400102
+    second: Blue (6)
+  - first:
+      4: 400104
+    second: Blue (7)
+  - first:
+      4: 400106
+    second: Blue (8)
+  - first:
+      4: 400108
+    second: Blue (9)
+  - first:
+      4: 400110
+    second: Camera
+  - first:
+      4: 400112
+    second: Red (10)
+  - first:
+      4: 400114
+    second: Red (11)
+  - first:
+      4: 400116
+    second: Red (12)
+  - first:
+      4: 400118
+    second: Red (13)
+  - first:
+      4: 400120
+    second: Red (14)
+  - first:
+      4: 400122
+    second: Red (15)
+  - first:
+      4: 400124
+    second: Red (16)
+  - first:
+      4: 400126
+    second: Red (17)
+  - first:
+      4: 400128
+    second: Red (18)
+  - first:
+      4: 400130
+    second: Red (19)
+  - first:
+      4: 400132
+    second: Red (2)
+  - first:
+      4: 400134
+    second: Red (20)
+  - first:
+      4: 400136
+    second: Red (21)
+  - first:
+      4: 400138
+    second: Red (22)
+  - first:
+      4: 400140
+    second: Red (23)
+  - first:
+      4: 400142
+    second: Red (24)
+  - first:
+      4: 400144
+    second: Red (25)
+  - first:
+      4: 400146
+    second: Red (26)
+  - first:
+      4: 400148
+    second: Red (27)
+  - first:
+      4: 400150
+    second: Red (28)
+  - first:
+      4: 400152
+    second: Red (29)
+  - first:
+      4: 400154
+    second: Red (3)
+  - first:
+      4: 400156
+    second: Red (30)
+  - first:
+      4: 400158
+    second: Red (31)
+  - first:
+      4: 400160
+    second: Red (32)
+  - first:
+      4: 400162
+    second: Red (33)
+  - first:
+      4: 400164
+    second: Red (34)
+  - first:
+      4: 400166
+    second: Red (35)
+  - first:
+      4: 400168
+    second: Red (36)
+  - first:
+      4: 400170
+    second: Red (37)
+  - first:
+      4: 400172
+    second: Red (38)
+  - first:
+      4: 400174
+    second: Red (39)
+  - first:
+      4: 400176
+    second: Red (4)
+  - first:
+      4: 400178
+    second: Red (40)
+  - first:
+      4: 400180
+    second: Red (41)
+  - first:
+      4: 400182
+    second: Red (42)
+  - first:
+      4: 400184
+    second: Red (43)
+  - first:
+      4: 400186
+    second: Red (44)
+  - first:
+      4: 400188
+    second: Red (45)
+  - first:
+      4: 400190
+    second: Red (46)
+  - first:
+      4: 400192
+    second: Red (47)
+  - first:
+      4: 400194
+    second: Red (48)
+  - first:
+      4: 400196
+    second: Red (49)
+  - first:
+      4: 400198
+    second: Red (5)
+  - first:
+      4: 400200
+    second: Red (50)
+  - first:
+      4: 400202
+    second: Red (51)
+  - first:
+      4: 400204
+    second: Red (52)
+  - first:
+      4: 400206
+    second: Red (53)
+  - first:
+      4: 400208
+    second: Red (54)
+  - first:
+      4: 400210
+    second: Red (55)
+  - first:
+      4: 400212
+    second: Red (6)
+  - first:
+      4: 400214
+    second: Red (7)
+  - first:
+      4: 400216
+    second: Red (8)
+  - first:
+      4: 400218
+    second: Red (9)
+  - first:
+      4: 400220
+    second: //RootNode
+  - first:
+      4: 400222
+    second: Yellow (10)
+  - first:
+      4: 400224
+    second: Yellow (11)
+  - first:
+      4: 400226
+    second: Yellow (12)
+  - first:
+      4: 400228
+    second: Yellow (13)
+  - first:
+      4: 400230
+    second: Yellow (14)
+  - first:
+      4: 400232
+    second: Yellow (15)
+  - first:
+      4: 400234
+    second: Yellow (16)
+  - first:
+      4: 400236
+    second: Yellow (17)
+  - first:
+      4: 400238
+    second: Yellow (18)
+  - first:
+      4: 400240
+    second: Yellow (19)
+  - first:
+      4: 400242
+    second: Yellow (2)
+  - first:
+      4: 400244
+    second: Yellow (20)
+  - first:
+      4: 400246
+    second: Yellow (21)
+  - first:
+      4: 400248
+    second: Yellow (22)
+  - first:
+      4: 400250
+    second: Yellow (23)
+  - first:
+      4: 400252
+    second: Yellow (24)
+  - first:
+      4: 400254
+    second: Yellow (25)
+  - first:
+      4: 400256
+    second: Yellow (26)
+  - first:
+      4: 400258
+    second: Yellow (27)
+  - first:
+      4: 400260
+    second: Yellow (28)
+  - first:
+      4: 400262
+    second: Yellow (29)
+  - first:
+      4: 400264
+    second: Yellow (3)
+  - first:
+      4: 400266
+    second: Yellow (30)
+  - first:
+      4: 400268
+    second: Yellow (31)
+  - first:
+      4: 400270
+    second: Yellow (32)
+  - first:
+      4: 400272
+    second: Yellow (33)
+  - first:
+      4: 400274
+    second: Yellow (34)
+  - first:
+      4: 400276
+    second: Yellow (35)
+  - first:
+      4: 400278
+    second: Yellow (36)
+  - first:
+      4: 400280
+    second: Yellow (37)
+  - first:
+      4: 400282
+    second: Yellow (38)
+  - first:
+      4: 400284
+    second: Yellow (39)
+  - first:
+      4: 400286
+    second: Yellow (4)
+  - first:
+      4: 400288
+    second: Yellow (40)
+  - first:
+      4: 400290
+    second: Yellow (41)
+  - first:
+      4: 400292
+    second: Yellow (42)
+  - first:
+      4: 400294
+    second: Yellow (43)
+  - first:
+      4: 400296
+    second: Yellow (44)
+  - first:
+      4: 400298
+    second: Yellow (45)
+  - first:
+      4: 400300
+    second: Yellow (46)
+  - first:
+      4: 400302
+    second: Yellow (47)
+  - first:
+      4: 400304
+    second: Yellow (48)
+  - first:
+      4: 400306
+    second: Yellow (49)
+  - first:
+      4: 400308
+    second: Yellow (5)
+  - first:
+      4: 400310
+    second: Yellow (50)
+  - first:
+      4: 400312
+    second: Yellow (51)
+  - first:
+      4: 400314
+    second: Yellow (52)
+  - first:
+      4: 400316
+    second: Yellow (53)
+  - first:
+      4: 400318
+    second: Yellow (54)
+  - first:
+      4: 400320
+    second: Yellow (55)
+  - first:
+      4: 400322
+    second: Yellow (6)
+  - first:
+      4: 400324
+    second: Yellow (7)
+  - first:
+      4: 400326
+    second: Yellow (8)
+  - first:
+      4: 400328
+    second: Yellow (9)
+  - first:
+      23: 2300000
+    second: Blue (10)
+  - first:
+      23: 2300002
+    second: Blue (11)
+  - first:
+      23: 2300004
+    second: Blue (12)
+  - first:
+      23: 2300006
+    second: Blue (13)
+  - first:
+      23: 2300008
+    second: Blue (14)
+  - first:
+      23: 2300010
+    second: Blue (15)
+  - first:
+      23: 2300012
+    second: Blue (16)
+  - first:
+      23: 2300014
+    second: Blue (17)
+  - first:
+      23: 2300016
+    second: Blue (18)
+  - first:
+      23: 2300018
+    second: Blue (19)
+  - first:
+      23: 2300020
+    second: Blue (2)
+  - first:
+      23: 2300022
+    second: Blue (20)
+  - first:
+      23: 2300024
+    second: Blue (21)
+  - first:
+      23: 2300026
+    second: Blue (22)
+  - first:
+      23: 2300028
+    second: Blue (23)
+  - first:
+      23: 2300030
+    second: Blue (24)
+  - first:
+      23: 2300032
+    second: Blue (25)
+  - first:
+      23: 2300034
+    second: Blue (26)
+  - first:
+      23: 2300036
+    second: Blue (27)
+  - first:
+      23: 2300038
+    second: Blue (28)
+  - first:
+      23: 2300040
+    second: Blue (29)
+  - first:
+      23: 2300042
+    second: Blue (3)
+  - first:
+      23: 2300044
+    second: Blue (30)
+  - first:
+      23: 2300046
+    second: Blue (31)
+  - first:
+      23: 2300048
+    second: Blue (32)
+  - first:
+      23: 2300050
+    second: Blue (33)
+  - first:
+      23: 2300052
+    second: Blue (34)
+  - first:
+      23: 2300054
+    second: Blue (35)
+  - first:
+      23: 2300056
+    second: Blue (36)
+  - first:
+      23: 2300058
+    second: Blue (37)
+  - first:
+      23: 2300060
+    second: Blue (38)
+  - first:
+      23: 2300062
+    second: Blue (39)
+  - first:
+      23: 2300064
+    second: Blue (4)
+  - first:
+      23: 2300066
+    second: Blue (40)
+  - first:
+      23: 2300068
+    second: Blue (41)
+  - first:
+      23: 2300070
+    second: Blue (42)
+  - first:
+      23: 2300072
+    second: Blue (43)
+  - first:
+      23: 2300074
+    second: Blue (44)
+  - first:
+      23: 2300076
+    second: Blue (45)
+  - first:
+      23: 2300078
+    second: Blue (46)
+  - first:
+      23: 2300080
+    second: Blue (47)
+  - first:
+      23: 2300082
+    second: Blue (48)
+  - first:
+      23: 2300084
+    second: Blue (49)
+  - first:
+      23: 2300086
+    second: Blue (5)
+  - first:
+      23: 2300088
+    second: Blue (50)
+  - first:
+      23: 2300090
+    second: Blue (51)
+  - first:
+      23: 2300092
+    second: Blue (52)
+  - first:
+      23: 2300094
+    second: Blue (53)
+  - first:
+      23: 2300096
+    second: Blue (54)
+  - first:
+      23: 2300098
+    second: Blue (55)
+  - first:
+      23: 2300100
+    second: Blue (6)
+  - first:
+      23: 2300102
+    second: Blue (7)
+  - first:
+      23: 2300104
+    second: Blue (8)
+  - first:
+      23: 2300106
+    second: Blue (9)
+  - first:
+      23: 2300108
+    second: Red (10)
+  - first:
+      23: 2300110
+    second: Red (11)
+  - first:
+      23: 2300112
+    second: Red (12)
+  - first:
+      23: 2300114
+    second: Red (13)
+  - first:
+      23: 2300116
+    second: Red (14)
+  - first:
+      23: 2300118
+    second: Red (15)
+  - first:
+      23: 2300120
+    second: Red (16)
+  - first:
+      23: 2300122
+    second: Red (17)
+  - first:
+      23: 2300124
+    second: Red (18)
+  - first:
+      23: 2300126
+    second: Red (19)
+  - first:
+      23: 2300128
+    second: Red (2)
+  - first:
+      23: 2300130
+    second: Red (20)
+  - first:
+      23: 2300132
+    second: Red (21)
+  - first:
+      23: 2300134
+    second: Red (22)
+  - first:
+      23: 2300136
+    second: Red (23)
+  - first:
+      23: 2300138
+    second: Red (24)
+  - first:
+      23: 2300140
+    second: Red (25)
+  - first:
+      23: 2300142
+    second: Red (26)
+  - first:
+      23: 2300144
+    second: Red (27)
+  - first:
+      23: 2300146
+    second: Red (28)
+  - first:
+      23: 2300148
+    second: Red (29)
+  - first:
+      23: 2300150
+    second: Red (3)
+  - first:
+      23: 2300152
+    second: Red (30)
+  - first:
+      23: 2300154
+    second: Red (31)
+  - first:
+      23: 2300156
+    second: Red (32)
+  - first:
+      23: 2300158
+    second: Red (33)
+  - first:
+      23: 2300160
+    second: Red (34)
+  - first:
+      23: 2300162
+    second: Red (35)
+  - first:
+      23: 2300164
+    second: Red (36)
+  - first:
+      23: 2300166
+    second: Red (37)
+  - first:
+      23: 2300168
+    second: Red (38)
+  - first:
+      23: 2300170
+    second: Red (39)
+  - first:
+      23: 2300172
+    second: Red (4)
+  - first:
+      23: 2300174
+    second: Red (40)
+  - first:
+      23: 2300176
+    second: Red (41)
+  - first:
+      23: 2300178
+    second: Red (42)
+  - first:
+      23: 2300180
+    second: Red (43)
+  - first:
+      23: 2300182
+    second: Red (44)
+  - first:
+      23: 2300184
+    second: Red (45)
+  - first:
+      23: 2300186
+    second: Red (46)
+  - first:
+      23: 2300188
+    second: Red (47)
+  - first:
+      23: 2300190
+    second: Red (48)
+  - first:
+      23: 2300192
+    second: Red (49)
+  - first:
+      23: 2300194
+    second: Red (5)
+  - first:
+      23: 2300196
+    second: Red (50)
+  - first:
+      23: 2300198
+    second: Red (51)
+  - first:
+      23: 2300200
+    second: Red (52)
+  - first:
+      23: 2300202
+    second: Red (53)
+  - first:
+      23: 2300204
+    second: Red (54)
+  - first:
+      23: 2300206
+    second: Red (55)
+  - first:
+      23: 2300208
+    second: Red (6)
+  - first:
+      23: 2300210
+    second: Red (7)
+  - first:
+      23: 2300212
+    second: Red (8)
+  - first:
+      23: 2300214
+    second: Red (9)
+  - first:
+      23: 2300216
+    second: Yellow (10)
+  - first:
+      23: 2300218
+    second: Yellow (11)
+  - first:
+      23: 2300220
+    second: Yellow (12)
+  - first:
+      23: 2300222
+    second: Yellow (13)
+  - first:
+      23: 2300224
+    second: Yellow (14)
+  - first:
+      23: 2300226
+    second: Yellow (15)
+  - first:
+      23: 2300228
+    second: Yellow (16)
+  - first:
+      23: 2300230
+    second: Yellow (17)
+  - first:
+      23: 2300232
+    second: Yellow (18)
+  - first:
+      23: 2300234
+    second: Yellow (19)
+  - first:
+      23: 2300236
+    second: Yellow (2)
+  - first:
+      23: 2300238
+    second: Yellow (20)
+  - first:
+      23: 2300240
+    second: Yellow (21)
+  - first:
+      23: 2300242
+    second: Yellow (22)
+  - first:
+      23: 2300244
+    second: Yellow (23)
+  - first:
+      23: 2300246
+    second: Yellow (24)
+  - first:
+      23: 2300248
+    second: Yellow (25)
+  - first:
+      23: 2300250
+    second: Yellow (26)
+  - first:
+      23: 2300252
+    second: Yellow (27)
+  - first:
+      23: 2300254
+    second: Yellow (28)
+  - first:
+      23: 2300256
+    second: Yellow (29)
+  - first:
+      23: 2300258
+    second: Yellow (3)
+  - first:
+      23: 2300260
+    second: Yellow (30)
+  - first:
+      23: 2300262
+    second: Yellow (31)
+  - first:
+      23: 2300264
+    second: Yellow (32)
+  - first:
+      23: 2300266
+    second: Yellow (33)
+  - first:
+      23: 2300268
+    second: Yellow (34)
+  - first:
+      23: 2300270
+    second: Yellow (35)
+  - first:
+      23: 2300272
+    second: Yellow (36)
+  - first:
+      23: 2300274
+    second: Yellow (37)
+  - first:
+      23: 2300276
+    second: Yellow (38)
+  - first:
+      23: 2300278
+    second: Yellow (39)
+  - first:
+      23: 2300280
+    second: Yellow (4)
+  - first:
+      23: 2300282
+    second: Yellow (40)
+  - first:
+      23: 2300284
+    second: Yellow (41)
+  - first:
+      23: 2300286
+    second: Yellow (42)
+  - first:
+      23: 2300288
+    second: Yellow (43)
+  - first:
+      23: 2300290
+    second: Yellow (44)
+  - first:
+      23: 2300292
+    second: Yellow (45)
+  - first:
+      23: 2300294
+    second: Yellow (46)
+  - first:
+      23: 2300296
+    second: Yellow (47)
+  - first:
+      23: 2300298
+    second: Yellow (48)
+  - first:
+      23: 2300300
+    second: Yellow (49)
+  - first:
+      23: 2300302
+    second: Yellow (5)
+  - first:
+      23: 2300304
+    second: Yellow (50)
+  - first:
+      23: 2300306
+    second: Yellow (51)
+  - first:
+      23: 2300308
+    second: Yellow (52)
+  - first:
+      23: 2300310
+    second: Yellow (53)
+  - first:
+      23: 2300312
+    second: Yellow (54)
+  - first:
+      23: 2300314
+    second: Yellow (55)
+  - first:
+      23: 2300316
+    second: Yellow (6)
+  - first:
+      23: 2300318
+    second: Yellow (7)
+  - first:
+      23: 2300320
+    second: Yellow (8)
+  - first:
+      23: 2300322
+    second: Yellow (9)
+  - first:
+      33: 3300000
+    second: Blue (10)
+  - first:
+      33: 3300002
+    second: Blue (11)
+  - first:
+      33: 3300004
+    second: Blue (12)
+  - first:
+      33: 3300006
+    second: Blue (13)
+  - first:
+      33: 3300008
+    second: Blue (14)
+  - first:
+      33: 3300010
+    second: Blue (15)
+  - first:
+      33: 3300012
+    second: Blue (16)
+  - first:
+      33: 3300014
+    second: Blue (17)
+  - first:
+      33: 3300016
+    second: Blue (18)
+  - first:
+      33: 3300018
+    second: Blue (19)
+  - first:
+      33: 3300020
+    second: Blue (2)
+  - first:
+      33: 3300022
+    second: Blue (20)
+  - first:
+      33: 3300024
+    second: Blue (21)
+  - first:
+      33: 3300026
+    second: Blue (22)
+  - first:
+      33: 3300028
+    second: Blue (23)
+  - first:
+      33: 3300030
+    second: Blue (24)
+  - first:
+      33: 3300032
+    second: Blue (25)
+  - first:
+      33: 3300034
+    second: Blue (26)
+  - first:
+      33: 3300036
+    second: Blue (27)
+  - first:
+      33: 3300038
+    second: Blue (28)
+  - first:
+      33: 3300040
+    second: Blue (29)
+  - first:
+      33: 3300042
+    second: Blue (3)
+  - first:
+      33: 3300044
+    second: Blue (30)
+  - first:
+      33: 3300046
+    second: Blue (31)
+  - first:
+      33: 3300048
+    second: Blue (32)
+  - first:
+      33: 3300050
+    second: Blue (33)
+  - first:
+      33: 3300052
+    second: Blue (34)
+  - first:
+      33: 3300054
+    second: Blue (35)
+  - first:
+      33: 3300056
+    second: Blue (36)
+  - first:
+      33: 3300058
+    second: Blue (37)
+  - first:
+      33: 3300060
+    second: Blue (38)
+  - first:
+      33: 3300062
+    second: Blue (39)
+  - first:
+      33: 3300064
+    second: Blue (4)
+  - first:
+      33: 3300066
+    second: Blue (40)
+  - first:
+      33: 3300068
+    second: Blue (41)
+  - first:
+      33: 3300070
+    second: Blue (42)
+  - first:
+      33: 3300072
+    second: Blue (43)
+  - first:
+      33: 3300074
+    second: Blue (44)
+  - first:
+      33: 3300076
+    second: Blue (45)
+  - first:
+      33: 3300078
+    second: Blue (46)
+  - first:
+      33: 3300080
+    second: Blue (47)
+  - first:
+      33: 3300082
+    second: Blue (48)
+  - first:
+      33: 3300084
+    second: Blue (49)
+  - first:
+      33: 3300086
+    second: Blue (5)
+  - first:
+      33: 3300088
+    second: Blue (50)
+  - first:
+      33: 3300090
+    second: Blue (51)
+  - first:
+      33: 3300092
+    second: Blue (52)
+  - first:
+      33: 3300094
+    second: Blue (53)
+  - first:
+      33: 3300096
+    second: Blue (54)
+  - first:
+      33: 3300098
+    second: Blue (55)
+  - first:
+      33: 3300100
+    second: Blue (6)
+  - first:
+      33: 3300102
+    second: Blue (7)
+  - first:
+      33: 3300104
+    second: Blue (8)
+  - first:
+      33: 3300106
+    second: Blue (9)
+  - first:
+      33: 3300108
+    second: Red (10)
+  - first:
+      33: 3300110
+    second: Red (11)
+  - first:
+      33: 3300112
+    second: Red (12)
+  - first:
+      33: 3300114
+    second: Red (13)
+  - first:
+      33: 3300116
+    second: Red (14)
+  - first:
+      33: 3300118
+    second: Red (15)
+  - first:
+      33: 3300120
+    second: Red (16)
+  - first:
+      33: 3300122
+    second: Red (17)
+  - first:
+      33: 3300124
+    second: Red (18)
+  - first:
+      33: 3300126
+    second: Red (19)
+  - first:
+      33: 3300128
+    second: Red (2)
+  - first:
+      33: 3300130
+    second: Red (20)
+  - first:
+      33: 3300132
+    second: Red (21)
+  - first:
+      33: 3300134
+    second: Red (22)
+  - first:
+      33: 3300136
+    second: Red (23)
+  - first:
+      33: 3300138
+    second: Red (24)
+  - first:
+      33: 3300140
+    second: Red (25)
+  - first:
+      33: 3300142
+    second: Red (26)
+  - first:
+      33: 3300144
+    second: Red (27)
+  - first:
+      33: 3300146
+    second: Red (28)
+  - first:
+      33: 3300148
+    second: Red (29)
+  - first:
+      33: 3300150
+    second: Red (3)
+  - first:
+      33: 3300152
+    second: Red (30)
+  - first:
+      33: 3300154
+    second: Red (31)
+  - first:
+      33: 3300156
+    second: Red (32)
+  - first:
+      33: 3300158
+    second: Red (33)
+  - first:
+      33: 3300160
+    second: Red (34)
+  - first:
+      33: 3300162
+    second: Red (35)
+  - first:
+      33: 3300164
+    second: Red (36)
+  - first:
+      33: 3300166
+    second: Red (37)
+  - first:
+      33: 3300168
+    second: Red (38)
+  - first:
+      33: 3300170
+    second: Red (39)
+  - first:
+      33: 3300172
+    second: Red (4)
+  - first:
+      33: 3300174
+    second: Red (40)
+  - first:
+      33: 3300176
+    second: Red (41)
+  - first:
+      33: 3300178
+    second: Red (42)
+  - first:
+      33: 3300180
+    second: Red (43)
+  - first:
+      33: 3300182
+    second: Red (44)
+  - first:
+      33: 3300184
+    second: Red (45)
+  - first:
+      33: 3300186
+    second: Red (46)
+  - first:
+      33: 3300188
+    second: Red (47)
+  - first:
+      33: 3300190
+    second: Red (48)
+  - first:
+      33: 3300192
+    second: Red (49)
+  - first:
+      33: 3300194
+    second: Red (5)
+  - first:
+      33: 3300196
+    second: Red (50)
+  - first:
+      33: 3300198
+    second: Red (51)
+  - first:
+      33: 3300200
+    second: Red (52)
+  - first:
+      33: 3300202
+    second: Red (53)
+  - first:
+      33: 3300204
+    second: Red (54)
+  - first:
+      33: 3300206
+    second: Red (55)
+  - first:
+      33: 3300208
+    second: Red (6)
+  - first:
+      33: 3300210
+    second: Red (7)
+  - first:
+      33: 3300212
+    second: Red (8)
+  - first:
+      33: 3300214
+    second: Red (9)
+  - first:
+      33: 3300216
+    second: Yellow (10)
+  - first:
+      33: 3300218
+    second: Yellow (11)
+  - first:
+      33: 3300220
+    second: Yellow (12)
+  - first:
+      33: 3300222
+    second: Yellow (13)
+  - first:
+      33: 3300224
+    second: Yellow (14)
+  - first:
+      33: 3300226
+    second: Yellow (15)
+  - first:
+      33: 3300228
+    second: Yellow (16)
+  - first:
+      33: 3300230
+    second: Yellow (17)
+  - first:
+      33: 3300232
+    second: Yellow (18)
+  - first:
+      33: 3300234
+    second: Yellow (19)
+  - first:
+      33: 3300236
+    second: Yellow (2)
+  - first:
+      33: 3300238
+    second: Yellow (20)
+  - first:
+      33: 3300240
+    second: Yellow (21)
+  - first:
+      33: 3300242
+    second: Yellow (22)
+  - first:
+      33: 3300244
+    second: Yellow (23)
+  - first:
+      33: 3300246
+    second: Yellow (24)
+  - first:
+      33: 3300248
+    second: Yellow (25)
+  - first:
+      33: 3300250
+    second: Yellow (26)
+  - first:
+      33: 3300252
+    second: Yellow (27)
+  - first:
+      33: 3300254
+    second: Yellow (28)
+  - first:
+      33: 3300256
+    second: Yellow (29)
+  - first:
+      33: 3300258
+    second: Yellow (3)
+  - first:
+      33: 3300260
+    second: Yellow (30)
+  - first:
+      33: 3300262
+    second: Yellow (31)
+  - first:
+      33: 3300264
+    second: Yellow (32)
+  - first:
+      33: 3300266
+    second: Yellow (33)
+  - first:
+      33: 3300268
+    second: Yellow (34)
+  - first:
+      33: 3300270
+    second: Yellow (35)
+  - first:
+      33: 3300272
+    second: Yellow (36)
+  - first:
+      33: 3300274
+    second: Yellow (37)
+  - first:
+      33: 3300276
+    second: Yellow (38)
+  - first:
+      33: 3300278
+    second: Yellow (39)
+  - first:
+      33: 3300280
+    second: Yellow (4)
+  - first:
+      33: 3300282
+    second: Yellow (40)
+  - first:
+      33: 3300284
+    second: Yellow (41)
+  - first:
+      33: 3300286
+    second: Yellow (42)
+  - first:
+      33: 3300288
+    second: Yellow (43)
+  - first:
+      33: 3300290
+    second: Yellow (44)
+  - first:
+      33: 3300292
+    second: Yellow (45)
+  - first:
+      33: 3300294
+    second: Yellow (46)
+  - first:
+      33: 3300296
+    second: Yellow (47)
+  - first:
+      33: 3300298
+    second: Yellow (48)
+  - first:
+      33: 3300300
+    second: Yellow (49)
+  - first:
+      33: 3300302
+    second: Yellow (5)
+  - first:
+      33: 3300304
+    second: Yellow (50)
+  - first:
+      33: 3300306
+    second: Yellow (51)
+  - first:
+      33: 3300308
+    second: Yellow (52)
+  - first:
+      33: 3300310
+    second: Yellow (53)
+  - first:
+      33: 3300312
+    second: Yellow (54)
+  - first:
+      33: 3300314
+    second: Yellow (55)
+  - first:
+      33: 3300316
+    second: Yellow (6)
+  - first:
+      33: 3300318
+    second: Yellow (7)
+  - first:
+      33: 3300320
+    second: Yellow (8)
+  - first:
+      33: 3300322
+    second: Yellow (9)
+  - first:
+      43: 4300000
+    second: Red (2)
+  - first:
+      43: 4300002
+    second: Red (3)
+  - first:
+      43: 4300004
+    second: Red (4)
+  - first:
+      43: 4300006
+    second: Red (5)
+  - first:
+      43: 4300008
+    second: Red (6)
+  - first:
+      43: 4300010
+    second: Red (7)
+  - first:
+      43: 4300012
+    second: Red (8)
+  - first:
+      43: 4300014
+    second: Red (9)
+  - first:
+      43: 4300016
+    second: Red (10)
+  - first:
+      43: 4300018
+    second: Red (11)
+  - first:
+      43: 4300020
+    second: Red (12)
+  - first:
+      43: 4300022
+    second: Red (13)
+  - first:
+      43: 4300024
+    second: Red (14)
+  - first:
+      43: 4300026
+    second: Red (15)
+  - first:
+      43: 4300028
+    second: Red (16)
+  - first:
+      43: 4300030
+    second: Red (17)
+  - first:
+      43: 4300032
+    second: Red (18)
+  - first:
+      43: 4300034
+    second: Red (19)
+  - first:
+      43: 4300036
+    second: Red (20)
+  - first:
+      43: 4300038
+    second: Red (21)
+  - first:
+      43: 4300040
+    second: Red (22)
+  - first:
+      43: 4300042
+    second: Red (23)
+  - first:
+      43: 4300044
+    second: Red (24)
+  - first:
+      43: 4300046
+    second: Red (25)
+  - first:
+      43: 4300048
+    second: Red (26)
+  - first:
+      43: 4300050
+    second: Red (27)
+  - first:
+      43: 4300052
+    second: Red (28)
+  - first:
+      43: 4300054
+    second: Red (29)
+  - first:
+      43: 4300056
+    second: Red (30)
+  - first:
+      43: 4300058
+    second: Red (31)
+  - first:
+      43: 4300060
+    second: Red (32)
+  - first:
+      43: 4300062
+    second: Red (33)
+  - first:
+      43: 4300064
+    second: Red (34)
+  - first:
+      43: 4300066
+    second: Red (35)
+  - first:
+      43: 4300068
+    second: Red (36)
+  - first:
+      43: 4300070
+    second: Red (37)
+  - first:
+      43: 4300072
+    second: Red (38)
+  - first:
+      43: 4300074
+    second: Red (39)
+  - first:
+      43: 4300076
+    second: Red (40)
+  - first:
+      43: 4300078
+    second: Red (41)
+  - first:
+      43: 4300080
+    second: Red (42)
+  - first:
+      43: 4300082
+    second: Red (43)
+  - first:
+      43: 4300084
+    second: Red (44)
+  - first:
+      43: 4300086
+    second: Red (45)
+  - first:
+      43: 4300088
+    second: Red (46)
+  - first:
+      43: 4300090
+    second: Red (47)
+  - first:
+      43: 4300092
+    second: Red (48)
+  - first:
+      43: 4300094
+    second: Red (49)
+  - first:
+      43: 4300096
+    second: Red (50)
+  - first:
+      43: 4300098
+    second: Red (51)
+  - first:
+      43: 4300100
+    second: Red (52)
+  - first:
+      43: 4300102
+    second: Red (53)
+  - first:
+      43: 4300104
+    second: Red (54)
+  - first:
+      43: 4300106
+    second: Red (55)
+  - first:
+      43: 4300108
+    second: Blue (2)
+  - first:
+      43: 4300110
+    second: Blue (3)
+  - first:
+      43: 4300112
+    second: Blue (4)
+  - first:
+      43: 4300114
+    second: Blue (5)
+  - first:
+      43: 4300116
+    second: Blue (6)
+  - first:
+      43: 4300118
+    second: Blue (7)
+  - first:
+      43: 4300120
+    second: Blue (8)
+  - first:
+      43: 4300122
+    second: Blue (9)
+  - first:
+      43: 4300124
+    second: Blue (10)
+  - first:
+      43: 4300126
+    second: Blue (11)
+  - first:
+      43: 4300128
+    second: Blue (12)
+  - first:
+      43: 4300130
+    second: Blue (13)
+  - first:
+      43: 4300132
+    second: Blue (14)
+  - first:
+      43: 4300134
+    second: Blue (15)
+  - first:
+      43: 4300136
+    second: Blue (16)
+  - first:
+      43: 4300138
+    second: Blue (17)
+  - first:
+      43: 4300140
+    second: Blue (18)
+  - first:
+      43: 4300142
+    second: Blue (19)
+  - first:
+      43: 4300144
+    second: Blue (20)
+  - first:
+      43: 4300146
+    second: Blue (21)
+  - first:
+      43: 4300148
+    second: Blue (22)
+  - first:
+      43: 4300150
+    second: Blue (23)
+  - first:
+      43: 4300152
+    second: Blue (24)
+  - first:
+      43: 4300154
+    second: Blue (25)
+  - first:
+      43: 4300156
+    second: Blue (26)
+  - first:
+      43: 4300158
+    second: Blue (27)
+  - first:
+      43: 4300160
+    second: Blue (28)
+  - first:
+      43: 4300162
+    second: Blue (29)
+  - first:
+      43: 4300164
+    second: Blue (30)
+  - first:
+      43: 4300166
+    second: Blue (31)
+  - first:
+      43: 4300168
+    second: Blue (32)
+  - first:
+      43: 4300170
+    second: Blue (33)
+  - first:
+      43: 4300172
+    second: Blue (34)
+  - first:
+      43: 4300174
+    second: Blue (35)
+  - first:
+      43: 4300176
+    second: Blue (36)
+  - first:
+      43: 4300178
+    second: Blue (37)
+  - first:
+      43: 4300180
+    second: Blue (38)
+  - first:
+      43: 4300182
+    second: Blue (39)
+  - first:
+      43: 4300184
+    second: Blue (40)
+  - first:
+      43: 4300186
+    second: Blue (41)
+  - first:
+      43: 4300188
+    second: Blue (42)
+  - first:
+      43: 4300190
+    second: Blue (43)
+  - first:
+      43: 4300192
+    second: Blue (44)
+  - first:
+      43: 4300194
+    second: Blue (45)
+  - first:
+      43: 4300196
+    second: Blue (46)
+  - first:
+      43: 4300198
+    second: Blue (47)
+  - first:
+      43: 4300200
+    second: Blue (48)
+  - first:
+      43: 4300202
+    second: Blue (49)
+  - first:
+      43: 4300204
+    second: Blue (50)
+  - first:
+      43: 4300206
+    second: Blue (51)
+  - first:
+      43: 4300208
+    second: Blue (52)
+  - first:
+      43: 4300210
+    second: Blue (53)
+  - first:
+      43: 4300212
+    second: Blue (54)
+  - first:
+      43: 4300214
+    second: Blue (55)
+  - first:
+      43: 4300216
+    second: Yellow (3)
+  - first:
+      43: 4300218
+    second: Yellow (4)
+  - first:
+      43: 4300220
+    second: Yellow (5)
+  - first:
+      43: 4300222
+    second: Yellow (6)
+  - first:
+      43: 4300224
+    second: Yellow (7)
+  - first:
+      43: 4300226
+    second: Yellow (8)
+  - first:
+      43: 4300228
+    second: Yellow (9)
+  - first:
+      43: 4300230
+    second: Yellow (10)
+  - first:
+      43: 4300232
+    second: Yellow (11)
+  - first:
+      43: 4300234
+    second: Yellow (12)
+  - first:
+      43: 4300236
+    second: Yellow (13)
+  - first:
+      43: 4300238
+    second: Yellow (14)
+  - first:
+      43: 4300240
+    second: Yellow (15)
+  - first:
+      43: 4300242
+    second: Yellow (16)
+  - first:
+      43: 4300244
+    second: Yellow (17)
+  - first:
+      43: 4300246
+    second: Yellow (18)
+  - first:
+      43: 4300248
+    second: Yellow (19)
+  - first:
+      43: 4300250
+    second: Yellow (20)
+  - first:
+      43: 4300252
+    second: Yellow (21)
+  - first:
+      43: 4300254
+    second: Yellow (22)
+  - first:
+      43: 4300256
+    second: Yellow (23)
+  - first:
+      43: 4300258
+    second: Yellow (24)
+  - first:
+      43: 4300260
+    second: Yellow (25)
+  - first:
+      43: 4300262
+    second: Yellow (26)
+  - first:
+      43: 4300264
+    second: Yellow (27)
+  - first:
+      43: 4300266
+    second: Yellow (28)
+  - first:
+      43: 4300268
+    second: Yellow (29)
+  - first:
+      43: 4300270
+    second: Yellow (30)
+  - first:
+      43: 4300272
+    second: Yellow (31)
+  - first:
+      43: 4300274
+    second: Yellow (32)
+  - first:
+      43: 4300276
+    second: Yellow (33)
+  - first:
+      43: 4300278
+    second: Yellow (34)
+  - first:
+      43: 4300280
+    second: Yellow (35)
+  - first:
+      43: 4300282
+    second: Yellow (36)
+  - first:
+      43: 4300284
+    second: Yellow (37)
+  - first:
+      43: 4300286
+    second: Yellow (38)
+  - first:
+      43: 4300288
+    second: Yellow (55)
+  - first:
+      43: 4300290
+    second: Yellow (54)
+  - first:
+      43: 4300292
+    second: Yellow (53)
+  - first:
+      43: 4300294
+    second: Yellow (52)
+  - first:
+      43: 4300296
+    second: Yellow (51)
+  - first:
+      43: 4300298
+    second: Yellow (50)
+  - first:
+      43: 4300300
+    second: Yellow (49)
+  - first:
+      43: 4300302
+    second: Yellow (48)
+  - first:
+      43: 4300304
+    second: Yellow (47)
+  - first:
+      43: 4300306
+    second: Yellow (46)
+  - first:
+      43: 4300308
+    second: Yellow (45)
+  - first:
+      43: 4300310
+    second: Yellow (44)
+  - first:
+      43: 4300312
+    second: Yellow (43)
+  - first:
+      43: 4300314
+    second: Yellow (42)
+  - first:
+      43: 4300316
+    second: Yellow (41)
+  - first:
+      43: 4300318
+    second: Yellow (40)
+  - first:
+      43: 4300320
+    second: Yellow (39)
+  - first:
+      43: 4300322
+    second: Yellow (2)
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block_Blue
+    second: {fileID: 2100000, guid: d5595e4222196814cae622b0b82b0e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block_Red
+    second: {fileID: 2100000, guid: a475a96e50910a440bafaeba71aa6b4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block_Yellow
+    second: {fileID: 2100000, guid: a13d76a0fd82ee64aa09cb3e5bd65f30, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -839,16 +2490,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 211
       wrapMode: 0
@@ -1210,13 +2865,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -1226,10 +2892,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -1239,14 +2909,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

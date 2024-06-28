@@ -1,67 +1,151 @@
 fileFormatVersion: 2
 guid: 84c37137326e7b943a87be7ae2a7ea19
-timeCreated: 1488144149
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: back_button_PLY
-    100002: center_button_PLY
-    100004: chassis_PLY
-    100006: disc_button_PLY
-    100008: home_button_PLY
-    100010: //RootNode
-    100012: text_PLY
-    100014: trigger_PLY
-    400000: back_button_PLY
-    400002: center_button_PLY
-    400004: chassis_PLY
-    400006: disc_button_PLY
-    400008: home_button_PLY
-    400010: //RootNode
-    400012: text_PLY
-    400014: trigger_PLY
-    2300000: back_button_PLY
-    2300002: center_button_PLY
-    2300004: chassis_PLY
-    2300006: disc_button_PLY
-    2300008: home_button_PLY
-    2300010: text_PLY
-    2300012: trigger_PLY
-    3300000: back_button_PLY
-    3300002: center_button_PLY
-    3300004: chassis_PLY
-    3300006: disc_button_PLY
-    3300008: home_button_PLY
-    3300010: text_PLY
-    3300012: trigger_PLY
-    4300000: text_PLY
-    4300002: center_button_PLY
-    4300004: trigger_PLY
-    4300006: home_button_PLY
-    4300008: back_button_PLY
-    4300010: disc_button_PLY
-    4300012: chassis_PLY
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: back_button_PLY
+  - first:
+      1: 100002
+    second: center_button_PLY
+  - first:
+      1: 100004
+    second: chassis_PLY
+  - first:
+      1: 100006
+    second: disc_button_PLY
+  - first:
+      1: 100008
+    second: home_button_PLY
+  - first:
+      1: 100010
+    second: //RootNode
+  - first:
+      1: 100012
+    second: text_PLY
+  - first:
+      1: 100014
+    second: trigger_PLY
+  - first:
+      4: 400000
+    second: back_button_PLY
+  - first:
+      4: 400002
+    second: center_button_PLY
+  - first:
+      4: 400004
+    second: chassis_PLY
+  - first:
+      4: 400006
+    second: disc_button_PLY
+  - first:
+      4: 400008
+    second: home_button_PLY
+  - first:
+      4: 400010
+    second: //RootNode
+  - first:
+      4: 400012
+    second: text_PLY
+  - first:
+      4: 400014
+    second: trigger_PLY
+  - first:
+      23: 2300000
+    second: back_button_PLY
+  - first:
+      23: 2300002
+    second: center_button_PLY
+  - first:
+      23: 2300004
+    second: chassis_PLY
+  - first:
+      23: 2300006
+    second: disc_button_PLY
+  - first:
+      23: 2300008
+    second: home_button_PLY
+  - first:
+      23: 2300010
+    second: text_PLY
+  - first:
+      23: 2300012
+    second: trigger_PLY
+  - first:
+      33: 3300000
+    second: back_button_PLY
+  - first:
+      33: 3300002
+    second: center_button_PLY
+  - first:
+      33: 3300004
+    second: chassis_PLY
+  - first:
+      33: 3300006
+    second: disc_button_PLY
+  - first:
+      33: 3300008
+    second: home_button_PLY
+  - first:
+      33: 3300010
+    second: text_PLY
+  - first:
+      33: 3300012
+    second: trigger_PLY
+  - first:
+      43: 4300000
+    second: text_PLY
+  - first:
+      43: 4300002
+    second: center_button_PLY
+  - first:
+      43: 4300004
+    second: trigger_PLY
+  - first:
+      43: 4300006
+    second: home_button_PLY
+  - first:
+      43: 4300008
+    second: back_button_PLY
+  - first:
+      43: 4300010
+    second: disc_button_PLY
+  - first:
+      43: 4300012
+    second: chassis_PLY
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: 54fb84af388c3734b9a4cae0b38e2c68, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -69,13 +153,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -85,9 +180,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -97,11 +197,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

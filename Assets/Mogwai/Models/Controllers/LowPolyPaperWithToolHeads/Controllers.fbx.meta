@@ -1,338 +1,1014 @@
 fileFormatVersion: 2
 guid: 9b2a8847ffd0e4f3882713251be17254
-timeCreated: 1474386963
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: ControllerBase
-    100002: //RootNode
-    100004: deleteTool_Geo
-    100006: deleteTool_Geo 1
-    100008: grabTool_Geo
-    100010: group6
-    100012: modifyTool_Geo
-    100014: paintTool_Geo
-    100016: pCylinder1
-    100018: pCylinder2
-    100020: pCylinder3
-    100022: pCylinder4
-    100024: pCylinder6
-    100026: pCylinder7
-    100028: polySurface1
-    100030: polySurface1 1
-    100032: polySurface10
-    100034: polySurface12
-    100036: polySurface13
-    100038: polySurface14
-    100040: polySurface2
-    100042: polySurface25
-    100044: polySurface26
-    100046: polySurface27
-    100048: polySurface28
-    100050: polySurface29
-    100052: polySurface3
-    100054: polySurface3 1
-    100056: polySurface34
-    100058: polySurface35
-    100060: polySurface36
-    100062: polySurface4
-    100064: polySurface4 1
-    100066: polySurface5
-    100068: polySurface6
-    100070: polySurface7
-    100072: polySurface8
-    100074: polySurface8 1
-    100076: polySurface9
-    100078: polySurface9 1
-    100080: pPipe1
-    100082: ShapeTool_Geo
-    100084: StrokeTool_Geo
-    100086: body
-    100088: claw
-    100090: claw1
-    100092: claw2
-    100094: ControlRenderV004:polySurface17
-    100096: group1
-    100098: group1 1
-    100100: group1 2
-    100102: group2
-    100104: group3
-    100106: group4
-    100108: group5
-    100110: pCube1
-    100112: pCube1 1
-    100114: pCube1 2
-    100116: pCube2
-    100118: polySurface11
-    100120: polySurface13 1
-    100122: polySurface13 2
-    100124: polySurface13 3
-    100126: polySurface15
-    100128: polySurface15 1
-    100130: polySurface15 2
-    100132: polySurface16
-    100134: polySurface16 1
-    100136: polySurface16 2
-    100138: polySurface17
-    100140: polySurface17 1
-    100142: polySurface37
-    100144: polySurface37 1
-    100146: polySurface37 2
-    100148: polySurface38
-    100150: polySurface38 1
-    100152: polySurface38 2
-    400000: ControllerBase
-    400002: //RootNode
-    400004: deleteTool_Geo
-    400006: deleteTool_Geo 1
-    400008: grabTool_Geo
-    400010: group6
-    400012: modifyTool_Geo
-    400014: paintTool_Geo
-    400016: pCylinder1
-    400018: pCylinder2
-    400020: pCylinder3
-    400022: pCylinder4
-    400024: pCylinder6
-    400026: pCylinder7
-    400028: polySurface1
-    400030: polySurface1 1
-    400032: polySurface10
-    400034: polySurface12
-    400036: polySurface13
-    400038: polySurface14
-    400040: polySurface2
-    400042: polySurface25
-    400044: polySurface26
-    400046: polySurface27
-    400048: polySurface28
-    400050: polySurface29
-    400052: polySurface3
-    400054: polySurface3 1
-    400056: polySurface34
-    400058: polySurface35
-    400060: polySurface36
-    400062: polySurface4
-    400064: polySurface4 1
-    400066: polySurface5
-    400068: polySurface6
-    400070: polySurface7
-    400072: polySurface8
-    400074: polySurface8 1
-    400076: polySurface9
-    400078: polySurface9 1
-    400080: pPipe1
-    400082: ShapeTool_Geo
-    400084: StrokeTool_Geo
-    400086: body
-    400088: claw
-    400090: claw1
-    400092: claw2
-    400094: ControlRenderV004:polySurface17
-    400096: group1
-    400098: group1 1
-    400100: group1 2
-    400102: group2
-    400104: group3
-    400106: group4
-    400108: group5
-    400110: pCube1
-    400112: pCube1 1
-    400114: pCube1 2
-    400116: pCube2
-    400118: polySurface11
-    400120: polySurface13 1
-    400122: polySurface13 2
-    400124: polySurface13 3
-    400126: polySurface15
-    400128: polySurface15 1
-    400130: polySurface15 2
-    400132: polySurface16
-    400134: polySurface16 1
-    400136: polySurface16 2
-    400138: polySurface17
-    400140: polySurface17 1
-    400142: polySurface37
-    400144: polySurface37 1
-    400146: polySurface37 2
-    400148: polySurface38
-    400150: polySurface38 1
-    400152: polySurface38 2
-    2300000: deleteTool_Geo 1
-    2300002: pCylinder1
-    2300004: pCylinder2
-    2300006: pCylinder3
-    2300008: pCylinder4
-    2300010: pCylinder6
-    2300012: pCylinder7
-    2300014: polySurface1
-    2300016: polySurface1 1
-    2300018: polySurface10
-    2300020: polySurface12
-    2300022: polySurface13
-    2300024: polySurface14
-    2300026: polySurface2
-    2300028: polySurface26
-    2300030: polySurface27
-    2300032: polySurface3
-    2300034: polySurface3 1
-    2300036: polySurface34
-    2300038: polySurface35
-    2300040: polySurface36
-    2300042: polySurface4
-    2300044: polySurface5
-    2300046: polySurface6
-    2300048: polySurface8
-    2300050: polySurface8 1
-    2300052: polySurface9
-    2300054: polySurface9 1
-    2300056: pPipe1
-    2300058: ControlRenderV004:polySurface17
-    2300060: pCube1
-    2300062: pCube1 1
-    2300064: pCube1 2
-    2300066: polySurface11
-    2300068: polySurface13 1
-    2300070: polySurface13 2
-    2300072: polySurface13 3
-    2300074: polySurface15
-    2300076: polySurface15 1
-    2300078: polySurface15 2
-    2300080: polySurface16
-    2300082: polySurface16 1
-    2300084: polySurface16 2
-    2300086: polySurface17
-    2300088: polySurface17 1
-    2300090: polySurface37
-    2300092: polySurface37 1
-    2300094: polySurface37 2
-    2300096: polySurface38
-    2300098: polySurface38 1
-    2300100: polySurface38 2
-    3300000: deleteTool_Geo 1
-    3300002: pCylinder1
-    3300004: pCylinder2
-    3300006: pCylinder3
-    3300008: pCylinder4
-    3300010: pCylinder6
-    3300012: pCylinder7
-    3300014: polySurface1
-    3300016: polySurface1 1
-    3300018: polySurface10
-    3300020: polySurface12
-    3300022: polySurface13
-    3300024: polySurface14
-    3300026: polySurface2
-    3300028: polySurface26
-    3300030: polySurface27
-    3300032: polySurface3
-    3300034: polySurface3 1
-    3300036: polySurface34
-    3300038: polySurface35
-    3300040: polySurface36
-    3300042: polySurface4
-    3300044: polySurface5
-    3300046: polySurface6
-    3300048: polySurface8
-    3300050: polySurface8 1
-    3300052: polySurface9
-    3300054: polySurface9 1
-    3300056: pPipe1
-    3300058: ControlRenderV004:polySurface17
-    3300060: pCube1
-    3300062: pCube1 1
-    3300064: pCube1 2
-    3300066: polySurface11
-    3300068: polySurface13 1
-    3300070: polySurface13 2
-    3300072: polySurface13 3
-    3300074: polySurface15
-    3300076: polySurface15 1
-    3300078: polySurface15 2
-    3300080: polySurface16
-    3300082: polySurface16 1
-    3300084: polySurface16 2
-    3300086: polySurface17
-    3300088: polySurface17 1
-    3300090: polySurface37
-    3300092: polySurface37 1
-    3300094: polySurface37 2
-    3300096: polySurface38
-    3300098: polySurface38 1
-    3300100: polySurface38 2
-    4300000: polySurface1
-    4300002: polySurface2
-    4300004: polySurface3
-    4300006: polySurface4
-    4300008: polySurface5
-    4300010: polySurface6
-    4300012: polySurface34
-    4300014: polySurface8
-    4300016: polySurface9
-    4300018: polySurface35
-    4300020: deleteTool_Geo
-    4300022: polySurface8
-    4300024: polySurface36
-    4300026: polySurface9
-    4300028: polySurface10
-    4300030: pCylinder1
-    4300032: pCylinder2
-    4300034: pCylinder4
-    4300036: pCylinder3
-    4300038: pPipe1
-    4300040: polySurface3
-    4300042: polySurface26
-    4300044: polySurface27
-    4300046: polySurface1
-    4300048: pCylinder6
-    4300050: pCylinder7
-    4300052: polySurface12
-    4300054: polySurface13
-    4300056: polySurface14
-    4300058: polySurface11
-    4300060: polySurface37
-    4300062: polySurface38
-    4300064: pCube1
-    4300066: polySurface15
-    4300068: ControlRenderV004:polySurface17
-    4300070: polySurface16
-    4300072: polySurface38
-    4300074: polySurface37
-    4300076: pCube1
-    4300078: polySurface13
-    4300080: polySurface15
-    4300082: polySurface17
-    4300084: polySurface16
-    4300086: polySurface38
-    4300088: polySurface37
-    4300090: pCube1
-    4300092: polySurface13
-    4300094: polySurface15
-    4300096: polySurface17
-    4300098: polySurface16
-    4300100: polySurface13
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ControllerBase
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: deleteTool_Geo
+  - first:
+      1: 100006
+    second: deleteTool_Geo 1
+  - first:
+      1: 100008
+    second: grabTool_Geo
+  - first:
+      1: 100010
+    second: group6
+  - first:
+      1: 100012
+    second: modifyTool_Geo
+  - first:
+      1: 100014
+    second: paintTool_Geo
+  - first:
+      1: 100016
+    second: pCylinder1
+  - first:
+      1: 100018
+    second: pCylinder2
+  - first:
+      1: 100020
+    second: pCylinder3
+  - first:
+      1: 100022
+    second: pCylinder4
+  - first:
+      1: 100024
+    second: pCylinder6
+  - first:
+      1: 100026
+    second: pCylinder7
+  - first:
+      1: 100028
+    second: polySurface1
+  - first:
+      1: 100030
+    second: polySurface1 1
+  - first:
+      1: 100032
+    second: polySurface10
+  - first:
+      1: 100034
+    second: polySurface12
+  - first:
+      1: 100036
+    second: polySurface13
+  - first:
+      1: 100038
+    second: polySurface14
+  - first:
+      1: 100040
+    second: polySurface2
+  - first:
+      1: 100042
+    second: polySurface25
+  - first:
+      1: 100044
+    second: polySurface26
+  - first:
+      1: 100046
+    second: polySurface27
+  - first:
+      1: 100048
+    second: polySurface28
+  - first:
+      1: 100050
+    second: polySurface29
+  - first:
+      1: 100052
+    second: polySurface3
+  - first:
+      1: 100054
+    second: polySurface3 1
+  - first:
+      1: 100056
+    second: polySurface34
+  - first:
+      1: 100058
+    second: polySurface35
+  - first:
+      1: 100060
+    second: polySurface36
+  - first:
+      1: 100062
+    second: polySurface4
+  - first:
+      1: 100064
+    second: polySurface4 1
+  - first:
+      1: 100066
+    second: polySurface5
+  - first:
+      1: 100068
+    second: polySurface6
+  - first:
+      1: 100070
+    second: polySurface7
+  - first:
+      1: 100072
+    second: polySurface8
+  - first:
+      1: 100074
+    second: polySurface8 1
+  - first:
+      1: 100076
+    second: polySurface9
+  - first:
+      1: 100078
+    second: polySurface9 1
+  - first:
+      1: 100080
+    second: pPipe1
+  - first:
+      1: 100082
+    second: ShapeTool_Geo
+  - first:
+      1: 100084
+    second: StrokeTool_Geo
+  - first:
+      1: 100086
+    second: body
+  - first:
+      1: 100088
+    second: claw
+  - first:
+      1: 100090
+    second: claw1
+  - first:
+      1: 100092
+    second: claw2
+  - first:
+      1: 100094
+    second: ControlRenderV004:polySurface17
+  - first:
+      1: 100096
+    second: group1
+  - first:
+      1: 100098
+    second: group1 1
+  - first:
+      1: 100100
+    second: group1 2
+  - first:
+      1: 100102
+    second: group2
+  - first:
+      1: 100104
+    second: group3
+  - first:
+      1: 100106
+    second: group4
+  - first:
+      1: 100108
+    second: group5
+  - first:
+      1: 100110
+    second: pCube1
+  - first:
+      1: 100112
+    second: pCube1 1
+  - first:
+      1: 100114
+    second: pCube1 2
+  - first:
+      1: 100116
+    second: pCube2
+  - first:
+      1: 100118
+    second: polySurface11
+  - first:
+      1: 100120
+    second: polySurface13 1
+  - first:
+      1: 100122
+    second: polySurface13 2
+  - first:
+      1: 100124
+    second: polySurface13 3
+  - first:
+      1: 100126
+    second: polySurface15
+  - first:
+      1: 100128
+    second: polySurface15 1
+  - first:
+      1: 100130
+    second: polySurface15 2
+  - first:
+      1: 100132
+    second: polySurface16
+  - first:
+      1: 100134
+    second: polySurface16 1
+  - first:
+      1: 100136
+    second: polySurface16 2
+  - first:
+      1: 100138
+    second: polySurface17
+  - first:
+      1: 100140
+    second: polySurface17 1
+  - first:
+      1: 100142
+    second: polySurface37
+  - first:
+      1: 100144
+    second: polySurface37 1
+  - first:
+      1: 100146
+    second: polySurface37 2
+  - first:
+      1: 100148
+    second: polySurface38
+  - first:
+      1: 100150
+    second: polySurface38 1
+  - first:
+      1: 100152
+    second: polySurface38 2
+  - first:
+      4: 400000
+    second: ControllerBase
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: deleteTool_Geo
+  - first:
+      4: 400006
+    second: deleteTool_Geo 1
+  - first:
+      4: 400008
+    second: grabTool_Geo
+  - first:
+      4: 400010
+    second: group6
+  - first:
+      4: 400012
+    second: modifyTool_Geo
+  - first:
+      4: 400014
+    second: paintTool_Geo
+  - first:
+      4: 400016
+    second: pCylinder1
+  - first:
+      4: 400018
+    second: pCylinder2
+  - first:
+      4: 400020
+    second: pCylinder3
+  - first:
+      4: 400022
+    second: pCylinder4
+  - first:
+      4: 400024
+    second: pCylinder6
+  - first:
+      4: 400026
+    second: pCylinder7
+  - first:
+      4: 400028
+    second: polySurface1
+  - first:
+      4: 400030
+    second: polySurface1 1
+  - first:
+      4: 400032
+    second: polySurface10
+  - first:
+      4: 400034
+    second: polySurface12
+  - first:
+      4: 400036
+    second: polySurface13
+  - first:
+      4: 400038
+    second: polySurface14
+  - first:
+      4: 400040
+    second: polySurface2
+  - first:
+      4: 400042
+    second: polySurface25
+  - first:
+      4: 400044
+    second: polySurface26
+  - first:
+      4: 400046
+    second: polySurface27
+  - first:
+      4: 400048
+    second: polySurface28
+  - first:
+      4: 400050
+    second: polySurface29
+  - first:
+      4: 400052
+    second: polySurface3
+  - first:
+      4: 400054
+    second: polySurface3 1
+  - first:
+      4: 400056
+    second: polySurface34
+  - first:
+      4: 400058
+    second: polySurface35
+  - first:
+      4: 400060
+    second: polySurface36
+  - first:
+      4: 400062
+    second: polySurface4
+  - first:
+      4: 400064
+    second: polySurface4 1
+  - first:
+      4: 400066
+    second: polySurface5
+  - first:
+      4: 400068
+    second: polySurface6
+  - first:
+      4: 400070
+    second: polySurface7
+  - first:
+      4: 400072
+    second: polySurface8
+  - first:
+      4: 400074
+    second: polySurface8 1
+  - first:
+      4: 400076
+    second: polySurface9
+  - first:
+      4: 400078
+    second: polySurface9 1
+  - first:
+      4: 400080
+    second: pPipe1
+  - first:
+      4: 400082
+    second: ShapeTool_Geo
+  - first:
+      4: 400084
+    second: StrokeTool_Geo
+  - first:
+      4: 400086
+    second: body
+  - first:
+      4: 400088
+    second: claw
+  - first:
+      4: 400090
+    second: claw1
+  - first:
+      4: 400092
+    second: claw2
+  - first:
+      4: 400094
+    second: ControlRenderV004:polySurface17
+  - first:
+      4: 400096
+    second: group1
+  - first:
+      4: 400098
+    second: group1 1
+  - first:
+      4: 400100
+    second: group1 2
+  - first:
+      4: 400102
+    second: group2
+  - first:
+      4: 400104
+    second: group3
+  - first:
+      4: 400106
+    second: group4
+  - first:
+      4: 400108
+    second: group5
+  - first:
+      4: 400110
+    second: pCube1
+  - first:
+      4: 400112
+    second: pCube1 1
+  - first:
+      4: 400114
+    second: pCube1 2
+  - first:
+      4: 400116
+    second: pCube2
+  - first:
+      4: 400118
+    second: polySurface11
+  - first:
+      4: 400120
+    second: polySurface13 1
+  - first:
+      4: 400122
+    second: polySurface13 2
+  - first:
+      4: 400124
+    second: polySurface13 3
+  - first:
+      4: 400126
+    second: polySurface15
+  - first:
+      4: 400128
+    second: polySurface15 1
+  - first:
+      4: 400130
+    second: polySurface15 2
+  - first:
+      4: 400132
+    second: polySurface16
+  - first:
+      4: 400134
+    second: polySurface16 1
+  - first:
+      4: 400136
+    second: polySurface16 2
+  - first:
+      4: 400138
+    second: polySurface17
+  - first:
+      4: 400140
+    second: polySurface17 1
+  - first:
+      4: 400142
+    second: polySurface37
+  - first:
+      4: 400144
+    second: polySurface37 1
+  - first:
+      4: 400146
+    second: polySurface37 2
+  - first:
+      4: 400148
+    second: polySurface38
+  - first:
+      4: 400150
+    second: polySurface38 1
+  - first:
+      4: 400152
+    second: polySurface38 2
+  - first:
+      23: 2300000
+    second: deleteTool_Geo 1
+  - first:
+      23: 2300002
+    second: pCylinder1
+  - first:
+      23: 2300004
+    second: pCylinder2
+  - first:
+      23: 2300006
+    second: pCylinder3
+  - first:
+      23: 2300008
+    second: pCylinder4
+  - first:
+      23: 2300010
+    second: pCylinder6
+  - first:
+      23: 2300012
+    second: pCylinder7
+  - first:
+      23: 2300014
+    second: polySurface1
+  - first:
+      23: 2300016
+    second: polySurface1 1
+  - first:
+      23: 2300018
+    second: polySurface10
+  - first:
+      23: 2300020
+    second: polySurface12
+  - first:
+      23: 2300022
+    second: polySurface13
+  - first:
+      23: 2300024
+    second: polySurface14
+  - first:
+      23: 2300026
+    second: polySurface2
+  - first:
+      23: 2300028
+    second: polySurface26
+  - first:
+      23: 2300030
+    second: polySurface27
+  - first:
+      23: 2300032
+    second: polySurface3
+  - first:
+      23: 2300034
+    second: polySurface3 1
+  - first:
+      23: 2300036
+    second: polySurface34
+  - first:
+      23: 2300038
+    second: polySurface35
+  - first:
+      23: 2300040
+    second: polySurface36
+  - first:
+      23: 2300042
+    second: polySurface4
+  - first:
+      23: 2300044
+    second: polySurface5
+  - first:
+      23: 2300046
+    second: polySurface6
+  - first:
+      23: 2300048
+    second: polySurface8
+  - first:
+      23: 2300050
+    second: polySurface8 1
+  - first:
+      23: 2300052
+    second: polySurface9
+  - first:
+      23: 2300054
+    second: polySurface9 1
+  - first:
+      23: 2300056
+    second: pPipe1
+  - first:
+      23: 2300058
+    second: ControlRenderV004:polySurface17
+  - first:
+      23: 2300060
+    second: pCube1
+  - first:
+      23: 2300062
+    second: pCube1 1
+  - first:
+      23: 2300064
+    second: pCube1 2
+  - first:
+      23: 2300066
+    second: polySurface11
+  - first:
+      23: 2300068
+    second: polySurface13 1
+  - first:
+      23: 2300070
+    second: polySurface13 2
+  - first:
+      23: 2300072
+    second: polySurface13 3
+  - first:
+      23: 2300074
+    second: polySurface15
+  - first:
+      23: 2300076
+    second: polySurface15 1
+  - first:
+      23: 2300078
+    second: polySurface15 2
+  - first:
+      23: 2300080
+    second: polySurface16
+  - first:
+      23: 2300082
+    second: polySurface16 1
+  - first:
+      23: 2300084
+    second: polySurface16 2
+  - first:
+      23: 2300086
+    second: polySurface17
+  - first:
+      23: 2300088
+    second: polySurface17 1
+  - first:
+      23: 2300090
+    second: polySurface37
+  - first:
+      23: 2300092
+    second: polySurface37 1
+  - first:
+      23: 2300094
+    second: polySurface37 2
+  - first:
+      23: 2300096
+    second: polySurface38
+  - first:
+      23: 2300098
+    second: polySurface38 1
+  - first:
+      23: 2300100
+    second: polySurface38 2
+  - first:
+      33: 3300000
+    second: deleteTool_Geo 1
+  - first:
+      33: 3300002
+    second: pCylinder1
+  - first:
+      33: 3300004
+    second: pCylinder2
+  - first:
+      33: 3300006
+    second: pCylinder3
+  - first:
+      33: 3300008
+    second: pCylinder4
+  - first:
+      33: 3300010
+    second: pCylinder6
+  - first:
+      33: 3300012
+    second: pCylinder7
+  - first:
+      33: 3300014
+    second: polySurface1
+  - first:
+      33: 3300016
+    second: polySurface1 1
+  - first:
+      33: 3300018
+    second: polySurface10
+  - first:
+      33: 3300020
+    second: polySurface12
+  - first:
+      33: 3300022
+    second: polySurface13
+  - first:
+      33: 3300024
+    second: polySurface14
+  - first:
+      33: 3300026
+    second: polySurface2
+  - first:
+      33: 3300028
+    second: polySurface26
+  - first:
+      33: 3300030
+    second: polySurface27
+  - first:
+      33: 3300032
+    second: polySurface3
+  - first:
+      33: 3300034
+    second: polySurface3 1
+  - first:
+      33: 3300036
+    second: polySurface34
+  - first:
+      33: 3300038
+    second: polySurface35
+  - first:
+      33: 3300040
+    second: polySurface36
+  - first:
+      33: 3300042
+    second: polySurface4
+  - first:
+      33: 3300044
+    second: polySurface5
+  - first:
+      33: 3300046
+    second: polySurface6
+  - first:
+      33: 3300048
+    second: polySurface8
+  - first:
+      33: 3300050
+    second: polySurface8 1
+  - first:
+      33: 3300052
+    second: polySurface9
+  - first:
+      33: 3300054
+    second: polySurface9 1
+  - first:
+      33: 3300056
+    second: pPipe1
+  - first:
+      33: 3300058
+    second: ControlRenderV004:polySurface17
+  - first:
+      33: 3300060
+    second: pCube1
+  - first:
+      33: 3300062
+    second: pCube1 1
+  - first:
+      33: 3300064
+    second: pCube1 2
+  - first:
+      33: 3300066
+    second: polySurface11
+  - first:
+      33: 3300068
+    second: polySurface13 1
+  - first:
+      33: 3300070
+    second: polySurface13 2
+  - first:
+      33: 3300072
+    second: polySurface13 3
+  - first:
+      33: 3300074
+    second: polySurface15
+  - first:
+      33: 3300076
+    second: polySurface15 1
+  - first:
+      33: 3300078
+    second: polySurface15 2
+  - first:
+      33: 3300080
+    second: polySurface16
+  - first:
+      33: 3300082
+    second: polySurface16 1
+  - first:
+      33: 3300084
+    second: polySurface16 2
+  - first:
+      33: 3300086
+    second: polySurface17
+  - first:
+      33: 3300088
+    second: polySurface17 1
+  - first:
+      33: 3300090
+    second: polySurface37
+  - first:
+      33: 3300092
+    second: polySurface37 1
+  - first:
+      33: 3300094
+    second: polySurface37 2
+  - first:
+      33: 3300096
+    second: polySurface38
+  - first:
+      33: 3300098
+    second: polySurface38 1
+  - first:
+      33: 3300100
+    second: polySurface38 2
+  - first:
+      43: 4300000
+    second: polySurface1
+  - first:
+      43: 4300002
+    second: polySurface2
+  - first:
+      43: 4300004
+    second: polySurface3
+  - first:
+      43: 4300006
+    second: polySurface4
+  - first:
+      43: 4300008
+    second: polySurface5
+  - first:
+      43: 4300010
+    second: polySurface6
+  - first:
+      43: 4300012
+    second: polySurface34
+  - first:
+      43: 4300014
+    second: polySurface8
+  - first:
+      43: 4300016
+    second: polySurface9
+  - first:
+      43: 4300018
+    second: polySurface35
+  - first:
+      43: 4300020
+    second: deleteTool_Geo
+  - first:
+      43: 4300022
+    second: polySurface8
+  - first:
+      43: 4300024
+    second: polySurface36
+  - first:
+      43: 4300026
+    second: polySurface9
+  - first:
+      43: 4300028
+    second: polySurface10
+  - first:
+      43: 4300030
+    second: pCylinder1
+  - first:
+      43: 4300032
+    second: pCylinder2
+  - first:
+      43: 4300034
+    second: pCylinder4
+  - first:
+      43: 4300036
+    second: pCylinder3
+  - first:
+      43: 4300038
+    second: pPipe1
+  - first:
+      43: 4300040
+    second: polySurface3
+  - first:
+      43: 4300042
+    second: polySurface26
+  - first:
+      43: 4300044
+    second: polySurface27
+  - first:
+      43: 4300046
+    second: polySurface1
+  - first:
+      43: 4300048
+    second: pCylinder6
+  - first:
+      43: 4300050
+    second: pCylinder7
+  - first:
+      43: 4300052
+    second: polySurface12
+  - first:
+      43: 4300054
+    second: polySurface13
+  - first:
+      43: 4300056
+    second: polySurface14
+  - first:
+      43: 4300058
+    second: polySurface11
+  - first:
+      43: 4300060
+    second: polySurface37
+  - first:
+      43: 4300062
+    second: polySurface38
+  - first:
+      43: 4300064
+    second: pCube1
+  - first:
+      43: 4300066
+    second: polySurface15
+  - first:
+      43: 4300068
+    second: ControlRenderV004:polySurface17
+  - first:
+      43: 4300070
+    second: polySurface16
+  - first:
+      43: 4300072
+    second: polySurface38
+  - first:
+      43: 4300074
+    second: polySurface37
+  - first:
+      43: 4300076
+    second: pCube1
+  - first:
+      43: 4300078
+    second: polySurface13
+  - first:
+      43: 4300080
+    second: polySurface15
+  - first:
+      43: 4300082
+    second: polySurface17
+  - first:
+      43: 4300084
+    second: polySurface16
+  - first:
+      43: 4300086
+    second: polySurface38
+  - first:
+      43: 4300088
+    second: polySurface37
+  - first:
+      43: 4300090
+    second: pCube1
+  - first:
+      43: 4300092
+    second: polySurface13
+  - first:
+      43: 4300094
+    second: polySurface15
+  - first:
+      43: 4300096
+    second: polySurface17
+  - first:
+      43: 4300098
+    second: polySurface16
+  - first:
+      43: 4300100
+    second: polySurface13
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StrokeHandle_SHD
+    second: {fileID: 2100000, guid: 107f1c726017c459a8e47dcefa250c37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brush_SHD
+    second: {fileID: 2100000, guid: af427637feb0b439a894ba0b0d8f663a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: controllerWhite_SHD
+    second: {fileID: 2100000, guid: 21d6a6678a7c04eec8933a6c5281a818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: controller_DarkGrey_SHD
+    second: {fileID: 2100000, guid: 3212c94c717104cdbb3d250c03062d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: controller_SHD
+    second: {fileID: 2100000, guid: 6a37879771e0c45268dee455c27e6a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: controller_black_SHD
+    second: {fileID: 2100000, guid: 3f5d641c3885f48d4b426189c87dabe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eraser_SHD
+    second: {fileID: 2100000, guid: 7049c4c46a1934da0829a8dfcc15133c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d46bdbe8080544352a16478c1f66c5b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shape_SHD
+    second: {fileID: 2100000, guid: 8a2a2b2f9d38b468a907877950194396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrenchHandle_SHD
+    second: {fileID: 2100000, guid: 8a12dc2cfe50e438a85f009a82f29ae9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrench_SHD
+    second: {fileID: 2100000, guid: d3e984c67267a4dd4acbaee6f9797b0d, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -340,13 +1016,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -356,9 +1043,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -368,11 +1060,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

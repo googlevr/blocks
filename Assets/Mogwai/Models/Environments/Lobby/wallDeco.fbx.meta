@@ -1,76 +1,178 @@
 fileFormatVersion: 2
 guid: 25dce137a2ccc4bbdbf0d2e7c4833421
-timeCreated: 1474664308
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: group1
-    100002: polySurface18
-    100004: polySurface39
-    100006: polySurface40
-    100008: polySurface40 1
-    100010: polySurface59
-    100012: polySurface60
-    100014: polySurface60 1
-    100016: polySurface61
-    100018: polySurface62
-    100020: polySurface63
-    100022: transform1
-    100024: transform2
-    100026: transform39
-    100028: transform40
-    100030: transform41
-    100032: transform42
-    100034: transform43
-    100036: transform44
-    100038: transform45
-    100040: //RootNode
-    400000: group1
-    400002: polySurface18
-    400004: polySurface39
-    400006: polySurface40
-    400008: polySurface40 1
-    400010: polySurface59
-    400012: polySurface60
-    400014: polySurface60 1
-    400016: polySurface61
-    400018: polySurface62
-    400020: polySurface63
-    400022: transform1
-    400024: transform2
-    400026: transform39
-    400028: transform40
-    400030: transform41
-    400032: transform42
-    400034: transform43
-    400036: transform44
-    400038: transform45
-    400040: //RootNode
-    2300000: polySurface40
-    3300000: polySurface40
-    4300000: polySurface40
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: group1
+  - first:
+      1: 100002
+    second: polySurface18
+  - first:
+      1: 100004
+    second: polySurface39
+  - first:
+      1: 100006
+    second: polySurface40
+  - first:
+      1: 100008
+    second: polySurface40 1
+  - first:
+      1: 100010
+    second: polySurface59
+  - first:
+      1: 100012
+    second: polySurface60
+  - first:
+      1: 100014
+    second: polySurface60 1
+  - first:
+      1: 100016
+    second: polySurface61
+  - first:
+      1: 100018
+    second: polySurface62
+  - first:
+      1: 100020
+    second: polySurface63
+  - first:
+      1: 100022
+    second: transform1
+  - first:
+      1: 100024
+    second: transform2
+  - first:
+      1: 100026
+    second: transform39
+  - first:
+      1: 100028
+    second: transform40
+  - first:
+      1: 100030
+    second: transform41
+  - first:
+      1: 100032
+    second: transform42
+  - first:
+      1: 100034
+    second: transform43
+  - first:
+      1: 100036
+    second: transform44
+  - first:
+      1: 100038
+    second: transform45
+  - first:
+      1: 100040
+    second: //RootNode
+  - first:
+      4: 400000
+    second: group1
+  - first:
+      4: 400002
+    second: polySurface18
+  - first:
+      4: 400004
+    second: polySurface39
+  - first:
+      4: 400006
+    second: polySurface40
+  - first:
+      4: 400008
+    second: polySurface40 1
+  - first:
+      4: 400010
+    second: polySurface59
+  - first:
+      4: 400012
+    second: polySurface60
+  - first:
+      4: 400014
+    second: polySurface60 1
+  - first:
+      4: 400016
+    second: polySurface61
+  - first:
+      4: 400018
+    second: polySurface62
+  - first:
+      4: 400020
+    second: polySurface63
+  - first:
+      4: 400022
+    second: transform1
+  - first:
+      4: 400024
+    second: transform2
+  - first:
+      4: 400026
+    second: transform39
+  - first:
+      4: 400028
+    second: transform40
+  - first:
+      4: 400030
+    second: transform41
+  - first:
+      4: 400032
+    second: transform42
+  - first:
+      4: 400034
+    second: transform43
+  - first:
+      4: 400036
+    second: transform44
+  - first:
+      4: 400038
+    second: transform45
+  - first:
+      4: 400040
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: polySurface40
+  - first:
+      33: 3300000
+    second: polySurface40
+  - first:
+      43: 4300000
+    second: polySurface40
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandard2
+    second: {fileID: 2100000, guid: e2e5f6502be0310438b9186fc2040218, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -78,13 +180,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -94,9 +207,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -106,11 +224,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
