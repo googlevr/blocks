@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1062313303619946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4324386732424652}
+  - component: {fileID: 114947750195704150}
+  - component: {fileID: 114038728000451858}
+  - component: {fileID: 114288096989126530}
+  m_Layer: 0
+  m_Name: PeltzerMain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4324386732424652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062313303619946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114947750195704150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062313303619946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba92baa92cec0dd4ebbac0c97f40fc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  peltzerController: {fileID: 0}
+  paletteController: {fileID: 0}
+  hmd: {fileID: 0}
+  controllerGeometryLeftRiftPrefab: {fileID: 1098572469174534, guid: 0dcf1c9673376d043bc60b51541d4b24,
+    type: 3}
+  controllerGeometryRightRiftPrefab: {fileID: 1223808143096240, guid: b37b4e133a127874682230477cddc9db,
+    type: 3}
+  controllerGeometryVivePrefab: {fileID: 1882265769105076, guid: 4268cf5c2c7d14d4e8f0b8a83b7a53c1,
+    type: 3}
+  autoThumbnailCamera: {fileID: 0}
+  eyeCamera: {fileID: 0}
+  eyeCameraPosition: {x: 0, y: 0, z: 0}
+  peltzerControllerInRightHand: 1
+  environmentThemeManager: {fileID: 0}
+  LocalId: 
+  AssetId: 
+  LastSavedAssetId: 
+  ModelChangedSinceLastSave: 0
+  LastAutoSaveDenied: 0
+  HasShownMenuTooltipThisSession: 0
+  polyMenuMain: {fileID: 0}
+  savePreview: {fileID: 0}
+  menuHint: {fileID: 0}
+  polyWorldBounds: {fileID: 0}
+  volumesInserted: 0
+  snappedInVolumeInserter: 0
+  movesCompleted: 0
+  snappedInMover: 0
+  faceReshapesCompleted: 0
+  snappedWhenReshapingFaces: 0
+  extrudesCompleted: 0
+  snappedInExtruder: 0
+  subdividesCompleted: 0
+  snappedInSubdivider: 0
+  newModelSinceLastSaved: 0
+--- !u!114 &114038728000451858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062313303619946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef3b74e457028248b29b806916675e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alignSound: {fileID: 0}
+  breakSound: {fileID: 0}
+  confettiSound: {fileID: 0}
+  copySound: {fileID: 0}
+  decrementSound: {fileID: 0}
+  deleteSound: {fileID: 0}
+  errorSound: {fileID: 0}
+  genericSelectSound: {fileID: 0}
+  genericReleaseSound: {fileID: 0}
+  grabMeshSound: {fileID: 0}
+  grabMeshPartSound: {fileID: 0}
+  groupSound: {fileID: 0}
+  incrementSound: {fileID: 0}
+  insertVolumeSound: {fileID: 0}
+  menuSelectSound: {fileID: 0}
+  modifyMeshSound: {fileID: 0}
+  paintSound: {fileID: 0}
+  pasteMeshSound: {fileID: 0}
+  redoSound: {fileID: 0}
+  releaseMeshSound: {fileID: 0}
+  saveSound: {fileID: 0}
+  selectToolSound: {fileID: 0}
+  shapeMenuEndSound: {fileID: 0}
+  snapSound: {fileID: 0}
+  subdivideSound: {fileID: 0}
+  startupSound: {fileID: 0}
+  successSound: {fileID: 0}
+  swipeLeftSound: {fileID: 0}
+  swipeRightSound: {fileID: 0}
+  toggleMenuSound: {fileID: 0}
+  tutorialCompletionSound: {fileID: 0}
+  tutorialIntroSound: {fileID: 0}
+  tutorialMeshAnimateInSound: {fileID: 0}
+  undoSound: {fileID: 0}
+  ungroupSound: {fileID: 0}
+  zoomResetSound: {fileID: 0}
+--- !u!114 &114288096989126530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062313303619946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3906864a6a21b543bf69eeaf58d6972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperCraftNoiseScale: 750
+  paperCraftNoiseIntensity: 0.1
+  baseMaterial: {fileID: 2100000, guid: 0f79d4ce1aba22f4294df2a16ca5465e, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 39a7d257347562e40aa0902710361e84, type: 2}
+  highlightMaterial2: {fileID: 2100000, guid: 3900b62c51c3e5840902a5d96d73c216, type: 2}
+  highlightSilhouetteMaterial: {fileID: 2100000, guid: 67ab1a035849e4249836f31881bf03c9,
+    type: 2}
+  gemMaterial: {fileID: 2100000, guid: fc077f0d30f0a4ccea1d2c28fa3cf93b, type: 2}
+  glassMaterial: {fileID: 2100000, guid: 2a120be907c2b54458e0e17bbff04771, type: 2}
+  glassSpecMaterial: {fileID: 2100000, guid: 7065649ba9240444d83fc01724ae8d82, type: 2}
+  subtractMaterial: {fileID: 2100000, guid: 0a5748c460d589746a25d885404bace2, type: 2}
+  copyMaterial: {fileID: 2100000, guid: b23e4ca96af9acf4694afad1de7c0818, type: 2}
+  snapEffectMaterial: {fileID: 2100000, guid: aba0c6b0d431a3242ae929604d0a6876, type: 2}
+  meshInsertEffectMaterial: {fileID: 2100000, guid: 1c31b048c15af5140bae8667a35a7480,
+    type: 2}
+  meshSelectMaterial: {fileID: 2100000, guid: 5661b44ff6cb3914bbfcc1fb80e203ca, type: 2}
+  gridMaterial: {fileID: 2100000, guid: c9d85c2af109a7e4f8a1549f47e7178e, type: 2}
+  pointHighlightMaterial: {fileID: 2100000, guid: b5280e2b525826e459b7b86b9940fb96,
+    type: 2}
+  pointInactiveMaterial: {fileID: 2100000, guid: 4cbe6d6e693ad6044a0b0624147a1702,
+    type: 2}
+  edgeHighlightMaterial: {fileID: 2100000, guid: e9946a6f1381fde41a3cd06134ad16ee,
+    type: 2}
+  edgeInactiveMaterial: {fileID: 2100000, guid: e8ef146ca97f37c4dbaeae72f761f4ee,
+    type: 2}
+  faceHighlightMaterial: {fileID: 2100000, guid: a023a08d6e37cb949a25e9373e58f121,
+    type: 2}
+  facePaintMaterial: {fileID: 2100000, guid: d4194faafba0acf469d1c2167a732dc6, type: 2}
+  faceExtrudeMaterial: {fileID: 2100000, guid: 4fbe852b345fb814baae8b268d93f5f3, type: 2}
+  selectMaterial: {fileID: 2100000, guid: e5e99df7d36669c4693bbbb75dc2a9cc, type: 2}

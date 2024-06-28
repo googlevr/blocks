@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DirectionalHighlighted
+  m_Shader: {fileID: 4800000, guid: c0e346f2a5fd4ee4988214507cff3588, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _EmissiveAmount: 1
+    - _FresnelPower: 5
+    - _Outline: 0.039
+    - _RefractiveIndex: 1.33333
+    - _Smoothness: 20
+    m_Colors:
+    - _Color: {r: 0, g: 1, b: 0, a: 0.519}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 0.20247622, g: 0.25486058, b: 0.78676474, a: 0.49411765}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
