@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 23f7af4d1287b8c43ac9c3a2b11a98d5
-timeCreated: 1478720494
-licenseType: Pro
 TrueTypeFontImporter:
+  externalObjects: {}
   serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
+  fontName: Product Sans
   fontNames:
   - Product Sans
   fallbackFontReferences:
@@ -16,6 +16,8 @@ TrueTypeFontImporter:
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

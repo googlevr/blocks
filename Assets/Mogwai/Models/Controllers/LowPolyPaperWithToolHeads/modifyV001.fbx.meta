@@ -1,64 +1,152 @@
 fileFormatVersion: 2
 guid: 8f2b15750512c4c7591d0770f64d6d5d
-timeCreated: 1475073984
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCylinder6
-    100004: Plier_Geo
-    100006: Plier_L_Geo
-    100008: Plier_R_Geo
-    100010: PlierHead_Geo
-    100012: polySurface42
-    100014: polySurface43
-    100016: polySurface44
-    400000: //RootNode
-    400002: pCylinder6
-    400004: Plier_Geo
-    400006: Plier_L_Geo
-    400008: Plier_R_Geo
-    400010: PlierHead_Geo
-    400012: polySurface42
-    400014: polySurface43
-    400016: polySurface44
-    2300000: pCylinder6
-    2300002: PlierHead_Geo
-    2300004: polySurface42
-    2300006: polySurface43
-    2300008: polySurface44
-    3300000: pCylinder6
-    3300002: PlierHead_Geo
-    3300004: polySurface42
-    3300006: polySurface43
-    3300008: polySurface44
-    4300000: PlierHead_Geo
-    4300002: polySurface44
-    4300004: pCylinder6
-    4300006: polySurface43
-    4300008: polySurface42
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: pCylinder6
+  - first:
+      1: 100004
+    second: Plier_Geo
+  - first:
+      1: 100006
+    second: Plier_L_Geo
+  - first:
+      1: 100008
+    second: Plier_R_Geo
+  - first:
+      1: 100010
+    second: PlierHead_Geo
+  - first:
+      1: 100012
+    second: polySurface42
+  - first:
+      1: 100014
+    second: polySurface43
+  - first:
+      1: 100016
+    second: polySurface44
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: pCylinder6
+  - first:
+      4: 400004
+    second: Plier_Geo
+  - first:
+      4: 400006
+    second: Plier_L_Geo
+  - first:
+      4: 400008
+    second: Plier_R_Geo
+  - first:
+      4: 400010
+    second: PlierHead_Geo
+  - first:
+      4: 400012
+    second: polySurface42
+  - first:
+      4: 400014
+    second: polySurface43
+  - first:
+      4: 400016
+    second: polySurface44
+  - first:
+      23: 2300000
+    second: pCylinder6
+  - first:
+      23: 2300002
+    second: PlierHead_Geo
+  - first:
+      23: 2300004
+    second: polySurface42
+  - first:
+      23: 2300006
+    second: polySurface43
+  - first:
+      23: 2300008
+    second: polySurface44
+  - first:
+      33: 3300000
+    second: pCylinder6
+  - first:
+      33: 3300002
+    second: PlierHead_Geo
+  - first:
+      33: 3300004
+    second: polySurface42
+  - first:
+      33: 3300006
+    second: polySurface43
+  - first:
+      33: 3300008
+    second: polySurface44
+  - first:
+      43: 4300000
+    second: PlierHead_Geo
+  - first:
+      43: 4300002
+    second: polySurface44
+  - first:
+      43: 4300004
+    second: pCylinder6
+  - first:
+      43: 4300006
+    second: polySurface43
+  - first:
+      43: 4300008
+    second: polySurface42
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: modifyPlastic_SHD
+    second: {fileID: 2100000, guid: 06774a1a1397d3c4d96c657a85506986, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrenchHandle_SHD
+    second: {fileID: 2100000, guid: 8a12dc2cfe50e438a85f009a82f29ae9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wrench_SHD
+    second: {fileID: 2100000, guid: 06774a1a1397d3c4d96c657a85506986, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -66,13 +154,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -82,9 +181,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -94,11 +198,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

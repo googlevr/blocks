@@ -4,163 +4,87 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Sky2
   m_Shader: {fileID: 4800000, guid: fca6cff383981874288a30f95b810f11, type: 3}
   m_ShaderKeywords: _EMISSION _SUNDISK_NONE
   m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _BumpMap
-      second:
+    - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailAlbedoMap
-      second:
+    - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailMask
-      second:
+    - _DetailMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailNormalMap
-      second:
+    - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _EmissionMap
-      second:
+    - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MainTex
-      second:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MetallicGlossMap
-      second:
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _OcclusionMap
-      second:
+    - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ParallaxMap
-      second:
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _AtmosphereThickness
-      second: 0.09
-    - first:
-        name: _BumpScale
-      second: 1
-    - first:
-        name: _Cutoff
-      second: 0.5
-    - first:
-        name: _DetailNormalMapScale
-      second: 1
-    - first:
-        name: _DstBlend
-      second: 0
-    - first:
-        name: _Exposure
-      second: 3.13
-    - first:
-        name: _GlossMapScale
-      second: 1
-    - first:
-        name: _Glossiness
-      second: 0.5
-    - first:
-        name: _GlossyReflections
-      second: 1
-    - first:
-        name: _Metallic
-      second: 0
-    - first:
-        name: _Mode
-      second: 0
-    - first:
-        name: _OcclusionStrength
-      second: 1
-    - first:
-        name: _Parallax
-      second: 0.02
-    - first:
-        name: _SkyExponent1
-      second: 2
-    - first:
-        name: _SkyIntensity
-      second: 3.3
-    - first:
-        name: _SmoothnessTextureChannel
-      second: 0
-    - first:
-        name: _SpecularHighlights
-      second: 1
-    - first:
-        name: _SrcBlend
-      second: 1
-    - first:
-        name: _SunDisk
-      second: 0
-    - first:
-        name: _SunIntensity
-      second: 0
-    - first:
-        name: _SunSize
-      second: 0
-    - first:
-        name: _UVSec
-      second: 0
-    - first:
-        name: _ZWrite
-      second: 1
+    - _AtmosphereThickness: 0.09
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Exposure: 3.13
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SkyExponent1: 2
+    - _SkyIntensity: 3.3
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SunDisk: 0
+    - _SunIntensity: 0
+    - _SunSize: 0
+    - _UVSec: 0
+    - _ZWrite: 1
     m_Colors:
-    - first:
-        name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _GroundColor
-      second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _MoonVector
-      second: {r: 2.16, g: 0.615, b: 0.74, a: 0}
-    - first:
-        name: _SkyColor1
-      second: {r: 0.44117647, g: 0.44117647, b: 0.44117647, a: 0}
-    - first:
-        name: _SkyColor2
-      second: {r: 0.15289794, g: 0.17698176, b: 0.20588237, a: 0}
-    - first:
-        name: _SkyTint
-      second: {r: 0.58823526, g: 0.58823526, b: 0.58823526, a: 1}
-    - first:
-        name: _SunColor
-      second: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MoonVector: {r: 2.16, g: 0.615, b: 0.74, a: 0}
+    - _SkyColor1: {r: 0.44117647, g: 0.44117647, b: 0.44117647, a: 0}
+    - _SkyColor2: {r: 0.15289794, g: 0.17698176, b: 0.20588237, a: 0}
+    - _SkyTint: {r: 0.58823526, g: 0.58823526, b: 0.58823526, a: 1}
+    - _SunColor: {r: 1, g: 1, b: 1, a: 1}

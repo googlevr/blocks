@@ -1,438 +1,1257 @@
 fileFormatVersion: 2
 guid: 6e6f4a4010316ea439508d01d2247462
-timeCreated: 1493055107
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Mesh
-    100002: Mesh (10)
-    100004: Mesh (11)
-    100006: Mesh (12)
-    100008: Mesh (13)
-    100010: Mesh (14)
-    100012: Mesh (15)
-    100014: Mesh (16)
-    100016: Mesh (17)
-    100018: Mesh (18)
-    100020: Mesh (19)
-    100022: Mesh (2)
-    100024: Mesh (20)
-    100026: Mesh (21)
-    100028: Mesh (22)
-    100030: Mesh (23)
-    100032: Mesh (24)
-    100034: Mesh (25)
-    100036: Mesh (26)
-    100038: Mesh (27)
-    100040: Mesh (28)
-    100042: Mesh (29)
-    100044: Mesh (3)
-    100046: Mesh (30)
-    100048: Mesh (31)
-    100050: Mesh (32)
-    100052: Mesh (33)
-    100054: Mesh (34)
-    100056: Mesh (35)
-    100058: Mesh (36)
-    100060: Mesh (37)
-    100062: Mesh (38)
-    100064: Mesh (39)
-    100066: Mesh (4)
-    100068: Mesh (40)
-    100070: Mesh (41)
-    100072: Mesh (42)
-    100074: Mesh (43)
-    100076: Mesh (44)
-    100078: Mesh (45)
-    100080: Mesh (46)
-    100082: Mesh (47)
-    100084: Mesh (48)
-    100086: Mesh (49)
-    100088: Mesh (5)
-    100090: Mesh (50)
-    100092: Mesh (51)
-    100094: Mesh (52)
-    100096: Mesh (53)
-    100098: Mesh (54)
-    100100: Mesh (55)
-    100102: Mesh (56)
-    100104: Mesh (57)
-    100106: Mesh (58)
-    100108: Mesh (59)
-    100110: Mesh (6)
-    100112: Mesh (60)
-    100114: Mesh (61)
-    100116: Mesh (62)
-    100118: Mesh (63)
-    100120: Mesh (64)
-    100122: Mesh (65)
-    100124: Mesh (66)
-    100126: Mesh (67)
-    100128: Mesh (68)
-    100130: Mesh (69)
-    100132: Mesh (7)
-    100134: Mesh (70)
-    100136: Mesh (71)
-    100138: Mesh (72)
-    100140: Mesh (73)
-    100142: Mesh (74)
-    100144: Mesh (75)
-    100146: Mesh (76)
-    100148: Mesh (77)
-    100150: Mesh (78)
-    100152: Mesh (79)
-    100154: Mesh (8)
-    100156: Mesh (80)
-    100158: Mesh (9)
-    100160: //RootNode
-    400000: Mesh
-    400002: Mesh (10)
-    400004: Mesh (11)
-    400006: Mesh (12)
-    400008: Mesh (13)
-    400010: Mesh (14)
-    400012: Mesh (15)
-    400014: Mesh (16)
-    400016: Mesh (17)
-    400018: Mesh (18)
-    400020: Mesh (19)
-    400022: Mesh (2)
-    400024: Mesh (20)
-    400026: Mesh (21)
-    400028: Mesh (22)
-    400030: Mesh (23)
-    400032: Mesh (24)
-    400034: Mesh (25)
-    400036: Mesh (26)
-    400038: Mesh (27)
-    400040: Mesh (28)
-    400042: Mesh (29)
-    400044: Mesh (3)
-    400046: Mesh (30)
-    400048: Mesh (31)
-    400050: Mesh (32)
-    400052: Mesh (33)
-    400054: Mesh (34)
-    400056: Mesh (35)
-    400058: Mesh (36)
-    400060: Mesh (37)
-    400062: Mesh (38)
-    400064: Mesh (39)
-    400066: Mesh (4)
-    400068: Mesh (40)
-    400070: Mesh (41)
-    400072: Mesh (42)
-    400074: Mesh (43)
-    400076: Mesh (44)
-    400078: Mesh (45)
-    400080: Mesh (46)
-    400082: Mesh (47)
-    400084: Mesh (48)
-    400086: Mesh (49)
-    400088: Mesh (5)
-    400090: Mesh (50)
-    400092: Mesh (51)
-    400094: Mesh (52)
-    400096: Mesh (53)
-    400098: Mesh (54)
-    400100: Mesh (55)
-    400102: Mesh (56)
-    400104: Mesh (57)
-    400106: Mesh (58)
-    400108: Mesh (59)
-    400110: Mesh (6)
-    400112: Mesh (60)
-    400114: Mesh (61)
-    400116: Mesh (62)
-    400118: Mesh (63)
-    400120: Mesh (64)
-    400122: Mesh (65)
-    400124: Mesh (66)
-    400126: Mesh (67)
-    400128: Mesh (68)
-    400130: Mesh (69)
-    400132: Mesh (7)
-    400134: Mesh (70)
-    400136: Mesh (71)
-    400138: Mesh (72)
-    400140: Mesh (73)
-    400142: Mesh (74)
-    400144: Mesh (75)
-    400146: Mesh (76)
-    400148: Mesh (77)
-    400150: Mesh (78)
-    400152: Mesh (79)
-    400154: Mesh (8)
-    400156: Mesh (80)
-    400158: Mesh (9)
-    400160: //RootNode
-    2300000: Mesh
-    2300002: Mesh (10)
-    2300004: Mesh (11)
-    2300006: Mesh (12)
-    2300008: Mesh (13)
-    2300010: Mesh (14)
-    2300012: Mesh (15)
-    2300014: Mesh (16)
-    2300016: Mesh (17)
-    2300018: Mesh (18)
-    2300020: Mesh (19)
-    2300022: Mesh (2)
-    2300024: Mesh (20)
-    2300026: Mesh (21)
-    2300028: Mesh (22)
-    2300030: Mesh (23)
-    2300032: Mesh (24)
-    2300034: Mesh (25)
-    2300036: Mesh (26)
-    2300038: Mesh (27)
-    2300040: Mesh (28)
-    2300042: Mesh (29)
-    2300044: Mesh (3)
-    2300046: Mesh (30)
-    2300048: Mesh (31)
-    2300050: Mesh (32)
-    2300052: Mesh (33)
-    2300054: Mesh (34)
-    2300056: Mesh (35)
-    2300058: Mesh (36)
-    2300060: Mesh (37)
-    2300062: Mesh (38)
-    2300064: Mesh (39)
-    2300066: Mesh (4)
-    2300068: Mesh (40)
-    2300070: Mesh (41)
-    2300072: Mesh (42)
-    2300074: Mesh (43)
-    2300076: Mesh (44)
-    2300078: Mesh (45)
-    2300080: Mesh (46)
-    2300082: Mesh (47)
-    2300084: Mesh (48)
-    2300086: Mesh (49)
-    2300088: Mesh (5)
-    2300090: Mesh (50)
-    2300092: Mesh (51)
-    2300094: Mesh (52)
-    2300096: Mesh (53)
-    2300098: Mesh (54)
-    2300100: Mesh (55)
-    2300102: Mesh (56)
-    2300104: Mesh (57)
-    2300106: Mesh (58)
-    2300108: Mesh (59)
-    2300110: Mesh (6)
-    2300112: Mesh (60)
-    2300114: Mesh (61)
-    2300116: Mesh (62)
-    2300118: Mesh (63)
-    2300120: Mesh (64)
-    2300122: Mesh (65)
-    2300124: Mesh (66)
-    2300126: Mesh (67)
-    2300128: Mesh (68)
-    2300130: Mesh (69)
-    2300132: Mesh (7)
-    2300134: Mesh (70)
-    2300136: Mesh (71)
-    2300138: Mesh (72)
-    2300140: Mesh (73)
-    2300142: Mesh (74)
-    2300144: Mesh (75)
-    2300146: Mesh (76)
-    2300148: Mesh (77)
-    2300150: Mesh (78)
-    2300152: Mesh (79)
-    2300154: Mesh (8)
-    2300156: Mesh (80)
-    2300158: Mesh (9)
-    3300000: Mesh
-    3300002: Mesh (10)
-    3300004: Mesh (11)
-    3300006: Mesh (12)
-    3300008: Mesh (13)
-    3300010: Mesh (14)
-    3300012: Mesh (15)
-    3300014: Mesh (16)
-    3300016: Mesh (17)
-    3300018: Mesh (18)
-    3300020: Mesh (19)
-    3300022: Mesh (2)
-    3300024: Mesh (20)
-    3300026: Mesh (21)
-    3300028: Mesh (22)
-    3300030: Mesh (23)
-    3300032: Mesh (24)
-    3300034: Mesh (25)
-    3300036: Mesh (26)
-    3300038: Mesh (27)
-    3300040: Mesh (28)
-    3300042: Mesh (29)
-    3300044: Mesh (3)
-    3300046: Mesh (30)
-    3300048: Mesh (31)
-    3300050: Mesh (32)
-    3300052: Mesh (33)
-    3300054: Mesh (34)
-    3300056: Mesh (35)
-    3300058: Mesh (36)
-    3300060: Mesh (37)
-    3300062: Mesh (38)
-    3300064: Mesh (39)
-    3300066: Mesh (4)
-    3300068: Mesh (40)
-    3300070: Mesh (41)
-    3300072: Mesh (42)
-    3300074: Mesh (43)
-    3300076: Mesh (44)
-    3300078: Mesh (45)
-    3300080: Mesh (46)
-    3300082: Mesh (47)
-    3300084: Mesh (48)
-    3300086: Mesh (49)
-    3300088: Mesh (5)
-    3300090: Mesh (50)
-    3300092: Mesh (51)
-    3300094: Mesh (52)
-    3300096: Mesh (53)
-    3300098: Mesh (54)
-    3300100: Mesh (55)
-    3300102: Mesh (56)
-    3300104: Mesh (57)
-    3300106: Mesh (58)
-    3300108: Mesh (59)
-    3300110: Mesh (6)
-    3300112: Mesh (60)
-    3300114: Mesh (61)
-    3300116: Mesh (62)
-    3300118: Mesh (63)
-    3300120: Mesh (64)
-    3300122: Mesh (65)
-    3300124: Mesh (66)
-    3300126: Mesh (67)
-    3300128: Mesh (68)
-    3300130: Mesh (69)
-    3300132: Mesh (7)
-    3300134: Mesh (70)
-    3300136: Mesh (71)
-    3300138: Mesh (72)
-    3300140: Mesh (73)
-    3300142: Mesh (74)
-    3300144: Mesh (75)
-    3300146: Mesh (76)
-    3300148: Mesh (77)
-    3300150: Mesh (78)
-    3300152: Mesh (79)
-    3300154: Mesh (8)
-    3300156: Mesh (80)
-    3300158: Mesh (9)
-    4300000: Mesh (79)
-    4300002: Mesh (50)
-    4300004: Mesh (76)
-    4300006: Mesh (30)
-    4300008: Mesh (13)
-    4300010: Mesh (51)
-    4300012: Mesh (46)
-    4300014: Mesh (27)
-    4300016: Mesh (28)
-    4300018: Mesh (33)
-    4300020: Mesh (20)
-    4300022: Mesh (25)
-    4300024: Mesh (22)
-    4300026: Mesh (34)
-    4300028: Mesh (41)
-    4300030: Mesh (80)
-    4300032: Mesh (16)
-    4300034: Mesh (59)
-    4300036: Mesh (6)
-    4300038: Mesh (24)
-    4300040: Mesh (53)
-    4300042: Mesh (19)
-    4300044: Mesh (35)
-    4300046: Mesh (75)
-    4300048: Mesh (29)
-    4300050: Mesh (23)
-    4300052: Mesh (55)
-    4300054: Mesh (38)
-    4300056: Mesh (39)
-    4300058: Mesh (44)
-    4300060: Mesh (36)
-    4300062: Mesh (42)
-    4300064: Mesh (32)
-    4300066: Mesh (31)
-    4300068: Mesh (54)
-    4300070: Mesh (37)
-    4300072: Mesh (58)
-    4300074: Mesh (21)
-    4300076: Mesh (56)
-    4300078: Mesh (57)
-    4300080: Mesh (40)
-    4300082: Mesh (49)
-    4300084: Mesh (43)
-    4300086: Mesh (10)
-    4300088: Mesh (3)
-    4300090: Mesh (2)
-    4300092: Mesh (11)
-    4300094: Mesh (60)
-    4300096: Mesh (9)
-    4300098: Mesh (4)
-    4300100: Mesh (5)
-    4300102: Mesh (15)
-    4300104: Mesh
-    4300106: Mesh (7)
-    4300108: Mesh (18)
-    4300110: Mesh (17)
-    4300112: Mesh (12)
-    4300114: Mesh (26)
-    4300116: Mesh (14)
-    4300118: Mesh (47)
-    4300120: Mesh (68)
-    4300122: Mesh (8)
-    4300124: Mesh (52)
-    4300126: Mesh (61)
-    4300128: Mesh (48)
-    4300130: Mesh (62)
-    4300132: Mesh (64)
-    4300134: Mesh (63)
-    4300136: Mesh (66)
-    4300138: Mesh (67)
-    4300140: Mesh (65)
-    4300142: Mesh (70)
-    4300144: Mesh (71)
-    4300146: Mesh (69)
-    4300148: Mesh (72)
-    4300150: Mesh (73)
-    4300152: Mesh (74)
-    4300154: Mesh (78)
-    4300156: Mesh (77)
-    4300158: Mesh (45)
-    7400000: intro_anim
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Mesh
+  - first:
+      1: 100002
+    second: Mesh (10)
+  - first:
+      1: 100004
+    second: Mesh (11)
+  - first:
+      1: 100006
+    second: Mesh (12)
+  - first:
+      1: 100008
+    second: Mesh (13)
+  - first:
+      1: 100010
+    second: Mesh (14)
+  - first:
+      1: 100012
+    second: Mesh (15)
+  - first:
+      1: 100014
+    second: Mesh (16)
+  - first:
+      1: 100016
+    second: Mesh (17)
+  - first:
+      1: 100018
+    second: Mesh (18)
+  - first:
+      1: 100020
+    second: Mesh (19)
+  - first:
+      1: 100022
+    second: Mesh (2)
+  - first:
+      1: 100024
+    second: Mesh (20)
+  - first:
+      1: 100026
+    second: Mesh (21)
+  - first:
+      1: 100028
+    second: Mesh (22)
+  - first:
+      1: 100030
+    second: Mesh (23)
+  - first:
+      1: 100032
+    second: Mesh (24)
+  - first:
+      1: 100034
+    second: Mesh (25)
+  - first:
+      1: 100036
+    second: Mesh (26)
+  - first:
+      1: 100038
+    second: Mesh (27)
+  - first:
+      1: 100040
+    second: Mesh (28)
+  - first:
+      1: 100042
+    second: Mesh (29)
+  - first:
+      1: 100044
+    second: Mesh (3)
+  - first:
+      1: 100046
+    second: Mesh (30)
+  - first:
+      1: 100048
+    second: Mesh (31)
+  - first:
+      1: 100050
+    second: Mesh (32)
+  - first:
+      1: 100052
+    second: Mesh (33)
+  - first:
+      1: 100054
+    second: Mesh (34)
+  - first:
+      1: 100056
+    second: Mesh (35)
+  - first:
+      1: 100058
+    second: Mesh (36)
+  - first:
+      1: 100060
+    second: Mesh (37)
+  - first:
+      1: 100062
+    second: Mesh (38)
+  - first:
+      1: 100064
+    second: Mesh (39)
+  - first:
+      1: 100066
+    second: Mesh (4)
+  - first:
+      1: 100068
+    second: Mesh (40)
+  - first:
+      1: 100070
+    second: Mesh (41)
+  - first:
+      1: 100072
+    second: Mesh (42)
+  - first:
+      1: 100074
+    second: Mesh (43)
+  - first:
+      1: 100076
+    second: Mesh (44)
+  - first:
+      1: 100078
+    second: Mesh (45)
+  - first:
+      1: 100080
+    second: Mesh (46)
+  - first:
+      1: 100082
+    second: Mesh (47)
+  - first:
+      1: 100084
+    second: Mesh (48)
+  - first:
+      1: 100086
+    second: Mesh (49)
+  - first:
+      1: 100088
+    second: Mesh (5)
+  - first:
+      1: 100090
+    second: Mesh (50)
+  - first:
+      1: 100092
+    second: Mesh (51)
+  - first:
+      1: 100094
+    second: Mesh (52)
+  - first:
+      1: 100096
+    second: Mesh (53)
+  - first:
+      1: 100098
+    second: Mesh (54)
+  - first:
+      1: 100100
+    second: Mesh (55)
+  - first:
+      1: 100102
+    second: Mesh (56)
+  - first:
+      1: 100104
+    second: Mesh (57)
+  - first:
+      1: 100106
+    second: Mesh (58)
+  - first:
+      1: 100108
+    second: Mesh (59)
+  - first:
+      1: 100110
+    second: Mesh (6)
+  - first:
+      1: 100112
+    second: Mesh (60)
+  - first:
+      1: 100114
+    second: Mesh (61)
+  - first:
+      1: 100116
+    second: Mesh (62)
+  - first:
+      1: 100118
+    second: Mesh (63)
+  - first:
+      1: 100120
+    second: Mesh (64)
+  - first:
+      1: 100122
+    second: Mesh (65)
+  - first:
+      1: 100124
+    second: Mesh (66)
+  - first:
+      1: 100126
+    second: Mesh (67)
+  - first:
+      1: 100128
+    second: Mesh (68)
+  - first:
+      1: 100130
+    second: Mesh (69)
+  - first:
+      1: 100132
+    second: Mesh (7)
+  - first:
+      1: 100134
+    second: Mesh (70)
+  - first:
+      1: 100136
+    second: Mesh (71)
+  - first:
+      1: 100138
+    second: Mesh (72)
+  - first:
+      1: 100140
+    second: Mesh (73)
+  - first:
+      1: 100142
+    second: Mesh (74)
+  - first:
+      1: 100144
+    second: Mesh (75)
+  - first:
+      1: 100146
+    second: Mesh (76)
+  - first:
+      1: 100148
+    second: Mesh (77)
+  - first:
+      1: 100150
+    second: Mesh (78)
+  - first:
+      1: 100152
+    second: Mesh (79)
+  - first:
+      1: 100154
+    second: Mesh (8)
+  - first:
+      1: 100156
+    second: Mesh (80)
+  - first:
+      1: 100158
+    second: Mesh (9)
+  - first:
+      1: 100160
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Mesh
+  - first:
+      4: 400002
+    second: Mesh (10)
+  - first:
+      4: 400004
+    second: Mesh (11)
+  - first:
+      4: 400006
+    second: Mesh (12)
+  - first:
+      4: 400008
+    second: Mesh (13)
+  - first:
+      4: 400010
+    second: Mesh (14)
+  - first:
+      4: 400012
+    second: Mesh (15)
+  - first:
+      4: 400014
+    second: Mesh (16)
+  - first:
+      4: 400016
+    second: Mesh (17)
+  - first:
+      4: 400018
+    second: Mesh (18)
+  - first:
+      4: 400020
+    second: Mesh (19)
+  - first:
+      4: 400022
+    second: Mesh (2)
+  - first:
+      4: 400024
+    second: Mesh (20)
+  - first:
+      4: 400026
+    second: Mesh (21)
+  - first:
+      4: 400028
+    second: Mesh (22)
+  - first:
+      4: 400030
+    second: Mesh (23)
+  - first:
+      4: 400032
+    second: Mesh (24)
+  - first:
+      4: 400034
+    second: Mesh (25)
+  - first:
+      4: 400036
+    second: Mesh (26)
+  - first:
+      4: 400038
+    second: Mesh (27)
+  - first:
+      4: 400040
+    second: Mesh (28)
+  - first:
+      4: 400042
+    second: Mesh (29)
+  - first:
+      4: 400044
+    second: Mesh (3)
+  - first:
+      4: 400046
+    second: Mesh (30)
+  - first:
+      4: 400048
+    second: Mesh (31)
+  - first:
+      4: 400050
+    second: Mesh (32)
+  - first:
+      4: 400052
+    second: Mesh (33)
+  - first:
+      4: 400054
+    second: Mesh (34)
+  - first:
+      4: 400056
+    second: Mesh (35)
+  - first:
+      4: 400058
+    second: Mesh (36)
+  - first:
+      4: 400060
+    second: Mesh (37)
+  - first:
+      4: 400062
+    second: Mesh (38)
+  - first:
+      4: 400064
+    second: Mesh (39)
+  - first:
+      4: 400066
+    second: Mesh (4)
+  - first:
+      4: 400068
+    second: Mesh (40)
+  - first:
+      4: 400070
+    second: Mesh (41)
+  - first:
+      4: 400072
+    second: Mesh (42)
+  - first:
+      4: 400074
+    second: Mesh (43)
+  - first:
+      4: 400076
+    second: Mesh (44)
+  - first:
+      4: 400078
+    second: Mesh (45)
+  - first:
+      4: 400080
+    second: Mesh (46)
+  - first:
+      4: 400082
+    second: Mesh (47)
+  - first:
+      4: 400084
+    second: Mesh (48)
+  - first:
+      4: 400086
+    second: Mesh (49)
+  - first:
+      4: 400088
+    second: Mesh (5)
+  - first:
+      4: 400090
+    second: Mesh (50)
+  - first:
+      4: 400092
+    second: Mesh (51)
+  - first:
+      4: 400094
+    second: Mesh (52)
+  - first:
+      4: 400096
+    second: Mesh (53)
+  - first:
+      4: 400098
+    second: Mesh (54)
+  - first:
+      4: 400100
+    second: Mesh (55)
+  - first:
+      4: 400102
+    second: Mesh (56)
+  - first:
+      4: 400104
+    second: Mesh (57)
+  - first:
+      4: 400106
+    second: Mesh (58)
+  - first:
+      4: 400108
+    second: Mesh (59)
+  - first:
+      4: 400110
+    second: Mesh (6)
+  - first:
+      4: 400112
+    second: Mesh (60)
+  - first:
+      4: 400114
+    second: Mesh (61)
+  - first:
+      4: 400116
+    second: Mesh (62)
+  - first:
+      4: 400118
+    second: Mesh (63)
+  - first:
+      4: 400120
+    second: Mesh (64)
+  - first:
+      4: 400122
+    second: Mesh (65)
+  - first:
+      4: 400124
+    second: Mesh (66)
+  - first:
+      4: 400126
+    second: Mesh (67)
+  - first:
+      4: 400128
+    second: Mesh (68)
+  - first:
+      4: 400130
+    second: Mesh (69)
+  - first:
+      4: 400132
+    second: Mesh (7)
+  - first:
+      4: 400134
+    second: Mesh (70)
+  - first:
+      4: 400136
+    second: Mesh (71)
+  - first:
+      4: 400138
+    second: Mesh (72)
+  - first:
+      4: 400140
+    second: Mesh (73)
+  - first:
+      4: 400142
+    second: Mesh (74)
+  - first:
+      4: 400144
+    second: Mesh (75)
+  - first:
+      4: 400146
+    second: Mesh (76)
+  - first:
+      4: 400148
+    second: Mesh (77)
+  - first:
+      4: 400150
+    second: Mesh (78)
+  - first:
+      4: 400152
+    second: Mesh (79)
+  - first:
+      4: 400154
+    second: Mesh (8)
+  - first:
+      4: 400156
+    second: Mesh (80)
+  - first:
+      4: 400158
+    second: Mesh (9)
+  - first:
+      4: 400160
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: Mesh
+  - first:
+      23: 2300002
+    second: Mesh (10)
+  - first:
+      23: 2300004
+    second: Mesh (11)
+  - first:
+      23: 2300006
+    second: Mesh (12)
+  - first:
+      23: 2300008
+    second: Mesh (13)
+  - first:
+      23: 2300010
+    second: Mesh (14)
+  - first:
+      23: 2300012
+    second: Mesh (15)
+  - first:
+      23: 2300014
+    second: Mesh (16)
+  - first:
+      23: 2300016
+    second: Mesh (17)
+  - first:
+      23: 2300018
+    second: Mesh (18)
+  - first:
+      23: 2300020
+    second: Mesh (19)
+  - first:
+      23: 2300022
+    second: Mesh (2)
+  - first:
+      23: 2300024
+    second: Mesh (20)
+  - first:
+      23: 2300026
+    second: Mesh (21)
+  - first:
+      23: 2300028
+    second: Mesh (22)
+  - first:
+      23: 2300030
+    second: Mesh (23)
+  - first:
+      23: 2300032
+    second: Mesh (24)
+  - first:
+      23: 2300034
+    second: Mesh (25)
+  - first:
+      23: 2300036
+    second: Mesh (26)
+  - first:
+      23: 2300038
+    second: Mesh (27)
+  - first:
+      23: 2300040
+    second: Mesh (28)
+  - first:
+      23: 2300042
+    second: Mesh (29)
+  - first:
+      23: 2300044
+    second: Mesh (3)
+  - first:
+      23: 2300046
+    second: Mesh (30)
+  - first:
+      23: 2300048
+    second: Mesh (31)
+  - first:
+      23: 2300050
+    second: Mesh (32)
+  - first:
+      23: 2300052
+    second: Mesh (33)
+  - first:
+      23: 2300054
+    second: Mesh (34)
+  - first:
+      23: 2300056
+    second: Mesh (35)
+  - first:
+      23: 2300058
+    second: Mesh (36)
+  - first:
+      23: 2300060
+    second: Mesh (37)
+  - first:
+      23: 2300062
+    second: Mesh (38)
+  - first:
+      23: 2300064
+    second: Mesh (39)
+  - first:
+      23: 2300066
+    second: Mesh (4)
+  - first:
+      23: 2300068
+    second: Mesh (40)
+  - first:
+      23: 2300070
+    second: Mesh (41)
+  - first:
+      23: 2300072
+    second: Mesh (42)
+  - first:
+      23: 2300074
+    second: Mesh (43)
+  - first:
+      23: 2300076
+    second: Mesh (44)
+  - first:
+      23: 2300078
+    second: Mesh (45)
+  - first:
+      23: 2300080
+    second: Mesh (46)
+  - first:
+      23: 2300082
+    second: Mesh (47)
+  - first:
+      23: 2300084
+    second: Mesh (48)
+  - first:
+      23: 2300086
+    second: Mesh (49)
+  - first:
+      23: 2300088
+    second: Mesh (5)
+  - first:
+      23: 2300090
+    second: Mesh (50)
+  - first:
+      23: 2300092
+    second: Mesh (51)
+  - first:
+      23: 2300094
+    second: Mesh (52)
+  - first:
+      23: 2300096
+    second: Mesh (53)
+  - first:
+      23: 2300098
+    second: Mesh (54)
+  - first:
+      23: 2300100
+    second: Mesh (55)
+  - first:
+      23: 2300102
+    second: Mesh (56)
+  - first:
+      23: 2300104
+    second: Mesh (57)
+  - first:
+      23: 2300106
+    second: Mesh (58)
+  - first:
+      23: 2300108
+    second: Mesh (59)
+  - first:
+      23: 2300110
+    second: Mesh (6)
+  - first:
+      23: 2300112
+    second: Mesh (60)
+  - first:
+      23: 2300114
+    second: Mesh (61)
+  - first:
+      23: 2300116
+    second: Mesh (62)
+  - first:
+      23: 2300118
+    second: Mesh (63)
+  - first:
+      23: 2300120
+    second: Mesh (64)
+  - first:
+      23: 2300122
+    second: Mesh (65)
+  - first:
+      23: 2300124
+    second: Mesh (66)
+  - first:
+      23: 2300126
+    second: Mesh (67)
+  - first:
+      23: 2300128
+    second: Mesh (68)
+  - first:
+      23: 2300130
+    second: Mesh (69)
+  - first:
+      23: 2300132
+    second: Mesh (7)
+  - first:
+      23: 2300134
+    second: Mesh (70)
+  - first:
+      23: 2300136
+    second: Mesh (71)
+  - first:
+      23: 2300138
+    second: Mesh (72)
+  - first:
+      23: 2300140
+    second: Mesh (73)
+  - first:
+      23: 2300142
+    second: Mesh (74)
+  - first:
+      23: 2300144
+    second: Mesh (75)
+  - first:
+      23: 2300146
+    second: Mesh (76)
+  - first:
+      23: 2300148
+    second: Mesh (77)
+  - first:
+      23: 2300150
+    second: Mesh (78)
+  - first:
+      23: 2300152
+    second: Mesh (79)
+  - first:
+      23: 2300154
+    second: Mesh (8)
+  - first:
+      23: 2300156
+    second: Mesh (80)
+  - first:
+      23: 2300158
+    second: Mesh (9)
+  - first:
+      33: 3300000
+    second: Mesh
+  - first:
+      33: 3300002
+    second: Mesh (10)
+  - first:
+      33: 3300004
+    second: Mesh (11)
+  - first:
+      33: 3300006
+    second: Mesh (12)
+  - first:
+      33: 3300008
+    second: Mesh (13)
+  - first:
+      33: 3300010
+    second: Mesh (14)
+  - first:
+      33: 3300012
+    second: Mesh (15)
+  - first:
+      33: 3300014
+    second: Mesh (16)
+  - first:
+      33: 3300016
+    second: Mesh (17)
+  - first:
+      33: 3300018
+    second: Mesh (18)
+  - first:
+      33: 3300020
+    second: Mesh (19)
+  - first:
+      33: 3300022
+    second: Mesh (2)
+  - first:
+      33: 3300024
+    second: Mesh (20)
+  - first:
+      33: 3300026
+    second: Mesh (21)
+  - first:
+      33: 3300028
+    second: Mesh (22)
+  - first:
+      33: 3300030
+    second: Mesh (23)
+  - first:
+      33: 3300032
+    second: Mesh (24)
+  - first:
+      33: 3300034
+    second: Mesh (25)
+  - first:
+      33: 3300036
+    second: Mesh (26)
+  - first:
+      33: 3300038
+    second: Mesh (27)
+  - first:
+      33: 3300040
+    second: Mesh (28)
+  - first:
+      33: 3300042
+    second: Mesh (29)
+  - first:
+      33: 3300044
+    second: Mesh (3)
+  - first:
+      33: 3300046
+    second: Mesh (30)
+  - first:
+      33: 3300048
+    second: Mesh (31)
+  - first:
+      33: 3300050
+    second: Mesh (32)
+  - first:
+      33: 3300052
+    second: Mesh (33)
+  - first:
+      33: 3300054
+    second: Mesh (34)
+  - first:
+      33: 3300056
+    second: Mesh (35)
+  - first:
+      33: 3300058
+    second: Mesh (36)
+  - first:
+      33: 3300060
+    second: Mesh (37)
+  - first:
+      33: 3300062
+    second: Mesh (38)
+  - first:
+      33: 3300064
+    second: Mesh (39)
+  - first:
+      33: 3300066
+    second: Mesh (4)
+  - first:
+      33: 3300068
+    second: Mesh (40)
+  - first:
+      33: 3300070
+    second: Mesh (41)
+  - first:
+      33: 3300072
+    second: Mesh (42)
+  - first:
+      33: 3300074
+    second: Mesh (43)
+  - first:
+      33: 3300076
+    second: Mesh (44)
+  - first:
+      33: 3300078
+    second: Mesh (45)
+  - first:
+      33: 3300080
+    second: Mesh (46)
+  - first:
+      33: 3300082
+    second: Mesh (47)
+  - first:
+      33: 3300084
+    second: Mesh (48)
+  - first:
+      33: 3300086
+    second: Mesh (49)
+  - first:
+      33: 3300088
+    second: Mesh (5)
+  - first:
+      33: 3300090
+    second: Mesh (50)
+  - first:
+      33: 3300092
+    second: Mesh (51)
+  - first:
+      33: 3300094
+    second: Mesh (52)
+  - first:
+      33: 3300096
+    second: Mesh (53)
+  - first:
+      33: 3300098
+    second: Mesh (54)
+  - first:
+      33: 3300100
+    second: Mesh (55)
+  - first:
+      33: 3300102
+    second: Mesh (56)
+  - first:
+      33: 3300104
+    second: Mesh (57)
+  - first:
+      33: 3300106
+    second: Mesh (58)
+  - first:
+      33: 3300108
+    second: Mesh (59)
+  - first:
+      33: 3300110
+    second: Mesh (6)
+  - first:
+      33: 3300112
+    second: Mesh (60)
+  - first:
+      33: 3300114
+    second: Mesh (61)
+  - first:
+      33: 3300116
+    second: Mesh (62)
+  - first:
+      33: 3300118
+    second: Mesh (63)
+  - first:
+      33: 3300120
+    second: Mesh (64)
+  - first:
+      33: 3300122
+    second: Mesh (65)
+  - first:
+      33: 3300124
+    second: Mesh (66)
+  - first:
+      33: 3300126
+    second: Mesh (67)
+  - first:
+      33: 3300128
+    second: Mesh (68)
+  - first:
+      33: 3300130
+    second: Mesh (69)
+  - first:
+      33: 3300132
+    second: Mesh (7)
+  - first:
+      33: 3300134
+    second: Mesh (70)
+  - first:
+      33: 3300136
+    second: Mesh (71)
+  - first:
+      33: 3300138
+    second: Mesh (72)
+  - first:
+      33: 3300140
+    second: Mesh (73)
+  - first:
+      33: 3300142
+    second: Mesh (74)
+  - first:
+      33: 3300144
+    second: Mesh (75)
+  - first:
+      33: 3300146
+    second: Mesh (76)
+  - first:
+      33: 3300148
+    second: Mesh (77)
+  - first:
+      33: 3300150
+    second: Mesh (78)
+  - first:
+      33: 3300152
+    second: Mesh (79)
+  - first:
+      33: 3300154
+    second: Mesh (8)
+  - first:
+      33: 3300156
+    second: Mesh (80)
+  - first:
+      33: 3300158
+    second: Mesh (9)
+  - first:
+      43: 4300000
+    second: Mesh (79)
+  - first:
+      43: 4300002
+    second: Mesh (50)
+  - first:
+      43: 4300004
+    second: Mesh (76)
+  - first:
+      43: 4300006
+    second: Mesh (30)
+  - first:
+      43: 4300008
+    second: Mesh (13)
+  - first:
+      43: 4300010
+    second: Mesh (51)
+  - first:
+      43: 4300012
+    second: Mesh (46)
+  - first:
+      43: 4300014
+    second: Mesh (27)
+  - first:
+      43: 4300016
+    second: Mesh (28)
+  - first:
+      43: 4300018
+    second: Mesh (33)
+  - first:
+      43: 4300020
+    second: Mesh (20)
+  - first:
+      43: 4300022
+    second: Mesh (25)
+  - first:
+      43: 4300024
+    second: Mesh (22)
+  - first:
+      43: 4300026
+    second: Mesh (34)
+  - first:
+      43: 4300028
+    second: Mesh (41)
+  - first:
+      43: 4300030
+    second: Mesh (80)
+  - first:
+      43: 4300032
+    second: Mesh (16)
+  - first:
+      43: 4300034
+    second: Mesh (59)
+  - first:
+      43: 4300036
+    second: Mesh (6)
+  - first:
+      43: 4300038
+    second: Mesh (24)
+  - first:
+      43: 4300040
+    second: Mesh (53)
+  - first:
+      43: 4300042
+    second: Mesh (19)
+  - first:
+      43: 4300044
+    second: Mesh (35)
+  - first:
+      43: 4300046
+    second: Mesh (75)
+  - first:
+      43: 4300048
+    second: Mesh (29)
+  - first:
+      43: 4300050
+    second: Mesh (23)
+  - first:
+      43: 4300052
+    second: Mesh (55)
+  - first:
+      43: 4300054
+    second: Mesh (38)
+  - first:
+      43: 4300056
+    second: Mesh (39)
+  - first:
+      43: 4300058
+    second: Mesh (44)
+  - first:
+      43: 4300060
+    second: Mesh (36)
+  - first:
+      43: 4300062
+    second: Mesh (42)
+  - first:
+      43: 4300064
+    second: Mesh (32)
+  - first:
+      43: 4300066
+    second: Mesh (31)
+  - first:
+      43: 4300068
+    second: Mesh (54)
+  - first:
+      43: 4300070
+    second: Mesh (37)
+  - first:
+      43: 4300072
+    second: Mesh (58)
+  - first:
+      43: 4300074
+    second: Mesh (21)
+  - first:
+      43: 4300076
+    second: Mesh (56)
+  - first:
+      43: 4300078
+    second: Mesh (57)
+  - first:
+      43: 4300080
+    second: Mesh (40)
+  - first:
+      43: 4300082
+    second: Mesh (49)
+  - first:
+      43: 4300084
+    second: Mesh (43)
+  - first:
+      43: 4300086
+    second: Mesh (10)
+  - first:
+      43: 4300088
+    second: Mesh (3)
+  - first:
+      43: 4300090
+    second: Mesh (2)
+  - first:
+      43: 4300092
+    second: Mesh (11)
+  - first:
+      43: 4300094
+    second: Mesh (60)
+  - first:
+      43: 4300096
+    second: Mesh (9)
+  - first:
+      43: 4300098
+    second: Mesh (4)
+  - first:
+      43: 4300100
+    second: Mesh (5)
+  - first:
+      43: 4300102
+    second: Mesh (15)
+  - first:
+      43: 4300104
+    second: Mesh
+  - first:
+      43: 4300106
+    second: Mesh (7)
+  - first:
+      43: 4300108
+    second: Mesh (18)
+  - first:
+      43: 4300110
+    second: Mesh (17)
+  - first:
+      43: 4300112
+    second: Mesh (12)
+  - first:
+      43: 4300114
+    second: Mesh (26)
+  - first:
+      43: 4300116
+    second: Mesh (14)
+  - first:
+      43: 4300118
+    second: Mesh (47)
+  - first:
+      43: 4300120
+    second: Mesh (68)
+  - first:
+      43: 4300122
+    second: Mesh (8)
+  - first:
+      43: 4300124
+    second: Mesh (52)
+  - first:
+      43: 4300126
+    second: Mesh (61)
+  - first:
+      43: 4300128
+    second: Mesh (48)
+  - first:
+      43: 4300130
+    second: Mesh (62)
+  - first:
+      43: 4300132
+    second: Mesh (64)
+  - first:
+      43: 4300134
+    second: Mesh (63)
+  - first:
+      43: 4300136
+    second: Mesh (66)
+  - first:
+      43: 4300138
+    second: Mesh (67)
+  - first:
+      43: 4300140
+    second: Mesh (65)
+  - first:
+      43: 4300142
+    second: Mesh (70)
+  - first:
+      43: 4300144
+    second: Mesh (71)
+  - first:
+      43: 4300146
+    second: Mesh (69)
+  - first:
+      43: 4300148
+    second: Mesh (72)
+  - first:
+      43: 4300150
+    second: Mesh (73)
+  - first:
+      43: 4300152
+    second: Mesh (74)
+  - first:
+      43: 4300154
+    second: Mesh (78)
+  - first:
+      43: 4300156
+    second: Mesh (77)
+  - first:
+      43: 4300158
+    second: Mesh (45)
+  - first:
+      74: 7400000
+    second: intro_anim
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poly_Ball
+    second: {fileID: 2100000, guid: 12a5b2cbdd057a64a9f22b53910b709d, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: intro_anim
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 200
       wrapMode: 0
@@ -626,13 +1445,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -642,10 +1472,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -655,14 +1489,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -1,73 +1,206 @@
 fileFormatVersion: 2
 guid: 093eaa714d01f4c4789d06131e57e648
-timeCreated: 1497888262
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Base_Controller
-    100002: Base_Object_000
-    100004: Circle_000
-    100006: Circle_001
-    100008: Circle_002
-    100010: Circle_003
-    100012: Circle_004
-    100014: Circle_005
-    100016: //RootNode
-    100018: Little_Button_005
-    100020: Little_Button_008
-    100022: Little_Button_009
-    400000: Base_Controller
-    400002: Base_Object_000
-    400004: Circle_000
-    400006: Circle_001
-    400008: Circle_002
-    400010: Circle_003
-    400012: Circle_004
-    400014: Circle_005
-    400016: //RootNode
-    400018: Little_Button_005
-    400020: Little_Button_008
-    400022: Little_Button_009
-    2300000: Base_Controller
-    2300002: Base_Object_000
-    2300004: Circle_000
-    2300006: Circle_001
-    2300008: Circle_002
-    2300010: Circle_003
-    2300012: Circle_004
-    2300014: Circle_005
-    2300016: Little_Button_005
-    2300018: Little_Button_008
-    2300020: Little_Button_009
-    3300000: Base_Controller
-    3300002: Base_Object_000
-    3300004: Circle_000
-    3300006: Circle_001
-    3300008: Circle_002
-    3300010: Circle_003
-    3300012: Circle_004
-    3300014: Circle_005
-    3300016: Little_Button_005
-    3300018: Little_Button_008
-    3300020: Little_Button_009
-    4300000: Circle_004
-    4300002: Circle_000
-    4300004: Circle_005
-    4300006: Base_Object_000
-    4300008: Base_Controller
-    4300010: Little_Button_008
-    4300012: Circle_003
-    4300014: Circle_002
-    4300016: Little_Button_009
-    4300018: Little_Button_005
-    4300020: Circle_001
-    7400000: Default Take
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Base_Controller
+  - first:
+      1: 100002
+    second: Base_Object_000
+  - first:
+      1: 100004
+    second: Circle_000
+  - first:
+      1: 100006
+    second: Circle_001
+  - first:
+      1: 100008
+    second: Circle_002
+  - first:
+      1: 100010
+    second: Circle_003
+  - first:
+      1: 100012
+    second: Circle_004
+  - first:
+      1: 100014
+    second: Circle_005
+  - first:
+      1: 100016
+    second: //RootNode
+  - first:
+      1: 100018
+    second: Little_Button_005
+  - first:
+      1: 100020
+    second: Little_Button_008
+  - first:
+      1: 100022
+    second: Little_Button_009
+  - first:
+      4: 400000
+    second: Base_Controller
+  - first:
+      4: 400002
+    second: Base_Object_000
+  - first:
+      4: 400004
+    second: Circle_000
+  - first:
+      4: 400006
+    second: Circle_001
+  - first:
+      4: 400008
+    second: Circle_002
+  - first:
+      4: 400010
+    second: Circle_003
+  - first:
+      4: 400012
+    second: Circle_004
+  - first:
+      4: 400014
+    second: Circle_005
+  - first:
+      4: 400016
+    second: //RootNode
+  - first:
+      4: 400018
+    second: Little_Button_005
+  - first:
+      4: 400020
+    second: Little_Button_008
+  - first:
+      4: 400022
+    second: Little_Button_009
+  - first:
+      23: 2300000
+    second: Base_Controller
+  - first:
+      23: 2300002
+    second: Base_Object_000
+  - first:
+      23: 2300004
+    second: Circle_000
+  - first:
+      23: 2300006
+    second: Circle_001
+  - first:
+      23: 2300008
+    second: Circle_002
+  - first:
+      23: 2300010
+    second: Circle_003
+  - first:
+      23: 2300012
+    second: Circle_004
+  - first:
+      23: 2300014
+    second: Circle_005
+  - first:
+      23: 2300016
+    second: Little_Button_005
+  - first:
+      23: 2300018
+    second: Little_Button_008
+  - first:
+      23: 2300020
+    second: Little_Button_009
+  - first:
+      33: 3300000
+    second: Base_Controller
+  - first:
+      33: 3300002
+    second: Base_Object_000
+  - first:
+      33: 3300004
+    second: Circle_000
+  - first:
+      33: 3300006
+    second: Circle_001
+  - first:
+      33: 3300008
+    second: Circle_002
+  - first:
+      33: 3300010
+    second: Circle_003
+  - first:
+      33: 3300012
+    second: Circle_004
+  - first:
+      33: 3300014
+    second: Circle_005
+  - first:
+      33: 3300016
+    second: Little_Button_005
+  - first:
+      33: 3300018
+    second: Little_Button_008
+  - first:
+      33: 3300020
+    second: Little_Button_009
+  - first:
+      43: 4300000
+    second: Circle_004
+  - first:
+      43: 4300002
+    second: Circle_000
+  - first:
+      43: 4300004
+    second: Circle_005
+  - first:
+      43: 4300006
+    second: Base_Object_000
+  - first:
+      43: 4300008
+    second: Base_Controller
+  - first:
+      43: 4300010
+    second: Little_Button_008
+  - first:
+      43: 4300012
+    second: Circle_003
+  - first:
+      43: 4300014
+    second: Circle_002
+  - first:
+      43: 4300016
+    second: Little_Button_009
+  - first:
+      43: 4300018
+    second: Little_Button_005
+  - first:
+      43: 4300020
+    second: Circle_001
+  - first:
+      74: 7400000
+    second: Default Take
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Off_white
+    second: {fileID: 2100000, guid: 5d95ce0a50f7e2d4ea39950aef45a913, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: d06ae5e60c379dc4484da7d362750c97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_001
+    second: {fileID: 2100000, guid: 6a2e86b059241fd4ba58b3c92a851b49, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -80,12 +213,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -93,13 +229,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -109,10 +256,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -122,14 +273,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

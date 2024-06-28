@@ -1,21 +1,65 @@
 fileFormatVersion: 2
 guid: e9aa83985070296429c1e6878ff7249e
-timeCreated: 1496245347
-licenseType: Pro
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2300000: default
-    3300000: default
-    4300000: default
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: default
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      4: 400000
+    second: default
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: default
+  - first:
+      33: 3300000
+    second: default
+  - first:
+      43: 4300000
+    second: default
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat18
+    second: {fileID: 2100000, guid: 6fe171c6def070b4f8366a0768736dc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat20
+    second: {fileID: 2100000, guid: 0cc4ff996e11ada45a4fe36785fab61c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat21
+    second: {fileID: 2100000, guid: 15e6beaeba123244e93ddcf95700784b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat24
+    second: {fileID: 2100000, guid: 7d27d60e3461e324691995d35280658d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat3
+    second: {fileID: 2100000, guid: a9b16113c56257e45959f1d8f7a1777f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat6
+    second: {fileID: 2100000, guid: d8983a104f58f0c40b025985587093c6, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -28,12 +72,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -41,13 +88,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -57,10 +115,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -70,14 +132,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -1,52 +1,106 @@
 fileFormatVersion: 2
 guid: bfdbbf4659a5c184d903982eda4286b9
-timeCreated: 1466126514
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Vista_card_A
-    100002: Vista_card_B
-    100004: Vista_card_C
-    100006: //RootNode
-    100008: Vista_card_D
-    400000: Vista_card_A
-    400002: Vista_card_B
-    400004: Vista_card_C
-    400006: //RootNode
-    400008: Vista_card_D
-    2300000: Vista_card_A
-    2300002: Vista_card_B
-    2300004: Vista_card_C
-    2300006: Vista_card_D
-    3300000: Vista_card_A
-    3300002: Vista_card_B
-    3300004: Vista_card_C
-    3300006: Vista_card_D
-    4300000: Vista_card_A
-    4300002: Vista_card_B
-    4300004: Vista_card_C
-    4300006: Vista_card_D
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Vista_card_A
+  - first:
+      1: 100002
+    second: Vista_card_B
+  - first:
+      1: 100004
+    second: Vista_card_C
+  - first:
+      1: 100006
+    second: //RootNode
+  - first:
+      1: 100008
+    second: Vista_card_D
+  - first:
+      4: 400000
+    second: Vista_card_A
+  - first:
+      4: 400002
+    second: Vista_card_B
+  - first:
+      4: 400004
+    second: Vista_card_C
+  - first:
+      4: 400006
+    second: //RootNode
+  - first:
+      4: 400008
+    second: Vista_card_D
+  - first:
+      23: 2300000
+    second: Vista_card_A
+  - first:
+      23: 2300002
+    second: Vista_card_B
+  - first:
+      23: 2300004
+    second: Vista_card_C
+  - first:
+      23: 2300006
+    second: Vista_card_D
+  - first:
+      33: 3300000
+    second: Vista_card_A
+  - first:
+      33: 3300002
+    second: Vista_card_B
+  - first:
+      33: 3300004
+    second: Vista_card_C
+  - first:
+      33: 3300006
+    second: Vista_card_D
+  - first:
+      43: 4300000
+    second: Vista_card_A
+  - first:
+      43: 4300002
+    second: Vista_card_B
+  - first:
+      43: 4300004
+    second: Vista_card_C
+  - first:
+      43: 4300006
+    second: Vista_card_D
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 46b308e6e04aaa648a7140abebb4559c, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 1
     materialSearch: 2
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 0
   meshes:
@@ -54,13 +108,24 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 0
@@ -70,9 +135,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -82,11 +152,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -3,15 +3,17 @@
 --- !u!43 &4300000
 Mesh:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Wedge
-  serializedVersion: 8
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
     indexCount: 24
     topology: 0
+    baseVertex: 0
     firstVertex: 0
     vertexCount: 18
     localAABB:
@@ -25,14 +27,17 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
   m_MeshCompression: 0
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
+  m_IndexFormat: 0
   m_IndexBuffer: 0000010002000000030001000400050006000700080009000a000b000c000a000d000b000e000f0010000e0011000f00
-  m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 139
+    serializedVersion: 3
     m_VertexCount: 18
     m_Channels:
     - stream: 0
@@ -43,6 +48,10 @@ Mesh:
       offset: 12
       format: 0
       dimension: 3
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 4
     - stream: 0
       offset: 0
       format: 0
@@ -64,9 +73,29 @@ Mesh:
       format: 0
       dimension: 0
     - stream: 0
-      offset: 32
+      offset: 0
       format: 0
-      dimension: 4
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
     m_DataSize: 864
     _typelessdata: 000000bffcffffbe0100003f00000000000000000000803f52d8913cfa8db43effff1f340000803f00000000000080bf0200003f0000003ffdffff3e00000000000000000000803f03b9253f3e717b3fffff1f340000803f00000000000080bf000000bf0100003ffdffff3e00000000000000000000803f03b9253ffa8db43e000000000000803f00000000000080bffaffff3e010000bf0100003f00000000000000000000803f52d8913c3e717b3fffff9f340000803f00000000000080bf000000bf0100003ffdffff3e000080bf0000000000000000c98fb43e70860b3c00000000000080bf01002034000080bf030000bffaffffbefdffffbe000080bf0000000000000000b6067d3fecec243f00000000000080bf01002034000080bf000000bffcffffbe0100003f000080bf0000000000000000b6067d3f70860b3c00000000000080bf01002034000080bffaffff3e010000bf0100003f0000803f0000000000000000c98fb43e70860b3c000000000000803f000020b4000080bfffffff3e010000bffdffffbe0000803f0000000000000000b6067d3fecec243f000000000000803f000020b4000080bf0200003f0000003ffdffff3e0000803f0000000000000000b6067d3f70860b3c000000000000803f000020b4000080bf0200003f0000003ffdffff3e00000000f304353ff30435bf52d8913cfa8db43e000080bfbf4e6433be4e6433000080bf030000bffaffffbefdffffbe00000000f304353ff30435bf03b9253f3e717b3f000080bfa0d88d339fd88d33000080bf000000bf0100003ffdffff3e00000000f304353ff30435bf03b9253ffa8db43e000080bfffffff32fdffff32000080bfffffff3e010000bffdffffbe00000000f304353ff30435bf52d8913c3e717b3f000080bfffffbf33feffbf33000080bf030000bffaffffbefdffffbe00000000000080bf0000000052d8913cfa8db43ef6ffff32000000000000803f000080bffaffff3e010000bf0100003f00000000000080bf0000000003b9253f3e717b3ff8ffff32000000000000803f000080bf000000bffcffffbe0100003f00000000000080bf0000000003b9253ffa8db43e00004034000000000000803f000080bfffffff3e010000bffdffffbe00000000000080bf0000000052d8913c3e717b3f000000b4000000000000803f000080bf
   m_CompressedMesh:
@@ -127,4 +156,10 @@ Mesh:
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 1
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: -1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
