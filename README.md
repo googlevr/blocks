@@ -3,6 +3,9 @@
 Blocks is licensed under Apache 2.0. It is not an officially supported
 Google product. See the [LICENSE](LICENSE) file for more details.
 
+This repo is archived, but a list of active forks is available at
+https://github.com/googlevr/blocks/network
+
 ## Trademarks
 
 The Blocks trademark and logo (“Blocks Trademarks”) are trademarks of
@@ -18,10 +21,9 @@ For more information, read the
 
 Get the Blocks open-source application running on your own devices.
 
-### Prerequisites #TODO
+### Prerequisites
 
-*   [Unity 2018.4.11f1](unityhub://2018.4.11f1/7098af2f11ea)
-*   [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)
+*   [Unity 2019.4.25f1](unityhub://2019.4.25f1/01a0494af254)
 
 The code is provided as-is.  Some external dependencies were removed.  It will
 not build out of the box.  Someone who is comfortable with Unity and SteamVR
@@ -45,6 +47,11 @@ open-source licensing issues. These are:
  * OpenVR
  * AnimatedGifEncoder32
  * LZWEncoder
+
+## Known issues
+
+OculusVR mode and reference image insertion are not currently functional in this
+branch.
 
 ## Google service API support
 
