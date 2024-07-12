@@ -2,7 +2,8 @@
 
 We encourage you to fork the repository; this repository does not currently
 accept patches or contributions. See README.md for rules governing
-the Blocks trademark.
+the Blocks trademark. See https://github.com/googlevr/blocks/network for a
+list of active forks.
 
 Should our contribution policy ever change, contributors will need to
 follow a few small guidelines.
