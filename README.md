@@ -48,58 +48,9 @@ open-source licensing issues. These are:
 
 ## Google service API support
 
-Set up Google API support to access Google services in the app.
+Legacy code is included to connect to Google APIs for People and Drive 
+integrations. This is not critical to the Blocks experience, but is left
+as a convenience for any forks that wish to make use of it with a new backend. 
 
-### Enabling Google service APIs
-
-Follow these steps when enabling Google service APIs:
-
-1.  Create a new project in the
-    [Google Cloud Console](https://console.developers.google.com/).
-1.  Enable the following APIs and services:
-
-    *   **Google Drive API** — for backup to Google Drive
-    *   **People API** — for username and profile picture
-
-Note: The name of your application on the developer console should match the
-name you've given the app in `App.kGoogleServicesAppName` in `App.cs`.
-
-### Creating a Google API key
-
-Follow these steps when creating a Google API key:
-
-1.  Go to the Credentials page from the Google Cloud Console.
-1.  Click **Create Credential** and select **API key** from the drop-down menu.
-
-### Google OAuth consent screen information
-
-The OAuth consent screen asks users for permission to access their Google
-account. You should be able to configure it from the Credentials screen.
-
-Follow these steps when configuring the OAuth consent screen:
-
-1.  Fill in the name and logo of your app, as well as the scope of the user data
-    that the app will access.
-1.  Add the following paths to the list of scopes:
-
-    *   Google Drive API `../auth/drive.appdata`
-    *   Google Drive API `../auth/drive.file`
-
-### Creating an OAuth credential
-
-The credential identifies the application to the Google servers. Follow these
-steps to create an OAuth credential:
-
-1.  Create a new credential on the Credentials screen.
-1.  Select **OAuth**, and then select **Other**. Take note of the client ID and
-    client secret values that are created for you. Keep the client secret a
-    secret!
-
-### Storing the Google API Key and credential data
-
-Follow these steps to store the Google API Key and credential data: #TODO
-
-1.  There is an asset in the `Assets/` directory called `Secrets` that contains
-    a `Secrets` field. Add a new item to this field.
-2.  Select `Google` as the service. Paste in the API key, client ID, and client
-    secret that were generated earlier.
+You must register new projects and obtain new keys and credentials from the 
+Google Cloud Console to make use of these features.
