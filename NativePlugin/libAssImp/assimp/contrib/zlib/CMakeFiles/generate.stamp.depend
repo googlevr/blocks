@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckTypeSize.c.in
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/CMakeFiles/CheckTypeSize/OFF64_T.c
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckFunctionExists.c
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.c.in
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/zlib.pc.cmakein
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/zconf.h.cmakein

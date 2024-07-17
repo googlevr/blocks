@@ -1,0 +1,841 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35D815A5-6420-3E89-B214-BD0EA6296389}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>assimp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">assimp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">assimp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">assimp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">assimp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Debug\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Debug\zlibstaticd.lib;..\lib\Debug\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/lib/Debug/assimp-vc140-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/bin/Debug/assimp-vc140-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Release\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Release\zlibstatic.lib;..\lib\Release\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/lib/Release/assimp-vc140-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/bin/Release/assimp-vc140-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"MinSizeRel\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\MinSizeRel\zlibstatic.lib;..\lib\MinSizeRel\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/lib/MinSizeRel/assimp-vc140-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/bin/MinSizeRel/assimp-vc140-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\rapidjson\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\unzip;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..\contrib\openddlparser\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\zlibstatic.lib;..\lib\RelWithDebInfo\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/lib/RelWithDebInfo/assimp-vc140-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ddgit/BlocksNativePlugin/libAssImp/assimp/bin/RelWithDebInfo/assimp-vc140-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\cmake-modules\FindRT.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\cmake-modules\FindRT.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\cmake-modules\FindRT.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\cmake-modules\FindRT.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Assimp.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\fast_atof.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\qnan.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BaseImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BaseImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BaseProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BaseProcess.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Importer.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ScenePrivate.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PostStepRegistry.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ImporterRegistry.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ByteSwapper.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DefaultProgressHandler.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DefaultIOStream.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DefaultIOSystem.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CInterfaceIOWrapper.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CInterfaceIOWrapper.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Hash.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Importer.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFF.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MemoryIOWrapper.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ParsingUtils.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StreamReader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StreamWriter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StringComparison.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StringUtils.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SGSpatialSort.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SGSpatialSort.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\VertexTriangleAdjacency.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\VertexTriangleAdjacency.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\GenericProperty.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SpatialSort.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SpatialSort.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SceneCombiner.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ScenePreprocessor.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ScenePreprocessor.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SkeletonMeshBuilder.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SkeletonMeshBuilder.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SplitByBoneCountProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SplitByBoneCountProcess.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SmoothingGroups.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StandardShapes.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StandardShapes.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TargetAnimation.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TargetAnimation.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveComments.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveComments.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Subdivision.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Subdivision.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\scene.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Vertex.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LineSplitter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TinyFormatter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Profiler.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LogAux.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Bitmap.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Bitmap.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XMLTools.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Version.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IOStreamBuffer.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CreateAnimMesh.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CreateAnimMesh.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Win32DebugLogStream.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DefaultLogger.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FileLogStream.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StdOStreamLogStream.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Exporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssimpCExport.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlobIOSystem.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CalcTangentsProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CalcTangentsProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ComputeUVMappingProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ComputeUVMappingProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ConvertToLHProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ConvertToLHProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindDegenerates.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindDegenerates.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindInstancesProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindInstancesProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindInvalidDataProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FindInvalidDataProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FixNormalsStep.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FixNormalsStep.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\GenFaceNormalsProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\GenFaceNormalsProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\GenVertexNormalsProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\GenVertexNormalsProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PretransformVertices.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PretransformVertices.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ImproveCacheLocality.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ImproveCacheLocality.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\JoinVerticesProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\JoinVerticesProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LimitBoneWeightsProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LimitBoneWeightsProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveRedundantMaterials.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveRedundantMaterials.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveVCProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RemoveVCProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SortByPTypeProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SortByPTypeProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SplitLargeMeshes.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SplitLargeMeshes.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TextureTransform.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TextureTransform.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TriangulateProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TriangulateProcess.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ValidateDataStructure.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ValidateDataStructure.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OptimizeGraph.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OptimizeGraph.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OptimizeMeshes.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OptimizeMeshes.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DeboneProcess.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DeboneProcess.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ProcessHelper.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ProcessHelper.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PolyTools.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MakeVerboseFormat.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MakeVerboseFormat.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MaterialSystem.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MaterialSystem.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StepExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\StepExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter_Macro.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter_Node.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter_Geometry.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter_Material.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AMFImporter_Postprocess.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSConverter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSHelper.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\3DSExporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ACLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ACLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ASELoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ASELoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ASEParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ASEParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssbinExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssbinExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssbinLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssbinLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssxmlExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\AssxmlExporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\B3DImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\B3DImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BVHLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BVHLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaHelper.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ColladaExporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DXFLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DXFLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\DXFHelper.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CSMLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\CSMLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\HMPFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\HMPLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\HMPLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\HalfLifeFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRMeshLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRMeshLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRShared.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRShared.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IRRLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOAnimation.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOAnimation.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOBLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWOMaterial.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWSLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\LWSLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD2FileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD2Loader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD2Loader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD2NormalTable.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD3FileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD3Loader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD3Loader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD5Loader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD5Loader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD5Parser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MD5Parser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDCFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDCLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDCLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDCNormalTable.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDLDefaultColorMap.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDLFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDLLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDLLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MDLMaterialLoader.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\NFFLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\NFFLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\NDOLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\NDOLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OFFLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OFFLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileData.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileMtlImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileMtlImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjFileParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjTools.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\ObjExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreImporter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreStructs.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreParsingUtils.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreBinarySerializer.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreXmlSerializer.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreImporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreStructs.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreBinarySerializer.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreXmlSerializer.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OgreMaterial.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OpenGEXExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OpenGEXExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OpenGEXImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OpenGEXImporter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\OpenGEXStructs.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyParser.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\PlyExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MS3DLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MS3DLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\COBLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\COBLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\COBScene.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderDNA.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderDNA.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderDNA.inl" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderScene.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderScene.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderSceneGen.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderIntermediate.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderModifier.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderModifier.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderBMesh.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderBMesh.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderTessellator.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\BlenderTessellator.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCReaderGen1.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCReaderGen2.cpp" >
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalOptions) /bigobj</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCReaderGen.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCUtil.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCUtil.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCGeometry.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCMaterial.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCProfile.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCCurve.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCBoolean.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\IFCOpenings.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STEPFile.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STEPFileReader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STEPFileReader.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STEPFileEncoding.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STEPFileEncoding.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XGLLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XGLLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXCompileConfig.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXParser.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXTokenizer.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXTokenizer.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXImportSettings.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXConverter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXConverter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXUtil.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXUtil.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXDocument.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXDocument.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXProperties.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXProperties.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXMeshGeometry.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXMeshGeometry.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXMaterial.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXModel.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXAnimation.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXNodeAttribute.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXDeformer.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXBinaryTokenizer.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FBXDocumentUtil.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3DLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3DLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPFileData.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPFileParser.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPFileParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPFileImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPFileImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPZipArchive.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Q3BSPZipArchive.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RawLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\RawLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SIBImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SIBImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SMDLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\SMDLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STLLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STLLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STLExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\STLExporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TerragenLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\TerragenLoader.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\UnrealLoader.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\UnrealLoader.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileHelper.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\XFileExporter.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DExporter.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Geometry2D.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Geometry3D.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Group.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Light.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Macro.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Metadata.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Networking.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Node.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Postprocess.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Rendering.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Shape.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DImporter_Texturing.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FIReader.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\FIReader.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\X3DVocabulary.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFAsset.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFAsset.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFAssetWriter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFAssetWriter.inl" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFImporter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFExporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\glTFExporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\D3MFImporter.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\D3MFImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\D3MFOpcPackage.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\D3MFOpcPackage.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDCpp14.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDImporter.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDImporter.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDPmdParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDPmxParser.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDPmxParser.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\MMDVmdParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\irrXMLWrapper.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\unzip\crypt.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\unzip\ioapi.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\unzip\ioapi.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\unzip\unzip.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\unzip\unzip.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\common\shapes.cc"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\common\shapes.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\common\utils.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\clipper\clipper.hpp" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\clipper\clipper.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\OpenDDLParser.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\DDLNode.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\OpenDDLCommon.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\OpenDDLExport.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\Value.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\code\OpenDDLStream.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\OpenDDLStream.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\DDLNode.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\openddlparser\include\openddlparser\Value.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcAdjacencyInfo.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcBinaryStream.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcCommon.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDVEncodeParams.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcDynamicVector.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcFIFO.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTimer.h" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTools.cpp"  />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleFans.cpp"  />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleFans.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcVector.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\Open3DGC\o3dgcVector.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\anim.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\camera.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\color4.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\color4.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\config.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\defs.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\light.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\material.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\material.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\matrix3x3.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\matrix4x4.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\quaternion.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\scene.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\texture.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\types.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\vector2.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\vector3.inl" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\version.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\DefaultIOStream.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\SceneCombiner.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include\assimp\Compiler\pstdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\ZERO_CHECK.vcxproj">
+      <Project>{23EA6B9D-5747-3B76-B11B-796D65259C8C}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\irrXML\IrrXML.vcxproj">
+      <Project>{18715EAC-937A-350D-A7D9-9DBA5180E02F}</Project>
+      <Name>IrrXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{6E4E9620-B60B-3F8C-BA1B-4E12072C829A}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcAdjacencyInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcBinaryStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcDVEncodeParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcDynamicVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcFIFO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcTriangleFans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\assimp\contrib\Open3DGC\o3dgcVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\assimp\contrib\Open3DGC\o3dgcVector.inl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\assimp\contrib\Open3DGC\o3dgcTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\assimp\contrib\Open3DGC\o3dgcTriangleFans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

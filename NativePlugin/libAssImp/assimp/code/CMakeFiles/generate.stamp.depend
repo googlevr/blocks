@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/code/CMakeLists.txt
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/cmake-modules/FindRT.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
