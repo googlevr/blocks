@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/ddgit/BlocksNativePlugin/libAssImp/assimp/test/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.9/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/DartConfiguration.tcl.in

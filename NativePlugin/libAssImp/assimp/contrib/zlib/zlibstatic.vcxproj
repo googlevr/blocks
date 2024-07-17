@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74D1874B-EF11-3C5E-A81E-918266206579}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>zlibstatic</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zlibstatic.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zlibstaticd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zlibstatic.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zlibstatic</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">zlibstatic.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">zlibstatic</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">zlibstatic.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">zlibstatic</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ddgit\BlocksNativePlugin\libAssImp\assimp\.;C:\ddgit\BlocksNativePlugin\libAssImp\assimp;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\include;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlib.pc.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zconf.h.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlib.pc.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zconf.h.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlib.pc.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zconf.h.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/ddgit/BlocksNativePlugin/libAssImp/assimp -BC:/ddgit/BlocksNativePlugin/libAssImp/assimp --check-stamp-file C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/ddgit/BlocksNativePlugin/libAssImp/assimp/contrib/zlib/CMakeLists.txt;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.c.in;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlib.pc.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zconf.h.cmakein;C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\adler32.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\compress.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\crc32.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\deflate.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\gzclose.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\gzlib.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\gzread.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\gzwrite.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inflate.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\infback.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inftrees.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inffast.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\trees.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\uncompr.c" />
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zutil.c" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zconf.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zlib.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\crc32.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\deflate.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\gzguts.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inffast.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inffixed.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inflate.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\inftrees.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\trees.h" />
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\ZERO_CHECK.vcxproj">
+      <Project>{23EA6B9D-5747-3B76-B11B-796D65259C8C}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

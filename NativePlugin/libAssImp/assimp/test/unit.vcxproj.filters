@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\contrib\gtest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\CCompilerTest.c">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\code\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\AbstractImportExportBase.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\ut3DImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\ut3DSImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utACImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utAMFImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utASEImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utAnim.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\AssimpAPITest.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utB3DImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBatchLoader.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBlenderIntermediate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBlendImportAreaLight.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBlenderImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBlendImportMaterials.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utBVHImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utColladaExportCamera.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utColladaExportLight.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utColladaImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utCSMImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utDefaultIOStream.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utDXFImporterExporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utFastAtof.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utFBXImporterExporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utFindDegenerates.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utFindInvalidData.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utFixInfacingNormals.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utGenNormals.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utglTFImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utHMPImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utIFCImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utImporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utImproveCacheLocality.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utIOSystem.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utIOStreamBuffer.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utIssues.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utJoinVertices.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utLimitBoneWeights.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utLWSImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utMaterialSystem.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utMatrix3x3.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utMatrix4x4.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utMetadata.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\SceneDiffer.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utSIBImporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utObjImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utObjTools.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utOpenGEXImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utPretransformVertices.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utPLYImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utPMXImporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utRemoveComments.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utRemoveComponent.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utRemoveRedundantMaterials.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utRemoveVCProcess.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utScenePreprocessor.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utSharedPPData.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utStringUtils.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utSMDImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utSortByPType.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utSplitLargeMeshes.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utTargetAnimation.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utTextureTransform.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utTriangulate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utTypes.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utVertexTriangleAdjacency.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utVersion.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utVector3.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utXImporterExporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utD3MFImportExport.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\utProfiler.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\UTLogStream.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\TestIOSystem.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\TestModelFactory.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\unit\SceneDiffer.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ddgit\BlocksNativePlugin\libAssImp\assimp\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9B4AF79F-2107-3F15-91CC-15AED5F6B9B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit">
+      <UniqueIdentifier>{7DE08687-A258-3D2D-9CE8-C59D4035DBC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{7B2D7B4C-5A43-3757-978C-3FC6C0AB881E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

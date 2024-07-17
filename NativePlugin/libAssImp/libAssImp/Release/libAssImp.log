@@ -1,0 +1,173 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (libAssImp.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  3DSConverter.cpp
+  AMFImporter_Postprocess.cpp
+..\assimp\code\AMFImporter_Postprocess.cpp(249): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+..\assimp\code\AMFImporter_Postprocess.cpp(948): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  ASELoader.cpp
+  AssbinExporter.cpp
+..\assimp\code\AssbinExporter.cpp(738): error C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h(495): note: see declaration of 'gmtime'
+..\assimp\code\AssbinExporter.cpp(744): error C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h(116): note: see declaration of 'asctime'
+..\assimp\code\AssbinExporter.cpp(760): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+..\assimp\code\AssbinExporter.cpp(764): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  AssbinLoader.cpp
+..\assimp\code\AssbinLoader.cpp(63): fatal error C1083: Cannot open include file: 'contrib/zlib/zlib.h': No such file or directory
+  Assimp.cpp
+  AssimpCExport.cpp
+..\assimp\code\AssimpCExport.cpp(76): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+..\assimp\code\AssimpCExport.cpp(78): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+..\assimp\code\AssimpCExport.cpp(80): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  AssxmlExporter.cpp
+..\assimp\code\AssxmlExporter.cpp(54): fatal error C1083: Cannot open include file: 'contrib/zlib/zlib.h': No such file or directory
+  B3DImporter.cpp
+  BlenderLoader.cpp
+..\assimp\code\BlenderLoader.cpp(575): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  BlenderModifier.cpp
+  C4DImporter.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(116): error C2039: 'map': is not a member of 'std'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\sstream(12): note: see declaration of 'std'
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(116): error C2143: syntax error: missing ';' before '<'
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(116): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(116): error C2238: unexpected token(s) preceding ';'
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(117): error C3646: 'material_mapping': unknown override specifier
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\C4DImporter.h(117): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+..\assimp\code\C4DImporter.cpp(65): fatal error C1083: Cannot open include file: 'c4d_file.h': No such file or directory
+  CalcTangentsProcess.cpp
+  ColladaExporter.cpp
+..\assimp\code\ColladaExporter.cpp(172): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
+  ColladaLoader.cpp
+..\assimp\code\ColladaLoader.cpp(1773): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  ColladaParser.cpp
+..\assimp\code\ColladaParser.cpp(2966): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+  ComputeUVMappingProcess.cpp
+  D3MFImporter.cpp
+..\assimp\code\D3MFImporter.cpp(60): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  D3MFOpcPackage.cpp
+..\assimp\code\D3MFOpcPackage.cpp(58): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  DeboneProcess.cpp
+  Compiling...
+  DefaultIOSystem.cpp
+..\assimp\code\DefaultIOSystem.cpp(78): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+..\assimp\code\DefaultIOSystem.cpp(93): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+..\assimp\code\DefaultIOSystem.cpp(149): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  DefaultLogger.cpp
+..\assimp\code\DefaultLogger.cpp(399): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  DXFLoader.cpp
+  FIReader.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  FixNormalsStep.cpp
+  glTFExporter.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\glTFAsset.h(62): fatal error C1083: Cannot open include file: 'rapidjson/rapidjson.h': No such file or directory
+  glTFImporter.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\glTFAsset.h(62): fatal error C1083: Cannot open include file: 'rapidjson/rapidjson.h': No such file or directory
+  HMPLoader.cpp
+  IFCLoader.cpp
+..\assimp\code\IFCLoader.cpp(54): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  IFCMaterial.cpp
+  ImporterRegistry.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  ImproveCacheLocality.cpp
+  MaterialSystem.cpp
+..\assimp\code\MaterialSystem.cpp(489): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  MD2Loader.cpp
+  MD5Parser.cpp
+..\assimp\code\MD5Parser.cpp(108): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  MDCLoader.cpp
+  MDLLoader.cpp
+..\assimp\code\MDLLoader.cpp(275): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+..\assimp\code\MDLLoader.cpp(1561): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  MDLMaterialLoader.cpp
+  MS3DLoader.cpp
+..\assimp\code\MS3DLoader.cpp(417): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  NDOLoader.cpp
+  Compiling...
+  NFFLoader.cpp
+..\assimp\code\NFFLoader.cpp(623): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  ObjExporter.cpp
+  OpenGEXImporter.cpp
+..\assimp\code\OpenGEXImporter.cpp(49): fatal error C1083: Cannot open include file: 'openddlparser/OpenDDLParser.h': No such file or directory
+  OptimizeGraph.cpp
+  Q3BSPFileImporter.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\Q3BSPZipArchive.h(44): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  Q3BSPFileParser.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\Q3BSPZipArchive.h(44): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  Q3BSPZipArchive.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\Q3BSPZipArchive.h(44): fatal error C1083: Cannot open include file: 'contrib/unzip/unzip.h': No such file or directory
+  Q3DLoader.cpp
+  SMDLoader.cpp
+..\assimp\code\SMDLoader.cpp(514): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+..\assimp\code\SMDLoader.cpp(665): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  SortByPTypeProcess.cpp
+  StepExporter.cpp
+..\assimp\code\StepExporter.cpp(205): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
+  STEPFileEncoding.cpp
+..\assimp\code\STEPFileEncoding.cpp(47): fatal error C1083: Cannot open include file: 'contrib/utf8cpp/source/utf8.h': No such file or directory
+  STEPFileReader.cpp
+  UnrealLoader.cpp
+..\assimp\code\UnrealLoader.cpp(385): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\assimp\code\UnrealLoader.cpp(387): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\assimp\code\UnrealLoader.cpp(393): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\assimp\code\UnrealLoader.cpp(395): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  ValidateDataStructure.cpp
+..\assimp\code\ValidateDataStructure.cpp(88): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+..\assimp\code\ValidateDataStructure.cpp(106): error C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+  Version.cpp
+..\assimp\code\Version.cpp(107): fatal error C1083: Cannot open include file: 'revision.h': No such file or directory
+  X3DImporter.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Geometry2D.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Geometry3D.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Group.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  Compiling...
+  X3DImporter_Light.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Metadata.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Networking.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Postprocess.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Rendering.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Shape.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DImporter_Texturing.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  X3DVocabulary.cpp
+c:\peltzer\google3\apps\peltzer\client\unitynativepluginassimp\libassimp\assimp\code\FIReader.hpp(49): fatal error C1083: Cannot open include file: 'irrXML.h': No such file or directory
+  XGLLoader.cpp
+..\assimp\code\XGLLoader.cpp(69): fatal error C1083: Cannot open include file: 'contrib/zlib/zlib.h': No such file or directory
