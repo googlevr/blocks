@@ -19700,7 +19700,7 @@ MonoBehaviour:
   hoverName: 
   isActive: 1
   isHovered: 0
-  action: 18
+  action: 19
 --- !u!1 &1269771415564090
 GameObject:
   m_ObjectHideFlags: 0
@@ -31160,7 +31160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4524181737418050
 Transform:
   m_ObjectHideFlags: 0
@@ -52705,7 +52705,7 @@ MonoBehaviour:
   hoverName: 
   isActive: 1
   isHovered: 0
-  action: 19
+  action: 20
 --- !u!1 &1739092500208330
 GameObject:
   m_ObjectHideFlags: 0
